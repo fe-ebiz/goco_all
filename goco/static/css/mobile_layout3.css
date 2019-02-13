@@ -2767,7 +2767,7 @@ text-align:left; text-indent:10px; border-bottom:1px solid #eee1c8; font-size:0.
 #sub_search .todayment .link a {display:block; width:100%; height:35px; margin:5px 0; color:#fff; font-size:0.813em}
 #sub_search .todayment .link .icon {height:15px; margin-top:5px}
 
-.radio_box .room_info_title .price {float:right; font-weight:bold;}
+.radio_box .room_info_title .price {float:right; font-weight:bold; /*width: 100%; text-align: right;*/}
 .radio_box .room_info_title .price del {font-size:1.000em; }
 .radio_box .room_info_title .person {float:left; margin-top:5px; font-size:10px; text-indent:0;}
 .radio_box .room_info_title .mini {font-size:0.688em}
@@ -4385,3 +4385,112 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
 .evt-reserv-wrap .btn-rsvt {position:relative; display:block; box-sizing:border-box; width:75%; height:35px; margin-top:5px; text-align:center; border:2px solid #f2b095; border-radius:4px; background: #ffe7b4}
 .evt-reserv-wrap .btn-rsvt span {position:relative; display:inline-block; padding-left:16px; font-size:13px; line-height:31px; color:#cd1818}
 .evt-reserv-wrap .btn-rsvt span:before {content:'▶'; position:absolute; display:inline-block; left:0; font-size:13px; line-height:31px; color:#cd1818}
+
+
+/* 181109 랜딩 : GangwonJejuTheme / 강원.제주 맞춤여행 다솜 */
+#gjt-181109 {position: relative;}
+#gjt-181109 * {font-family: "Nanum Gothic", sans-serif;}
+#gjt-181109 div[class*='sec-lan'] {position: relative; box-sizing: border-box; width: 100%;}
+#gjt-181109 div[class*='sec-lan'] .gjt-wrap {position: relative; box-sizing: border-box; max-width: 360px; margin: 0 auto; padding-left: 20px; padding-right: 20px;}
+#gjt-181109 figure {position: relative; margin: 0; padding: 0}
+#gjt-181109 img {position: relative; width: 100%; max-width: 360px;}
+#gjt-181109 .sec-lan-main {min-height: 406px; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/bg_main.jpg) no-repeat center center; background-size: cover;}
+#gjt-181109 .sec-lan-main .gjt-wrap {padding-top: 40px;}
+#gjt-181109 .sec-lan-main .gjt-tit {display: block; margin: 0 auto; text-align: center; padding: 0 50px;}
+#gjt-181109 .sec-lan-main .gjt-tit img {}
+#gjt-181109 .sec-lan-menu {padding-top: 20px; background: #e83e3e;}
+#gjt-181109 .sec-lan-menu .gjt-wrap {padding-top: 40px;}
+#gjt-181109 .sec-lan-menu .gjt-menu-box {position: relative; box-sizing: border-box; max-width: 230px; /*min-height: 153px;*/ margin: 66px auto 0; padding: 15px 22px 12px; background: #fff; box-shadow: 0px 7px 15px 0px rgba(7, 2, 2, 0.6);}
+#gjt-181109 .sec-lan-menu .gjt-menu-box:before {content: ''; display: block; position: absolute; width: 100%; height: 66px; top: -66px; left: 0; margin: 0 auto; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/img_menu.png) no-repeat center center; background-size: auto 100%;}
+#gjt-181109 .sec-lan-menu .gjt-menu-list {padding-top: 4px;}
+#gjt-181109 .sec-lan-menu .gjt-menu-list li {padding-top: 8px;}
+#gjt-181109 .sec-lan-menu .gjt-menu-list li a {display: block;}
+#gjt-181109 .sec-lan-menu .gjt-menu-list li a img {}
+#gjt-181109 .sec-lan-theme {background: #fff;}
+#gjt-181109 .sec-lan-theme .gjt-wrap {padding-top: 30px; padding-bottom: 45px;}
+#gjt-181109 .sec-lan-theme .gjt-tit {}
+#gjt-181109 .sec-lan-theme .gjt-theme-list {padding-top: 5px;}
+#gjt-181109 .sec-lan-theme .gjt-theme-list li {float: left; box-sizing: border-box; width: 50%; padding: 20px 9px 0 0;}
+#gjt-181109 .sec-lan-theme .gjt-theme-list li:nth-child(2n) {padding-right: 0; padding-left: 9px;}
+#gjt-181109 .sec-lan-theme .gjt-theme-list li a {display: block;}
+#gjt-181109 .sec-lan-theme .gjt-txt-box {}
+#gjt-181109 .sec-lan-theme .gjt-txt-box p {font-size: 12px; line-height: 15px; letter-spacing: -1px; color: #000;}
+#gjt-181109 .sec-lan-theme .gjt-txt-box .gjt-theme-name {overflow:hidden; padding-top: 10px; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap;}
+#gjt-181109 .sec-lan-theme .gjt-txt-box .gjt-theme-price {padding-top: 5px;}
+#gjt-181109 .sec-lan-theme .gjt-txt-box .gjt-theme-price span {position: relative; display: inline-block; color: #8c8c8c;}
+#gjt-181109 .sec-lan-theme .gjt-txt-box .gjt-theme-price span:before {content: ''; display: block; position: absolute; width: 100%; height: 1px; top:50%; left: 0; background: #8c8c8c;}
+#gjt-181109 .sec-lan-theme .gjt-txt-box .gjt-theme-price em {display: inline-block; padding-left: 5px; font-size: 15px;}
+#gjt-181109 .sec-lan-kakao {background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/bg_kakao.jpg) no-repeat center center; background-size: cover;}
+#gjt-181109 .sec-lan-kakao .gjt-wrap {padding-top: 26px; padding-bottom: 28px; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/img_kakao.png) no-repeat right 16px bottom; background-size: 112px auto;}
+#gjt-181109 .sec-lan-kakao .gjt-tit {max-width: 210px; padding-left: 2px;}
+#gjt-181109 .sec-lan-kakao .gjt-txt {padding: 5px 0 0 4px; font-size: 14px; line-height: 18px; letter-spacing: -1px; color: #373737;}
+#gjt-181109 .sec-lan-kakao .btn-kakao {display: block; width: 250px; height: 35px; margin-top: 24px; text-align: center; border-radius: 3px; background: #fbe901;}
+#gjt-181109 .sec-lan-kakao .btn-kakao span {position: relative; display: inline-block; padding-left: 19px; font-size: 15px; letter-spacing: -1px; line-height: 35px; color: #371f10;}
+#gjt-181109 .sec-lan-kakao .btn-kakao span:before {content: ''; display: block; position: absolute; width: 16px; height: 100%; top: 0; left: 0; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/ico_kakao.gif) no-repeat center center; background-size: 100% auto;}
+
+/* 181115 랜딩 : weekHot / 금주의 핫한 특가 패키지 */
+#gjt-181109.weekHot-181115 .sec-lan-main {background: #1f3180;}
+#gjt-181109.weekHot-181115 .sec-lan-main .gjt-tit {padding: 0 10px 10px;}
+#gjt-181109.weekHot-181115 .sec-lan-menu {background: #d94582;}
+#gjt-181109.weekHot-181115 .sec-lan-menu .gjt-menu-box {min-height: 153px; padding-top: 20px;}
+#gjt-181109.weekHot-181115 .sec-lan-menu .gjt-menu-list {padding-top: 6px;}
+#gjt-181109.weekHot-181115 .sec-lan-theme .gjt-wrap {padding-top: 40px; padding-bottom: 20px;}
+#gjt-181109.weekHot-181115 .sec-lan-theme.gjt-theme02 .gjt-wrap {padding-bottom: 85px;}
+
+/* 181115 랜딩 : spaTraval / 전국 온천 인기숙소 BEST3 */
+#gjt-181109.spa-181115 .sec-lan-main {background: url(http://img.go.co.kr/mobile/landing/20181115_spaTravel/bg_main.jpg) no-repeat center center; background-size: cover;}
+#gjt-181109.spa-181115 .sec-lan-menu {background: #bc6c33;}
+#gjt-181109.spa-181115 .sec-lan-theme .gjt-wrap {padding-bottom: 50px;}
+#gjt-181109.spa-181115 .sec-lan-theme.gjt-theme03 .gjt-wrap {padding-bottom: 60px;}
+
+/* 181122 랜딩 : skiResort / 전국 스키장 인기숙소 BEST2 */
+#gjt-181109.ski-181122 .sec-lan-main {background: url(http://img.go.co.kr/mobile/landing/20181122_skiResort/bg_main.jpg) no-repeat center center; background-size: cover;}
+#gjt-181109.ski-181122 .sec-lan-main .gjt-tit {padding: 0 15px;}
+#gjt-181109.ski-181122 .sec-lan-menu {background: #76bdb6;}
+#gjt-181109.ski-181122 .sec-lan-menu .gjt-menu-box {padding-top: 20px; padding-bottom: 21px;}
+#gjt-181109.ski-181122 .sec-lan-theme .gjt-wrap {padding-top: 40px; padding-bottom: 35px;}
+#gjt-181109.ski-181122 .sec-lan-theme.gjt-theme02 .gjt-wrap {padding-bottom: 60px;}
+
+/* 181128 랜딩 : chainHotel / 토요코인 체인호텔 BEST7 */
+#gjt-181109.chain-181128 .sec-lan-main {background: url(http://img.go.co.kr/mobile/landing/20181128_chainHotel/bg_main.jpg) no-repeat center center; background-size: cover;}
+#gjt-181109.chain-181128 .sec-lan-main .gjt-wrap {padding-top: 28px; padding-bottom: 30px;}
+#gjt-181109.chain-181128 .sec-lan-main .gjt-tit {padding: 0 30px;}
+#gjt-181109.chain-181128 .sec-lan-menu {background: #1f7ed8;}
+#gjt-181109.chain-181128 .sec-lan-menu .gjt-menu-box {padding-top: 20px; padding-bottom: 21px;}
+#gjt-181109.chain-181128 .sec-lan-theme .gjt-wrap {padding-top: 40px; padding-bottom: 60px;}
+
+/* 181207 랜딩 : lastYear / 크리스마스&연말 특별기획전 */
+#gjt-181109.lastyear-181207 .sec-lan-main {background: url(http://img.go.co.kr/mobile/landing/20181207_lastYear/bg_main.jpg) no-repeat center bottom; background-size: cover;}
+#gjt-181109.lastyear-181207 .sec-lan-main .gjt-wrap {padding-top: 66px;}
+#gjt-181109.lastyear-181207 .sec-lan-main .gjt-tit {padding: 0 19px;}
+#gjt-181109.lastyear-181207 .sec-lan-menu {background: #c11310;}
+#gjt-181109.lastyear-181207 .sec-lan-menu .gjt-menu-box {padding-top: 20px; padding-bottom: 21px;}
+#gjt-181109.lastyear-181207 .sec-lan-theme .gjt-wrap {padding-top: 30px; padding-bottom: 45px;}
+
+
+
+
+@media (max-device-width: 320px) {
+    /* 181109 랜딩 : GangwonJejuTheme / 강원.제주 맞춤여행 다솜 */
+    #gjt-181109 div[class*='sec-lan'] .gjt-wrap {padding-left: 16px; padding-right: 16px;}
+    #gjt-181109 div.sec-lan-theme .gjt-txt-box p {font-size: 11px;}
+    #gjt-181109 div.sec-lan-theme .gjt-theme-list li {padding: 20px 8px 0 0;}
+    #gjt-181109 div.sec-lan-theme .gjt-theme-list li:nth-child(2n) {padding-right: 0; padding-left: 8px;}
+    #gjt-181109 .sec-lan-kakao .gjt-tit {max-width: 195px;}
+    #gjt-181109 .sec-lan-kakao .gjt-txt {font-size: 13px;}
+    #gjt-181109 .sec-lan-kakao .gjt-wrap {padding-top: 23px; padding-bottom: 25px; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/img_kakao.png) no-repeat right 13px bottom; background-size: 100px auto;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
