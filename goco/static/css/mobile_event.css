@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.c-white {color: #fff;}
+.f-bd {font-weight: 700;}
+/*.cl-1 {color: #ff6000;}
+.cl-2 {color: #ffc600;}
+.cl-3 {color: #d91a2e;}*/
+
+.cmGc .header-evt {position: relative; width: 100%; height: 45px; background: #f4f2f3; line-height: 45px; text-align: center; letter-spacing: -1px; border-bottom: 1px solid #d2d2d2;}
+.cmGc .header-evt .a-x {width: 45px; height: 45px; top: 0; right: 0;}
+.cmGc .header-evt .a-x:before, .header-evt .a-x:after {width: 22px; height: 1px; top: 22px; left: 12px;}
+.cmGc figure {margin: 0 auto;}
+.cmGc figure img {width: 100%;}
+
+/* 20161223 연말초특가 */
+#special_price_161223 {position:relative; width:device-width;}
+#special_price_161223 img{display:block; }
+#special_price_161223 .link1-1{position:absolute; top:16.7%; left:10.3%; width:79%; height:0.7%;}
+#special_price_161223 .link1-2{position:absolute; top:24.67%; left:10.3%; width:79%; height:0.7%;}
+#special_price_161223 .link1-3{position:absolute; top:32.65%; left:10.3%; width:79%; height:0.7%;}
+#special_price_161223 .link_kakao{position:absolute; top:98.5%; left:6.6%; width:86.9%; height:0.9%;}
+/* 20161223 연말초특가 end*/
+
+/* 2017.02.16 모바일 앱설치안내-바우처확인  */
+#wrap {width:100%;  }
+ul li img{font-align:center; width:100%; }
+ul .btn{width: 100%; background:#fff; text-align:center; margin:0 auto; }
+ul .btn img{width: 60%; padding-bottom: 20px; }
+
+/* 171031 3만원 쿠폰팩 이벤트 */
+#event-wrap {position: relative; width: 100%; margin: 0 auto; color:#282828; font-family: 'Nanum Gothic', sans-serif; font-size:14px; line-height: 1.5; box-sizing: border-box;}
+
+.evt30000 {}
+.evt30000 .evt-content {position: relative;}
+.evt30000 .evt-content > img {width: 100%;}
+
+.fail-recomm {border-top: 1px solid #c4c4c4; border-bottom: 1px solid #c4c4c4; padding: 8px 10px; font-size: 14px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; font-weight: 500;}
+.fail-recomm .i-spot {width: 22px; margin-right: 3px; vertical-align: middle; position: relative; top: -2px;}
+.fail-recomm .s1 {color: #fa6b0a;}
+
+/*180212 제주 탭 변경*/
+.jeju-tab.type-2 {position: relative; padding-left: 2.5%; padding-right: 2.5%; margin: 0 auto; background: #010206;}
+.jeju-tab.type-2 > a {display: block; width: 32%; float: left;}
+.jeju-tab.type-2 > a {margin-left: 2%;}
+.jeju-tab.type-2 > a:first-child {margin-left: 0;}
+
+/*180302 리뷰작성시 3,000원 쿠폰발급*/
+.evt-cp3 {font-family: "Noto Sans KR", "Malgun Gothic", "Nanum Gothic", sans-serif;}
+.evt-cp3 .main {position: relative; width: 100%;}
+.evt-cp3 .main .area-part {padding: 35px 0 30px;}
+.evt-cp3 .main .area-part > p {color: #241916; line-height: 1.5; text-align: center; letter-spacing: -1px;}
+.evt-cp3 .main .area-part .p-1 {font-size: 14px;}
+.evt-cp3 .main .area-part .p-2 {font-size: 16px;}
+.evt-cp3 .main .area-part .p-3 {font-size: 15px;}
+.evt-cp3 .main .area-part .cl-1 {color: #fdf06e;}
+.evt-cp3 .main .area-part .bor-b {border-bottom: 1px solid #241916	;}
+.evt-cp3 .main .area-1 {background: #fdf0cc url(http://img.go.co.kr/mobile/landing/180302_rvCp3/rvCpBg_1.jpg) no-repeat top center; background-size: cover;}
+.evt-cp3 .main .area-1 figure {width: 94%; width: 315px; margin-bottom: 10px;}
+.evt-cp3 .main .area-2 {background: #f6f6f6;}
+.evt-cp3 .main .area-2 figure {width: 94%; margin-bottom: 10px; width: 315px;}
+.evt-cp3 .main .area-3 {background: #3f4657;}
+.evt-cp3 .main .area-3 {padding: 20px 0;}
+.evt-cp3 .main .d-line {position: relative; width: 100%; margin-top: 10px; margin-bottom: -5px;}
+.evt-cp3 .main .s-line {display: block; height: 1px; width: 298px; background: #353b49; margin: 0 auto;}
+.evt-cp3 .main .d-line:before, .evt-cp3 .main .d-line:after {position: absolute; content: ""; top: -5px; display: block; background: #f6f6f6; width: 10px; height: 10px; border-radius: 50%;}
+.evt-cp3 .main .d-line:before {left: -5px;}
+.evt-cp3 .main .d-line:after {right: -5px;}
+
+.evt-cp3 .main .area-btn {text-align: center; margin-top: 10px;}
+.evt-cp3 .main .area-3 .area-btn {margin-top: 20px;}
+.evt-cp3 .main .area-btn .a-btn {position: relative; display: inline-block; width: 300px; height: 50px; text-align: center; color: #fff; font-size: 16px; border-radius: 4px; box-sizing: border-box; font-weight: 700; letter-spacing: -0.5px;}
+.evt-cp3 .main .area-btn .a-btn:after {content: ""; display: inline-block; height: 105%; vertical-align: middle;}
+.evt-cp3 .main .area-btn .a-btn > img {position: relative; top: -2px; left: 1px; width: 22px; vertical-align: middle;}
+.evt-cp3 .main .area-btn .a-btn.bg-1 {background: #ff6000;}
+.evt-cp3 .main .area-btn .a-btn.bg-2 {background: #ffc600; color: #272727; border: 1px solid #d0d0d0;}
+.evt-cp3 .main .area-btn .a-btn.bg-3 {background: #d91a2e;}

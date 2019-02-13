@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title> 오션투유리조트 버스왕복이용권 (주말전용) </title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+    <!-- 181126 나눔스퀘어폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+	<!-- 폰트어썸 CDN -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<!-- jquery라이브러리 -->
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/mobile_layout_event-v1.1.css">
+	<!--<link rel="stylesheet" type="text/css" href="../../../static/css/mobile_layout_event-v1.1.css">-->
+
+</head>
+
+<body style="">
+	<h1 class="hidden">오션투유리조트 버스왕복이용권 (주말전용)</h1>
+
+	<div class="wrapper bus-wrapper">
+		<section class="section">
+			<img src="http://img.go.co.kr/mobile/landing/20181126_busOcean/ld_1.jpg" alt="오션투유리조트 버스왕복이용권">
+			<div class="hidden">
+                <p>가장편하고 저렴하게!</p>
+                <h2 class="">
+                    오션투유리조트<br>
+                    <em>버스왕복이용권</em><br>
+                    <span>주말전용</span>
+                </h2>
+                <p>매주 토요일 오전 잠실 종합운동장에서 출발하여 일요일 오후에 귀가하실 수 있는 버스왕복이용권입니다.</p>
+                <p>※ 본 운행은 주말 1회이며 중간 경유지가 없어 운행 중 승/하차는 불가합니다.</p>
+			</div>
+			<div class="fixed-bg" style="display: none;">
+                <div class="dawrap">
+                    <h1>버스왕복이용권 예약하기<a class="i-x" href="javascript:;"></a></h1>
+                    <div id="blist">
+                        <div id="break_o">
+                           <div class="da clr">
+                                <span class="da-tit">버스이용일</span>
+                                <input type="text" class="date hasDatepicker" name="sdate" id="sdate" placeholder="날짜선택" readonly="" onfocus="this.blur()" style="cursor:default" onchange="break_o()" value="2018-11-28">
+                            </div>
+                            
+                            <!-- 날짜 선택 후 -->
+                            <div class="da clr">
+                                <span class="da-tit">성인</span>
+                                <span class="da-money">
+                                    <span class="t-line">27,000원</span>
+                                    <span class="t-moeny"><em>20,000</em>원</span>
+                                </span>
+
+                                <input type="hidden" name="ticket_num[]" id="ticket_num0" value="58">
+                                <select name="tcount[]" id="tcount0" class="date date2" onchange="fmoney();">
+                                    <option value="">1인</option>
+                                    <option value="">2인</option>
+                                    <option value="">3인</option>
+                                </select>
+                            </div>
+                            <div class="da clr">
+                                <span class="da-tit">소인</span>
+                                <span class="da-money" style="">
+                                    <span class="t-line">22,000원</span>
+                                    <span class="t-moeny"><em>15,000</em>원</span>
+                                </span>
+
+                                <input type="hidden" name="ticket_num[]" id="ticket_num0" value="58">
+                                <select name="tcount[]" id="tcount0" class="date date2" onchange="fmoney();">
+                                    <option value="">1인</option>
+                                    <option value="">2인</option>
+                                    <option value="">3인</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+        <div class="btn-box but" id="but">
+            <a href="#none" class="btn-buy r_bt" style="display: block;"><span>버스이용권 구매하기</span></a>
+            <a href="#none" class="bt" onclick="form_chk();" style="display: none;">결제하기<span id="fmoney">(35,000원)</span></a>
+        </div>
+        <script>
+            $(function() {
+                $(".bbqwrap, #but .bt").hide();
+
+                $("#but").on('click', '.r_bt', function() {
+                    $("#but .l_bt, #but .r_bt").hide();
+                    $(".bbqwrap, #but .bt").show();
+                    $("#but").addClass('on');
+                });
+
+                $("#but .r_bt").on('click', function() {
+                    $(".fixed-bg").fadeToggle();
+                    $(".bbqwrap").slideToggle();
+                    $("#but").removeClass('on');
+                    $("#wrap").bind("touchmove", function(e) { e.preventDefault(); });
+                            });
+
+                $(".i-x").on('click', function() {
+                    $(".fixed-bg").fadeToggle();
+                    $(".bbqwrap").slideToggle();
+                    $("#but").removeClass('on');
+
+                    $("#but .l_bt, #but .r_bt").show();
+                    $("#but .bt").hide();
+
+                    $("#wrap").unbind("touchmove");
+                });
+
+                $("#sdate").click(function() {
+                    alert("체크인 날짜를 선택해주세요.");
+                });
+            });
+            
+            function break_o() {
+                var string = $("#rform").serialize();
+
+                $.ajax({
+                    url: "./state.php",
+                    type: "post",
+                    data: "mode=break_o&"+string,
+                    success: function(e) {
+                        $("#break_o").html(e);
+                        datereload();
+                        myScroll3 = new IScroll('#blist', { mouseWheel: false, click: false, bounce:false, preventDefault : false, tap:true});
+                        $("#fmoney").text("");
+                    }
+                });
+            }
+        </script>
+	</div>
+
+</body>
+
+</html>

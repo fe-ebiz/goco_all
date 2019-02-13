@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=	">
+	<meta charset="UTF-8">
+	<title>테스트 - 에디터</title>
+	<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css" type="text/css">
+
+	<!-- include libraries & summernote source -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/lang/summernote-ko-KR.min.js"></script> -->
+</head>
+<body>
+
+	<div class="summernote"></div>
+	<style>
+		.note-btn-group .btn {
+		    display: inline-block;
+		    padding: 6px 12px;
+		    margin-bottom: 0;
+		    font-size: 14px;
+		    font-weight: normal;
+		    line-height: 1.42857143;
+		    text-align: center;
+		    white-space: nowrap;
+		    vertical-align: middle;
+		    -ms-touch-action: manipulation;
+		    touch-action: manipulation;
+		    cursor: pointer;
+		    -webkit-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		    background-image: none;
+		    border: 1px solid transparent;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		    min-height: 30px;
+		}
+		.note-btn-group .btn-sm,
+		.note-btn-group .btn-group-sm > .btn {
+			font-size: 12px; padding: 5px 10px; line-height: 1.5; border-right: 3px;
+		}
+		.note-btn-group .btn-sm.dropdown-toggle {font-size: 12px; padding: 5px 10px; line-height: 1.5;}
+		.note-editable {min-height: 300px;}
+		.note-editable ol {list-style: decimal none inside;}
+		.note-editable ul {list-style: disc none inside;}
+
+		.panel {width: 50%;	margin: 20px auto;}
+	</style>
+	<script>
+		$(function() {
+			$('.summernote').summernote({
+				lang: 'ko-KR',
+				fontNames: ['Gulim', 'Dotum', 'Malgun Gothic', 'Nanum Gothic', 'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Merriweather'],
+				tabsize: 2,
+	        	height: 100
+			});
+		});
+	</script>
+
+</body>
+</html>

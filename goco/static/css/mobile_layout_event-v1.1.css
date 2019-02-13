@@ -1,0 +1,848 @@
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://go.co.kr/fonts/nanumsquare/nanumsquare.css);
+
+body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:13px; color:#000; line-height:1.5; letter-spacing:0.1px; position: relative; margin:0 auto;}
+a:link, a:visited {text-decoration:none; color:#000}
+a:hover, a:active {text-decoration:none; color:#000}
+input,select,option,textarea {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:12px; color:#000}
+ul,li {list-style: none;}
+
+.hidden {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px; opacity: 0; filter: alpha(opacity=0);}
+.clr:before, .clr:after {content: ""; display: block;}
+.clr:after {clear: both;}
+.wrapper img {max-width: 100%;}
+
+/* 랜딩페이지 */
+.wrap_information{width:100%; text-align:center;}
+.wrap_information .request_btn{position:fixed; bottom:0; padding:8px 0; width:100%; height:72px; background-color:#ffffff; border-top:1px solid #dedede; text-align:center; display:table-cell;}
+.wrap_information .request_btn a{display:inline-block; vertical-align:middle; font-weight:bold; line-height:1.2; color:#fff; padding: 15px 3px; height:43px;}
+.wrap_information .request_btn a span{display:inline-block;}
+.wrap_information .ticket{background-color:#f57c3a; text-align:center;}
+.wrap_information .ticket span{display:inline-block; padding: 5px; font-size:17px;}
+.wrap_information .mobile{background-color:#23a9db; text-align:center;}
+.wrap_information .mobile span{display:inline-block; padding: 5px; font-size:17px;}
+.wrap_information .callcenter{background-color:#3a6af5; text-align:center; line-height: 1 !important;}
+.wrap_information .callcenter strong{color:#ffe400;}
+.wrap_information .callcenter span{display:inline-block;}
+.wrap_information .callcenter .s1{color:#fff60c;}
+
+/* 예약하기-모바일 */
+.wrap_reservation-mobile{width:100%; height:1024px; background-color:#f2f2f2;}
+.wrap_reservation-mobile .title{padding:20px 0; text-align:center; background-color:#f2f2f2; color:#404040; font-size:20px; font-weight:bold; border-bottom:1px solid #dedede;}
+.wrap_reservation-mobile .title span{color:#2395ff;}
+.wrap_reservation-mobile .contents{padding:13px 16px; text-align:left; background-color:#fff; border-bottom:1px solid #dedede;}
+.wrap_reservation-mobile .contents form .labelStyle{text-align:left; font-size:17px; color:#696969; margin-bottom:8px;}
+.wrap_reservation-mobile .contents form .inputStyle{margin-bottom:20px;}
+.wrap_reservation-mobile .contents form .inputStyle-date {margin-bottom: 20px;}
+.wrap_reservation-mobile .contents form .inputStyle-date input{width:47%; border-bottom:1px solid #dedede; font-size:17px; font-weight:bold;}
+.wrap_reservation-mobile .contents form input{appearance:none; width:100%; background-color:#fff; border-bottom:1px solid #dedede; font-size:17px; font-weight:bold;}
+.wrap_reservation-mobile .contents form input#tel1{width:30%;}
+.wrap_reservation-mobile .contents form input#tel2{width:30%;}
+.wrap_reservation-mobile .contents form input#tel3{width:30%;}
+.wrap_reservation-mobile .contents form input#email1{width:46%;}
+.wrap_reservation-mobile .contents form input#email2{width:46%;}
+.wrap_reservation-mobile .contents form select{appearance: none; width:100%; background-color:#fff; border-bottom:1px solid #dedede; font-size:17px; font-weight:bold;}
+.wrap_reservation-mobile .contents form select option{appearance: none; font-size:17px; font-weight:bold;}
+.wrap_reservation-mobile input, textarea, select {appearance: none; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border:0px solid #fff;}
+.wrap_reservation-mobile button{appearance: none; position:absolute; left:0; bottom:0; width:100%; height:101px; background-color:#ff6600; color:#fff; font-size:24px; font-weight:bold; border:0px solid #fff;}
+
+/* 예약하기-지류권 */
+.wrap_reservation-paper{width:100%; height:1024px; background-color:#f2f2f2;}
+.wrap_reservation-paper .title{padding:20px 0; text-align:center; background-color:#f2f2f2; color:#404040; font-size:20px; font-weight:bold; border-bottom:1px solid #dedede;}
+.wrap_reservation-paper .title span{color:#2395ff;}
+.wrap_reservation-paper .contents{padding:13px 16px; text-align:center; background-color:#fff; border-bottom:1px solid #dedede;}
+.wrap_reservation-paper .contents form .labelStyle{text-align:left; font-size:20px; color:#696969; margin-bottom:8px;}
+.wrap_reservation-paper .contents form .inputStyle{margin-bottom:20px;}
+.wrap_reservation-paper .contents form .inputStyle-date input{width:48.5%; border-bottom:1px solid #dedede; font-size:24px; font-weight:bold;}
+.wrap_reservation-paper .contents form input{appearance:none; width:100%; background-color:#fff; border-bottom:1px solid #dedede; font-size:24px; font-weight:bold;}
+.wrap_reservation-paper input, textarea, select {appearance: none; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border:0px solid #fff;}
+.wrap_reservation-paper button{appearance: none; position:absolute; left:0; bottom:0; width:100%; height:101px; background-color:#ff6600; color:#fff; font-size:32px; font-weight:bold; border:0px solid #fff;}
+.wrap_reservation-paper .guide{padding: 15px 20px; text-align:left; font-size:17px; color:#696969; margin-bottom:8px; line-height:1.8;}
+.wrap_reservation-paper .notice{width: 250px; height: 20px; height:auto; position: fixed; left: 50%; margin-left:-125px; bottom: 100px; z-index: 9999; background-color: #383838; color: #F0F0F0;  font-family: Calibri; font-size: 15px; padding: 10px; text-align:center; border-radius: 2px; -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1); -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1); box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);}
+
+
+/*예약하기 리뉴얼*/
+.oc2reserv-wrap {}
+.oc2468-wrap {position: relative; width:100%;/* width: 320px;*/}
+.oc2468-wrap .oce-top {position: relative;}
+.oc2468-wrap .oce-top .p0 {font-size: 12px; background: #1884f3; text-align: center; padding: 8px 0; color: #fff; letter-spacing: -1px;}
+.oc2468-wrap .oce-outer {position: relative; width: 100%; background: #d1f0ff; font-size: 0px !important;}
+.oc2468-wrap .oce-inner {position: relative; padding: 10px 0 0px; box-sizing: border-box; text-align: center; margin: 0 auto; /*max-width: 360px;*/}
+.oc2468-wrap .oce-inner img {width: 100%;}
+.oc2468-wrap .oce-inner .title_3 {padding: 15px 0 0 0;}
+.oc2468-wrap .oce-inner .u-name {position: absolute; display: inline-block; width: 171px; height: 30px; left: 67px; top: 18px; font-size: 22px; font-weight: 600; letter-spacing: -1px; text-align: center;
+box-sizing: border-box; /*border: 1px solid #000;*/}
+.oc2468-wrap .oce-inner .p1 {font-size: 15px; margin-top: 10px; font-weight: 500; color: #404040; line-height: 1.3;}
+.oc2468-wrap .p0-2 {color: #000; font-size: 12px; background: #8cd9ff; letter-spacing: -1px; text-align: center; padding: 10px 0;}
+.oc2468-wrap .oce-inner .btn-area {position: relative; margin: 15px auto 15px; text-align: center;}
+.oc2468-wrap .oce-inner .btn-area > a {display: inline-block; height: 37px; width: 41%; color: #fff; font-size: 15px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; letter-spacing: -1px;}
+.oc2468-wrap .oce-inner .btn-area > a:after {content: ""; display: inline-block; height: 110%; vertical-align: middle;}
+.oc2468-wrap .oce-inner .btn-area .a-1 {background: #ff6428;}
+.oc2468-wrap .oce-inner .btn-area .a-2 {background: #2873ff; margin-left: 8px;}
+
+.oc2468-wrap .oce-box {position: relative; padding-bottom: 120px;}
+.oc2468-wrap .oce-box .ig-1 {width: 100%;}
+.oc2468-wrap .oce-box .faq-ul {position: relative; border-top: 1px solid #bababa;}
+.oc2468-wrap .oce-box .faq-ul > li {position: relative; border: 1px solid #bababa; border-top: none;}
+.oc2468-wrap .oce-box .faq-ul > li > div {position: relative; padding: 15px 10px 15px 28px; letter-spacing: -0.2px; min-height: 49px; box-sizing: border-box; word-break: keep-all; cursor: pointer;}
+.oc2468-wrap .oce-box .faq-q {color: #393939;}
+.oc2468-wrap .oce-box .faq-q .i-x, .oc2468-wrap .oce-box .faq-q .i-dArr {float: right; display: inline-block; position: relative; top: -5px; right: -10px;}
+.oc2468-wrap .oce-box .faq-q .i-x:before, .oc2468-wrap .oce-box .faq-q .i-x:after {content: ""; width: 12px; height: 1px; background: #393939; position: relative; display: none;}
+.oc2468-wrap .oce-box .faq-q .i-x:before {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.oc2468-wrap .oce-box .faq-q .i-x:after {
+	left: -12px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.oc2468-wrap .oce-box .faq-q .i-dArr {
+	top: 3px; right: 5px;
+	width: 7px; height: 7px;
+	border: 1px solid #393939;
+	border-right: none; border-top: none;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.oc2468-wrap .oce-box .faq-q.on .i-dArr {display: none;}
+.oc2468-wrap .oce-box .faq-q.on .i-x:before, .oc2468-wrap .oce-box .faq-q.on .i-x:after {display: inline-block;}
+.oc2468-wrap .oce-box .faq-a {display: none; border-top: 1px solid #bababa; color: #2f2f2f; line-height: 1.25;}
+.oc2468-wrap .oce-box .faq-a.on {display: block;}
+.oc2468-wrap .oce-box .faq-q:before, .oc2468-wrap .oce-box .faq-a:before {content: ""; display: inline-block; position: absolute; left: 10px; top: 16px; font-weight: 600; font-family: Arial , sans-serif;}
+.oc2468-wrap .oce-box .faq-q:before {content: "Q."; color: #005aff;}
+.oc2468-wrap .oce-box .faq-a:before {content: "A."; color: #F9912e;}
+.oc2468-wrap .oce-box .btn-a {display: block; width: 300px; margin: 15px auto 0; text-align: center; box-sizing: border-box; background: #417ffc; color: #fff; font-size: 16px; height: 46px; font-weight: 600; letter-spacing: -0.5px;}
+.oc2468-wrap .oce-box .btn-a > img {width: 24px; vertical-align: middle; position: relative; top: -2px; margin-right: 8px;}
+.oc2468-wrap .oce-box .btn-a:after {height: 108%;}
+
+.oc2468-wrap .request_btn{position:fixed; left:0; bottom:0; width:100%; height:auto; padding:10px 0; background-color:#ffffff; border-top:1px solid #dedede;}
+.oc2468-wrap .request_btn .btn_wrap {overflow: hidden; padding: 0 10px;} 
+.oc2468-wrap .request_btn a {width: 49.5%; height: 60px; padding: 0; border: 1px solid #e0e0e0; box-sizing: border-box;float:left} 
+.oc2468-wrap .request_btn a:nth-child(2) {margin:0 0.5%;}
+.oc2468-wrap .ticket{background-color:#f57c3a;}
+.oc2468-wrap .mobile{background-color:#23a9db;}
+.oc2468-wrap .qna{background-color:#3a6af5;}
+.oc2468-wrap .inquiry{/*background-color:#783af5;*/background-color: #3A6AF5;}
+.oc2468-wrap .callcenter{background-color:#3a6af5; text-align:center; line-height: 1 !important;}
+.oc2468-wrap .request_btn a div {display:table; width:100%; height:100%; color:#fff;}
+.oc2468-wrap .request_btn a div p {display:table-cell; width:100%; font-size:14px; text-align:center; line-height:1.3; vertical-align:middle;}
+.oc2468-wrap .request_btn a div p span {padding:0; font-weight:bold; font-size:17px;}
+.oc2468-wrap .request_btn a div p span.callnumber {font-size:14px;}
+.oc2468-wrap .callcenter .s1{color:#fff60c; font-style:normal;}
+
+.oc2468-wrap .f-noto {font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.oc2468-wrap .ver-mi {line-height: 1;}
+.oc2468-wrap .ver-mi:after {content: ""; display: inline-block; height: 115%; vertical-align: middle;}
+.oc2468-wrap .c-1 {color: #ffeb1b;}
+.oc2468-wrap .c-2 {color: #265fd5;}
+
+/* width: 320px 모바일 */
+@media (max-device-width: 320px) {
+.oc2468-wrap .oce-top .p0 {font-size: 11px;}
+.oc2468-wrap .p0-2 {font-size: 11px;}
+}
+
+/* 171110_리뉴얼 수연 */
+
+.oc2468-wrap .oce-top .p0 {background-color: #f486ad; border-bottom: 2px solid #e05888; text-align: center; font-size: 14px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; font-weight: bold;}
+.oc2468-wrap .oce-inner {padding: 0;}
+.oc2468-wrap .oce-inner .p1 {position: relative; bottom: 5px; padding: 5px 5px; background: #9ed2df; font-weight: normal; line-height: 1.5; letter-spacing: -0.5px;}
+.oc2468-wrap .oce-outer {background: #9ed2df;}
+.oc2468-wrap .oce-inner .u-name {position: absolute; top: 4.5%; left: 20%; font-size: 17px; color: #404040; font-weight: normal; display: block; height: 44px; padding: 10px 5px; text-align: center;}
+
+.oce-inner .name_ev {position: absolute; top: 13%;}
+.oce-inner img {width: 100%; }
+
+.oc2468-wrap .c-2 {color: #301aff; font-weight: 500;}
+.oc2468-wrap .under {color: #301aff; text-decoration: underline;}
+.oce-top-bg .top_img {position: absolute; bottom: 250px;}
+.oce-box img {width: 100%;}
+.oce-box .title_t {font-size: 15px; font-weight: bold; color: #201f1d; text-align: center; margin: -123px auto 30px;}
+.oce-box .title_t .txt_col {color: #018dc9;}
+.oce-box .bottom_txt {font-size: 13px; color: #1e6380; letter-spacing: -1px; text-align: center;}
+.oce-box .bottom_txt .txt_bold {font-weight: bold;}
+.oc2468-wrap .oce-box {padding-bottom: 80px;}
+
+/* 모바일 당첨자 페이지 */
+
+#Event_wrap {position: relative; width: 100%; margin: 0 auto; color:#282828; font-family: 'Nanum Gothic', '맑은 고딕', 'Malgun Gothic'; font-size:14px; line-height: 1.5; box-sizing: border-box;}
+#Event_wrap .topBg, #Event_wrap .btmBg {width: 100%;}
+#Event_wrap .topBg img, #Event_wrap .btmBg img {width: 100%;}
+#Event_wrap .event_area {width: 100%; margin:0 auto; padding-top: 30px; background-color:#fff;}
+#Event_wrap .event_area > div {padding-bottom:15px; text-align:center;}
+#Event_wrap .event_area .event_top {font-size:0; margin-top: -10px;}
+#Event_wrap .event_area .event_top > img {display: block; width: 290px; margin: 0 auto;}
+#Event_wrap .event_area .event_mid {border-top:1px dashed; border-bottom:1px dashed; text-align:center;}
+#Event_wrap .title {margin-top:15px; font-size:20px;}
+#Event_wrap .s_txt {margin-bottom:10px; font-size:13px; letter-spacing: -1px;}
+#Event_wrap .event_area .event_mid .id_area input[type="text"] {width: 280px; height: 44px; border: 2px solid #265fd3; color:#27282a; font-size:20px; text-align:center; padding-top: 5px; box-sizing: border-box;}
+#Event_wrap .event_area .event_btm {padding-bottom: 20px;}
+#Event_wrap .event_area .event_btm .event_list {width: 260px; margin: 15px auto 0; table-layout:fixed; border-bottom:1px solid #000;}
+#Event_wrap .event_area .event_btm .event_list tr td {height:auto; padding:7px 10px; border-top:1px solid #e5e5e5; border-right:1px solid #000}
+#Event_wrap .event_area .event_btm .event_list tr:first-child td {border-top:1px solid #000;}
+#Event_wrap .event_area .event_btm .event_list tr td:first-child {border-left:1px solid #000;}
+#Event_wrap .event_area .paging {margin-top:10px;}
+#Event_wrap .event_btn {padding:25px 0; background-color:#009dfd; text-align:center; font-size: 0;}
+#Event_wrap .event_btn > a {display: inline-block; padding: 10px 0; border: 1px solid #0443c3; background: #275ed5; color: #fff; font-size: 13px; margin: 0 9px; width: 140px; letter-spacing: -1px;}
+#Event_wrap .event_btn > a.nth-1 {}
+#Event_wrap .event_btn > a.nth-2 {}
+#Event_wrap .event_btn .i-rArr {position: relative; top: 6px; margin-left: 4px;}
+#Event_wrap .event_renew {border:1px solid red;}
+
+/* 171113 모바일 당첨자 페이지 */
+#Event_wrap .topBg {position: relative;}
+#Event_wrap .event_area {width: 100%; background: none; position: absolute; bottom: 0px;}
+#Event_wrap .event_area .event_mid {border-top: none;}
+#Event_wrap .event_area .event_mid .id_area input[type="text"] {border: 1px solid #3756d3;}
+
+/* 171130  오션투유 사전예약할인특가 랜딩페이지 수연*/
+
+.wrap {width: 100%;}
+.wrap .content > img {width: 100%; vertical-align: top;}
+.wrap .content .img_wr {position: relative; width: 100%;}
+.wrap .content .cont_list {position: absolute; top: 48%; margin-top: -80%; left: 50%; margin-left: -45%; width: 100%;}
+.wrap .content .cont_list img {width: 90%; margin-top: 2.5%;}
+
+
+/* 180118 bs콘도 모바일 이벤트 랜딩 수연 */
+
+.bscond_wrap {width: 100%; position: relative; background: #efefef;}
+.bscond_wrap img {width: 100%;}
+.bscond_wrap .bs-top .p0 {font-size: 12px; background: #090c12; text-align: center; padding: 8px 0; color: #fff; letter-spacing: -1px;}
+
+/* faq */
+.bscond_wrap .bs-box {position: relative; width: 100%; margin: 0 auto 15px; background-color: #efefef;}
+.bscond_wrap .bs-box .faq_title img {width: 100%;}
+/*.bscond_wrap .bs-box .faq_title {background: url(http://img.go.co.kr/event/180118_bscond_event/faq_top.jpg) no-repeat center center; width: 100%; height: 113px; background-size: 100% 100%;}*/
+.bscond_wrap .bs-box .ig-1 {width: 100%;}
+.bscond_wrap .bs-box .faq-ul {position: relative; border-top: 2px solid #264a76; background: #f8f8f8;}
+.bscond_wrap .bs-box .faq-ul > li {position: relative; border: 1px solid #bababa; border-top: none; border-right: none; border-left: none;}
+.bscond_wrap .bs-box .faq-ul > li > div {position: relative; padding: 15px 10px 15px 28px; letter-spacing: -0.2px; min-height: 49px; box-sizing: border-box; word-break: keep-all; cursor: pointer;}
+.bscond_wrap .bs-box .faq-q {color: #393939;}
+.bscond_wrap .bs-box .faq-q .i-x, .bscond_wrap .bs-box .faq-q .i-dArr {float: right; display: inline-block; position: relative; top: -4px; right: -10px;}
+.bscond_wrap .bs-box .faq-q .i-x:before, .bscond_wrap .bs-box .faq-q .i-x:after {content: ""; width: 12px; height: 1px; background: #393939; position: relative; display: none;}
+.bscond_wrap .bs-box .faq-q .i-x:before {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.bscond_wrap .bs-box .faq-q .i-x:after {
+	left: -12px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.bscond_wrap  .bs-box .faq-q .i-dArr {
+	top: 3px; right: 5px;
+	width: 7px; height: 7px;
+	border: 1px solid #393939;
+	border-right: none; border-top: none;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.bscond_wrap .bs-box .faq-q.on .i-dArr {display: none;}
+.bscond_wrap .bs-box .faq-q.on .i-x:before, .bscond_wrap .bs-box .faq-q.on .i-x:after {display: inline-block;}
+.bscond_wrap .bs-box .faq-a {display: none; border-top: 1px solid #bababa; color: #2f2f2f; line-height: 1.25;}
+.bscond_wrap .bs-box .faq-a.on {display: block;}
+.bscond_wrap .bs-box .faq-q:before, .bscond_wrap .bs-box .faq-a:before {content: ""; display: inline-block; position: absolute; left: 10px; top: 16px; font-weight: 600; font-family: Arial , sans-serif;}
+.bscond_wrap .bs-box .faq-q:before {content: "Q."; color: #274b77;}
+.bscond_wrap .bs-box .faq-a:before {content: "A."; color: #F9912e;}
+.bscond_wrap .bs-box .btn-a {display: block; width: 300px; margin: 15px auto 0; text-align: center; box-sizing: border-box; background: #417ffc; color: #fff; font-size: 16px; height: 46px; font-weight: 600; letter-spacing: -0.5px; line-height: 46px;}
+.bscond_wrap .bs-box .btn-a > img {width: 24px; vertical-align: middle; position: relative; top: 0px; margin-right: 8px;}
+.bscond_wrap .bs-box .btn-a:after {height: 108%;}
+.bscond_wrap .bs-bottom {position: relative;}
+
+.bscond_wrap .request_btn{position:fixed; left:0; bottom:0; width:100%; height:auto; padding:10px 0; background-color:#ffffff; border-top:1px solid #dedede;}
+.bscond_wrap .request_btn .btn_wrap {overflow: hidden; padding: 0 10px;} 
+.bscond_wrap .request_btn a {width: 49.5%; height: 60px; padding: 0; border: 1px solid #e0e0e0; box-sizing: border-box;float:left} 
+.bscond_wrap .request_btn a:nth-child(2) {margin:0 0.5%;}
+.bscond_wrap .ticket{background-color:#f57c3a;}
+.bscond_wrap .mobile{background-color:#23a9db;}
+.bscond_wrap .qna{background-color:#3a6af5;}
+.bscond_wrap .inquiry{/*background-color:#783af5;*/background-color: #3A6AF5;}
+.bscond_wrap .callcenter{background-color:#3a6af5; text-align:center; line-height: 1 !important;}
+.bscond_wrap .request_btn a div {display:table; width:100%; height:100%; color:#fff;}
+.bscond_wrap .request_btn a div p {display:table-cell; width:100%; font-size:14px; text-align:center; line-height:1.3; vertical-align:middle;}
+.bscond_wrap .request_btn a div p span {padding:0; font-weight:bold; font-size:17px;}
+.bscond_wrap .request_btn a div p span.callnumber {font-size:14px;}
+
+
+/* 회원이벤트 */
+.user_wrap .bs-top .p0 {font-size: 12px; background: #194c69; text-align: center; padding: 8px 0; color: #fff; letter-spacing: -1px;}
+
+/* 180122 1:1문의하기 수정 수연 */
+.bscond_wrap .bs-box .tel_txt {text-align: center; padding-top: 10px; font-size: 13px;}
+.bscond_wrap .bs-box .tel_txt .txt_bold {font-weight: bold;}
+
+
+/* 이벤트 신청하기 공통 */
+.fz-1 {font-size: 15px !important;}
+.evt-area-apply {position: relative; width: 100%; padding-bottom: 80px; font-family: "NanumSquare", sans-serif;}
+.evt-area-apply.evt-name {background: #394052;}
+.evt-area-apply .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 14px; padding: 6px 0; line-height: 1.3; letter-spacing: 0; word-break: keep-all;}
+.evt-area-apply .evt-top br {}
+.evt-area-apply .ig-1 {width: 100%;}
+.evt-area-apply .txt-box {position: relative; padding: 18px 0;}
+.evt-area-apply .p0 {position: relative; padding: 0 10px 0 20px; color: #fff; letter-spacing: -0.5px; line-height: 1.3; word-break: keep-all; font-size: 13px; margin-top: 5px;}
+.evt-area-apply .p0:first-child {margin-top: 0;}
+@media (max-device-width: 320px) {
+	.evt-area-apply .p0 {font-size: 13px;}
+}
+.evt-area-apply .p0 .i-dot {position: absolute; left: 11px; top: 6px; display: inline-block; width: 3px; height: 3px; background: #fff; border-radius: 50%;}
+.evt-area-apply .btn-a {position: fixed; bottom: 0; left: 0; background-color:#ff6600; width: 100%; display: block; text-align: center; height: 60px; color: #fff; font-size: 16px;}
+.evt-area-apply .btn-a:after {content: ""; display: inline-block; height: 110%; vertical-align: middle;}
+
+/* 이벤트페이지 전체 공통 */
+.f-bd {font-weight: 700;}
+.f-bdr {font-weight: 800;}
+.colr-1 {color: #fce37f;}
+.colr-2 {color: #ffe49a;}
+.colr-3 {color: #180075;}
+
+.evt-area {width: 100%; min-width: 320px; min-height: 800px; background: #fff; letter-spacing: -0.5px; font-family: "NanumSquare", sans-serif; max-width: 768px; margin: 0 auto;}
+
+.evt-outer {color: #282828;}
+.max-wd , .evt-outer img.max-wd {width: 100%;}
+.evt-outer .evt-top {background: #3B2150; text-align: center; color: #fff; font-size: 13px; padding: 6px 0; line-height: 1.3; letter-spacing: 0; word-break: keep-all;}
+.evt-outer .evt-top br {display: none;}
+@media (max-width: 400px) {
+	.evt-outer .evt-top {font-size: 10px;}
+}
+.evt-outer .evt-main {text-align: center;}
+.evt-outer .evt-main .evt-visual {padding-top: 5px; padding-bottom: 18px; background: #d6d8f7;}
+.evt-outer .evt-main .evt-visual img.txtResult {width: 310px;}
+.evt-outer .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 303px; margin: 0 auto; background: url(http://img.go.co.kr/event/mayhills/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.evt-outer .evt-main .evt-visual div.txtResult span.name {display: inline-block; font-size: 18px; font-weight: 700; position: absolute; top: 25px; width: 172px; height: 26px; left: 50px; text-align: center; line-height: 1.5;}
+.evt-outer .evt-main .evt-visual > p {width: 100%; max-width: 320px; margin: 10px auto 0; font-size: 13px; word-break: keep-all;}
+.evt-outer .evt-main .evt-visual .p-row-1 {}
+.evt-outer .evt-main .evt-visual .p-row-2 {background: #C0C3F2; padding: 6px 0; font-size: 12px; letter-spacing: -1px;}
+
+.evt-outer .box-result,
+.evt-outer .box-winnerList {width: 310px; margin: 0 auto; border-top: 2px solid #501143; background: #fff; margin-top: 15px;}
+
+.evt-outer .evt-main .evt-tit {color: #fff; font-size: 20px; background: #241941; text-align: center; padding: 16px 0;}
+.evt-outer .box-faq {background: #fff; text-align: left;}
+.evt-outer .box-faq img.txtFaq {width: 160px; display: block; margin: 0 auto; padding: 15px 0 5px;}
+
+.evt-outer .box-faq {position: relative; padding-bottom: 30px;}
+.evt-outer .box-faq .ig-1 {width: 100%;}
+.evt-outer .box-faq .faq-ul {position: relative; width: 96%; margin: 0px auto;}
+.evt-outer .box-faq .faq-ul > li {position: relative; border-top: 1px solid #bababa;}
+.evt-outer .box-faq .faq-ul li:first-child {border-top: 0;}
+.evt-outer .box-faq .faq-ul > li:last-child {border-bottom: 1px solid #bababa;}
+.evt-outer .box-faq .faq-ul > li > div{position: relative; letter-spacing: -0.2px; /*min-height: 49px;*/ box-sizing: border-box; word-break: keep-all; cursor: pointer;}
+.evt-outer .box-faq .faq-ul > li > div.faq-q {padding: 10px 18px 10px 25px;}
+.evt-outer .box-faq .faq-ul > li > div.faq-a {padding: 10px 5px 10px 5px;}
+.evt-outer .box-faq .faq-q {color: #393939;}
+/*.evt-outer .box-faq .faq-q .i-x, .evt-outer .box-faq .faq-q .i-dArr {float: right; display: inline-block; position: relative; top: -4px; right: -22px;}*/
+.evt-outer .box-faq .faq-q .i-x, .evt-outer .box-faq .faq-q .i-dArr {display: inline-block; position: absolute; top: 7px; right: -8px;}
+.evt-outer .box-faq .faq-q .i-x:before, .evt-outer .box-faq .faq-q .i-x:after {content: ""; width: 12px; height: 1px; background: #393939; position: relative; display: none;}
+.evt-outer .box-faq .faq-q .i-x:before {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.evt-outer .box-faq .faq-q .i-x:after {
+	left: -12px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/*.evt-outer .box-faq .faq-q .i-dArr {
+	top: 3px; right: -8px;
+	width: 7px; height: 7px;
+	border: 1px solid #393939;
+	border-right: none; border-top: none;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}*/
+.evt-outer .box-faq .faq-q .i-dArr {
+	top: 13px; right: 6px;
+	width: 7px; height: 7px;
+	border: 1px solid #393939;
+	border-right: none; border-top: none;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.evt-outer .box-faq .faq-q.on {color: #f24959;}
+.evt-outer .box-faq .faq-q.on .i-dArr {display: none;}
+.evt-outer .box-faq .faq-q.on .i-x:before, .evt-outer .box-faq .faq-q.on .i-x:after {display: inline-block; background: #f24959;}
+.evt-outer .box-faq .faq-a {display: none; border-top: 1px solid #bababa; color: #2f2f2f; line-height: 1.25;}
+.evt-outer .box-faq .faq-a.on {display: block;}
+.evt-outer .box-faq .faq-q:before, .evt-outer .box-faq .faq-a:before {content: ""; display: inline-block; position: absolute; left: 5px; top: 10px; font-weight: 600; font-family: Arial , sans-serif;}
+.evt-outer .box-faq .faq-q:before {content: "Q."; /*color: #005aff;*/}
+.evt-outer .box-faq .area-btn {margin-top: 20px;}
+.evt-outer .box-faq .area-btn a {background: #4f4c7b; width: 260px; color: #fff; height: 46px; font-size: 16px;}
+.evt-outer .box-faq .area-btn a .rArrow:after {width: 7px; height: 7px; border-width: 1px; top: -1;}
+
+.evt-outer .evt-bottom {}
+.evt-outer .evt-bottom {position: relative; height: 62px;}
+.evt-outer .evt-bottom .fixed-btn {font-size: 0; box-sizing: border-box; z-index: 3; text-align: center; background: #fff; padding: 8px 0; position: fixed; left: 0; bottom: 0; width: 100%;}
+@media (min-width: 768px) {
+	.evt-outer .evt-bottom .fixed-btn {width: 768px; left: 50%; margin-left: -384px; box-sizing: border-box; border-left: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6;}
+}
+.evt-outer .evt-bottom .fixed-btn > a {display: inline-block; width: 46%; height: 46px; vertical-align: middle; color: #fff; font-size: 13px; line-height: 1.2; box-sizing: border-box;}
+.evt-outer .evt-bottom .fixed-btn > a:first-child {margin-right: 1%; background: #f24959; padding-top: 8px;}
+.evt-outer .evt-bottom .fixed-btn > a:first-child + a {background: #3a7edb; padding-top: 15px;}
+.evt-outer .area-btn {margin-top: 30px; text-align: center;}
+.evt-outer .area-btn a {display: inline-block; background: #fff; width: 290px; height: 56px; font-size: 18px; box-sizing: border-box; color: #000; letter-spacing: 0;}
+.evt-outer .area-btn a:after {content: ""; display: inline-block; vertical-align: middle; height: 105%;}
+.evt-outer .area-btn a .rArrow:after {width: 12px; height: 12px; border-width: 2px; border-color: #fff; top: -1px;}
+
+.evt-area .paging {margin-top: 15px;}
+.evt-area .paging > a {margin-left: 0px;}
+.evt-area .paging > a:first-child {margin-left: 0;}
+.evt-area .paging > a:first-child + a {margin-right: 20px;}
+
+/* 라마다평택 친한친구(7179) 이벤트 */
+.evt-outer .tit-arrow {position: relative;}
+.evt-outer .tit-arrow:after {content: ""; position: absolute; width: 17px; height: 17px; left:50%; margin-left:-8px; bottom:-8px; background: #64000a; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+.evt-outer .evt-visual {}
+.evt-outer .evt-visual p.visual-txt {position: absolute; box-sizing: border-box; width: 100%; max-width: 100%; bottom: 15.5%; left: 0; margin: 0; padding: 0; text-align: center;}
+.evt-outer .evt-visual .visual-txt span {display: inline-block; margin-left: 17px; font-size: 11px; line-height: 11px; text-align:center; letter-spacing: -1px; color: #d88181;}
+
+.evt-outer .txt-area {position: relative; box-sizing: border-box; width: 86%; margin: 0 auto; margin-bottom: 50px; /* padding: 0 6.8% 0; */ background: #fff;}
+.evt-outer .txt-area > .txt-area {width: 92%; word-break: keep-all;}
+.evt-outer .area-guide {position: relative; box-sizing: border-box; padding: 20px 0 0;}
+.evt-outer .area-guide .guide-txt-1 {font-size: 20px; line-height: 26px; letter-spacing: -1px; color: #181818;}
+.evt-outer .area-guide .guide-txt-1 em {font-weight: bold; color: #dd5e6b;}
+.evt-outer .area-guide .guide-txt-2 {padding: 17px 0 24px; font-size: 11px; line-height: 18px; color: #454545;}
+.evt-outer .area-guide .box-guide {position: relative; margin: 0 auto; padding: 20px 10px 18px; text-align: center; background: #f4f4f4;}
+.evt-outer .box-guide .guide-tit {font-size: 17px; line-height: 17px; color: #181818;}
+.evt-outer .area-guide .box-guide .list-box {position: relative; display: inline-block; margin: 0 auto; text-align: center;}
+.evt-outer .box-guide .guide-list {position: relative;}
+.evt-outer .box-guide .guide-list li {display: table; min-height: 32px; margin-top: 12px; text-align: left;}
+.evt-outer .box-guide .guide-list li:first-child {margin-top: 22px;}
+.evt-outer .box-guide .guide-list li .ico {display: table-cell; width: 32px; height: 100%; vertical-align: middle;}
+.evt-outer .box-guide .guide-list li p {display: table-cell; padding-left: 7px; font-size: 13px; line-height: 16px; word-break: keep-all; vertical-align: middle; color: #181818;}
+.evt-outer .box-guide .guide-list .li-1 .ico {background: url(http://img.go.co.kr/event/ramada/evt7179/list_guide_01.png) no-repeat; background-size: 32px;}
+.evt-outer .box-guide .guide-list .li-2 .ico {background: url(http://img.go.co.kr/event/ramada/evt7179/list_guide_02.png) no-repeat; background-size: 32px;}
+.evt-outer .box-guide .guide-list .li-3 .ico {background: url(http://img.go.co.kr/event/ramada/evt7179/list_guide_03.png) no-repeat; background-size: 32px;}
+.evt-outer .box-guide .guide-list .li-4 .ico {background: url(http://img.go.co.kr/event/ramada/evt7179/list_guide_04.png) no-repeat; background-size: 32px;}
+.evt-outer .box-guide .guide-list .li-5 .ico {background: url(http://img.go.co.kr/event/ramada/evt7179/list_guide_05.png) no-repeat; background-size: 32px;}
+.evt-outer .box-guide .p-list {position: relative; box-sizing:border-box; margin-top: 22px; padding: 0 6px}
+.evt-outer .box-guide .p-list p {margin-top: 4px; padding-left: 12px; font-size: 10px; line-height: 14px; text-align: left; word-break: keep-all; color: #111; background: url(http://img.go.co.kr/event/ramada/evt7179/list_p.gif) no-repeat 0 4px; background-size: 9px auto;}
+
+.evt-outer .box-faq .faq-q.on .i-x-2 {top: 17px; right: 4px; width: 7px; height: 7px; border: 1px solid #f24959; border-left: none;  border-bottom: none; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+.evt-outer .box-faq .faq-q.on .i-x-2:before, .evt-outer .box-faq .faq-q.on .i-x-2:after {content:none}
+.evt-outer .evt-contents {position:relative; font-family: 'Nanum Gothic'; background: #fff;}
+.evt-outer .evt-contents .price-txt {position: relative; box-sizing: border-box; width: 100%; max-width: 100%; margin: 0; padding: 20px 6% 35px; font-size: 12px; text-align: center; line-height: 20px; letter-spacing: -1px; color: #fff; background: #ee4d5a;}
+
+.evt-outer[class*='bscondo-'] .box-faq .faq-q.on .i-x-2 {border-color: #00a19b;}
+
+/* 메뉴탭버튼 추가_181119 */
+.evt-outer .evt-contents .evt-menu-box {z-index: 2; position: absolute; width: 100%; max-width: 768px; top: 0;} 
+.evt-outer .evt-contents .evt-menu-list {position: relative; width: 100%; border-bottom: 5px solid #000; background: #fff;}
+.evt-outer .evt-contents .evt-menu-list li {position: relative; float: left; display: inline-block; width: 32.4%; margin-left: 1.4%; background: #767676;}
+.evt-outer .evt-contents .evt-menu-list li.on {background: #000;}
+.evt-outer .evt-contents .evt-menu-list li:first-child {margin-left: 0;}
+.evt-outer .evt-contents .evt-menu-list li a {position: relative; display: block; padding: 7px 0 7px; text-align: center; color: #fff;}
+.evt-outer .evt-contents .evt-menu-list li.on a {color: #d3d3d3;}
+.evt-outer .evt-contents .evt-list-box {position: relative; padding-top: 57px;}
+
+/* 메이스힐리조트 원투쓰리 이벤트 */
+
+/* 메이힐스 이벤트 안내 */
+.mayhills-evt123 {}
+.mayhills-evt123 .evt-top {background: #4f4c7b;}
+.mayhills-evt123 .evt-main {}
+.mayhills-evt123 .evt-main .evt-visual {padding-top: 5px; padding-bottom: 18px; background: #d6d8f7;}
+
+.apply-mayhills .evt-top,
+.apply-mayhills {background: #3B2150;}
+.apply-mayhills .btn-a {background: #FF4052;}
+
+/* BS콘도 칙칙폭폭이벤트 */
+.bscondo-evt7788 {}
+.bscondo-evt7788 .colr-1 {color: #fbef2b;}
+.bscondo-evt7788 .colr-2 {color: #fbef2b;}
+.bscondo-evt7788 .colr-3 {color: #1b1575;}
+.bscondo-evt7788 .evt-top,
+.apply-bscondo .evt-top {background: #1c1a1b;}
+.bscondo-evt7788 .evt-main .evt-visual {background: #f7ca4b; padding-top: 20px;}
+.bscondo-evt7788 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 270px; margin: 0 auto; background: url(http://img.go.co.kr/event/bscondo/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.bscondo-evt7788 .evt-main .evt-visual div.txtResult span.name {width: 162px; top: 8px; left: 75px;}
+.bscondo-evt7788 .evt-main .evt-visual .p-row-2 {background: #debf4a; border-top: 1px solid #74a47e; border-bottom: 1px solid #74a47e;}
+.apply-bscondo .btn-a,
+.bscondo-evt7788 .evt-main .evt-tit {background: #252525;}
+.bscondo-evt7788 .box-faq .faq-q.on {color: #01a29d;}
+.bscondo-evt7788 .box-faq .faq-q.on .i-x:before, .bscondo-evt7788 .evt-outer .box-faq .faq-q.on .i-x:after {background: #01a29d;}
+.bscondo-evt7788 .box-faq .area-btn a,
+.bscondo-evt7788 .evt-bottom .fixed-btn > a:first-child{background: #005b6e;}
+.bscondo-evt7788 .evt-bottom {background: #c4b07e;}
+
+.apply-bscondo {background: #fce39e;}
+.apply-bscondo .p0 .i-dot {background: #252525;}
+.apply-bscondo .txt-box .p0 {color: #2d2d2d;}
+
+/* 연호리조트 */
+.yeonho-evt7788 {}
+.yeonho-evt7788 .colr-1 {color: #fbef2b;}
+.yeonho-evt7788 .colr-2 {color: #fbef2b;}
+.yeonho-evt7788 .colr-3 {color: #fbef2b;}
+.yeonho-evt7788 .evt-top {background: #005B6E;}
+.yeonho-evt7788 .evt-main .evt-visual {background: #7bcacf; padding-top: 10px;}
+.yeonho-evt7788 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/yeonho/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.yeonho-evt7788 .evt-main .evt-visual div.txtResult span.name {width: 162px; top: 29px; left: 60px;}
+.yeonho-evt7788 .evt-main .evt-visual .p-row-2 {background: #6DBFCB; border-top: 1px solid #5bb5c3; border-bottom: 1px solid #5bb5c3;}
+.yeonho-evt7788 .evt-main .evt-tit {background: #005B6E;}
+.apply-yeonho .btn-a,
+.apply-yeonho .evt-top {background: #13548a;}
+.yeonho-evt7788 .box-faq .faq-q.on {color: #01a29d;}
+.yeonho-evt7788 .box-faq .faq-q.on .i-x:before, .yeonho-evt7788 .box-faq .faq-q.on .i-x:after {background: #01a29d;}
+.yeonho-evt7788 .box-faq .area-btn a,
+.yeonho-evt7788 .evt-bottom .fixed-btn > a:first-child{background: #005b6e;}
+.yeonho-evt7788 .evt-bottom {background: #c4b07e;}
+.evt-area-apply.apply-yeonho .txt-box {background: #d9d3d0;}
+
+.apply-yeonho .p0 .i-dot {background: #252525;}
+.apply-yeonho .txt-box .p0 {color: #252525;}
+
+/* 오션투유 7942이벤트 */
+.ocean-evt7942 {}
+.ocean-evt7942 .colr-3 {color: #4237ff;}
+.ocean-evt7942 .evt-top {background: #2684cc;}
+.ocean-evt7942 .evt-main {}
+.ocean-evt7942 .evt-main .evt-visual {background: #BEE6FF;}
+.ocean-evt7942 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.ocean-evt7942 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 29px; left: 50px;}
+.ocean-evt7942 .evt-main .evt-visual .p-row-2 {background: #a4daff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
+.ocean-evt7942 .evt-main .evt-tit {background: #243b71;}
+
+.apply-ocean .evt-top {background: #243b71;}
+.apply-ocean {background: #172340;}
+.apply-ocean .btn-a {background: #FF4052;}
+
+/* 태백 라마다 8282이벤트 */
+.taebaek-evt8282 {}
+.taebaek-evt8282 .evt-top {background: #0257b5;}
+.taebaek-evt8282 .evt-main {}
+.taebaek-evt8282 .evt-main .evt-visual {background: #B8D7F4;}
+.taebaek-evt8282 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/taebaek/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.taebaek-evt8282 .evt-main .evt-visual .p-row-2 {background: #a6c3ef; border-top: 1px solid #94b3e4; border-bottom: 1px solid #94b3e4;}
+.taebaek-evt8282 .evt-main .evt-tit {background: #0052ad;}
+
+.apply-taebaek .evt-top,
+.apply-taebaek {background: #316ac1;}
+.apply-taebaek .btn-a {background: #FF4052;}
+
+/* 남원하이츠 7179이벤트 */
+.namwonHts-evt7179 {}
+.namwonHts-evt7179 .evt-top {background: #336534;}
+.namwonHts-evt7179 .evt-main {}
+.namwonHts-evt7179 .evt-main .evt-visual {background: #C6EDCE;}
+.namwonHts-evt7179 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/namwonHts/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.namwonHts-evt7179 .evt-main .evt-visual .p-row-2 {background: #B1D7CA; border-top: 1px solid #94b3e4; border-bottom: 1px solid #94b3e4;}
+.namwonHts-evt7179 .evt-main .evt-tit {background: #56A264;}
+
+.apply-namwonHts .evt-top,
+.apply-namwonHts {background: #2F8C08;}
+.apply-namwonHts .btn-a {background: #FF4052;}
+
+/* BS콘도 2018 여름을 즐겨라 */
+.bscondo-evt2018 {}
+.bscondo-evt2018 .colr-1 {color: #fbef2b;}
+.bscondo-evt2018 .colr-2 {color: #fbef2b;}
+.bscondo-evt2018 .colr-3 {color: #1b1575;}
+.bscondo-evt2018 .evt-top,
+.apply-bscondo .evt-top {background: #1c1a1b;}
+.bscondo-evt2018 .evt-main {}
+.bscondo-evt2018 .evt-main .evt-visual {background: #ff7db1;}
+.bscondo-evt2018 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/bscondo/summer2018/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.bscondo-evt2018 .evt-main .evt-visual div.txtResult span.name {top: 6px; width: 162px; height: 27px;  left: 75px;}
+.bscondo-evt2018 .evt-main .evt-visual .p-row-2 {background: #e977ae; border-top: 1px solid #8f5e76; border-bottom: 1px solid #8f5e76;}
+.bscondo-evt2018 .evt-main .evt-tit {background: #1c1a1b;}
+.bscondo-evt2018 .box-faq .faq-q.on {color: #00a19b;}
+.bscondo-evt2018  .box-faq .faq-q.on .i-x:before, .bscondo-evt2018 .box-faq .faq-q.on .i-x:after {background: #00a19b}
+.bscondo-evt2018 .box-faq .area-btn a, .bscondo-evt2018 .evt-bottom .fixed-btn > a:first-child {background: #005b6e}
+
+/* 오션투유 2253 이벤트 */
+.ocean-evt2253 {}
+.ocean-evt2253 .colr-3 {color: #9844ff;}
+.ocean-evt2253 .evt-top {background: #2684cc;}
+.ocean-evt2253 .evt-main {}
+.ocean-evt2253 .evt-main .evt-visual {background: #bde6ff;}
+.ocean-evt2253 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/ocean/come2253/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.ocean-evt2253 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 28px; left: 50px;}
+.ocean-evt2253 .evt-main .evt-visual .p-row-2 {background: #a4d9ff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
+.ocean-evt2253 .evt-main .evt-tit {background: #243b71;}
+
+.ocean-evt2253 .box-faq .faq-q.on {color:#f24959}
+.ocean-evt2253 .box-faq .faq-q.on .i-x {top: 7px; right: -8px; width: 7px; height: 7px; border: 1px solid #f24959; border-left: none;  border-bottom: none; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+.ocean-evt2253 .box-faq .faq-q.on .i-x:before, .ocean-evt2253 .box-faq .faq-q.on .i-x:after {content:none}
+.ocean-evt2253 .box-faq .area-btn a {border-radius:4px; background:#2b8de7}
+
+/* 코레스코 치악 사오육칠4567 이벤트 */
+.coresco-evt4567 {}
+.coresco-evt4567 .colr-3 {color: #180075;}
+.coresco-evt4567 .evt-top {background: #4187b0;}
+.coresco-evt4567 .evt-main .evt-visual {background: #3ddae9;}
+.coresco-evt4567 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/coresco/chiak_evt4567/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.coresco-evt4567 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 26px; left: 50px;}
+.coresco-evt4567 .evt-main .evt-visual .p-row-2 {background: #37c5e5; border-top: 1px solid #b7b9ef; border-bottom: 1px solid #b7b9ef;}
+.coresco-evt4567 .evt-main .evt-tit {background: #064f88;}
+.coresco-evt4567 .box-faq .faq-q.on {color:#f24959}
+.coresco-evt4567 .box-faq .faq-q.on .i-x {top: 17px; right: 7px; width: 7px; height: 7px; border: 1px solid #f24959; border-left: none;  border-bottom: none; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+.coresco-evt4567 .box-faq .faq-q.on .i-x:before, .coresco-evt4567 .box-faq .faq-q.on .i-x:after {content:none}
+.coresco-evt4567 .box-faq .area-btn a {border-radius:4px; background:#4f4c7b}
+
+.apply-coresco {background: #00396a;}
+.apply-coresco .evt-top {background: #145b97;}
+.apply-coresco .btn-a {background: #ff4052;}
+
+.ramada-evt7179 {}
+.ramada-evt7179 .colr-3 {color: #c63a3a;}
+.ramada-evt7179 .evt-top {display:none; background:none;}
+.ramada-evt7179 .evt-main .evt-visual {position:relative; padding-top:0; padding-bottom:0; background:none;}
+.ramada-evt7179 .evt-main .evt-visual .visual-img {position:relative; width:100%; }
+.ramada-evt7179 .evt-main .evt-visual div.txtResult {position: absolute; width: 100%; height:auto; top:0; padding-top:46%; margin: 0 auto; background:none;}
+.ramada-evt7179 .evt-main .evt-visual div.txtResult span.name {position:relative; text-align:center;  width:115px; height:22px; top:0; left:0; font-size:15px; line-height:22px; color:#ff9aa3; border-radius:30px; background:#1b0c0d;}
+.ramada-evt7179 .evt-main .evt-visual .p-row-1, .ramada-evt7179 .evt-main .evt-visual .p-row-2 {position:absolute; display:inline-block; max-width:100%; left:0; margin:0 auto; text-align:center}
+.ramada-evt7179 .evt-main .evt-visual .p-row-1 {top:51.5%; font-size:12px; line-height:16px; color:#161616}
+.ramada-evt7179 .evt-main .evt-visual .p-row-2 {padding:0; bottom:1.5%; background:none; border:0; color:#e8e0bf}
+.ramada-evt7179 .evt-contents {background: #64000a;}
+.ramada-evt7179 .evt-main .evt-tit {background: #64000a;}
+.ramada-evt7179 .box-faq {position:relative; padding-bottom: 10px;}
+.ramada-evt7179 .box-faq img.txtFaq {z-index:2; position:relative; padding:21px 0 18px;}
+.ramada-evt7179 .box-faq .faq-ul {box-sizing:border-box; width:100%; padding:0 8px;}
+.ramada-evt7179 .box-faq .faq-a {border-top:0}
+.ramada-evt7179 .box-faq .faq-q.on {color:#f24959}
+.ramada-evt7179 .box-faq .area-btn {margin-top:0; padding:20px 0 16px;}
+.ramada-evt7179 .box-faq .area-btn a {border-radius:2px; background:#191919}
+
+.apply-ramada {position:relative; padding-bottom: 50px; background:#64000a;}
+.apply-ramada .evt-top {position:absolute; display:block; width:100%; top:0; left:0; padding:0; padding-top:103.2%; font-size:10px; text-align: center; background:none;}
+.apply-ramada p.visual-txt {position: absolute; box-sizing: border-box; width: 100%; max-width: 100%; top: 0; left: 0; margin: 0; padding: 0; padding-top:87.3%; text-align: center;}
+.apply-ramada .visual-txt span {display: inline-block; margin-left: 10px; font-size: 11px; line-height: 11px; text-align:center; letter-spacing: -1px; color: #d88181;}
+.apply-ramada .btn-a {/*height:50px;*/ background: #150002;}
+.apply-ramada .btn-a:after {height:100%}
+.apply-ramada .p0 {margin-top:10px; line-height:1.5}
+
+/* 모항해나루 0113 이벤트 */
+.mhh-evt0113 {}
+.mhh-evt0113 .colr-3 {color: #9844ff;}
+.mhh-evt0113 .evt-top {background: #2684cc;}
+.mhh-evt0113 .evt-main {}
+.mhh-evt0113 .evt-main .evt-visual {background: #bde6ff;}
+.mhh-evt0113 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/mohanghea/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.mhh-evt0113 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 28px; left: 50px;}
+.mhh-evt0113 .evt-main .evt-visual .p-row-2 {background: #a4d9ff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
+.mhh-evt0113 .evt-main .evt-tit {background: #243b71;}
+
+.mhh-evt0113 .box-faq .faq-q.on {color:#f24959}
+.mhh-evt0113 .box-faq .faq-q.on .i-x {top: 16px; right: 7px; width: 7px; height: 7px; border: 1px solid #f24959; border-left: none;  border-bottom: none; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+.mhh-evt0113 .box-faq .faq-q.on .i-x:before, .mhh-evt0113 .box-faq .faq-q.on .i-x:after {content:none}
+.mhh-evt0113 .box-faq .area-btn a {border-radius:4px; background:#2b8de7}
+
+/* 3대 숙박시설 무료숙박 이벤트_181119 */
+.stay3-evt1119 {}
+.stay3-evt1119 .colr-3 {color: #9844ff;}
+.stay3-evt1119 .evt-top {background: #2684cc;}
+.stay3-evt1119 .evt-main .evt-visual {background: #bde6ff;}
+.stay3-evt1119 .evt-main .evt-visual div.txtResult {height: 175px; background: url(http://img.go.co.kr/event/stay3_181119/txt_winnerGd.jpg) no-repeat; background-size: 100% auto;}
+.stay3-evt1119 .evt-main .evt-visual div.txtResult span.name {width: 173px; top: 15px; left: 70px;}
+.stay3-evt1119 .evt-main .evt-visual .p-row-2 {background: #a4d9ff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
+.stay3-evt1119 .evt-contents, .stay3-evt1119 .evt-contents .evt-menu-box {background: #bde6ff;}
+
+.stay3-evt1119 .box-faq .faq-q.on {color: #00a19b}
+.stay3-evt1119 .box-faq .faq-q.on .i-x {top: 16px; right: 7px; width: 7px; height: 7px; border: 1px solid #00a19b; border-left: none;  border-bottom: none; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+.stay3-evt1119 .box-faq .faq-q.on .i-x:before, .stay3-evt1119 .box-faq .faq-q.on .i-x:after {content: none}
+.stay3-evt1119 .box-faq .area-btn a {border-radius: 4px; background: #005b6e}
+
+.stay3-evt1119 .evt-bottom {height: 70px}
+.stay3-evt1119 .evt-bottom .fixed-btn > a {height: 54px;}
+.stay3-evt1119 .evt-bottom .fixed-btn > a:first-child {padding-top: 20px; background: #3a7edb;}
+.stay3-evt1119 .evt-bottom .fixed-btn > a:first-child + a {padding-top: 12px; background: #f24959;}
+
+.apply-stay3 {padding-bottom: 55px; background: #e8e8e8;}
+.apply-stay3 .evt-top {background: #1c1a1b;}
+.apply-stay3 .p0 {color: #2d2d2d;}
+.apply-stay3 .p0 .i-dot {background: #2d2d2d;}
+.apply-stay3 .btn-a {background-color: #252525;}
+
+/* 
+    최고의 득템찬스 
+    - 오션투유, 라마다, BS콘도 
+    181211 
+*/
+.chance-evt181211 .colr-3 {display: block; color: #161616;}
+.chance-evt181211 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto;}
+/* 오션투유 */
+.ocean-evt2253.chance-evt181211 .colr-3 {color: #e60000;}
+.ocean-evt2253.chance-evt181211 .evt-main .evt-visual div.txtResult {background: url(http://img.go.co.kr/mobile/event/181211_chance/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+/* bs콘도 */
+.bscondo-evt2018.chance-evt181211 .colr-3 {color: #0044aa;}
+.bscondo-evt2018.chance-evt181211 .evt-main .evt-visual div.txtResult {background: url(http://img.go.co.kr/mobile/event/181211_chance/bscondo/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+
+
+
+
+/*---------------
+미드나잇 페스티벌
+-----------------*/
+.midnight-wrapper {position: relative;}
+.midnight-wrapper .section {position: relative;}
+.midnight-wrapper .section img {width: 100%;}
+.midnight-wrapper .section .btn-buy {display: block; width: 90%; margin: 0 auto; position: absolute; left: 50%; margin-left: -45%; bottom: 0; z-index: 1;}
+.midnight-wrapper .area1 .btn-buy {bottom: -4.7%;}
+.midnight-wrapper .area4 .btn-buy {bottom: 3.6%;}
+
+/* 페스티벌, 재구매 공통 */
+.reevt-wrapper {position: relative;}
+.reevt-wrapper .section {position: relative;}
+.reevt-wrapper .section img {width: 100%;}
+.reevt-wrapper .section .btn-buy {z-index: 1; display: block; width: 90%; margin: 0 auto; position: absolute; left: 50%; margin-left: -45%; bottom: 0;}
+.reevt-wrapper .area1 .btn-buy {bottom: -4.7%;}
+.reevt-wrapper .area3 .btn-buy {bottom: 1.6%;}
+
+.reevt-wrapper .section .btn-box {z-index: 2; position: absolute; display: block; box-sizing:border-box; width:100%; margin: 0 auto; padding:0 10px; bottom: -5%; text-align:center; }
+.reevt-wrapper .section .btn-box a {float:left; position: relative; display:inline-block; box-sizing:border-box; margin:0 auto; padding:0 2px; }
+.reevt-wrapper .section .btn-box a.last {float: right}
+.reevt-wrapper .section .btn-box.btn-lan-3 a {width:33.3%;}
+.reevt-wrapper .section .btn-box.btn-lan-3 a.mid {float:none}
+
+/* 180809 무조건 49000원 할인 이벤트 */
+.ucdt-wrapper .section .btn-buy {width:88%; margin-left:-44%;}
+.ucdt-wrapper .section.ocean .btn-buy {bottom:3.9%;}
+.ucdt-wrapper .section.bscondo .btn-buy {bottom:3.3%;}
+.ucdt-wrapper .section.yeonho .btn-buy {bottom:3.5%;}
+.ucdt-wrapper .section.yeonho .btn-box {bottom:2%;}
+
+/* 181126 오션투유리조트 버스왕복이용권 (주말전용) */
+.bus-wrapper {position: relative; font-family: 'NanumSquare';}
+.bus-wrapper .section {position: relative; padding-bottom: 74px;}
+.bus-wrapper .section img {width: 100%;}
+.bus-wrapper .btn-box {z-index:10; position: fixed; display: block; width: 100%; bottom: 0; left: 0;}
+.bus-wrapper .btn-box a {position: absolute; display: block; width: 100%; height: 74px; bottom: 0; left: 0; text-align: center; background: #00457a;}
+.bus-wrapper .btn-box .btn-buy span {position: relative; display: inline-block; padding-right: 40px; font-size: 26px; font-weight: 700; line-height: 74px; color: #fff;}
+.bus-wrapper .btn-box .btn-buy span:before {content: ''; display: inline-block; position: absolute; width: 32px; height: 32px; top:50%; right: 0; margin-top: -16px; background: url(http://img.go.co.kr/mobile/landing/20181126_busOcean/btn_buy.png) no-repeat center center; background-size: 32px auto;}
+.bus-wrapper .btn-box .bt {height: 42px; font-size: 14px; font-weight: 700; line-height: 42px; color: #fff; background: #385fa4;}
+.bus-wrapper .dawrap {z-index: 11; width:100%; height:100%; max-height:300px; background: #fff; position:absolute; bottom:42px; height:auto;padding-bottom:25px;}
+.bus-wrapper .dawrap span, .dawrap select {display: inline-block;}
+.bus-wrapper .dawrap span {position: relative; font-size:15px; text-align: left; box-sizing: border-box;}
+.bus-wrapper .dawrap  h1 {text-align:center; font-size:15px; line-height: 35px; font-weight: bold; color:#333; background: #f2f2f2; height:35px; border-bottom: 1px solid #cfcfcf;}
+.bus-wrapper .dawrap #blist {overflow-y: hidden; box-sizing: border-box; padding:0px 10px; touch-action: none;}
+.bus-wrapper .dawrap #blist .break_o {}
+.bus-wrapper .da {margin-top:10px;}
+.bus-wrapper .da:first-child {margin-bottom: 5px;}
+.bus-wrapper .da:nth-child(2) {padding-top: 10px; border-top: 1px solid #BDBDBD;}
+.bus-wrapper .da .da-tit {float:left; width:35%; top:8px;}
+.bus-wrapper .da .da-money {width:42%; height:35px; padding:0px 8px; font-weight:700; font-size:14px; line-height: 14px; text-align:right;}
+.bus-wrapper .da .da-money .t-line {display:block; text-decoration: line-through; text-align:right; color:#8f8f8f;}
+.bus-wrapper .da .da-money .t-moeny {font-size:14px; line-height:25px;}
+.bus-wrapper .da .da-money .t-moeny em {color: #e63b3b;}
+.bus-wrapper .date {width: 55%; height: 35px; line-height: 35px; font-size:15px; cursor:pointer; float:right; text-align:center}
+.bus-wrapper .date2 {width: 21%; text-align:right; border:1px solid #a9a9a9; background: #fff;}
+.bus-wrapper input.date {border:1px solid #a4a4a4; box-sizing:border-box;}
+.bus-wrapper .fixed-bg {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); display: none;}
+.bus-wrapper .i-x {position: absolute; right: 5px; top: 5px; width: 20px; height: 20px; display: block;}
+.bus-wrapper .i-x:before, .i-x:after {content: ""; position: absolute; display: inline-block; width: 20px; height: 1px; background: #000; top: 12px; right: 0px;}
+.bus-wrapper .i-x:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.bus-wrapper .i-x:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); 
+    -o-transform: rotate(-45deg); 
+    transform: rotate(-45deg); 
+}
+
+
+/* 모바일 영역 - 320 */
+@media (max-width: 320px){
+    .evt-outer .evt-visual .visual-txt span, .evt-area-apply .visual-txt span {font-size: 10px;}
+    .evt-outer .evt-contents .price-txt {font-size: 11px;}
+}
+
+/* 한화 아쿠아플래닛 */
+.hanhwa-ap {}
+.hanhwa-ap {}
+
+.hanhwa-ap.evt-outer .evt-main .evt-visual {padding: 0;}
+.hanhwa-ap.evt-outer .evt-main .evt-visual .visual {width: 100%;}
+/*
+.hanhwa-ap.evt-outer .evt-contents .evt-menu-list {border-color: #40b396;}
+.hanhwa-ap.evt-outer .evt-contents .evt-menu-list li {background: #bae6ff; color: #397EDB;}
+*/
+.hanhwa-ap.evt-outer .evt-contents .evt-menu-list {display: table; border-color: #40b396;}
+.hanhwa-ap.evt-outer .evt-contents .evt-menu-list li {display: table-cell; float: none; width: auto; border-left: 5px solid #fff; background: #bae6ff; color: #397EDB;}
+.hanhwa-ap.evt-outer .evt-contents .evt-menu-list li:first-child {border: none;}
+.hanhwa-ap.evt-outer .evt-contents .evt-menu-list li a {color: #255CAE;}
+.hanhwa-ap.evt-outer .evt-contents .evt-menu-list li.on {background: #40b396;}
+.hanhwa-ap.evt-outer .evt-contents .evt-menu-list li.on a {color: #fff;}
+.d {width: 32.4%; margin-left: 1.4%;}
+.evt-outer .evt-bottom .fixed-btn.type-btn3 {padding: 8px;}
+
+.evt-outer .evt-bottom .fixed-btn.type-btn3 {display: table;}
+.evt-outer .evt-bottom .fixed-btn.type-btn3 > a {display: table-cell; background: #397edb; width: auto; border-left: 5px solid #fff; padding-top: 0; margin-right: 0; margin-left: 0;}
+.evt-outer .evt-bottom .fixed-btn.type-btn3 > a:first-child {border: none;}
+.evt-outer .evt-bottom .fixed-btn.type-btn3 > a:first-child + a {padding-top: 0px;}
+/*
+.evt-outer .evt-bottom .fixed-btn.type-btn3 > a {display: inline-block; width: 32.4%; margin-left: 1.4%; background: #397edb; padding-top: 8px;}
+.evt-outer .evt-bottom .fixed-btn.type-btn3 > a:first-child {margin-left: 0; margin-right: 0;}
+.evt-outer .evt-bottom .fixed-btn.type-btn3 > a:first-child + a {background: #3a7edb; padding-top: 8px;}
+*/
+.evt-outer .evt-bottom .fixed-btn.type-btn3 > a .fz-1 {font-size: 15px;}
+
+/* 단순 랜딩 공통 */
+.landing-wrapper {padding-bottom: 72px;}
+/* 이미지 랜딩 imgLanding */
+.landing-wrapper.imgLanding {}
+.landing-wrapper .evt-bottom .fixed-btn {position: fixed; left: 0; bottom: 0; width: 100%; padding: 10px; background-color: #fff; box-sizing: border-box;}
+.landing-wrapper .evt-bottom .type-btn1 > a {display: block; height: 52px; font-weight: bold; font-size: 16px; text-align: center; line-height: 52px;}
+
+/* 예약하기 팝업 */
+.pop_layer {display:none; position:fixed; left:0; right:0; top:0; bottom:0; background-color:rgba(0,0,0,.5); }
+.pop_layer .pop_area {position:absolute; left:20px; right:20px; top:50%; padding:35px 0 10px; background-color:#fff; -webkit-transform:translateY(-50%); transform:translateY(-50%); }
+.pop_layer .pop_area .pop_title {display:block; margin:0 20px; padding-bottom:10px; border-bottom:1px solid #000; font-size:18px; text-align:center;}
+.pop_layer .pop_area .input_area {padding:20px 30px 12px; }
+.pop_layer .pop_area .input_area table tr th {font-weight:bold; font-size:14px; text-align:left; vertical-align:middle;}
+.pop_layer .pop_area .input_area table tr td {padding:5px 0; vertical-align:middle;}
+.pop_layer .pop_area .input_area table tr td input[type="text"], .pop_layer .pop_area .input_area table tr td input[type="password"] {height:30px; padding:5px; border:1px solid #8f8f8f; font-size:14px; box-sizing:border-box;}
+.pop_layer .pop_area .input_area table tr td .select_wrapper {position:relative;}
+.pop_layer .pop_area .input_area table tr td .select_wrapper:before {content:''; display:block; position:absolute; right:10px; top:50%; width:0; height:0; margin-top:-2px; border-top:5px solid transparent; border-bottom:5px solid #585858; border-right:5px solid transparent; border-left:5px solid transparent; -webkit-transform:rotate(180deg); transform:rotate(180deg);}
+.pop_layer .pop_area .input_area table tr td .select_wrapper select {width:100%; height:30px; padding:5px; border:1px solid #8f8f8f; font-size:14px; box-sizing:border-box; -webkit-appearance:none;border-radius:0}
+
+.pop_layer .pop_area .pop_btn {margin:0 10px;}
+.pop_layer .pop_area .pop_btn a {display:block; height:52px; background-color:#e63b3b; color:#fff; font-weight:bold; font-size:14px; text-align:center; line-height:52px;}
+.pop_layer .pop_area .pop_close {position:absolute; right:0; top:0; width:40px; height:40px; font-size:0; text-align:center; line-height:40px;}
+.pop_layer .pop_area .pop_close img {width:18px;}
+.pop_layer .pop_area .prc-box {position: relative; padding: 0px 30px 17px;}
+.pop_layer .pop_area .prc-box span {display: inline-block;}
+.pop_layer .pop_area .prc-box .s1 {font-size: 14px; color: #8f8f8f; font-weight: 700;}
+.pop_layer .pop_area .prc-box .s1 s {font-size: 15px;}
+.pop_layer .pop_area .prc-box {}
+.pop_layer .pop_area .prc-box .s2 {position: relative; top: -5px; float: right; font-weight: 700; font-size: 14px;}
+.pop_layer .pop_area .prc-box .s2 .c1 {color: #e63b3b; font-size: 20px; margin-right: 1px;}
+
+
+/* 조식뷔페 이용권 */
+.landing-wrapper.rmd-bf-use .evt-bottom .type-btn1 > a, 
+.landing-wrapper.rmd-bf-use .pop_layer .pop_area .pop_btn a {background: #95a26e; color: #fff;}
+.landing-wrapper.rmd-bf-use .evt-bottom .type-btn1 > a {}
+.landing-wrapper.rmd-bf-free1p .evt-bottom .type-btn1 > a,
+.landing-wrapper.rmd-bf-free1p .pop_layer .pop_area .pop_btn a {background: #ae9c87; color: #fff;}
+.landing-wrapper.rmd-bf-free1p .evt-bottom .type-btn1 > a {}

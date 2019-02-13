@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>삼포지점 객실배치도</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css" type="text/css">
+	<link rel="stylesheet" href="http://static.go.co.kr/css/task/room_layout.css">
+<!--
+	<link rel="stylesheet" href="../../src/css/go/layout.css">
+	<link rel="stylesheet" href="../../src/css/task/room_layout.css">
+-->
+
+</head>
+
+<body>
+
+	<div id="headerW">
+		<div class="header">
+			<h1><a href="/"><img src="http://img.go.co.kr/go/logo.jpg"></a></h1>
+			<div class="snb">
+				<span class="user">테스트용</span>
+				<a href="/logout.php" class="log_btn">로그아웃</a> <a onclick="layer_on('#popWs');" class="log_btn">비밀번호변경</a>
+			</div>
+		</div>
+	</div>
+
+	<!--변경내용-->
+	<div id="nav-bar" style="z-index: 2; position: relative; top: 0px;">
+		<ul class="nav" style="height: 50px; top: 0px;">
+
+			<li><a href="/reserve.php">판매기록</a></li>
+			<li class="on">
+				<a href="/sale.php">객실관리</a>
+				<ul class="dep2-menu">
+					<li><a href="">요금</a></li>
+					<li><a href="">현황</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/room_day.php">객실별 판매</a>
+				<ul class="dep2-menu">
+					<li><a href="">일별</a></li>
+					<li><a href="">월별</a></li>
+				</ul>
+			</li>
+			<li><a href="/info.php">호텔정보</a></li>
+			<li><a href="/pay.php">정산</a></li>
+			<li><a href="/guide.php">가이드 보기</a></li>
+		</ul>
+	</div>
+
+	<div id="wrapper">
+		<div id="container">
+			<div id="alert_info" style="position: static; top: 0px; z-index: 2;"><span>현재 <strong>미확인</strong>된 예약이 <strong>1건</strong> 있습니다.</span> &nbsp; <span class="alert_btn2"><a href="reserve.php?u=1">미확인 리스트 보기 &gt;</a></span><span class="alert_tel">제휴점문의 : <strong>김민철 대리 &nbsp; | &nbsp; 070-4694-5803</strong> (09:00 ~ 18:00)</span></div>
+		</div>
+	</div>
+
+	<!--변경내용-->
+	<div class="cf"></div>
+	<div class="search-day cf">
+		<span>일정</span> <input class="day-inp" type="text"> <input class="day-search" type="button" value="검색">
+		<button type="button" class="btn" style="background: #3d5696; color: #fff;" onclick="reserve.add_rsv()">현장 예약하기</button>
+	</div>
+	<div id="room-layout-wrap" class="room-layout-yh">
+
+		<!--
+			컬러 클래스  color-1 ~ color-4
+			너비 클래스 w-2
+		-->
+		
+		<div class="room-layout">
+			<div class="floor-10 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1 color-3 w-2">
+						<div class="nth-1">1001호</div>
+						<div class="nth-2">50평</div>
+						<div class="nth-3">패밀리 침대</div>
+						<div class="nth-4">개별난방</div>
+						<div class="nth-5">판매가능</div>
+					</li>
+					<li class="li-1 color-3 w-2">
+						<div class="nth-1">1002호</div>
+						<div class="nth-2">50평</div>
+						<div class="nth-3">패밀리 침대</div>
+						<div class="nth-4">중앙난방</div>
+						<div class="nth-5">판매가능</div>
+					</li>
+				</ul>
+				<ul class="ul-2 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+			</div>
+			<div class="floor-9 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-2 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+			</div>
+			<div class="floor-8 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-2 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+			</div>
+			<div class="floor-7 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1 color-3 w-2">
+						<div class="nth-1">701호</div>
+						<div class="nth-2">50평</div>
+						<div class="nth-3">패밀리 침대</div>
+						<div class="nth-4">개별난방</div>
+						<div class="nth-5">판매가능</div>
+					</li>
+				</ul>
+				<ul class="ul-2 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-3 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4 color-4">
+						<div class="nth-1">709호</div>
+						<div class="nth-2">25평형</div>
+						<div class="nth-3">디럭스 온돌</div>
+						<div class="nth-4">개별난방</div>
+						<div class="nth-5">판매가능</div>
+					</li>
+				</ul>
+				<ul class="ul-4 cf">
+					<li class="li-1 color-3 w-2">
+						<div class="nth-1">701호</div>
+						<div class="nth-2">50평</div>
+						<div class="nth-3">패밀리 침대</div>
+						<div class="nth-4">개별난방</div>
+						<div class="nth-5">판매가능</div>
+					</li>
+				</ul>
+			</div>
+			<div class="floor-6 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1">
+						<div class="nth-1">601호</div>
+						<div class="nth-2">25평</div>
+						<div class="nth-3">디럭스 침대</div>
+						<div class="nth-4">중앙난방</div>
+						<div class="nth-5">수리중</div>
+					</li>
+					<li class="li-1">
+						<div class="nth-1">602호</div>
+						<div class="nth-2">25평</div>
+						<div class="nth-3">디럭스 침대</div>
+						<div class="nth-4">중앙난방</div>
+						<div class="nth-5">수리중</div>
+					</li>
+				</ul>
+				<ul class="ul-2 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-3 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-4 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+				</ul>
+			</div>
+			<div class="floor-5 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-2 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-3 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-4 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+			</div>
+			<div class="floor-4 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-2 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-3 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-4 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+			</div>
+			<div class="floor-3 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-2 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-3 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-4 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+			</div>
+			<div class="floor-2 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-2 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-3 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-4 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+			</div>
+			<div class="floor-1 cf">
+				<ul class="ul-1 cf">
+					<li class="li-1">
+						<div class="nth-1">101호</div>
+						<div class="nth-2">25평</div>
+						<div class="nth-3">스탠다드 침대</div>
+						<div class="nth-4">중앙난방</div>
+						<div class="nth-5">판매가능</div>
+					</li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+				<ul class="ul-2 ul-info cf">
+					<li class="li-1 color-1">
+						<div class="nth-1">105호</div>
+						<div class="nth-2">18평</div>
+						<div class="nth-3">18평 침대</div>
+						<div class="nth-4">중앙난방</div>
+						<div class="nth-5">판매가능</div>
+					</li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4">Information</li>
+				</ul>
+				<ul class="ul-4 cf">
+					<li class="li-1"></li>
+					<li class="li-2"></li>
+					<li class="li-3"></li>
+					<li class="li-4"></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>

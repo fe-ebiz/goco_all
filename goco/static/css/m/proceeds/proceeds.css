@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/*****컨테이너*****/
+.codeMoney-sec .code-money, .main-sec .main-img { border: 1px solid #dfdfdf; border-right: 0; border-left: 0; }
+
+.status-sec .ssmb-tit select, .applyInfo-sec .apInfo-table td select, .applyInfo-sec .apInfo-table td .data, .promotion-sec .recommend .code .inner > input { border: 1px #dcdcdc solid; appearance: none; -webkit-appearance: none; -moz-appearance: none; border-radius: 0; letter-spacing: -0.7px; }
+
+.container { position: relative; padding: 5px 0 0px 0; background: #ededed; }
+
+/*****코드 및 수익금*****/
+.codeMoney-sec .code-money { background: #fff; }
+
+.codeMoney-sec .code-money > li { float: left; width: 50%; padding: 4px 0 7px; border-right: 1px solid #d9d9d9; }
+
+.codeMoney-sec .code-money > li p { position: relative; padding: 6px 5px 0px 33px; font-size: 13px; line-height: 15px; }
+
+@media (max-width: 320px) { .codeMoney-sec .code-money > li p { font-size: 12px; } }
+
+.codeMoney-sec .code-money > li p .icon { position: relative; top: 4px; display: inline-block; background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat; background-size: 200px; }
+
+.codeMoney-sec .code-money > li p .i-user { position: absolute; top: 6px; left: 16px; width: 16px; height: 16px; background-position: -25px 0; }
+
+.codeMoney-sec .code-money > li p .i-coin { position: absolute; top: 6px; left: 11px; width: 22px; height: 17px; background-position: -51px 0; }
+
+.codeMoney-sec .code-money > li p .btn-a { display: inline-block; font-size: 12px; color: #fff; background: #a4a4a4; padding: 3px 6px; height: 19px; border-radius: 19px; }
+
+@media (max-width: 320px) { .codeMoney-sec .code-money > li p .btn-a { font-size: 11px; } }
+
+.codeMoney-sec .code-money > li .type-2 { padding-left: 34px; line-height: 13px; }
+
+.codeMoney-sec .code-money > li.nth-2 p.type-2 { padding-left: 14px; }
+
+/*****메인이미지*****/
+.main-sec .main-img { display: block; margin: 5px 0 0; }
+
+.main-sec .main-img img { display: block; }
+
+/*****랭킹차트*****/
+.rank-sec { position: relative; margin: 7px 9px 14px; padding: 50px 0; background: #fff; border: 1px #dcdcdc solid; }
+
+.rank-sec .top-bg, .rank-sec .bottom-bg { position: absolute; width: 100%; height: 37.5px; }
+
+.rank-sec .top-bg > span, .rank-sec .bottom-bg > span { display: block; position: absolute; top: 0; }
+
+.rank-sec .top-bg > span.left, .rank-sec .top-bg > span.right, .rank-sec .bottom-bg > span.left, .rank-sec .bottom-bg > span.right { display: inline-block; width: 33px; height: 37.5px; background: url(http://img.go.co.kr/proceeds/m/rank_bg_sprites.jpg) no-repeat; background-size: 66px; }
+
+.rank-sec .top-bg > span.left, .rank-sec .bottom-bg > span.left { left: 0; }
+
+.rank-sec .top-bg > span.right, .rank-sec .bottom-bg > span.right { right: 0; }
+
+.rank-sec .top-bg > span.center, .rank-sec .bottom-bg > span.center { width: 100%; height: 1px; border: 1px #EDDDBD solid; }
+
+.rank-sec .top-bg { top: 0; }
+
+.rank-sec .top-bg > span.right { background-position: -33px 0; }
+
+.rank-sec .top-bg > span.center { top: 10px; }
+
+.rank-sec .bottom-bg { bottom: 0; }
+
+.rank-sec .bottom-bg > span.left { background-position: 0px -37.5px; }
+
+.rank-sec .bottom-bg > span.right { background-position: -33px -37.5px; }
+
+.rank-sec .bottom-bg > span.center { top: 26px; }
+
+.rank-sec .friend-outer { margin: -16px 9px -18px; border-left: 2px #F8E8B6 solid; border-right: 2px #F8E8B6 solid; padding: 0 10px; }
+
+.rank-sec .friend-rankbox { position: relative; margin-top: -24px; }
+
+.rank-sec .friend-rankbox > h3 { position: relative; left: 8px; float: left; font-size: 15px; font-weight: 600; color: #2f2f2f; }
+
+.rank-sec .friend-rankbox .fr-rankbox { position: relative; right: 8px; float: right; }
+
+.rank-sec .friend-rankbox .fr-rankbox li { position: relative; display: inline-block; height: 18px; }
+
+.rank-sec .friend-rankbox .fr-rankbox li a { padding: 1px 8px; font-size: 12px; line-height: 15px; text-align: center; display: block; width: 100%; height: 100%; border: 1px #c4c4c4 solid; border-radius: 3px; }
+
+.rank-sec .friend-rankbox .fr-rankbox li.on a { border-color: #f97319; color: #f97319; background: #fef0e6; }
+
+.rank-sec .friend-rank { position: relative; margin-top: 8px; box-sizing: border-box; }
+
+.rank-sec .fr-low { position: relative; border-bottom: 1px solid #dfd1b6; background: #fff; }
+
+.rank-sec .fr-low:after { content: ""; display: block; clear: both; }
+
+.rank-sec .fr-low.nth-1 { z-index: 3; background: #feefd2; }
+
+.rank-sec .fr-low.nth-2 { z-index: 2; }
+
+.rank-sec .fr-low.nth-3 { z-index: 0; }
+
+.rank-sec .fr-low.nth-1 .fr-cell.nth-1, .rank-sec .fr-low.nth-2 .fr-cell.nth-1, .rank-sec .fr-low.nth-3 .fr-cell.nth-1 { background: none; }
+
+.rank-sec .fr-low .fr-cell { position: relative; float: left; height: 24px; font-weight: 600; letter-spacing: -1px; line-height: 24px; color: #343434; font-size: 13px; }
+
+.rank-sec .fr-low .fr-cell.nth-1 { width: 37px; text-align: center; color: #fff; background: url(http://img.go.co.kr/landing//20170320//ranking/graynumber.png) no-repeat -7px 5px; background-size: 42px; font-size: 11px; line-height: 25px; text-indent: -10px; }
+
+.rank-sec .fr-low .fr-cell.nth-1 img { position: relative; top: -2px; width: 22px; }
+
+.rank-sec .fr-low .fr-cell.nth-2 { width: 52%; overflow: hidden; text-overflow: ellipsis; }
+
+@media (max-device-width: 320px) { .rank-sec .fr-low .fr-cell.nth-2 { width: 45%; } }
+
+.rank-sec .fr-low .fr-cell.nth-3 { display: none; width: 1px; background-color: #b4b4b4; font-weight: 400; top: 10px; height: 15px; }
+
+.rank-sec .fr-low .fr-cell.nth-4 { float: right; width: 100px; text-align: right; right: 10px; }
+
+/*****적립금 지급 안내*****/
+.step-sec { background: #fff; padding: 0 12px; border-top: 1px solid #dfdfdf; }
+
+.step-sec h3 { position: relative; font-size: 14px; font-weight: 600; color: #2f2f2f; padding-top: 15px; }
+
+.step-sec .step-img { padding: 15px 0 20px; }
+
+/*****수익금 상세 현황*****/
+.status-sec, .applyInfo-sec, .promotion-sec { margin: 7px 0 0; padding: 5px 10px 20px; border-top: 1px solid #cdcdcd; background: #fff; }
+
+.status-sec h2, .applyInfo-sec h2, .promotion-sec h2 { margin: 5px 0; }
+
+.status-sec .ssmb-tit select, .applyInfo-sec .apInfo-table td select { background: #fff url(http://img.go.co.kr/proceeds/m/select_arr.png) no-repeat; background-size: 16px; font-size: 14px; padding-left: 5px; }
+
+.status-sec .ssmb-tit { position: relative; font-size: 15px; font-weight: 600; height: 40px; line-height: 30px; }
+
+.status-sec .ssmb-tit h2 { float: left; }
+
+.status-sec .ssmb-tit select { width: 150px; height: 30px; position: relative; top: 5px; background-position: 122px 10px; float: right; }
+
+.status-sec .ssmb-table { position: relative; margin-top: 3px; width: 100%; }
+
+.status-sec .ssmb-table thead tr, .status-sec .ssmb-table .total { background: #f5f5f5; }
+
+.status-sec .ssmb-table th, .status-sec .ssmb-table td { height: 30px; vertical-align: middle; text-align: center; font-size: 14px; border: 1px solid #c5c5c5; }
+
+.status-sec .ssmb-table th { border-top: 3px solid #ff742e; font-weight: 600; }
+
+.status-sec .ssmb-table tbody td.nth-2, .status-sec .ssmb-table tbody td.nth-3 { text-align: right; padding-right: 8px; }
+
+/*****수익금 신청 정보*****/
+.applyInfo-sec .apply-tab, .promotion-sec .promo-tab { position: relative; margin: 5px 0 10px; width: 100%; }
+
+.applyInfo-sec .apply-tab li, .promotion-sec .promo-tab li { float: left; width: 50%; height: 36px; line-height: 36px; text-align: center; font-size: 14px; color: #ff742e; border: 1px #ff742e solid; border-left: 0; }
+
+.applyInfo-sec .apply-tab li.on, .promotion-sec .promo-tab li.on { color: #fff; background: #ff742e; }
+
+.applyInfo-sec .apply-tab li.nth-1, .promotion-sec .promo-tab li.nth-1 { border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-left: 1px solid #ff742e; }
+
+.applyInfo-sec .apply-tab li.nth-2, .promotion-sec .promo-tab li.nth-2 { border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+
+.applyInfo-sec .tab-con, .promotion-sec .tab-con { position: relative; width: 100%; }
+
+.applyInfo-sec .tab-con > li, .promotion-sec .tab-con > li { display: none; }
+
+.applyInfo-sec .tab-con > li.on, .promotion-sec .tab-con > li.on { display: block; }
+
+.applyInfo-sec .apInfo-table { position: relative; width: 100%; font-size: 14px; text-align: left; border: 1px #e6e6e6 solid; }
+
+.applyInfo-sec .apInfo-table th, .applyInfo-sec .apInfo-table td { height: 34px; vertical-align: middle; }
+
+.applyInfo-sec .apInfo-table th, .applyInfo-sec .apInfo-table tbody tr.last td { background: #f1f1f1; }
+
+.applyInfo-sec .apInfo-table th { border-bottom: 1px solid #e6e6e6; position: relative; text-align: center; }
+
+.applyInfo-sec .apInfo-table tbody tr.last td p, .applyInfo-sec .apInfo-table td, .applyInfo-sec .apInfo-table td select, .applyInfo-sec .apInfo-table td .data { font-size: 13px; }
+
+.applyInfo-sec .apInfo-table tbody tr:first-child td { padding-top: 10px; }
+
+.applyInfo-sec .apInfo-table tbody tr.lt-1 td { padding-bottom: 10px; }
+
+.applyInfo-sec .apInfo-table tbody tr.last td { padding: 15px 12px; }
+
+.applyInfo-sec .apInfo-table tbody tr.last td p { position: relative; padding-left: 8px; word-break: keep-all; line-height: 20px; color: #4a4a4a; }
+
+.applyInfo-sec .apInfo-table tbody tr.last td p .dot { position: absolute; left: 0; }
+
+.applyInfo-sec .apInfo-table td { padding: 3px 0; }
+
+.applyInfo-sec .apInfo-table td.nth-1 { padding-left: 12px; font-weight: 600; }
+
+.applyInfo-sec .apInfo-table td.nth-2 { padding-right: 12px; }
+
+.applyInfo-sec .apInfo-table td select { width: 100%; height: 30px; line-height: 28px; background-position: 95% 10px; }
+
+.applyInfo-sec .apInfo-table td .data { width: 100%; height: 30px; border: 1px #dcdcdc solid; padding: 1px 5px 4px; }
+
+.applyInfo-sec .apInfo-table td .data.num { padding: 0px 5px; }
+
+.applyInfo-sec .apl td .data { width: 90%; margin-right: 2px; }
+
+.applyInfo-sec .fullBtn-a { display: block; width: 100%; text-align: center; background: #ff742e; color: #fff; font-size: 14px; border-radius: 4px; margin-top: 10px; height: 40px; line-height: 42px; }
+
+/*****홍보이미지*****/
+.promotion-sec .promo-tab { margin-top: 10px; }
+
+.promotion-sec .promo-tab li { width: 33.33333%; height: 40px; line-height: 41px; }
+
+.promotion-sec .tab-con { margin-top: 20px; }
+
+.promotion-sec .recommend { position: relative; width: 208px; height: 350px; margin: 0 auto; background: url("http://img.go.co.kr/proceeds/bg_mileage.jpg") no-repeat 0 0; background-size: 208px; border-bottom: 1px solid #ddd; }
+
+.promotion-sec .recommend .code { position: absolute; top: 260px; left: 10px; width: 188px; height: 79px; /*padding:10px 12px 0;*/ text-align: center; background: url("http://img.go.co.kr/proceeds/bg_code.jpg") no-repeat 0 0; background-size: 188px; }
+
+.promotion-sec .recommend .code .inner > p { margin: 7px 0 5px; font-size: 13px; font-weight: 800; font-style: italic; }
+
+.promotion-sec .recommend .code .inner > p > span { color: #d82802; }
+
+.promotion-sec .recommend .code .inner > input { border: 2px #ff742e solid; width: 92%; height: 26px; text-align: center; font-size: 18px; letter-spacing: 1px; padding-top: 2px; text-transform: uppercase; outline: 0; }
+
+.promotion-sec .recommend .code .btn-a { position: absolute; top: 56px; left: 0; display: block; width: 100%; }
+
+.promotion-sec .copy-code { margin: 12px auto 0; overflow: auto; padding: 3px 5px; border: 1px solid #e0e0e0; line-height: 18px; font-size: 13px; word-break: break-all; width: 100%; height: 63px; }
+
+.promotion-sec .btn-area { margin-top: 12px; }
+
+.promotion-sec .btn-area .btn-a { width: 46%; height: 40px; line-height: 40px; text-align: center; display: inline-block; border-radius: 4px; }
+
+.promotion-sec .btn-area .btn-a.pull-left { border: 1px #5f5f5f solid; background: #5f5f5f; color: #fff; }
+
+.promotion-sec .btn-area .btn-a.pull-right { border: 1px #d2d2d2 solid; background: #ffffff; /* Old browsers */ background: -moz-linear-gradient(top, #ffffff 0%, #fbfbfb 50%, #f3f3f4 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, #ffffff 0%, #fbfbfb 50%, #f3f3f4 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 50%, #f3f3f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f4',GradientType=0 ); /* IE6-9 */ }
+
+.promotion-sec .banner-rec { position: relative; }
+
+.promotion-sec .banner-rec .code { position: relative; margin: 0 auto; width: 300px; height: 120px; background: url("http://img.go.co.kr/proceeds/banner_mileage.jpg") no-repeat 0 0; background-size: contain; }
+
+.promotion-sec .banner-rec .code > input { position: absolute; top: 78px; left: 77px; width: 196px; height: 30px; text-align: center; font-size: 22px; border: 0; background: none; letter-spacing: 1px; outline: 0; text-transform: uppercase; }
+
+.promotion-sec .div-h2 { position: relative; font-size: 15px; margin: 25px 0 10px; }
+
+.promotion-sec .div-h2 > .pull-right { position: relative; top: -15px; }
+
+.promotion-sec .div-h2 > .pull-right > a { width: 34px; height: 34px; display: inline-block; background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat; background-size: 150px; }
+
+.promotion-sec .div-h2 > .pull-right > a.i-copy { background-position: -60px 0; margin-right: 5px; }
+
+.promotion-sec .div-h2 > .pull-right > a.i-share { background-position: -100px 0; }
+
+.promotion-sec .txt-box { border: 1px #dcdcdc solid; padding: 6px; }
+
+.promotion-sec .txt-box > p { font-size: 13px; word-break: keep-all; line-height: 20px; }
+
+.promotion-sec .q-modal { display: none; position: fixed; z-index: 12; width: 250px; /*height: 170px;*/ top: 50%; margin-top: -145px; left: 50%; margin-left: -125px; background: #fff; border-radius: 6px; }
+
+.promotion-sec .q-modal h2 { width: 100%; height: 50px; margin: 0 auto; font-family: "Nanum Gothic", sans-serif; font-size: 17px; font-weight: 600; text-align: center; border-bottom: 1px solid #dfdfdf; line-height: 3em; }
+
+.promotion-sec .q-modal ul { padding: 5px 0 7px; }
+
+.promotion-sec .q-modal ul li { position: relative; /*height: 60px;*/ line-height: 50px; }
+
+.promotion-sec .q-modal ul li a { display: block; padding: 0 22px; font-size: 14px; font-weight: 600; }
+
+.promotion-sec .q-modal ul li a img { position: relative; top: -1px; vertical-align: middle; width: 35px; margin-right: 13px; }
+
+/*# sourceMappingURL=proceeds.css.map */

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<!--숫자인식,메일주소,지도상의 주소링크 막기-->
+	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/swiper.min.css" type="text/css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+
+	<link rel="stylesheet" href="http://static.go.co.kr/css/moblie_reset.css" type="text/css" />
+	<link rel="stylesheet" href="http://static.go.co.kr/css/mobile_layout3.css" type="text/css" />
+
+	<!-- 모든사이트 통합 css -->
+	<link rel="stylesheet" href="http://static.go.co.kr/css/totalmobile.css" type="text/css" />
+<!--	<link rel="stylesheet" href="../../../src/css/totalmobile.css" type="text/css" />-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="wrapper" data-role="page">
+		<div id="scroll_box">
+		
+			<div id="top_box" style="position:fixed;top:0px;z-index:9999;width:100%;background:#ffffff">
+				<!--- 서브페이지 상단 -->
+				<div id="headTitle_box">
+					<div id="headTitle">
+						<span class="back">
+							<a href="javascript:history.back(-1);"><img src="http://img.go.co.kr/mobile/btn_back.png" height="17" alt="뒤로"></a>
+						</span>
+						다음서비스 계정전환
+					</div>
+				</div>
+			</div>
+			<div id="top_box_bottom"></div>
+			<script>
+				$("#top_box_bottom").css("height", $("#top_box").height()+"px");
+			</script>
+			<form name="test" method="get" action="http://m.go.co.kr/home/member/sns/sub_forward.php">
+				<input type="hidden" name="rtn" id="rtn" value="UVFvMFUyUUpjVTV1R1VjSEhTOE5OVlJ4">
+				<input type="hidden" name="sub_url" id="sub_url" value="http://m.go.co.kr">
+				<input type="hidden" name="sns_type" id="sns_type" value="">
+			</form>
+			<form id="login" name="login" class="login" method="post" action="state.php">
+				<input type="hidden" name="encrypt" value="0">
+				<input type="hidden" name="mode" value="RREnSjA=">
+				<input type="hidden" name="rtn" id="rtn" value="UVFvMFUyUUpjVTV1R1VjSEhTOE5OVlJ4">
+				<input type="hidden" name="member_chk" id="member_chk" value="member">
+				<fieldset>
+					<legend class="hidden">로그인/예약확인</legend>
+
+					<!--- 180828 다음 로그인 종료 안내 --->
+					<section class="login-daumEnd cf">
+						<div class="area-notice">
+							<h2>
+								<img src="http://img.go.co.kr/mobile/d_logo.jpg" class="logo-daum">
+								다음 로그인 종료 안내
+							</h2>
+							<p class="an-p1">
+								다음서비스를 통한 로그인은 금년 12월말까지만<br>
+								이용이 가능하며 신규 계정으로도 더 이상<br>
+								이용이 불가합니다.
+							</p>
+							<p class="an-p2">
+								다음아이디로 로그인을 하셨던 고객님께서는<br>
+								<span class="color-1">다른 서비스로의 계정전환이 필요하오니 아래에 준비된<br>
+									서비스계정을 선택 후 계정을 전환하여 주십시오.</span>
+							</p>
+						</div>
+						
+						<div id="snsLogin">
+							<ul class="snsLarge">
+								<li class="kakao">
+									<a href="javascript:kakaologin();"><span><img src="http://img.go.co.kr/mobile/k_logo.jpg" height="25"><span>카카오톡 아이디로 전환</span></span></a>
+								</li>
+								<li class="naver">
+									<a href="http://m.go.co.kr/home/member/naver/login.php?rurl=UVFvMFUyUUpjVTV1R1VjSEhTOE5OVlJ4"><span><img src="http://img.go.co.kr/mobile/n_logo.jpg" height="20"><span>네이버 아이디로 전환</span></span></a>
+								</li>
+								<li class="facebook">
+									<a href="javascript:facebooklogin();"><span><img src="http://img.go.co.kr/mobile/f_logo.jpg" height="25"><span>페이스북 아이디로 전환</span></span></a>
+								</li>
+								<li class="google">
+									<a href="javascript:googlelogin();">
+										<span><img src="http://img.go.co.kr/mobile/g_logo.jpg" height="25"><span>구글 아이디로 전환</span></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!-- // -->
+					
+				</fieldset>
+			</form>
+			<div class="btmLogo" id="btmLogo"></div>
+			<!-- footer -->
+			<div class="clr"></div>
+			<div id="Footer" class="hide_div">
+				<ul class="f-menu">
+					<li><a href="http://m.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcU5uGUcHHS8NNVRxSy8TTQYTJU48QywMfxpMFCwSZjB1NGJ9WFpcDCweD3cxExVMeWMdFRYrYQtACDZ7ETAOdQxe">로그인</a></li>
+					<li><a href="http://www.go.co.kr?ver=pc">PC버전</a></li>
+					<li><a href="http://m.go.co.kr/home/customer/?dd=QBA0UTE=">고객센터</a></li>
+					<li><a href="javascript:navi.move_home();" class="move_top">TOP <span>▲</span></a></li>
+				</ul>
+				<div class="f-area">
+					<ul class="policy">
+						<li><a href="http://m.go.co.kr/home/member/?dd=SwwhTTp5N00mEQ==">회사소개</a></li>
+						<li><a href="/home/policy/?dd=QxEpTQFWMVM=">이용약관</a></li>
+						<li class="privacy"><a href="/home/policy/?dd=WQwpVT9FJw==">개인정보처리방침</a></li>
+					</ul>
+					<ul class="customer">
+						<li><a href="tel:1666-1243" class="call">고객상담 1666-1243</a></li>
+						<li><a href="mailto:help@go.co.kr" class="mail">문의메일 : help@go.co.kr</a></li>
+					</ul>
+					<address>
+										<p>
+								<strong>(주)바로네트웍스</strong><br>
+								대표이사 : 전병권<br>
+								주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br>
+								사업자등록번호 : 215-87-85373<br>					통신판매업 : 제2017-서울강남-00561호<br>					여행업등록번호 : 제2017-07호<br>					여행영업보증서 : 국내여행 제100-000-2015 0144 5816호<br>					국외여행업등록번호 : 제2017호-26호				</p>
+							<!--
+							<p>
+								<strong>(주)가자닷컴투어</strong><br>
+								대표이사 : 김영환<br>
+								주소 : 서울특별시 강남구 테헤란로82길 15, 13층(대치동, 디아이타워)<br>
+								사업자등록번호 : 220-88-92970<br>
+								통신판매업 : 제2014-서울강남-03546호<br>
+								여행업등록번호 : 제2015-02호
+							</p>-->
+									<!--171204 추가-->
+									<p class="copy"><span style="font-weight:bold;">고코투어는 통신판매중개자로서 통신판매 당사자가 아닙니다.<br>따라서 고코투어는 상품정보 및 거래정보에 대하여<br>책임을 지지 않습니다.<br><br></span>Copyright 2015 by GO.CO.KR co., all right reserved.</p>
+								</address>
+				</div>
+			</div>
+			<!-- 하단 고정메뉴 -->
+			<div id="bottomMenu2" class="hide_div default">
+				<span class="btn"><a href="javascript:history.back();"><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_prev.png" alt="이전" width="50" height="50"></a></span>
+				<span class="btn"><a href="http://m.go.co.kr/home/map/?dd=RB8wfDNf"><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_map.png" alt="내주변" width="50" height="50"></a></span>
+				<span class="btn"><a href="http://m.go.co.kr/home/main/"><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_home.png" alt="홈" width="50" height="50"></a></span>
+				<span class="btn"><a href="http://m.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcU5uGUcHHS8NNVRxSy8TTQYTJU48QywMfxpMFC03UGtyJEcWNU8UQw=="><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_mybooking.png" alt="나의예약" width="50" height="50"></a></span>
+				<!---<span class="btn"><a href="http://m.go.co.kr/home/search/?dd=TRs0QjdKAVAlH1pKFg=="><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_search.png" alt="국내검색" width="50" height="50"></a></span>--->
+				<span class="btn"><a id="rightmenu" href="#"><img src="http://img.go.co.kr/mobile/mnB_201605/mnBottom_myinfo.png" alt="myinfo" width="50" height="50"></a></span>
+			</div>
+			
+		</div>
+	</div>
+
+			
+
+</body>
+
+</html>

@@ -1,0 +1,630 @@
+@charset "utf-8";
+@import "parts/variables";
+@import "parts/mixins";
+
+/*****컨테이너*****/
+%border-tb {border: 1px solid $borCr; border-right: 0; border-left: 0;}
+%appear {
+	@include bor();
+	appearance: none; -webkit-appearance: none; -moz-appearance: none;
+	border-radius: 0; letter-spacing: -0.7px;
+}
+
+.container {
+	position: relative;
+	padding: 5px 0 0px 0;
+	background: #ededed;
+}
+/*****코드 및 수익금*****/
+.codeMoney-sec {
+	.code-money {
+		@extend %border-tb;
+		background: #fff;
+		> li {
+			float: left;
+			width: 50%;
+			padding: 4px 0 7px;
+			border-right: 1px solid #d9d9d9;
+			p {
+				position: relative;
+				padding: 6px 5px 0px 33px;
+				font-size: 13px;
+				line-height: 15px;
+				@media (max-width:320px){
+					font-size: 12px;
+				}
+				.icon {
+					@include position-tl(relative, 4px);
+					display: inline-block;
+					background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat;
+					background-size: 200px;
+				}
+				.i-user {
+					@include position-tl(absolute, 6px, 16px);
+					@include size(16px, 16px);
+					background-position: -25px 0;
+				}
+				.i-coin {
+					@include position-tl(absolute, 6px, 11px);
+					@include size(22px, 17px);
+					background-position: -51px 0;
+				}
+				.btn-a {
+					display: inline-block;
+					font-size: 12px;
+					color: #fff;
+					background: #a4a4a4;
+					padding: 3px 6px;
+					height: 19px;
+					border-radius: 19px;
+					@media (max-width:320px){
+						font-size: 11px;
+					}
+				}
+			}
+			.type-2 {
+				padding-left: 34px;
+				line-height: 13px;
+			}
+			&.nth-2 p.type-2 {
+				padding-left: 14px;
+			}
+		}
+	}
+}
+/*****메인이미지*****/
+.main-sec {
+	.main-img {
+		display: block;
+		@extend %border-tb;
+		margin: 5px 0 0;
+		img {display: block;}
+	}
+}
+/*****랭킹차트*****/
+.rank-sec {
+	position: relative;
+	margin: $mt-2 9px ($mt-2 * 2);
+	padding: 50px 0;
+	background: #fff;
+	@include bor();
+
+	.top-bg, .bottom-bg {
+		position: absolute;
+		width: 100%;
+		height: 37.5px;
+		> span {
+			display: block;
+			@include position-tl(absolute, 0);
+			&.left, &.right {
+				display: inline-block;
+				@include size(33px, 37.5px);
+				background: url(http://img.go.co.kr/proceeds/m/rank_bg_sprites.jpg) no-repeat;
+				background-size: 66px;
+			}
+			&.left {
+				left: 0;
+			}
+			&.right {
+				right: 0;
+			}
+			&.center {
+				width: 100%; height: 1px;
+				@include bor(1px, #EDDDBD, solid);
+			}
+		}
+	}
+	.top-bg {
+		top: 0;
+		> span {
+			&.right {
+				background-position: -33px 0;
+			}
+			&.center {
+				top: 10px;
+			}
+		}
+	}
+	.bottom-bg {
+		bottom: 0;
+		> span {
+			&.left {
+				background-position: 0px -37.5px;
+			}
+			&.right {
+				background-position: -33px -37.5px;
+			}
+			&.center {
+				top: 26px;
+			}
+		}
+	}
+
+	.friend-outer {
+		margin: -16px 9px -18px;
+		@include bor-lr(2px, #F8E8B6);
+		padding: 0 10px;
+	}
+
+	%extend_1 {
+		position: relative;
+		width: 29px;
+		height: auto;
+		left: -5px;
+	}
+	//@extend-elements
+	//original selectors
+	//.contents01 .fr-low.nth-1 .fr-cell.nth-1 img, #container .contents01 .fr-low.nth-2 .fr-cell.nth-1 img, .contents01 .fr-low.nth-3 .fr-cell.nth-1 img
+	.friend-rankbox {
+		position: relative;
+		margin-top: -24px;
+		> h3 {
+			position: relative;
+			left: 8px;
+			float: left;
+			font-size: 15px;
+			font-weight: 600;
+			color: #2f2f2f;
+		}
+		.fr-rankbox {
+			position: relative;
+			right: 8px;
+			float: right;
+			li {
+				position: relative;
+				display: inline-block;
+				height: 18px;
+				a {
+					padding: 1px 8px;
+					font-size: 12px;
+					line-height: 15px;
+					text-align: center;
+					display: block;
+					width: 100%; height: 100%;
+					@include bor(1px, #c4c4c4);
+					border-radius: 3px;
+				}
+				&.on a {
+					border-color: #f97319;
+					color: #f97319;
+					background: #fef0e6;
+				}
+			}
+		}
+
+	}
+	.friend-rank {
+		position: relative;
+		margin-top: 8px;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+	}
+	.fr-low {
+		position: relative;
+		border-bottom: 1px solid #dfd1b6;
+		background: #fff;
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		&.nth-1 {
+			z-index: 3;
+			background: #feefd2;
+		}
+		&.nth-2 {
+			z-index: 2;
+		}
+		&.nth-3 {
+			z-index: 0;
+		}
+		&.nth-1, &.nth-2, &.nth-3 {
+			.fr-cell.nth-1 {
+				background: none;
+			}
+		}
+		.fr-cell {
+			position: relative;
+			float: left;
+			height: 24px;
+			font-weight: 600;
+			letter-spacing: -1px;
+			line-height: 24px;
+			color: #343434;
+			font-size: 13px;
+			&.nth-1 {
+				width: 37px;
+				text-align: center;
+				color: #fff;
+				background: url(http://img.go.co.kr/landing//20170320//ranking/graynumber.png) no-repeat -7px 5px;
+				background-size: 42px;
+				font-size: 11px;
+				line-height: 25px;
+				text-indent: -10px;
+				img {
+					position: relative;
+					top: -2px;
+					width: 22px;
+				}
+			}
+			&.nth-2 {
+				width: 52%;
+				@media (max-device-width: 320px){
+					width: 45%;
+				}
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			&.nth-3 {
+				display: none;
+				width: 1px;
+				background-color: #b4b4b4;
+				font-weight: 400;
+				top: 10px;
+				height: 15px;
+			}
+			&.nth-4 {
+				float: right;
+				width: 100px;
+				text-align: right;
+				right: 10px;
+			}
+		}
+	}
+}
+/*****적립금 지급 안내*****/
+.step-sec {
+	background: #fff;
+	padding: 0 12px;
+	border-top: 1px solid $borCr;
+	h3 {
+		position: relative;
+		font-size: 14px;
+		font-weight: 600;
+		color: #2f2f2f;
+		padding-top: 15px;
+	}
+	.step-img {padding: 15px 0 20px;}
+}
+/*****수익금 상세 현황*****/
+%common-sec {
+	margin: $mt-2 0 0;
+	padding: 5px 10px 20px;
+	border-top: 1px solid #cdcdcd;
+	background: #fff;
+	h2 {
+		margin: 5px 0;
+	}
+}
+%slt-custom {
+	@extend %appear;
+	background: #fff url(http://img.go.co.kr/proceeds/m/select_arr.png) no-repeat;
+	background-size: 16px;
+	font-size: 14px;
+	padding-left: 5px;
+}
+.status-sec {
+	@extend %common-sec;
+	
+	.ssmb-tit {
+		position: relative; font-size: 15px; font-weight: 600;
+		height: 40px; line-height: 30px;
+		h2 {
+			float: left;
+		}
+		select {
+			@include size(150px, 30px);
+			@extend %appear;
+			@extend %slt-custom;
+			@include position-tl(relative, 5px);
+			background-position: 122px 10px;
+			float: right;
+		}
+	}
+	.ssmb-table {
+		position: relative;
+		margin-top: 3px;
+		width: 100%;
+		%bg-f5 {background: #f5f5f5;}
+		th, td {
+			height: 30px; vertical-align: middle; text-align: center;
+			font-size: 14px; border: 1px solid #c5c5c5;
+		}
+		thead tr, .total {@extend %bg-f5;}
+		th {
+			border-top: 3px solid $orange; font-weight: 600;
+		}
+		tbody td {
+			&.nth-2, &.nth-3 {text-align: right; padding-right: 8px;}
+		}
+	}
+}
+/*****수익금 신청 정보*****/
+%common-tab {
+	position: relative; margin: 5px 0 10px; width: 100%;
+	li {
+		float: left;
+		@include size(50%, 36px, 36px, center, 14px, $orange);
+		@include bor(1px, $orange);
+		border-left: 0;
+		&.on {
+			color: $white;
+			background: $orange;
+		}
+		&.nth-1 {
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			border-left: 1px solid $orange;
+		}
+		&.nth-2 {
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+	}
+}
+%tab-con {
+	position: relative;
+	width: 100%;
+	> li {
+		display: none;
+		&.on {display: block;}
+	}
+}
+.applyInfo-sec {
+	@extend %common-sec;
+	.apply-tab {
+		@extend %common-tab;
+	}
+	.tab-con {
+		@extend %tab-con;
+	}
+	.apInfo-table {
+		position: relative; width: 100%;
+		font-size: 14px; text-align: left;
+		@include bor(1px, #e6e6e6);
+		th, td {height: 34px; vertical-align: middle;}
+		thead tr {
+		}
+		%bg-f1 {background: #f1f1f1;}
+		th {
+			border-bottom: 1px solid #e6e6e6;
+			position: relative;
+			text-align: center;
+			@extend %bg-f1;
+		}
+		%fz {font-size: 13px;}
+		tbody tr {
+			&:first-child td {padding-top: 10px;}
+			&.lt-1 td {padding-bottom: 10px;}
+			&.last td {
+				@extend %bg-f1;
+				padding: 15px 12px;
+				p {
+					position: relative;
+					padding-left: 8px;
+					@extend %fz;
+					word-break: keep-all;
+					line-height: 20px;
+					color: #4a4a4a;
+					.dot {
+						position: absolute;
+						left: 0;
+					}
+				}
+			}
+		}
+		td {
+			padding: 3px 0;
+			@extend %fz;
+			&.nth-1 {padding-left: 12px; font-weight: 600;}
+			&.nth-2 {padding-right: 12px;}
+			select {
+				@include size(100%, 30px);
+				@extend %slt-custom;
+				@extend %fz;
+				line-height: 28px;
+				background-position: 95% 10px;
+			}
+			.data {
+				@extend %appear;
+				@include size(100%, 30px);
+				@include bor();
+				@extend %fz;
+				padding: 1px 5px 4px;
+				&.num {
+					padding: 0px 5px;
+				}
+			}
+		}
+	}
+	.apl {
+		td .data {
+			width: 90%; margin-right: 2px;
+		}
+	}
+	.fullBtn-a {
+		display: block; width: 100%; text-align: center;
+		background: $orange; color: $white;
+		font-size: 14px; border-radius: 4px;
+		margin-top: 10px; height: 40px; line-height: 42px;
+	}
+	
+}
+/*****홍보이미지*****/
+.promotion-sec {
+	@extend %common-sec;
+	.promo-tab {
+		@extend %common-tab;
+		margin-top: 10px;
+		li {
+			@include size($w100/3, 40px, 41px);
+			&:nth-child(2) {}
+		}
+	}
+	.tab-con {
+		@extend %tab-con;
+		margin-top: 20px;
+	}	
+	.recommend {
+		position: relative;
+		@include size(208px, 350px); margin: 0 auto;
+		background:url('http://img.go.co.kr/proceeds/bg_mileage.jpg') no-repeat 0 0;
+		background-size: 208px;
+		border-bottom: 1px solid #ddd;
+		.code {
+			@include position(absolute, 260px, 10px);
+			width: 188px;
+			height: 79px; /*padding:10px 12px 0;*/ 
+			text-align:center;
+			background:url('http://img.go.co.kr/proceeds/bg_code.jpg') no-repeat 0 0; 
+			background-size: 188px;
+			.inner {
+				> p {
+					margin: 7px 0 5px;
+					font-size: 13px;
+					font-weight: 800;
+					font-style: italic;
+					> span {
+						color: #d82802;
+					}
+				}
+				> input {
+					@extend %appear;
+					@include bor(2px, $orange);
+					@include size(92%, 26px, null, center, 18px);
+					letter-spacing: 1px;
+					padding-top: 2px;
+					text-transform: uppercase;
+					outline: 0;
+				}
+			}
+			.btn-a {
+				@include position(absolute, 56px, 0);
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+	.copy-code {
+		margin: 12px auto 0; overflow: auto;
+		padding: 3px 5px; border:1px solid #e0e0e0; 
+		line-height: 18px; font-size: 13px;
+		word-break:break-all; width: 100%; height: 63px;
+	}
+	.btn-area {
+		margin-top: 12px;
+		.btn-a {
+			@include size(46%, 40px, 40px);
+			text-align: center;
+			display: inline-block;
+			border-radius: 4px;
+			&.pull-left {
+				@include bor(1px, #5f5f5f);
+				background: #5f5f5f;
+				color: #fff;
+			}
+			&.pull-right {
+				@include bor(1px, #d2d2d2);
+				background: #ffffff; /* Old browsers */
+				background: -moz-linear-gradient(top,  #ffffff 0%, #fbfbfb 50%, #f3f3f4 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  #ffffff 0%,#fbfbfb 50%,#f3f3f4 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  #ffffff 0%,#fbfbfb 50%,#f3f3f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f4',GradientType=0 ); /* IE6-9 */
+			}
+		}
+	}
+	.banner-rec {
+		position: relative;
+		.code {
+			position: relative;
+			margin: 0 auto;
+			@include size(300px, 120px);
+			background:url('http://img.go.co.kr/proceeds/banner_mileage.jpg') no-repeat 0 0;
+			background-size: contain;
+			> input {
+				@include position(absolute, 78px, 77px);
+				@include size(196px, 30px, null, center, 22px);
+				border: 0; 
+				background: none;
+				letter-spacing: 1px;
+				outline: 0; 
+				text-transform: uppercase;
+			}
+		}
+	}
+	.div-h2 {
+		position: relative;
+		font-size: 15px;
+		margin: 25px 0 10px;
+		> .pull-right {
+			@include position(relative, -15px);
+			> a {
+				@include size(34px, 34px);
+				display: inline-block;
+				background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat;
+				background-size: 150px;
+				&.i-copy {
+					background-position: -60px 0;
+					margin-right: 5px;
+				}
+				&.i-share {
+					background-position: -100px 0;
+				}
+
+			}
+		}
+	}
+	.txt-box {
+		@include bor();
+		padding: 6px;
+		> p {
+			font-size: 13px;
+			word-break: keep-all;
+			line-height: 20px;
+		}
+	}
+	.q-modal {
+		display: none;
+		position: fixed;
+		z-index: 12;
+		width: 250px;
+		/*height: 170px;*/
+		top: 50%;
+		margin-top: -145px;
+		left: 50%;
+		margin-left: -125px;
+		background: #fff;
+		border-radius: 6px;
+		h2 {
+			width: 100%;
+			height: 50px;
+			margin: 0 auto;
+			font-family: "Nanum Gothic", sans-serif;
+			font-size: 17px;
+			font-weight: 600;
+			text-align: center;
+			border-bottom: 1px solid #dfdfdf;
+			line-height: 3em;
+		}
+		ul {
+			padding: 5px 0 7px;
+			li {
+			position: relative;
+			/*height: 60px;*/
+			line-height: 50px;
+			a {
+				display: block;
+				padding: 0 22px;
+				font-size: 14px;
+				font-weight: 600;
+				img {
+					@include position(relative, -1px);
+					vertical-align: middle;
+					width: 35px;
+					margin-right: 13px;
+				}
+			}
+		}
+		}
+	}
+}

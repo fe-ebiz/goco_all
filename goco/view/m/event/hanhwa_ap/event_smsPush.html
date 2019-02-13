@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
+
+	<meta http-equiv="Cache-Control" content="No-Cache" />
+	<meta http-equiv="Pragma" content="No-Cache" />
+	<meta http-equiv="expire" content="-1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="format-detection" content="telephone=no, address=no, email=no" />
+	
+	<!-- 소셜 -->
+	<meta property="og:title" content="한화 아쿠아플라넷">  
+	<meta property="og:image" content="http://img.go.co.kr/mobile/event/hanhwa_ap/270x270.jpg">  
+	<meta property="og:description" content="여수 일산 63빌딩 아쿠아플라넷 1000매 한정수량! 초특가 판매!"/>  
+	<meta name="twitter:card" content="summary">  
+	<meta name="twitter:title" content="한화 아쿠아플라넷">  
+	<meta name="twitter:image" content="http://img.go.co.kr/mobile/event/hanhwa_ap/270x270.jpg">  
+	<meta name="twitter:description" content="여수 일산 63빌딩 아쿠아플라넷 1000매 한정수량! 초특가 판매!"/>
+	
+	<!-- 폰트어썸 CDN -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+	
+	<!--폰트추가-->
+<!--	<link rel="stylesheet" href="http://go.co.kr/fonts/nanumsquare/nanumsquare.css">-->
+	
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/mobile_layout_event-v1.1.css">
+<!--	<link rel="stylesheet" type="text/css" href="../../../../src/css/mobile_layout_event-v1.1.css">-->
+<!--	<link rel="stylesheet" type="text/css" href="../../../../static/css/mobile_layout_event-v1.1.css">-->
+	
+	<!-- jquery라이브러리 -->
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="http://static.go.co.kr/js/jquery_ui.js"></script>
+	
+	<!-- 181119 js 추가 -->
+	<script type="text/javascript" src="http://static.go.co.kr/js/lazyload.min.js"></script>
+</head>
+
+<body>
+	<h1 class="hidden">한화아쿠아플라넷 초특가 판매</h1>
+
+	<div class="evt-area">
+		<div class="evt-outer hanhwa-ap">
+			<div class="evt-main">
+				<div class="evt-visual">
+					<img src="http://img.go.co.kr/mobile/event/hanhwa_ap/aqua_top.jpg" alt="한화아쿠아플래닛" class="max-wd">
+					<h2 class="hidden">한화아쿠아플라넷</h2>
+					<p class="hidden">
+						소셜(티몬/쿠팡등) 보다 더 저렴하다!!
+						<br>
+						1,000매 한정수량!
+						초특가 판매!
+						- 여수/일산/63아쿠아플라넷 -
+						<br>
+						한정수량판매완료 시 조기 마감될 수 있습니다.
+					</p>
+				</div>
+
+				<div class="evt-contents">
+					<div class="evt-menu-box">
+                        <ul class="evt-menu-list clr">
+                            <li class="on"><a href="#evt-tab01"><span class="f-bd fz-1">아쿠아플라넷</span><br>여수 안내</a></li>
+                            <li><a href="#evt-tab02"><span class="f-bd fz-1">아쿠아플라넷</span><br>일산 안내</a></li>
+                            <li><a href="#evt-tab03"><span class="f-bd fz-1">아쿠아플라넷</span><br>63 안내</a></li>
+                            <li><a href="#evt-tab04"><span class="f-bd fz-1">아쿠아플라넷</span><br>제주 안내</a></li>
+                        </ul>
+                    </div>
+					
+					<div class="cont-tab">
+						<div id="evt-tab01" class="evt-list-box">
+							<img class="max-wd" src="http://img.go.co.kr/mobile/event/hanhwa_ap/aqua_yeosu.jpg" alt="아쿠아플라넷 여수 안내">
+						</div>
+						
+						<div id="evt-tab02" class="evt-list-box" style="display: none;">
+							<img class="max-wd" src="http://img.go.co.kr/mobile/event/hanhwa_ap/aqua_ilsan.jpg" alt="아쿠아플라넷 일산 안내">
+						</div>
+						
+						<div id="evt-tab03" class="evt-list-box" style="display: none;">
+							<img class="max-wd" src="http://img.go.co.kr/mobile/event/hanhwa_ap/aqua_63.jpg" alt="아쿠아플라넷 63 안내">
+						</div>
+						
+						<div id="evt-tab04" class="evt-list-box">
+							<img class="max-wd" src="http://img.go.co.kr/mobile/event/hanhwa_ap/aqua_jeju.jpg" alt="아쿠아플라넷 제주 안내">
+						</div>
+					</div>
+					
+                    <!-- scroll and btn js -->
+                    <script type="text/javascript">
+                        $(function() {
+                            var evtMenu = $('.evt-menu-box');
+                            $(window).scroll(function(){
+                                $(window).resize(function(){
+                                    var scroll = $(document).scrollTop();
+                                    var evtConT = $('.evt-contents').offset().top;
+                                    //console.log(scroll, menuT)
+
+                                    if( scroll <= evtConT ){
+                                        evtMenu.stop().css({'position' : 'absolute'});
+                                    }else if( scroll > evtConT ){
+                                        evtMenu.stop().css({'position' : 'fixed'});
+                                    }
+                                }).resize();
+                            });
+							evtMenu.find('a').on('click', function(e){
+								var menuId = $($(this).attr("href"));
+								$(this).parent('li').addClass('on').siblings('li').removeClass('on');
+
+								$('.evt-list-box').css({'display' : 'none'});
+								menuId.css({'display' : 'block'})
+							});
+                        });
+                    </script>
+				</div>
+			</div>
+						
+			<div class="evt-bottom">
+				<div class="fixed-btn type-btn3 cf">
+					<a href="http://m.go.co.kr/home/view/?p_no=Gk10E2sT"><span class="f-bd fz-1">아쿠아플라넷</span><br>여수 상품 ▶</a>
+					<a href="http://m.go.co.kr/home/view/?p_no=Gk10E2sQ"><span class="f-bd fz-1">아쿠아플라넷</span><br>일산 상품 ▶</a>
+					<a href="http://m.go.co.kr/home/view/?p_no=Gk1zGmYe"><span class="f-bd fz-1">아쿠아플라넷</span><br>63 상품 ▶</a>
+					<a href=""><span class="f-bd fz-1">아쿠아플라넷</span><br>제주 상품 ▶</a>
+				</div>
+			</div>
+		</div>
+		<!-- //.evt-outer.hanhwa-ap -->
+	</div>
+	<!-- // -->
+</body>
+
+</html>
