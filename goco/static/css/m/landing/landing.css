@@ -52,3 +52,49 @@
 .landing-contents .sec-lan-kakao .btn-kakao {display: block; width: 250px; height: 35px; margin-top: 24px; text-align: center; border-radius: 3px; background: #fbe901;}
 .landing-contents .sec-lan-kakao .btn-kakao span {position: relative; display: inline-block; padding-left: 19px; font-size: 15px; letter-spacing: -1px; line-height: 35px; color: #371f10;}
 .landing-contents .sec-lan-kakao .btn-kakao span:before {content: ''; display: block; position: absolute; width: 16px; height: 100%; top: 0; left: 0; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/ico_kakao.gif) no-repeat center center; background-size: 100% auto;}
+
+/* 190214 랜딩페이지 */
+.landing-contents-2 {position: relative; text-align: center;}
+.landing-contents-2 * {box-sizing: border-box; letter-spacing: -0.7px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
+.landing-contents-2 div[class*='sec-lan'] {position: relative; box-sizing: border-box; width: 100%;}
+.landing-contents-2 .lan-wrap {position: relative; box-sizing: border-box; width: 100%; max-width: 640px; margin: 0 auto; padding: 0 6%;}
+.landing-contents-2 figure {position: relative; /*overflow: hidden;*/ width: 100%; margin: 0; padding: 0;}
+.landing-contents-2 img {width: 100%; margin: 0; padding: 0;}
+/* 메인 */
+.landing-contents-2 .sec-lan-main {background: #0f326c;}
+.landing-contents-2 .sec-lan-main .lan-wrap {padding: 0;}
+.landing-contents-2 .sec-lan-main img {position: relative; }
+/* 숙소 */
+.landing-contents-2 .sec-lan-stay {background: #0067da;}
+.landing-contents-2 .sec-lan-stay .lan-wrap:before {z-index: 2; content: ''; display: inline-block; position: absolute; width: 0px; height: 0px; left: 50%; bottom: -31px; margin-left: -16px; border: 16px solid #0067da; border-left-color: transparent; border-right-color: transparent; border-bottom-color: transparent;}
+.landing-contents-2 .sec-lan-stay .stay-box {position: relative; box-sizing: border-box; width: 100%; padding: 6% 0;} 
+.landing-contents-2 .sec-lan-stay .stay-box .stay-img {display: table-cell; width: 35%; vertical-align: middle;}
+.landing-contents-2 .sec-lan-stay .stay-box .stay-img img {min-height: 95px; border: 2px solid #fff; border-radius: 12px;}
+.landing-contents-2 .sec-lan-stay .stay-box .stay-txt {display: table-cell; width: 65%; padding-left: 5%; vertical-align: middle;}
+.landing-contents-2 .sec-lan-stay .stay-box .stay-txt p {font-size: 21px; line-height: 33px; letter-spacing: -1px; color: #fff; font-family: "Nanum Gothic", sans-serif;}
+.landing-contents-2 .sec-lan-stay .stay-box .stay-txt .p-1 {}
+.landing-contents-2 .sec-lan-stay .stay-box .stay-txt .p-2 {border-radius: 6px; font-weight: 800; color: #fffc00; background: #0098f4;}
+.landing-contents-2 .sec-lan-stay .stay-box .stay-txt .p-2 span {}
+.landing-contents-2 .sec-lan-stay .stay-box .stay-txt .p-3 {font-weight: 800;}
+/* 리스트 */
+.landing-contents-2 .sec-lan-list {padding: 9% 0 6%} 
+.landing-contents-2 .lan-list {}
+.landing-contents-2 .lan-list li {margin-bottom: 6.8%;}
+.landing-contents-2 .lan-list li a {position: relative; overflow: hidden; display: block; box-sizing: border-box; border: 1px solid #c9c9c9; border-radius: 18px; -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15); box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);}
+.landing-contents-2 .lan-list li a .list-type {z-index: 1; position: absolute; min-width: 68px; top: 5%; left: 5%; font-size: 14px; font-weight: 800; line-height: 26px; text-align: center; color: #3d3d3d; border: 1px solid #0f0f00; background: #fffc01;}
+.landing-contents-2 .lan-list li a .list-img {}
+.landing-contents-2 .lan-list li a .list-img img {}
+.landing-contents-2 .lan-list li a .list-txt-box {padding: 5.2% 5% 5%; line-height: 1; text-align: left;}
+.landing-contents-2 .lan-list li a .list-txt-box p {}
+.landing-contents-2 .lan-list li a .list-txt-box .list-name {overflow:hidden; font-size: 16px; font-weight: 500; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap; color: #333;}
+.landing-contents-2 .lan-list li a .list-txt-box .list-adr {padding-top: 9px; font-size: 14px; font-weight: 100; color: #888;}
+.landing-contents-2 .lan-list li a .list-txt-box .list-price {font-size: 21px; letter-spacing: -0.5px; text-align: right;}
+/*.landing-contents-2 .lan-list li a .list-txt-box .list-price span {}*/
+.landing-contents-2 .lan-list li a .list-txt-box .list-price em {font-weight: 600; color: #333;}
+
+@media (max-device-width: 320px) {
+    /* 190214 랜딩페이지 */
+    .landing-contents-2 .lan-wrap {padding: 0 5%;}
+}
+
+
