@@ -445,6 +445,8 @@ a:active { text-decoration: none; color: #ff6600; color: #ff6600; color: #ff6600
 
 #info_img { float: left; width: 100%; position: relative; border-top: 1px solid #d2d2d2; }
 
+#info_img .swiper-button-next {text-align: right;}
+
 #info_img .btn_wish { position: absolute; top: 15px; left: 15px; z-index: 100; }
 
 #info_img .btn_slide { width: 100%; position: absolute; bottom: 0; z-index: 99; }
@@ -462,6 +464,8 @@ a:active { text-decoration: none; color: #ff6600; color: #ff6600; color: #ff6600
 #info_img .shop_photo img { border: 20px solid #fff; box-sizing: border-box; height: 220px; }
 
 #product_info { float: left; width: 100%; font-size: 14px; border-top: 1px solid #d2d2d2; }
+#product_info * {line-height: 1.5; vertical-align: middle;}
+#product_info.type-2 {}
 
 #product_info #pruduct_title { padding: 10px; }
 
@@ -473,15 +477,16 @@ a:active { text-decoration: none; color: #ff6600; color: #ff6600; color: #ff6600
 
 #product_info th { text-align: left; color: #3f3f3f; padding-left: 10px; border-bottom: 1px solid #d2d2d2; }
 
-#product_info td { text-align: left; border-bottom: 1px solid #d2d2d2; color: #555; }
+#product_info td { text-align: left; border-bottom: 1px solid #d2d2d2; word-break: keep-all; color: #555; }
+#product_info.type-2 .bd-b0 td {border-bottom: 0; }
 
 #product_info td.link a { color: #ff6600; }
 
 #product_info td > #reserve_table > td { border: 0; }
-
+ 
 #product_info .info_title { background-color: #606060; text-align: left; color: #ffffff; border-bottom: 1px solid #bebebe; line-height: 56px; font-weight: bold; padding-left: 5%; }
 
-#product_info .info_title img { margin-top: 25px; }
+#product_info .info_title img { /*margin-top: 25px;*/ }
 
 #product_info .info_text { font-size: 14px; text-align: justify; border: 0; }
 
@@ -586,6 +591,7 @@ a:active { text-decoration: none; color: #ff6600; color: #ff6600; color: #ff6600
 #product_info .roomINFO th { padding: 5px 0; text-align: center; border: 1px solid #d2d2d2; letter-spacing: -0.3px; }
 
 #product_info .roomINFO td { padding: 5px 10px 5px 0; text-align: right; border: 1px solid #d2d2d2; letter-spacing: -0.3px; }
+#product_info.type-2 .roomINFO td {padding: 5px 0 5px 0; text-align: center; word-break: keep-all;}
 
 #product_info .roomINFO .tit { padding: 5px 0; text-align: center; font-weight: bold; background-color: #f15d28; color: #ffffff; }
 
@@ -6267,3 +6273,34 @@ a:active { text-decoration: none; color: #ff6600; color: #ff6600; color: #ff6600
 .adm-info-box .adm-mt .adm-l { color: #bfbfbf; }
 
 /*# sourceMappingURL=mobile_layout_goco.css.map */
+
+/* 181217 예상 요금 추가 */
+/* 예상 체류기간 */
+.rsv-stay-area .rsv-stay-box {padding: 6px 7px 7px 7px;}
+.rsv-stay-area .rsv-stay-box + .rsv-stay-box {border-top:1px solid #dddddd;}
+.rsv-stay-area .stay-chk {float: left; width: 32%; padding-top: 3px; text-align: left;}
+.rsv-stay-area .stay-chk input[type="radio"] {-webkit-appearance: radio; height: 13px; }
+.rsv-stay-area .stay-chk label {cursor: pointer; padding-left: 3px;}
+.rsv-stay-area .stay-chk label span {font-size: 12px; vertical-align: middle; letter-spacing: -1px; color: #292929;}
+.rsv-stay-area .rsb-stay-list {float: left; width: 68%; text-align: left;}
+.rsv-stay-area .rsb-stay-list li {font-size: 0; padding-top: 3px; padding-bottom: 3px;}
+.rsv-stay-area .rsb-stay-list li > * {display: inline-block; vertical-align: middle;}
+.rsv-stay-area .rsb-stay-list li .lbl {font-size: 12px; /*width: 55px;*/ width: 26%; color: #292929; letter-spacing: -1px; font-weight: 400; padding: 0; text-align: left;}
+.rsv-stay-area .rsb-stay-list li select {-webkit-appearance: menulist; padding: 3px 3px 4px; height: 22px; font-size: 11px; border-radius: 0; border:1px solid #bcbcbc;}
+.rsv-stay-area .rsb-stay-list li select option {font-size: 11px;}
+/*.rsv-stay-area .rsb-stay-list li select.type-1 {width: 80px;}*/
+.rsv-stay-area .rsb-stay-list li select.type-1 {/*width: 50px;*/ width: 41%; padding: 0 6px;}
+.rsv-stay-area .rsb-stay-list li select.type-2 {/*width: 50px;*/ width: 23%;}
+.rsv-stay-area .rsb-stay-list li input {margin-right: 5px;}
+.rsv-stay-area .rsb-stay-list li input.type-1 {/*width: 80px;*/ width: 41%;}
+.rsv-stay-area .rsb-stay-list li input {padding: 3px 6px 4px; height: 22px; font-size: 11px; border-radius: 0; border:1px solid #bcbcbc; box-sizing: border-box;}
+.rsv-stay-area .rsb-stay-list li .pl-15 {padding-left: 7px;}
+/* 예상 요금 */
+.rsv-stay-area .stay-count-box {padding: 10px 22px 11px; background: #e8e8e8;}
+.rsv-stay-area .stay-count-box .single-prc {box-sizing: border-box; width: 100%; /*border: 1px solid #d7d7d7;*/}
+.rsv-stay-area .stay-count-box .single-prc .p-row {padding-top: 7px; font-size: 13px; letter-spacing: -0.5px;}
+.rsv-stay-area .stay-count-box .single-prc .p-row:first-child {padding-top: 0;}
+.rsv-stay-area .stay-count-box .single-prc .p-row span {width: 50%; text-align: left;}
+.rsv-stay-area .stay-count-box .single-prc .p-row .pull-right {text-align: right;}
+.rsv-stay-area .stay-count-box .single-prc .mt-bar {display: block; width: 100%; height: 2px; margin: 7px auto 2px; background: #c3c3c3;}
+.rsv-stay-area .stay-count-box .c-red {color: #ff4445 !important; font-weight: 600;}

@@ -705,8 +705,15 @@ text-align:left; text-indent:15px; border-bottom:1px solid #e4e4e4; font-size:15
 	position: absolute; bottom: 0; left: 0; font-size: 11px; display: block;
 	width: 100%; text-align: center; line-height: 1.3; color: #969696;
 } */
-/* 고코모바일 상품이름 텍스트정렬170904 혜준 */
+/* 고코모바일 상품이름 텍스트정렬 170904 혜준 */
 .radio_box label {padding-left: 30px; text-indent: 0;}
+
+/* 고코모바일 상품이름 텍스트정렬 181205 다솜 */
+.radio_box .font_black20 {float: none;}
+.radio_box .font_black20 span {display: inline-block;}
+
+/*#notice_w .notice_in p {word-break: keep-all;}*/
+
 /* 고코 모바일 결제 배경 */
 #pay_reserInfo_wrpa {background: #fff;}
 #pay_reserInfo_wrpa input {-webkit-appearance:none;}
@@ -2188,75 +2195,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 #popup-filter .a-i-x {top:11px}
 #popup-filter .a-i-x:before, #popup-filter .a-i-x:after {top: 0; right: 9px;}
 
-
-
-@media (max-device-width: 320px){ 
-	/* 로고 변경 및 간격조정 */ 
-	#head.head-type02 #logo2 {padding:8px 0 5px;} 
-	#head.head-type02 #logo2 a {min-height:40px; background-size:107px auto;} 
-	
-	/* 메뉴 */ 
-	.main-menu-box .gnb-box li a {height:43px; line-height:43px;} 
-	
-	/* 검색영역 */ 
-	#search-area {padding-top:110px;} 
-	#search-area .main-input-area {padding-top:15px;} 
-	#search-area .search-box {height:46px; padding:0 10px 0 7px;} 
-	#search-area .similar-sech-box {margin-top:7px;} 
-	#search-area .similar-sech-box p span {line-height:42px;} 
-	#search-area .fast-room-search .room-sech-tit {padding:7px 0 4px;} 
-	#search-area .fast-list li a { padding:7px 0 10px;} 
-	#search-area .fast-list li:nth-child(-n+3) a {padding:10px 0 7px;} 
-	#search-area .fast-list li a span {padding-top:49px;} 
-	#search-area .fast-list li .list-hotel span, #search-area .fast-list li.on .list-hotel span {background-size:48px auto;}
-	#search-area .fast-list li .list-condo span, #search-area .fast-list li.on .list-condo span {background-size:49px auto;}
-	#search-area .fast-list li .list-motel span, #search-area .fast-list li.on .list-motel span {background-size:49px auto;} 
-	#search-area .fast-list li .list-gest span, #search-area .fast-list li.on .list-gest span {background-size:49px auto;} 
-	#search-area .fast-list li .list-krental span, #search-area .fast-list li.on .list-krental span {background-size:49px auto;} 
-	#search-area .fast-list li .list-leisure span, #search-area .fast-list li.on .list-leisure span {background-size:49px auto;} 
-	#search-area .bnt-wrap {padding:8px 0 10px;} 
-	#search-area .bnt-wrap .btn-search {height:40px;} 
-	#search-area .bnt-wrap .btn-search span {font-size:14px; line-height:40px;} 
-	
-	/* 목록-내주변 디자인 변경 */ 
-	#sub-search-area .top-sub-area {padding:10px 10px 11px;}
-	#sub-search-area .top-sub-area .sub-sech-txt {padding-left:0; font-size:15px;}
-	#sub-search-area .top-sub-area .date-area {height:35px; right:9px; margin-top:-18px;}
-	#sub-search-area .top-sub-area .date-area .input-box {width:132px; margin-right:3px; padding:0 5px;}
-	#sub-search-area .top-sub-area .date-area .input-box .input-date {font-size:13px;}
-	#sub-search-area .top-sub-area .date-area .input-date-sech {width:20px; background-size:20px auto;}
-
-	#sub-search-area .sub-sech-area .sub-sech-box {margin-right:23px;}
-	#sub-search-area .sub-sech-area .sub-sech-list li {height:36px;}
-	#sub-search-area .sub-sech-area .sub-sech-list li a {font-size:13px; line-height:36px;}
-	#sub-search-area .sub-sech-area .deco-arrowr {width:6px; height:6px; margin-top:-5px;}
-	#sub-search-area .reg-list .sub-sech-list li {padding:0 4px 0 5px;}
-	#sub-search-area .rooms-list .sub-sech-list li {padding:0 5px 0 5px;}
-
-	.sub-sech-relt {margin-top:86px;}
-	
-	/* 필터/지도 */ 
-	#float-area {width:110px; margin-left:-67px;}
-	#float-area .float-box {padding:2px 7px 2px 12px;}
-	#float-area .float-box li a {padding:2px 0 4px 20px;}
-	#float-area .float-box li a span {font-size:14px;}
-	#float-area .float-box .ico-fil a {background:url(http://img.go.co.kr/mobile/icon_sub_filter.png) 0 4px no-repeat; background-size:16px auto;}
-	#float-area .float-box .ico-map a {background:url(http://img.go.co.kr/mobile/icon_sub_map.png) 0 9px no-repeat; background-size:16px auto;}
-	
-	/* 필터 */ 
-	#filter-area {padding:3px 10px;}
-	#filter-area .filter-type .filter-tit {padding:4px 0 3px;}
-	#filter-area .filter-type .filter-list li a { padding:6px 0 4px;}
-	#filter-area .rooms-type .filter-list li a {padding:1px 0 2px;}
-	#filter-area .rooms-type .filter-list li:nth-child(-n+4) a {padding:3px 0 2px;} 
-	#filter-area .rooms-type .filter-list li a span {padding-top:34px;}
-	#filter-area .rooms-type .filter-list li a span, #filter-area .rooms-type .filter-list li.on a span {background-size:37px auto;}
-	#filter-area .rooms-type .filter-list li .list-hotel span, #filter-area .rooms-type .filter-list li.on .list-hotel span {background-size:36px auto;}
-
-	#filter-area .btn-wrap {padding:9px 0;}
-	#filter-area .btn-wrap a span {font-size:13px;}
-}
-
 /*지식쇼핑 예약하기 수정 180316 혜준*/
 .ftfm-nt {font-family: "Noto Sans KR", sans-serif !important;}
 #calender_number_w .row-appPrc {text-align: center; margin-bottom: 10px; color: #101010; letter-spacing: -0.5px;}
@@ -2354,3 +2292,99 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 #search_list .dupRegion .list dl dd {line-height: 20px; padding-top: 5px; font-size: 0;}
 #search_list .dupRegion .list dl dd span {font-size: 13px; display: block;}
 
+/* 객실예약페이지 - 패키지 메뉴 추가 181122 다솜 */
+.package-menu-area {position: relative; box-sizing: border-box; width: 100%; margin: 0 auto; text-align: center; background: #f8f8f8;}
+.package-menu-area:after {content: ''; position: absolute; display: block; width: 100%; height: 1px; left: 0; bottom: 1px; background: #b6b6b6;}
+.package-menu-area .package-menu-list {position: relative; box-sizing: border-box; width: 100%; margin: 0 auto; border-bottom: 1px solid #c7c7c7;}
+.package-menu-area .package-menu-list li {float: left; position: relative; display: block; box-sizing: border-box; width: 50%; min-height: 45px; margin-top: -1px; border-top: 1px solid #9e9e9e; border-bottom: 1px solid #9e9e9e; background: #d7d7d7;}
+.package-menu-area .package-menu-list li.nth-1, .package-menu-area .package-menu-list li.nth-2 {border-top: 0;}
+.package-menu-area .package-menu-list li:nth-child(2n-1) {border-right: 1px solid #9e9e9e;}
+.package-menu-area .package-menu-list li:nth-child(2n) a {border-right: 1px solid #b6b6b6;}
+.package-menu-area .package-menu-list li:nth-child(2n-1) a {border-left: 1px solid #b6b6b6;}
+.package-menu-area .package-menu-list li a {position: relative; overflow: hidden; box-sizing: border-box; display: block; height: 57px; margin-top: 1px; padding: 0 10px 0;}
+.package-menu-area .package-menu-list li a span {position: relative; box-sizing: border-box; display: inline-block; font-size: 14px; line-height: 57px; letter-spacing: -1.3px; word-break: keep-all; color: #010101;}
+.package-menu-area .package-menu-list li.on {border-bottom-color: #434343; background: #434343;}
+.package-menu-area .package-menu-list li.on:nth-child(2n) a {border-right-color: #434343;}
+.package-menu-area .package-menu-list li.on:nth-child(2n-1) a {border-left-color: #434343;}
+.package-menu-area .package-menu-list li.on a {padding: 0 5px 0 2px;}
+.package-menu-area .package-menu-list li.on a span {padding-right: 17px; font-weight: bold; color: #ffd800;}
+.package-menu-area .package-menu-list li.on a span:before {content: '▼'; display: block; position: absolute; top: 0; right: 0px; margin-top: -1px; font-size: 13px;}
+.package-menu-area .package-menu-list li.on a span.on:before {right: 10px;}
+
+
+
+
+@media (max-device-width: 320px){ 
+	/* 로고 변경 및 간격조정 */ 
+	#head.head-type02 #logo2 {padding:8px 0 5px;} 
+	#head.head-type02 #logo2 a {min-height:40px; background-size:107px auto;} 
+	
+	/* 메뉴 */ 
+	.main-menu-box .gnb-box li a {height:43px; line-height:43px;} 
+	
+	/* 검색영역 */ 
+	#search-area {padding-top:110px;} 
+	#search-area .main-input-area {padding-top:15px;} 
+	#search-area .search-box {height:46px; padding:0 10px 0 7px;} 
+	#search-area .similar-sech-box {margin-top:7px;} 
+	#search-area .similar-sech-box p span {line-height:42px;} 
+	#search-area .fast-room-search .room-sech-tit {padding:7px 0 4px;} 
+	#search-area .fast-list li a { padding:7px 0 10px;} 
+	#search-area .fast-list li:nth-child(-n+3) a {padding:10px 0 7px;} 
+	#search-area .fast-list li a span {padding-top:49px;} 
+	#search-area .fast-list li .list-hotel span, #search-area .fast-list li.on .list-hotel span {background-size:48px auto;}
+	#search-area .fast-list li .list-condo span, #search-area .fast-list li.on .list-condo span {background-size:49px auto;}
+	#search-area .fast-list li .list-motel span, #search-area .fast-list li.on .list-motel span {background-size:49px auto;} 
+	#search-area .fast-list li .list-gest span, #search-area .fast-list li.on .list-gest span {background-size:49px auto;} 
+	#search-area .fast-list li .list-krental span, #search-area .fast-list li.on .list-krental span {background-size:49px auto;} 
+	#search-area .fast-list li .list-leisure span, #search-area .fast-list li.on .list-leisure span {background-size:49px auto;} 
+	#search-area .bnt-wrap {padding:8px 0 10px;} 
+	#search-area .bnt-wrap .btn-search {height:40px;} 
+	#search-area .bnt-wrap .btn-search span {font-size:14px; line-height:40px;} 
+	
+	/* 목록-내주변 디자인 변경 */ 
+	#sub-search-area .top-sub-area {padding:10px 10px 11px;}
+	#sub-search-area .top-sub-area .sub-sech-txt {padding-left:0; font-size:15px;}
+	#sub-search-area .top-sub-area .date-area {height:35px; right:9px; margin-top:-18px;}
+	#sub-search-area .top-sub-area .date-area .input-box {width:132px; margin-right:3px; padding:0 5px;}
+	#sub-search-area .top-sub-area .date-area .input-box .input-date {font-size:13px;}
+	#sub-search-area .top-sub-area .date-area .input-date-sech {width:20px; background-size:20px auto;}
+
+	#sub-search-area .sub-sech-area .sub-sech-box {margin-right:23px;}
+	#sub-search-area .sub-sech-area .sub-sech-list li {height:36px;}
+	#sub-search-area .sub-sech-area .sub-sech-list li a {font-size:13px; line-height:36px;}
+	#sub-search-area .sub-sech-area .deco-arrowr {width:6px; height:6px; margin-top:-5px;}
+	#sub-search-area .reg-list .sub-sech-list li {padding:0 4px 0 5px;}
+	#sub-search-area .rooms-list .sub-sech-list li {padding:0 5px 0 5px;}
+
+	.sub-sech-relt {margin-top:86px;}
+	
+	/* 필터/지도 */ 
+	#float-area {width:110px; margin-left:-67px;}
+	#float-area .float-box {padding:2px 7px 2px 12px;}
+	#float-area .float-box li a {padding:2px 0 4px 20px;}
+	#float-area .float-box li a span {font-size:14px;}
+	#float-area .float-box .ico-fil a {background:url(http://img.go.co.kr/mobile/icon_sub_filter.png) 0 4px no-repeat; background-size:16px auto;}
+	#float-area .float-box .ico-map a {background:url(http://img.go.co.kr/mobile/icon_sub_map.png) 0 9px no-repeat; background-size:16px auto;}
+	
+	/* 필터 */ 
+	#filter-area {padding:3px 10px;}
+	#filter-area .filter-type .filter-tit {padding:4px 0 3px;}
+	#filter-area .filter-type .filter-list li a { padding:6px 0 4px;}
+	#filter-area .rooms-type .filter-list li a {padding:1px 0 2px;}
+	#filter-area .rooms-type .filter-list li:nth-child(-n+4) a {padding:3px 0 2px;} 
+	#filter-area .rooms-type .filter-list li a span {padding-top:34px;}
+	#filter-area .rooms-type .filter-list li a span, #filter-area .rooms-type .filter-list li.on a span {background-size:37px auto;}
+	#filter-area .rooms-type .filter-list li .list-hotel span, #filter-area .rooms-type .filter-list li.on .list-hotel span {background-size:36px auto;}
+
+	#filter-area .btn-wrap {padding:9px 0;}
+	#filter-area .btn-wrap a span {font-size:13px;}
+    
+    /* 객실예약페이지 - 패키지 메뉴 추가 181122 다솜 */
+    .package-menu-area .package-menu-list li a {padding: 0 8px;}
+    .package-menu-area .package-menu-list li a span {font-size: 13px; letter-spacing: -1.5px;}
+    .package-menu-area .package-menu-list li.on a {padding: 0 3px 0 1px;}
+    .package-menu-area .package-menu-list li.on a span {padding-right: 13px;}
+    .package-menu-area .package-menu-list li.on a span:before {font-size: 12px;}
+    .package-menu-area .package-menu-list li.on a span.on:before {right: 8px;}
+}

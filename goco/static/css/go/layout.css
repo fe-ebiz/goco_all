@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://go.co.kr/fonts/notosanskr/notosanskr.css);
 @import url(http://go.co.kr/fonts/nanumsquare/nanumsquare.css);
 
@@ -440,6 +440,19 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 .table-wrapper .table-box .l-table  th.th-d {border: 0;}
 
 .table-wrapper .table-box td {font-size: 11px;text-align: right;}
+.pull-left {float: left !important;}
+.table-wrapper .table-box .ic-i {position: relative; margin-left: 4px;}
+.table-wrapper .table-box .ic-i .btn-i {position: relative; display: inline-block; background: #C44334; border: 1px solid #ad2e1f; width: 18px; height: 18px; box-sizing: border-box; text-align: center; font-size: 14px; line-height: 1.2; font-weight: 700; border-radius: 50%; color: #fff; font-family: "Noto Sans KR",sans-serif; cursor: pointer; word-break: keep-all;}
+/*
+.table-wrapper .table-box .ic-i .i-box {position: absolute; top: 26px; left: 0; width: 200px; background: #fff; color: #222; font-family: "Nanum Gothic", sans-serif; border-radius: 4px; font-size: 13px; padding: 5px; text-align: left; line-height: 1.3; border: 1px solid #ad2e1f; z-index: 1;}
+
+.table-wrapper .table-box .ic-i .i-box:before {content: ""; display: block; position: absolute; top: -16px; left: 0; border: 1px solid transparent; border-width: 8px; border-bottom-color: #ad2e1f;}
+.table-wrapper .table-box .ic-i .i-box:after {content: ""; display: block; position: absolute; top: -15px; left: 0; border: 1px solid transparent; border-width: 8px; border-bottom-color: #fff;}
+*/
+.table-wrapper .table-box .ic-i .i-box {display: none; position: absolute; bottom: 28px; left: -6px; width: 200px; background: #fff; color: #222; font-family: "Nanum Gothic", sans-serif; border-radius: 4px; font-size: 13px; padding: 5px; text-align: left; line-height: 1.3; border: 1px solid #ad2e1f; z-index: 1;}
+.table-wrapper .table-box .ic-i .i-box:before {content: ""; display: block; position: absolute; bottom: -16px; left: 6px; border: 1px solid transparent; border-width: 8px; border-top-color: #ad2e1f;}
+.table-wrapper .table-box .ic-i .i-box:after {content: ""; display: block; position: absolute; bottom: -15px; left: 6px; border: 1px solid transparent; border-width: 8px; border-top-color: #fff;}
+
 .table-wrapper .table-box th .btn-a {display: inline-block; width: 60px; padding: 3px 0; text-align: center; border: 1px solid #ddd; border-radius: 4px; line-height: 1.6em; float: right;
   font-size: 12px; color: #fff; margin-left: 5px; margin-right: 5px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d8286+0,5b5f68+100 */
@@ -463,6 +476,7 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 .table-wrapper .left-box .l-table th, .table-wrapper .left-box .l-table td {padding-right: 5px;}
 .table-wrapper .left-box .l-table tr:first-child th {border: 1px solid #ddd; text-align: center;}
 .table-wrapper .left-box .l-table td {font-size: 11px;} 
+.table-wrapper .left-box .l-table tr:last-child td {height: 60px;}
 
 .table-wrapper .table-box .non-table {background: #fff; height: 281px;}
 

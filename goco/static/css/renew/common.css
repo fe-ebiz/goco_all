@@ -124,7 +124,7 @@ table.sep td {
 .thColor1-2 {color: #ff6700;}
 
 /* 공통 color */
-.c-red, .colr-red {color: #eb1212;}
+.c-red, .colr-red, a.c-red {color: #eb1212;}
 .colr-org {color: #fd5426;}
 
 /* 공통 css */
@@ -134,7 +134,7 @@ table.sep td {
 .mgl, .mg- {display: inline-block; vertical-align: middle; position: relative;}
 .ftfm-nt, .ftfm-nt * {font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;}
 .ftfm-mg, .ftfm-mg * {font-family: "Malgun Gothic", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif; letter-spacing: -1px;}
-.f-bd {font-weight: 700;}
+.f-bd, a.f-bd {font-weight: 700;}
 .f-bdr {font-weight: 800;}
 .pull-left {float: left;}
 .pull-right {float: right;}
@@ -197,7 +197,7 @@ span.i-ctgr-off {background: #555a78;}
 /*.rn-gwrap a:focus {font-weight: 400;} */
 
 /* 전체 wrap */
-.rn-gwrap {position: relative; width: 100%; min-width: 1360px; /*width: 1680px;*/}
+.rn-gwrap {position: relative; width: 100%; min-width: 1550px; /*min-width: 1260px;*/ /*width: 1680px;*/ overflow: hidden;}
 /* 공통 콘텐츠 태그 클래스 */
 .rn-contents {position: relative;}
 .rn-container, .rn-containerF {position: relative; margin: 0 auto;}
@@ -266,7 +266,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-header .d-box .schBox {position: relative; margin-left: 36px; display: inline-block;}
 .rnL-header .d-box .schBox .schBor, .rnL-header .d-box .schBox .schBtn {position: relative; top: 0px; height: 47px; margin-left: -4px;}
 .rnL-header .d-box .schBox .schBor {display: inline-block; border: 2px solid #fa6b0a; width: 350px;}
-.rnL-header .d-box .schBox .schBor input[type=text] {position: relative; display: block; top: 11px; width: 93%; border: none; background: 0; font-size: 18px; outline: none; letter-spacing: 0; margin: 0 auto; color: #555;}
+.rnL-header .d-box .schBox .schBor input[type=text] {position: relative; display: block; top: 11px; width: 93%; border: none; background: 0; font-size: 18px; outline: none; letter-spacing: 0; margin: 0 auto; color: #555; line-height: 1;}
 
 .rnL-header .d-box .schBox .schBtn {display: inline-block; border: 0; width: 47px; background: #fa6b0a;}
 .rnL-header .d-box .schBox .schBtn .i-mag {cursor: pointer;}
@@ -308,7 +308,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rn-hdTop .flr-box .rnL-nv > li > a.lgn {border: 1px solid #595959; padding: 2px 4px;} */
 
 /* 푸터영역 */
-#Footer {background-color:#323232; padding-bottom:100px; position: relative;}
+#Footer {background-color:#323232; padding-bottom:50px; position: relative;}
 .f-area {position: relative; width:1190px; margin:0 auto;}
 
 .f-area .f-top {position: relative; padding:20px 0;}
@@ -324,7 +324,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .f-area .f-top .family-site .site li {padding:3px 0;}
 .f-area .f-top .family-site .site li a {display:block; padding-left:10px; color:#a3a3a3; font-size: 14px;}
 .f-area .f-top .family-site .site li a:hover {font-weight:bold;}
-.f-area .f-bottom {overflow:hidden; position:relative; padding-top:35px; border-top:1px solid #505050;}
+.f-area .f-bottom {overflow:hidden; position:relative; padding-top:35px; padding-bottom: 50px; border-top:1px solid #505050;}
 .f-area .f-bottom .f_logo {float:left;}
 
 .f-area .f-bottom .address {float:left; margin-left:40px; margin-top: -8px; color: #a9a9a9;}

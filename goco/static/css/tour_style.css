@@ -1,0 +1,601 @@
+body {
+	scrollbar-face-color:#ffffff;
+	scrollbar-highlight-color:#aaaaaa;
+	scrollbar-shadow-color:#aaaaaa;
+	scrollbar-3dlight-color:#ffffff;
+	scrollbar-arrow-color:#aaaaaa;
+	scrollbar-track-color:#ffffff;
+	scrollbar-darkshadow-color:#ffffff;
+	background-color:#ffffff;
+	margin:0;
+}
+
+body, td, input, select, table, textarea, div, p, b {
+	font-family:돋움,굴림,verdana,arial;
+	font-size:12px;
+	color:#6c6c6c;
+	text-decoration:none; /* none l underline l overline l line-through */
+	line-height:16px;
+	letter-spacing:0; /* 자간(1, 0, -1 ..) */
+	word-break:break-all; /* 줄바꿈 break-all , nowrap  */
+}
+
+img {
+	border:none
+}
+
+A:link    {color:#6c6c6c; text-decoration:none;} /* 기본 */
+A:visited {color:#6c6c6c; text-decoration:none;}
+A:active  {color:#6c6c6c; text-decoration:none;}
+A:hover   {color:#f66901; text-decoration:none;}
+
+
+A.notice:link    {color:#d0c9c4; text-decoration:none;}
+A.notice:visited {color:#d0c9c4; text-decoration:none;}
+A.notice:active  {color:#d0c9c4; text-decoration:none;}
+A.notice:hover   {color:#f66901; text-decoration:none;}
+
+A.a_link:link    {color:blue; text-decoration:underline;}
+A.a_link:visited {color:blue; text-decoration:underline;}
+A.a_link:active  {color:blue; text-decoration:underline;}
+A.a_link:hover   {color:#f66901; text-decoration:underline;}
+
+A.b_link:link    {color:#989FE0; text-decoration:underline;}
+A.b_link:visited {color:#989FE0; text-decoration:underline;}
+A.b_link:active  {color:#989FE0; text-decoration:underline;}
+A.b_link:hover   {color:#f66901; text-decoration:underline;}
+
+
+
+.small_txt {
+font-family:돋움,굴림,verdana,arial;
+font-size:11px;
+line-height:13px;
+}
+
+
+/* 게시판 */
+.b_input
+{
+	background-color:#f9f9f9;
+	border:1px solid #d5d5d5;
+}
+
+.b_input_blog3
+{
+	background-color:#E2BAC5;
+	border:1px solid #F5E7EB;
+}
+
+.b_search
+{
+ background-color:#f9f9f9;
+ height:20;
+}
+
+.b_textarea
+{
+	background-color:#f9f9f9;
+	border:1px solid #d5d5d5;
+  scrollbar-face-color:#f0f0f0;
+  scrollbar-shadow-color:#9C9C9C;
+  scrollbar-highlight-color:#ffffff;
+  scrollbar-3dlight-color:#9C9C9C;
+  scrollbar-darkshadow-color:#ffffff;
+  scrollbar-base-color:#ffffff;
+  scrollbar-arrow-color:#DCDCDC
+}
+
+.b_input_white
+{
+  background-color:#ffffff;
+	border:1px solid #d5d5d5;
+}
+
+.c_input_white
+{
+  background-color:#ffffff;
+	border:0px solid #d5d5d5;
+}
+
+.b_textarea_white
+{
+  background-color:#ffffff;
+	border:1px solid #d5d5d5;
+  scrollbar-face-color:#f0f0f0;
+  scrollbar-shadow-color:#9C9C9C;
+  scrollbar-highlight-color:#ffffff;
+  scrollbar-3dlight-color:#9C9C9C;
+  scrollbar-darkshadow-color:#ffffff;
+  scrollbar-base-color:#ffffff;
+  scrollbar-arrow-color:#DCDCDC
+}
+
+/* 게시판 끝 */
+
+/* 메인 */
+.main {
+font-family:돋움;
+font-size:12px;
+color:#6c441e; 
+line-height:35px;
+}
+
+/*  */
+.small_gray {
+font-family:돋움;
+font-size:11px;
+color:#898989; 
+
+}
+
+.small_none {
+font-family:돋움;
+font-size:11px;
+color:#000000; 
+
+}
+
+/* 지역탭1 */
+.small_brown {
+font-family:돋움;
+font-size:11px;
+color:#928b80; 
+font-weight: bold;
+
+}
+/* 지역탭1 */
+.small_red {
+font-family:돋움;
+font-size:11px;
+color:#560c2b; 
+font-weight: bold;
+
+}
+
+/* 네티즌평점 */
+.red_bold {
+font-family:돋움;
+font-size:12px;
+color:#560c2b; 
+font-weight: bold;
+}
+/* 블로그타이틀 작은텍스트 기본*/
+.black_s {
+font-family:돋움;
+font-size:12px;
+color:#000000; 
+font-weight: bold;
+}
+
+
+/*---------------------- (basic,black,blue,brown)*/
+/* 블로그타이틀 작은텍스트 */
+.white_s {
+font-family:돋움;
+font-size:12px;
+color:#ffffff; 
+font-weight: bold;
+}
+.blue_s {
+font-family:돋움;
+font-size:12px;
+color:#0b57a2; 
+font-weight: bold;
+}
+.pink_s {
+font-family:돋움;
+font-size:12px;
+color:#78324b; 
+font-weight: bold;
+}
+.heart_s {
+font-family:돋움;
+font-size:12px;
+color:#525252; 
+font-weight: bold;
+}
+.input_s {
+color:#ffffff; 
+}
+
+/* 블로그 흰색타이틀 */
+.white_t {
+font-family:돋움;
+font-size:13px;
+color:#ffffff; 
+background-color:transparent;
+}
+
+.skin_red{font-weight:bold;
+ font-size:13px;
+ color:#ff0000;
+}
+
+.white_t_pay {
+font-family:돋움;
+font-size:15px;
+color:#ffffff; 
+font-weight: bold;
+
+}
+
+.heart_t_pay {
+font-family:돋움;
+font-size:15px;
+color:#000000; 
+font-weight: bold;
+
+}
+
+
+/* 블로그 블루타이틀 */
+.blue_t {
+font-family:돋움;
+font-size:12px;
+color:#0b57a2; 
+}
+.blue_t_pay {
+font-family:돋움;
+font-size:15px;
+color:#0b57a2; 
+font-weight: bold;
+
+}
+
+/* 블로그 핑크타이틀 */
+.pink_t {
+font-family:돋움;
+font-size:12px;
+color:#78324b; 
+
+}
+.pink_t_pay {
+font-family:돋움;
+font-size:15px;
+color:#78324b; 
+font-weight: bold;
+
+}
+
+/* 블로그 흰색타이틀s */
+.white_ts {
+font-family:돋움;
+font-size:11px;
+color:#ffffff; 
+font-weight: bold;
+}
+/* 블로그 블루타이틀s */
+.blue_ts {
+font-family:돋움;
+font-size:11px;
+color:#0b57a2; 
+font-weight: bold;
+}
+/* 블로그 핑크타이틀s */
+.pink_ts {
+font-family:돋움;
+font-size:11px;
+color:#78324b; 
+font-weight: bold;
+}
+/* 블로그타이틀 큰텍스트 */
+.blue_b {
+font-family:돋움;
+font-size:16px;
+color:#0b57a2; 
+font-weight: bold;
+}
+/* 블로그타이틀 큰텍스트 */
+.pink_b {
+font-family:돋움;
+font-size:16px;
+color:#78324b; 
+font-weight: bold;
+}
+.heart1_b {
+font-family:돋움;
+font-size:12px;
+color:#970e37; 
+font-weight: bold;
+}
+.bear1_b {
+font-family:돋움;
+font-size:12px;
+color:#664221; 
+font-weight: bold;
+}
+.charming1_b {
+font-family:돋움;
+font-size:12px;
+color:#664221; 
+font-weight: bold;
+}
+
+/* 블로그타이틀 큰텍스트 */
+.white_b {
+font-family:돋움;
+font-size:16px;
+color:#ffffff; 
+font-weight: bold;
+}
+
+/* 블로그타이틀 노란텍스트 */
+.yellow_b {
+font-family:돋움;
+font-size:12px;
+color:#fee66e; 
+font-weight: bold;
+}
+.pink1_b {
+font-family:돋움;
+font-size:11px;
+color:#78324b; 
+font-weight: bold;
+}
+/*---------------------- */
+
+
+/*---------------------- */
+/* 블로그타이틀 hart */
+.hart_s {
+font-family:돋움;
+font-size:12px;
+color:#464645; 
+font-weight: bold;
+}
+
+/* 블로그 흰색타이틀 */
+.hart_t {
+font-family:돋움;
+font-size:12px;
+color:#464645; 
+
+}
+/* 블로그 흰색타이틀s */
+.hart_ts {
+font-family:돋움;
+font-size:11px;
+color:#464645; 
+font-weight: bold;
+}
+
+/* 블로그타이틀 큰텍스트 */
+.hart_b {
+font-family:돋움;
+font-size:16px;
+color:#464645; 
+font-weight: bold;
+}
+/*---------------------- */
+
+/*---------------------- */
+/* 블로그타이틀 bear */
+.bear_s {
+font-family:돋움;
+font-size:12px;
+color:#664221; 
+font-weight: bold;
+}
+
+/* 블로그 흰색타이틀 */
+.bear_t {
+font-family:돋움;
+font-size:12px;
+color:#664221; 
+
+}
+/* 블로그 흰색타이틀s */
+.bear_ts {
+font-family:돋움;
+font-size:11px;
+color:#664221; 
+font-weight: bold;
+}
+
+/* 블로그타이틀 큰텍스트 */
+.bear_b {
+font-family:돋움;
+font-size:16px;
+color:#664221; 
+font-weight: bold;
+}
+/*---------------------- */
+/*---------------------- */
+/* 블로그타이틀 charming */
+.charming_s {
+font-family:돋움;
+font-size:12px;
+color:#6f481b; 
+font-weight: bold;
+}
+
+/* 블로그 흰색타이틀 */
+.charming_t {
+font-family:돋움;
+font-size:12px;
+color:#6f481b; 
+
+}
+/* 블로그 흰색타이틀s */
+.charming_ts {
+font-family:돋움;
+font-size:11px;
+color:#6f481b; 
+font-weight: bold;
+}
+
+/* 블로그타이틀 큰텍스트 */
+.charming_b {
+font-family:돋움;
+font-size:16px;
+color:#6f481b; 
+font-weight: bold;
+}
+/*---------------------- */
+
+
+/* 맛집블로그 타이틀 */
+.b_t {
+font-family:돋움;
+font-size:12px;
+color:#000000; 
+font-weight: bold;
+}
+/* 맛집블로그 타이틀1 */
+.bb_t {
+font-family:돋움;
+font-size:16px;
+color:#000000; 
+font-weight: bold;
+}
+
+/* 맛집블로그 타이틀 블랙 */
+.bt {
+font-family:돋움;
+font-size:12px;
+color:#000000; 
+}
+
+/* 테마여행  */
+.bnt {
+font-family:돋움;
+font-size:12px;
+color:#6c441e; 
+
+}
+/* 테마여행  */
+.rt {
+font-family:돋움;
+font-size:12px;
+color:#b80153; 
+
+}
+
+/* 테마여행  */
+.gt {
+font-family:돋움;
+font-size:12px;
+color:#777777; 
+font-weight: bold;
+}
+
+
+/* 페이지 분할  */
+.bbs_list_page
+{
+  font-size:11Px; font-family:verdana; COLOR: red;
+}
+
+/* 페이지 분할 하이퍼링크 */
+a.bbs_link_page:link 
+{
+  font-size: 11px; color: #6c6c6c; font-family:verdana; text-decoration: none
+}
+a.bbs_link_page:visited 
+{
+  font-size: 11px; color: #6c6c6c; font-family:verdana; text-decoration: none
+}
+a.bbs_link_page:hover 
+{
+  font-size: 11px; color: blue;; font-family:verdana; text-decoration: none
+}
+a.bbs_link_page:active 
+{
+  font-size: 11px; color: #6c6c6c; font-family:verdana; text-decoration: none
+}
+
+/* 게시판 */
+.b_input
+{
+	background-color:#f9f9f9;
+	border:1px solid #d5d5d5;
+}
+
+.b_button
+{
+	border:1px solid;color:#8C8C8C;
+}
+
+.b_button1
+{
+	border:1px solid;
+	color:#BFBDBD;
+	background-color:#f9f9f9;	
+}
+
+.b_button2
+{
+	border:1px solid;
+	color:#E87D44;
+	background-color:#f9f9f9;
+}
+
+.b_button3
+{
+	border:1px solid;
+	color:#8898BD;
+	background-color:#f9f9f9;
+}
+
+.b_search
+{
+ background-color:#f9f9f9;
+ height:20;
+}
+
+.b_textarea
+{
+	background-color:#f9f9f9;
+	border:1px solid #d5d5d5;
+  scrollbar-face-color:#f0f0f0;
+  scrollbar-shadow-color:#9C9C9C;
+  scrollbar-highlight-color:#ffffff;
+  scrollbar-3dlight-color:#9C9C9C;
+  scrollbar-darkshadow-color:#ffffff;
+  scrollbar-base-color:#ffffff;
+  scrollbar-arrow-color:#DCDCDC
+}
+
+.b_input_white
+{
+  background-color:#ffffff;
+	border:1px solid #d5d5d5;
+}
+
+.b_textarea_white
+{
+  background-color:#ffffff;
+	border:1px solid #d5d5d5;
+  scrollbar-face-color:#f0f0f0;
+  scrollbar-shadow-color:#9C9C9C;
+  scrollbar-highlight-color:#ffffff;
+  scrollbar-3dlight-color:#9C9C9C;
+  scrollbar-darkshadow-color:#ffffff;
+  scrollbar-base-color:#ffffff;
+  scrollbar-arrow-color:#DCDCDC
+}
+
+
+.frame1 { position: absolute; width: 170px; height: 135px; background: url(http://www.gaza82.com/index/images/ch_img.gif) no-repeat; text-align: center; z-index : 10; } 
+.frame1 a{ display: block; margin: 0 auto; width: 170px; height: 135px; }
+
+
+.top_frame1 { position: absolute; width: 186px; height: 210px; background: url(http://www.gaza82.com/index/images/best_img.gif) no-repeat; text-align: center; z-index : 10; } 
+.top_frame1 a{ display: block; margin: 0 auto; width: 186px; height: 210px; }
+
+
+.cal_input {
+width:70px;
+}
+
+
+.company {
+font-size:14px;
+font-weight: bold;
+}
+
+.txt_blue_b {
+	color:#5555aa;
+	font-weight:bold
+}
