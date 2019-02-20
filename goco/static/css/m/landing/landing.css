@@ -86,8 +86,8 @@
 .landing-contents-2 .lan-list li a .list-img img {}
 .landing-contents-2 .lan-list li a .list-txt-box {padding: 5.2% 5% 5%; line-height: 1; text-align: left;}
 .landing-contents-2 .lan-list li a .list-txt-box p {}
-.landing-contents-2 .lan-list li a .list-txt-box .list-name {overflow:hidden; font-size: 16px; font-weight: 500; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap; color: #333;}
-.landing-contents-2 .lan-list li a .list-txt-box .list-adr {padding-top: 9px; font-size: 14px; font-weight: 100; color: #888;}
+.landing-contents-2 .lan-list li a .list-txt-box .list-name {overflow:hidden; font-size: 18px; font-weight: 500; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap; color: #333;}
+.landing-contents-2 .lan-list li a .list-txt-box .list-adr {padding-top: 9px; font-size: 14px; font-weight: 400; color: #888;}
 .landing-contents-2 .lan-list li a .list-txt-box .list-price {font-size: 21px; letter-spacing: -0.5px; text-align: right;}
 /*.landing-contents-2 .lan-list li a .list-txt-box .list-price span {}*/
 .landing-contents-2 .lan-list li a .list-txt-box .list-price em {font-weight: 600; color: #333;}
