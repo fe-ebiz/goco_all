@@ -53,7 +53,19 @@
 .landing-contents .sec-lan-kakao .btn-kakao span {position: relative; display: inline-block; padding-left: 19px; font-size: 15px; letter-spacing: -1px; line-height: 35px; color: #371f10;}
 .landing-contents .sec-lan-kakao .btn-kakao span:before {content: ''; display: block; position: absolute; width: 16px; height: 100%; top: 0; left: 0; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/ico_kakao.gif) no-repeat center center; background-size: 100% auto;}
 
-/* 190214 랜딩페이지 */
+/* 190419 아이원리조트X온양관광호텔 할인특가 */
+.landing-contents.iwanAonyang {}
+.landing-contents.iwanAonyang .sec-lan-main {min-height: 365px; background: url(http://img.go.co.kr/mobile/landing/20190419_iwanAonyang/bg_main.jpg) no-repeat center center; background-size: cover;}
+.landing-contents.iwanAonyang .sec-lan-main .gjt-wrap {padding: 0;}
+.landing-contents.iwanAonyang .sec-lan-main .gjt-wrap .gjt-tit {padding: 0;}
+.landing-contents.iwanAonyang .sec-lan-theme .gjt-wrap {padding: 6%;}
+.landing-contents.iwanAonyang .sec-lan-theme .gjt-theme-list li {padding-top: 12px}
+.landing-contents.iwanAonyang .sec-lan-theme .gjt-theme-list .gjt-txt-box .gjt-theme-name {font-weight: 600;}
+.landing-contents.iwanAonyang .sec-lan-theme .gjt-theme-list .gjt-txt-box .gjt-theme-price {text-align: right;}
+.landing-contents.iwanAonyang .sec-lan-theme .gjt-theme-list .gjt-txt-box .gjt-theme-price em {font-weight: 600;}
+
+
+/* 190214 랜딩페이지 type2 */
 .landing-contents-2 {position: relative; text-align: center;}
 .landing-contents-2 * {box-sizing: border-box; letter-spacing: -0.7px; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}
 .landing-contents-2 div[class*='sec-lan'] {position: relative; box-sizing: border-box; width: 100%;}
@@ -91,6 +103,11 @@
 .landing-contents-2 .lan-list li a .list-txt-box .list-price {font-size: 21px; letter-spacing: -0.5px; text-align: right;}
 /*.landing-contents-2 .lan-list li a .list-txt-box .list-price span {}*/
 .landing-contents-2 .lan-list li a .list-txt-box .list-price em {font-weight: 600; color: #333;}
+
+
+
+
+
 
 @media (max-device-width: 320px) {
     /* 190214 랜딩페이지 */
