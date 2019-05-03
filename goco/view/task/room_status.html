@@ -26,6 +26,7 @@
             padding-left: 10px;
         }
     </style>
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </head>
 
 <body>
@@ -149,7 +150,7 @@
                         <td>오션뷰 테라스</td>
                         <td>1</td>
                     </tr>
-                    <tr>
+                    <tr class="bg-gray">
                         <td>합계</td>
                         <td>250</td>
                     </tr>
@@ -195,7 +196,7 @@
                         <td>오션뷰 테라스</td>
                         <td>1</td>
                     </tr>
-                    <tr>
+                    <tr class="bg-gray">
                         <td>합계</td>
                         <td>250</td>
                     </tr>
@@ -275,6 +276,11 @@
                             <td>50</td>
                             <td>50</td>
                         </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
                     </table>
                     <table class="d-table">
                         <tr>
@@ -338,6 +344,11 @@
                             <td>50</td>
                             <td>50</td>
                         </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
                     </table>
                     <table class="d-table">
                         <tr>
@@ -397,6 +408,11 @@
                             <td>50</td>
                             <td>50</td>
                             <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
                         </tr>
                     </table>
                     <table class="d-table">
@@ -461,6 +477,11 @@
                             <td>50</td>
                             <td>50</td>
                         </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
                     </table>
                     <table class="d-table">
                         <tr>
@@ -521,6 +542,11 @@
                             <td>50</td>
                             <td>50</td>
                             <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
                         </tr>
                     </table>
                     <div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
@@ -587,6 +613,11 @@
                             <td>50</td>
                             <td>50</td>
                         </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
                     </table>
                     <table class="d-table">
                         <tr>
@@ -649,6 +680,11 @@
                             <td>50</td>
                             <td>50</td>
                         </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
                     </table>
                     <table class="d-table">
                         <tr>
@@ -709,6 +745,11 @@
                             <td>50</td>
                             <td>50</td>
                             <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
                         </tr>
                     </table>
                     <table class="d-table">
@@ -771,6 +812,11 @@
                             <td>50</td>
                             <td>50</td>
                         </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
                     </table>
                     <table class="d-table">
                         <tr>
@@ -831,6 +877,11 @@
                             <td>50</td>
                             <td>50</td>
                             <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
                         </tr>
                     </table>
                     <table class="d-table">
@@ -893,6 +944,11 @@
                             <td>50</td>
                             <td>50</td>
                         </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
                     </table>
                     <table class="d-table">
                         <tr>
@@ -954,6 +1010,11 @@
                             <td>50</td>
                             <td>50</td>
                         </tr>
+                        <tr>
+                            <td>단체</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
                     </table>
                     <div class="btn-area"><a href="" class="btn-a">패키지 </a></div>
                 </div>
@@ -975,15 +1036,21 @@
                     $(this).find(".non-table").css("background", "#fff");
                 });
 				
+                var tableLength = $(".d-table:not('.non-table')").length,
+                    tableLastBefore = tableLength - 2;
                 $(".d-table, .l-table").find("tr:eq(1) th").css("background", "#efefef");
-                $(".d-table, .l-table").find("tr:eq(10) td").css("background", "#efefef");
+
+                $(".l-table").find("tr:last-child td").css("background", "#efefef");               
+                $(".d-table:not('.non-table')").find("tr:last-child td").css("background", "#efefef");
+                $(".d-table:not('.non-table')").find("tr:eq(" + tableLastBefore + ") td").css("background", "#efefef");
+
                 $(".row-box .btn-area").hide();
 				
 				
 				// 높이 조절
 				//var ht = $("#table-box .d-table").height();
 				var ht = $("#table-box .d-ht").height();
-				console.log(ht);
+				// console.log(ht);
 				$("#table-box .non-table").height(ht);
 				/*var $_trHeight = $("#table-box tr");
 				console.log($_trHeight);

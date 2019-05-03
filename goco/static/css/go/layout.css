@@ -407,6 +407,8 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 .table-wrapper .th-day > .day, .table-wrapper .th-day > .day + .sun {border-left: 1px solid #ddd;}
 
 .table-wrapper .table-box {position: relative; width: 1400px; margin-top: -1px;}
+.table-wrapper .table-box tr.bg-gray th,
+.table-wrapper .table-box tr.bg-gray td {background: #efefef;}
 .table-wrapper .table-box .row-box {position: relative; margin-top: 0px;}
 .table-wrapper .table-box .row-box:first-child {margin-top: 0px;}
 .table-wrapper .table-box .row-box.pkg {margin-top: -1px; display: none; margin-bottom: 20px; border: 1px solid #2d71f9;}
