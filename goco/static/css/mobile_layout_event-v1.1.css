@@ -1,7 +1,8 @@
 @charset "utf-8";
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(http://go.co.kr/fonts/nanumsquare/nanumsquare.css);
+@import url(http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+/*@import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);*/
 
 body {font-family: 'Nanum Gothic', '나눔고딕', 'NanumGothicWeb', 'Malgun Gothic', '돋움', Dotum, sans-serif; font-size:13px; color:#000; line-height:1.5; letter-spacing:0.1px; position: relative; margin:0 auto;}
 a:link, a:visited {text-decoration:none; color:#000}
@@ -446,7 +447,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-outer .box-faq .faq-q.on .i-x-2 {top: 17px; right: 4px; width: 7px; height: 7px; border: 1px solid #f24959; border-left: none;  border-bottom: none; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
 .evt-outer .box-faq .faq-q.on .i-x-2:before, .evt-outer .box-faq .faq-q.on .i-x-2:after {content:none}
 .evt-outer .evt-contents {position:relative; font-family: 'Nanum Gothic'; background: #fff;}
-.evt-outer .evt-contents .price-txt {position: relative; box-sizing: border-box; width: 100%; max-width: 100%; margin: 0; padding: 20px 6% 35px; font-size: 12px; text-align: center; line-height: 20px; letter-spacing: -1px; color: #fff; background: #ee4d5a;}
+.evt-outer .evt-contents .price-txt {position: relative; box-sizing: border-box; width: 100%; max-width: 100%; margin: 0; padding: 20px 0 35px; font-size: 12px; text-align: center; line-height: 20px; letter-spacing: -1px; color: #fff; background: #ee4d5a;}
 
 .evt-outer[class*='bscondo-'] .box-faq .faq-q.on .i-x-2 {border-color: #00a19b;}
 
@@ -610,6 +611,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .apply-coresco .evt-top {background: #145b97;}
 .apply-coresco .btn-a {background: #ff4052;}
 
+/* 라마다 7179 */
 .ramada-evt7179 {}
 .ramada-evt7179 .colr-3 {color: #c63a3a;}
 .ramada-evt7179 .evt-top {display:none; background:none;}
@@ -846,3 +848,50 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .landing-wrapper.rmd-bf-free1p .evt-bottom .type-btn1 > a,
 .landing-wrapper.rmd-bf-free1p .pop_layer .pop_area .pop_btn a {background: #ae9c87; color: #fff;}
 .landing-wrapper.rmd-bf-free1p .evt-bottom .type-btn1 > a {}
+
+/* 라마다 7179-써머 */
+.ramada-evt7179-summer {}
+.ramada-evt7179-summer .tit-arrow:after {display: none; /*background: #070238;*/}
+.ramada-evt7179-summer .evt-top {display:none; background:none;}
+.ramada-evt7179-summer .evt-main .evt-visual {position:relative; padding-top:0; padding-bottom:0; background:none;}
+.ramada-evt7179-summer .evt-main .evt-visual .visual-img {position:relative; width:100%; }
+.ramada-evt7179-summer .evt-main .evt-visual div.txtResult {position: absolute; width: 100%; height:auto; top:0; padding-top:46%; margin: 0 auto; background:none;}
+.ramada-evt7179-summer .evt-main .evt-visual div.txtResult span.name {position:relative; text-align:center;  width:115px; height:22px; top:0; left:0; font-size:15px; line-height:22px; color: #f1f1f1; border-radius:30px; background: #0A35A3;}
+.ramada-evt7179-summer .evt-main .evt-visual .visual-txt span,
+.ramada-evt7179-summer .evt-main .evt-visual .p-row-1, 
+.ramada-evt7179-summer .evt-main .evt-visual .p-row-2 {color: #222;}
+.ramada-evt7179-summer .evt-main .evt-visual .p-row-1, 
+.ramada-evt7179-summer .evt-main .evt-visual .p-row-2 {position:absolute; display:inline-block; margin:0 auto; max-width:100%; left:0; text-align:center;}
+.ramada-evt7179-summer .evt-main .evt-visual .visual-txt {bottom: 13.5%;}
+.ramada-evt7179-summer .evt-main .evt-visual .p-row-1 {top:51.5%; font-size:12px; line-height:16px;}
+.ramada-evt7179-summer .evt-main .evt-visual .p-row-2 {padding:0; bottom:1.5%; background:none; border:0;}
+.ramada-evt7179-summer .evt-contents {background: #0DE1F9;}
+.ramada-evt7179-summer .evt-contents .price-txt {background: #0D8CFA;}
+.ramada-evt7179-summer .evt-main .evt-tit {background: #070238;}
+.ramada-evt7179-summer .area-guide .guide-txt-1 em {color: #0856C2;}
+.ramada-evt7179-summer .box-guide .guide-list .li-1 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_01.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-guide .guide-list .li-2 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_02.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-guide .guide-list .li-3 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_03.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-guide .guide-list .li-4 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_04.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-guide .guide-list .li-5 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_05.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-faq {position:relative; padding-bottom: 10px;}
+.ramada-evt7179-summer .box-faq img.txtFaq {z-index:2; position:relative; padding:21px 0 18px;}
+.ramada-evt7179-summer .box-faq .faq-ul {box-sizing:border-box; width:100%; padding:0 8px;}
+.ramada-evt7179-summer .box-faq .faq-a {border-top:0}
+.ramada-evt7179-summer .box-faq .faq-q.on {color:#f24959}
+.ramada-evt7179-summer .box-faq .area-btn {margin-top:0; padding:20px 0 16px;}
+.ramada-evt7179-summer .box-faq .area-btn a {border-radius:2px; background:#191919}
+
+.evt-area-apply.ramada-evt7179-summer {position:relative; padding-bottom: 50px; background: #0D8CFA;}
+.evt-area-apply.ramada-evt7179-summer .evt-top,
+.evt-area-apply.ramada-evt7179-summer .visual-txt span
+{color: #222;}
+.evt-area-apply.ramada-evt7179-summer .evt-top {position:absolute; display:block; width:100%; top:0; left:0; padding:0; padding-top:103.2%; font-size:10px; text-align: center; background:none; font-weight: 700;}
+.evt-area-apply.ramada-evt7179-summer .p-row-1,
+.evt-area-apply.ramada-evt7179-summer .visual-txt {position: absolute; box-sizing: border-box; width: 100%; top: 0; left: 0; margin: 0; padding: 0; text-align: center;}
+.evt-area-apply.ramada-evt7179-summer .p-row-1 {padding-top: 48%; font-size: 12.5px; line-height: 1.5;}
+.evt-area-apply.ramada-evt7179-summer .visual-txt {padding-top:89.3%;}
+.evt-area-apply.ramada-evt7179-summer .visual-txt span {display: inline-block; margin-left: 10px; font-size: 11px; line-height: 11px; text-align:center; letter-spacing: -1px;}
+.evt-area-apply.ramada-evt7179-summer .btn-a {/*height:50px;*/ background: #191919;}
+.evt-area-apply.ramada-evt7179-summer .btn-a:after {height:100%}
+.evt-area-apply.ramada-evt7179-summer .p0 {margin-top:10px; line-height:1.5}
