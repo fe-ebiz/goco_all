@@ -905,7 +905,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-outer.value_free {}
 .evt-outer.value_free .tit-arrow:after {display: none; /*background: #070238;*/}
 .evt-outer.value_free .evt-top {display:none; background:none;}
-.evt-outer.value_free .evt-main .evt-visual {position: relative; height: 625px; padding: 0; background: url('http://img.go.co.kr/event/value/free/txt_winnerGd_bg.jpg') no-repeat center bottom / cover;}
+.evt-outer.value_free .evt-main .evt-visual {position: relative; height: 625px; padding: 0; background: url('http://img.go.co.kr/event/value/free/txt_winnerGd_bg.jpg') no-repeat center bottom / 100% 100%;}
 .evt-outer.value_free .evt-main .evt-visual .visual-box {position: absolute; width: 100%; top: 11%; text-align: center;}
 .evt-outer.value_free .evt-main .evt-visual .visual-box > * {position: absolute; width: 100%; color: #fff;}
 .evt-outer.value_free .evt-main .evt-visual .visual-box .visual-img {position: relative; display: block; margin: 0 auto; width: 250px;}
@@ -922,7 +922,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 
 /* 새로운 형식 이벤트 .visual-box 추가로 스타일 변경 차후 상단 이동*/
 .evt-area-apply .evt-top {z-index: 1; position: absolute; width: 100%; top: 375px; background: none; font-size: 11px;}
-.evt-area-apply .evt-visual {position: relative; height: 410px; padding: 0; background: url('http://img.go.co.kr/event/value/free/txt_apply_bg.jpg') no-repeat center bottom / cover;}
+.evt-area-apply .evt-visual {position: relative; height: 410px; padding: 0; background: url('http://img.go.co.kr/event/value/free/txt_apply_bg.jpg') no-repeat center bottom / 100% 100%;}
 .evt-area-apply .evt-visual .visual-box {position: absolute; width: 100%; top: 10%; text-align: center;}
 .evt-area-apply .evt-visual .visual-box > * {position: absolute; width: 100%; color: #fff;}
 .evt-area-apply .evt-visual .visual-box .visual-img {position: relative; display: block; margin: 0 auto; width: 275px;}
