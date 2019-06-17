@@ -258,7 +258,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	transform-origin: left top;
 }
 .history02-info .barcode-pop .box p.nth-1 {font-size: 26px; font-weight: 600; right: -455px; top: 0; width: 480px;}
-.history02-info .barcode-pop .box p.nth-2 {background: url("http://img.go.co.kr/mobile/h_barcode.png") repeat; right: -322px; top: 30px; width: 402px; height: 125px;}
+.history02-info .barcode-pop .box p.nth-2 {background: url("//img.go.co.kr/mobile/h_barcode.png") repeat; right: -322px; top: 30px; width: 402px; height: 125px;}
 .history02-info .barcode-pop .box p.nth-3 {right: -260px; font-size: 20px; font-weight: 600; width: 480px;}
 .history02-info .barcode-pop .box .btn-a-cancel {position: absolute; bottom: 30px; right: 36px; display: block; width: 20px; height: 20px;}
 .history02-info .barcode-pop .box .btn-a-cancel:before, .history02-info .barcode-pop .box .btn-a-cancel:after {content: ""; position: absolute; top: 10px; left: -2px; display: block; width: 26px; height: 1px; background: #000;}
@@ -302,7 +302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .h-q-pop .box ul li {position: relative; margin-top: 9px;}
 .h-q-pop .box ul li:first-child {margin-top: 0;}
 .h-q-pop .box ul li a {display: block; margin: 0 auto; width: 248px; height: 40px; border-radius: 6px; line-height: 2.8em; text-align: left; text-indent: 41px;}
-.h-q-pop .box ul li a:before {content: ""; display: inline-block; position: relative; width: 44px; height: 16px; background: url(http://img.go.co.kr/mobile/h_q_icons.png) no-repeat;}
+.h-q-pop .box ul li a:before {content: ""; display: inline-block; position: relative; width: 44px; height: 16px; background: url(//img.go.co.kr/mobile/h_q_icons.png) no-repeat;}
 .h-q-pop .box ul li.front a {background: #163c88; color: #fff;}
 .h-q-pop .box ul li.go a {background: #f96a0a; color: #fff;}
 .h-q-pop .box ul li.kko a {background: #fbe300; color: #381e1f;}
@@ -311,9 +311,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .h-q-pop .box ul li.kko a:before {height: 22px; background-position: center -60px; top: 5px;}
 
 .h-q-pop.road .box {position: fixed; left: 50%; top: 50%; margin-left: -138px; margin-top: -57px; width: 276px; height: 114px; background: #fff; border-radius: 8px; text-align: center; font-size: 14px;}
-.h-q-pop .box ul li.road.daum a:before {top: 9px; height: 28px; width: 56px; height: 26px; background: url(http://img.go.co.kr/daum_logo.png) no-repeat; background-size: 55px;}
+.h-q-pop .box ul li.road.daum a:before {top: 9px; height: 28px; width: 56px; height: 26px; background: url(//img.go.co.kr/daum_logo.png) no-repeat; background-size: 55px;}
 .h-q-pop .box ul li.road.daum a {text-indent: 80px; border: 1px solid #cdcdcd;}
-.h-q-pop .box ul li.road.naver a:before {top: 6px; height: 28px; width: 100px; height: 26px; background: url(http://img.go.co.kr/mobile/h_r_icons.png) no-repeat;}
+.h-q-pop .box ul li.road.naver a:before {top: 6px; height: 28px; width: 100px; height: 26px; background: url(//img.go.co.kr/mobile/h_r_icons.png) no-repeat;}
 .h-q-pop .box ul li.road.naver a {background: #3869b8; color: #fff; text-indent: 58px;}
 .h-q-pop .box ul li.road a span {position: relative;}
 
@@ -374,7 +374,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .h04-pop .box {position: fixed; left: 50%; top: 50%; margin-left: -150px; margin-top: -245px; width: 300px; height: auto; /* max-height: 440px; */ background: #fff; text-align: center; font-size: 14px; z-index: 10000; /* padding-bottom: 15px; overflow-y: auto; */}
 .h04-pop .box header {position: relative; height: 40px; width: 300px; background: #f96a0a; color: #fff; font-size: 14px; line-height: 2.8em; font-weight: 600; letter-spacing: -0.5px; text-align: left;
   padding-left: 12px;}
-.h04-pop header:before, .h04-pop footer .addr:before, .h04-pop footer .copy:before {content: ""; display: inline-block; background: url(http://img.go.co.kr/mobile/mk_icons.png) no-repeat 0; background-size: 52px; position: relative; margin-right: 3px; top: 3px; width: 12px; height: 14px;}
+.h04-pop header:before, .h04-pop footer .addr:before, .h04-pop footer .copy:before {content: ""; display: inline-block; background: url(//img.go.co.kr/mobile/mk_icons.png) no-repeat 0; background-size: 52px; position: relative; margin-right: 3px; top: 3px; width: 12px; height: 14px;}
 .h04-pop .box header:before {top: 2px;}
 .h04-pop .box .btn-a-cancel {position: absolute; top: 10px; right: 10px; display: block; width: 20px; height: 20px;}
 .h04-pop .box .btn-a-cancel:before, .h04-pop .box .btn-a-cancel:after {content: ""; position: absolute; top: 10px; left: 0; display: block; width: 20px; height: 1px; background: #fff;}
@@ -453,12 +453,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .clearHere > a {display: inline-block; width: 230px; height: 42px; padding-top: 5px; background-color: #585858; border-radius: 3px; font-size: 14px; color: #fff; line-height: 1.3em; letter-spacing: -0.7px;}
 .clearHere .c-yellow {color: #fff600;}
 .clearHere .gt {position: relative; top: -2px; left: 45px;font-size: 12px; font-family: "Nanum Gothic"; font-weight: 400;}
-.layer-pop-bg {position: fixed; z-index:9999; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
+.layer-pop-bg {position: fixed; z-index:9999; top: 0; left: 0; width: 100%; height: 100%; background: url(//img.go.co.kr/black_rgba58.png) repeat;}
 #r-lookup {position: fixed; z-index: 6; width: 300px; height: 208px; top: 50%; margin-top: -104px; left: 50%; margin-left: -150px; background: #f1f1f1; box-sizing: border-box; border: 2px solid #ff610a;  border-radius: 2px;}
 #r-lookup * {letter-spacing: -0.5px; color: #303030;}
 #r-lookup h2 {height: 42px; font-size: 15px; color: #fff; font-weight: 700; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
 #r-lookup .clsBtn {position: absolute; right: 12px;	top: 10px; display: inline-block; width: 18px; height: 18px;
-    background: url("http://img.go.co.kr/x_btn.png") no-repeat; background-size: 18px;
+    background: url("//img.go.co.kr/x_btn.png") no-repeat; background-size: 18px;
 }
 #r-lookup > p {font-size: 14px; line-height: 1.5em; text-align: center; margin-top: 15px; box-sizing: border-box; padding: 0 20px;}
 #r-lookup > p.nth-1 {margin-top: 16px; margin-bottom: -4px;}
@@ -479,7 +479,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #r-confirm * {letter-spacing: -0.5px; color: #303030;}
 #r-confirm h2 {height: 42px; font-size: 15px; color: #fff; font-weight: 700; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
 #r-confirm .clsBtn {position: absolute; right: 12px;	top: 10px;	 display: inline-block; width: 18px; height: 18px;
-    background: url("http://img.go.co.kr/x_btn.png") no-repeat; background-size: 18px;
+    background: url("//img.go.co.kr/x_btn.png") no-repeat; background-size: 18px;
 }
 #r-confirm > p.nth-1 {font-size: 14px; line-height: 1.5em; text-align: center; margin-top: 15px; box-sizing: border-box;}
 #r-confirm > div.inner-box {width: 88%; min-height: 160px; margin: 0 auto; margin-top: 12px; border: 1px solid #d6d6d6; box-sizing: border-box; background: #fff; padding: 0 12px;}
@@ -511,11 +511,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .history02-info [class*="form"] li:first-child .review {display:inline-block; padding:2px 4px; border-radius:2px; color:#fd5413; border:1px solid #fd5413; font-size:13px; position:absolute; right:10px; top:-6px;}
 
 /* 이용완료 삭제버튼 추가 170627 이현우 */
-#headTitle .delete {position:absolute; right:10px; padding-left:15px; background:url('http://img.go.co.kr/mobile/btn_delete2.png') no-repeat 0 50%; background-size:11.5px 11px;}
-#headTitle .delete.on {background:url('http://img.go.co.kr/mobile/btn_delete2_on.png') no-repeat 0 50%; background-size:11.5px 11px; color:#ff6701}
+#headTitle .delete {position:absolute; right:10px; padding-left:15px; background:url('//img.go.co.kr/mobile/btn_delete2.png') no-repeat 0 50%; background-size:11.5px 11px;}
+#headTitle .delete.on {background:url('//img.go.co.kr/mobile/btn_delete2_on.png') no-repeat 0 50%; background-size:11.5px 11px; color:#ff6701}
 .fixdelete {position:fixed; left:0; bottom:0; z-index:9999; width:100%; height:42px; line-height:42px; color:#fff; background-color:#f96a0a; font-size:16px; text-align:center;}
-.history01-list li .chk {display:none; position:absolute; right:8px; top:10px; z-index:9000; width:44px; height:44px; border-radius:100%; font-size:11px; box-sizing:border-box; padding-top:22px; text-align:center; color:#fff; background:url('http://img.go.co.kr/mobile/history_ico_chk_off.png') no-repeat 50% 9px #000; background-size:14.5px 10.5px;}
-.history01-list li .chk.on {background:url('http://img.go.co.kr/mobile/history_ico_chk_on.png') no-repeat 50% 9px #f96a0a; background-size:14.5px 10.5px; color:#fffc00;}
+.history01-list li .chk {display:none; position:absolute; right:8px; top:10px; z-index:9000; width:44px; height:44px; border-radius:100%; font-size:11px; box-sizing:border-box; padding-top:22px; text-align:center; color:#fff; background:url('//img.go.co.kr/mobile/history_ico_chk_off.png') no-repeat 50% 9px #000; background-size:14.5px 10.5px;}
+.history01-list li .chk.on {background:url('//img.go.co.kr/mobile/history_ico_chk_on.png') no-repeat 50% 9px #f96a0a; background-size:14.5px 10.5px; color:#fffc00;}
 
 /* 취소팝업 추가 170627 이현우 */
 .modal-wrap {position:absolute; left:0; top:0; width:100%; z-index:10000; background-color:rgba(0,0,0,.7);}
@@ -744,7 +744,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .table_02 .can_box {width: 100%; border: 1px solid #bdbdbd;}
 .table_02 input[type="text"].can_bx::-webkit-input-placeholder{color: #9c9c9c;}
 .table_02 tr td .can_box {border: 1px solid #bdbdbd;}
-.table_02 .bank_box2 {width: 100%; color: #9c9c9c; background: url(http://img.go.co.kr/mobile/i_gt.png) no-repeat center right 10px; background-size: 20px;}
+.table_02 .bank_box2 {width: 100%; color: #9c9c9c; background: url(//img.go.co.kr/mobile/i_gt.png) no-repeat center right 10px; background-size: 20px;}
 .info_02 {padding-bottom: 0px;}
 .info_02 > ul {border: none; margin: 0;}
 .info_02 > ul:first-child {border: none;}

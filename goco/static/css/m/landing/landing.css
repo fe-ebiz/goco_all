@@ -19,14 +19,14 @@
 .landing-contents div[class*='sec-lan'] .gjt-wrap {position: relative; box-sizing: border-box; max-width: 360px; margin: 0 auto; padding-left: 20px; padding-right: 20px;}
 .landing-contents figure {position: relative; margin: 0; padding: 0}
 .landing-contents img {position: relative; width: 100%; max-width: 360px;}
-.landing-contents .sec-lan-main {min-height: 406px; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/bg_main.jpg) no-repeat center center; background-size: cover;}
+.landing-contents .sec-lan-main {min-height: 406px; background: url(//img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/bg_main.jpg) no-repeat center center; background-size: cover;}
 .landing-contents .sec-lan-main .gjt-wrap {padding-top: 40px;}
 .landing-contents .sec-lan-main .gjt-tit {display: block; margin: 0 auto; text-align: center; padding: 0 50px;}
 .landing-contents .sec-lan-main .gjt-tit img {}
 .landing-contents .sec-lan-menu {padding-top: 20px; background: #e83e3e;}
 .landing-contents .sec-lan-menu .gjt-wrap {padding-top: 40px;}
 .landing-contents .sec-lan-menu .gjt-menu-box {position: relative; box-sizing: border-box; max-width: 230px; /*min-height: 153px;*/ margin: 66px auto 0; padding: 15px 22px 12px; background: #fff; box-shadow: 0px 7px 15px 0px rgba(7, 2, 2, 0.6);}
-.landing-contents .sec-lan-menu .gjt-menu-box:before {content: ''; display: block; position: absolute; width: 100%; height: 66px; top: -66px; left: 0; margin: 0 auto; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/img_menu.png) no-repeat center center; background-size: auto 100%;}
+.landing-contents .sec-lan-menu .gjt-menu-box:before {content: ''; display: block; position: absolute; width: 100%; height: 66px; top: -66px; left: 0; margin: 0 auto; background: url(//img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/img_menu.png) no-repeat center center; background-size: auto 100%;}
 .landing-contents .sec-lan-menu .gjt-menu-list {padding-top: 4px;}
 .landing-contents .sec-lan-menu .gjt-menu-list li {padding-top: 8px;}
 .landing-contents .sec-lan-menu .gjt-menu-list li a {display: block;}
@@ -45,17 +45,17 @@
 .landing-contents .sec-lan-theme .gjt-txt-box .gjt-theme-price span {position: relative; display: inline-block; color: #8c8c8c;}
 .landing-contents .sec-lan-theme .gjt-txt-box .gjt-theme-price span:before {content: ''; display: block; position: absolute; width: 100%; height: 1px; top:50%; left: 0; background: #8c8c8c;}
 .landing-contents .sec-lan-theme .gjt-txt-box .gjt-theme-price em {display: inline-block; padding-left: 5px; font-size: 15px;}
-.landing-contents .sec-lan-kakao {background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/bg_kakao.jpg) no-repeat center center; background-size: cover;}
-.landing-contents .sec-lan-kakao .gjt-wrap {padding-top: 26px; padding-bottom: 28px; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/img_kakao.png) no-repeat right 16px bottom; background-size: 112px auto;}
+.landing-contents .sec-lan-kakao {background: url(//img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/bg_kakao.jpg) no-repeat center center; background-size: cover;}
+.landing-contents .sec-lan-kakao .gjt-wrap {padding-top: 26px; padding-bottom: 28px; background: url(//img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/img_kakao.png) no-repeat right 16px bottom; background-size: 112px auto;}
 .landing-contents .sec-lan-kakao .gjt-tit {max-width: 210px; padding-left: 2px;}
 .landing-contents .sec-lan-kakao .gjt-txt {padding: 5px 0 0 4px; font-size: 14px; line-height: 18px; letter-spacing: -1px; color: #373737;}
 .landing-contents .sec-lan-kakao .btn-kakao {display: block; width: 250px; height: 35px; margin-top: 24px; text-align: center; border-radius: 3px; background: #fbe901;}
 .landing-contents .sec-lan-kakao .btn-kakao span {position: relative; display: inline-block; padding-left: 19px; font-size: 15px; letter-spacing: -1px; line-height: 35px; color: #371f10;}
-.landing-contents .sec-lan-kakao .btn-kakao span:before {content: ''; display: block; position: absolute; width: 16px; height: 100%; top: 0; left: 0; background: url(http://img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/ico_kakao.gif) no-repeat center center; background-size: 100% auto;}
+.landing-contents .sec-lan-kakao .btn-kakao span:before {content: ''; display: block; position: absolute; width: 16px; height: 100%; top: 0; left: 0; background: url(//img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/ico_kakao.gif) no-repeat center center; background-size: 100% auto;}
 
 /* 190419 아이원리조트X온양관광호텔 할인특가 */
 .landing-contents.iwanAonyang {}
-.landing-contents.iwanAonyang .sec-lan-main {min-height: 365px; background: url(http://img.go.co.kr/mobile/landing/20190419_iwanAonyang/bg_main.jpg) no-repeat center center; background-size: cover;}
+.landing-contents.iwanAonyang .sec-lan-main {min-height: 365px; background: url(//img.go.co.kr/mobile/landing/20190419_iwanAonyang/bg_main.jpg) no-repeat center center; background-size: cover;}
 .landing-contents.iwanAonyang .sec-lan-main .gjt-wrap {padding: 0;}
 .landing-contents.iwanAonyang .sec-lan-main .gjt-wrap .gjt-tit {padding: 0;}
 .landing-contents.iwanAonyang .sec-lan-theme .gjt-wrap {padding: 6%;}

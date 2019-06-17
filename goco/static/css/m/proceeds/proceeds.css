@@ -15,7 +15,7 @@
 
 @media (max-width: 320px) { .codeMoney-sec .code-money > li p { font-size: 12px; } }
 
-.codeMoney-sec .code-money > li p .icon { position: relative; top: 4px; display: inline-block; background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat; background-size: 200px; }
+.codeMoney-sec .code-money > li p .icon { position: relative; top: 4px; display: inline-block; background: url(//img.go.co.kr/proceeds/m/icon.png) no-repeat; background-size: 200px; }
 
 .codeMoney-sec .code-money > li p .i-user { position: absolute; top: 6px; left: 16px; width: 16px; height: 16px; background-position: -25px 0; }
 
@@ -41,7 +41,7 @@
 
 .rank-sec .top-bg > span, .rank-sec .bottom-bg > span { display: block; position: absolute; top: 0; }
 
-.rank-sec .top-bg > span.left, .rank-sec .top-bg > span.right, .rank-sec .bottom-bg > span.left, .rank-sec .bottom-bg > span.right { display: inline-block; width: 33px; height: 37.5px; background: url(http://img.go.co.kr/proceeds/m/rank_bg_sprites.jpg) no-repeat; background-size: 66px; }
+.rank-sec .top-bg > span.left, .rank-sec .top-bg > span.right, .rank-sec .bottom-bg > span.left, .rank-sec .bottom-bg > span.right { display: inline-block; width: 33px; height: 37.5px; background: url(//img.go.co.kr/proceeds/m/rank_bg_sprites.jpg) no-repeat; background-size: 66px; }
 
 .rank-sec .top-bg > span.left, .rank-sec .bottom-bg > span.left { left: 0; }
 
@@ -93,7 +93,7 @@
 
 .rank-sec .fr-low .fr-cell { position: relative; float: left; height: 24px; font-weight: 600; letter-spacing: -1px; line-height: 24px; color: #343434; font-size: 13px; }
 
-.rank-sec .fr-low .fr-cell.nth-1 { width: 37px; text-align: center; color: #fff; background: url(http://img.go.co.kr/landing//20170320//ranking/graynumber.png) no-repeat -7px 5px; background-size: 42px; font-size: 11px; line-height: 25px; text-indent: -10px; }
+.rank-sec .fr-low .fr-cell.nth-1 { width: 37px; text-align: center; color: #fff; background: url(//img.go.co.kr/landing//20170320//ranking/graynumber.png) no-repeat -7px 5px; background-size: 42px; font-size: 11px; line-height: 25px; text-indent: -10px; }
 
 .rank-sec .fr-low .fr-cell.nth-1 img { position: relative; top: -2px; width: 22px; }
 
@@ -117,7 +117,7 @@
 
 .status-sec h2, .applyInfo-sec h2, .promotion-sec h2 { margin: 5px 0; }
 
-.status-sec .ssmb-tit select, .applyInfo-sec .apInfo-table td select { background: #fff url(http://img.go.co.kr/proceeds/m/select_arr.png) no-repeat; background-size: 16px; font-size: 14px; padding-left: 5px; }
+.status-sec .ssmb-tit select, .applyInfo-sec .apInfo-table td select { background: #fff url(//img.go.co.kr/proceeds/m/select_arr.png) no-repeat; background-size: 16px; font-size: 14px; padding-left: 5px; }
 
 .status-sec .ssmb-tit { position: relative; font-size: 15px; font-weight: 600; height: 40px; line-height: 30px; }
 
@@ -195,9 +195,9 @@
 
 .promotion-sec .tab-con { margin-top: 20px; }
 
-.promotion-sec .recommend { position: relative; width: 208px; height: 350px; margin: 0 auto; background: url("http://img.go.co.kr/proceeds/bg_mileage.jpg") no-repeat 0 0; background-size: 208px; border-bottom: 1px solid #ddd; }
+.promotion-sec .recommend { position: relative; width: 208px; height: 350px; margin: 0 auto; background: url("//img.go.co.kr/proceeds/bg_mileage.jpg") no-repeat 0 0; background-size: 208px; border-bottom: 1px solid #ddd; }
 
-.promotion-sec .recommend .code { position: absolute; top: 260px; left: 10px; width: 188px; height: 79px; /*padding:10px 12px 0;*/ text-align: center; background: url("http://img.go.co.kr/proceeds/bg_code.jpg") no-repeat 0 0; background-size: 188px; }
+.promotion-sec .recommend .code { position: absolute; top: 260px; left: 10px; width: 188px; height: 79px; /*padding:10px 12px 0;*/ text-align: center; background: url("//img.go.co.kr/proceeds/bg_code.jpg") no-repeat 0 0; background-size: 188px; }
 
 .promotion-sec .recommend .code .inner > p { margin: 7px 0 5px; font-size: 13px; font-weight: 800; font-style: italic; }
 
@@ -219,7 +219,7 @@
 
 .promotion-sec .banner-rec { position: relative; }
 
-.promotion-sec .banner-rec .code { position: relative; margin: 0 auto; width: 300px; height: 120px; background: url("http://img.go.co.kr/proceeds/banner_mileage.jpg") no-repeat 0 0; background-size: contain; }
+.promotion-sec .banner-rec .code { position: relative; margin: 0 auto; width: 300px; height: 120px; background: url("//img.go.co.kr/proceeds/banner_mileage.jpg") no-repeat 0 0; background-size: contain; }
 
 .promotion-sec .banner-rec .code > input { position: absolute; top: 78px; left: 77px; width: 196px; height: 30px; text-align: center; font-size: 22px; border: 0; background: none; letter-spacing: 1px; outline: 0; text-transform: uppercase; }
 
@@ -227,7 +227,7 @@
 
 .promotion-sec .div-h2 > .pull-right { position: relative; top: -15px; }
 
-.promotion-sec .div-h2 > .pull-right > a { width: 34px; height: 34px; display: inline-block; background: url(http://img.go.co.kr/proceeds/m/icon.png) no-repeat; background-size: 150px; }
+.promotion-sec .div-h2 > .pull-right > a { width: 34px; height: 34px; display: inline-block; background: url(//img.go.co.kr/proceeds/m/icon.png) no-repeat; background-size: 150px; }
 
 .promotion-sec .div-h2 > .pull-right > a.i-copy { background-position: -60px 0; margin-right: 5px; }
 

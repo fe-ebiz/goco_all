@@ -26,7 +26,7 @@
     padding: 10px 10px 10px 15px; line-height: 1.3em; font-weight: 400; border-bottom: 1px solid #bcbcbc;}
 .pdtSlt-sec2 .part-1 h3 span.tt {position: absolute; display: inline-block; width: 58px; height: 17px;
     left: 15px; top: 13px;
-    background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat -340px 0;
+    background: url(//img.go.co.kr/fix_nav_sprBg2.png) no-repeat -340px 0;
 }
 .pdtSlt-sec2 .part-1 .dep-1 {padding: 5px 0;}
 .pdtSlt-sec2 .part-1 .dep-1 > li {font-size: 0; padding-top: 5px; padding-bottom: 5px;}
@@ -56,7 +56,7 @@
     border: 1px solid #a5a5a5; width: 15px; height: 15px; border-radius: 0; outline: 0;
     background: #fff; margin-right: 5px; margin-left: 15px;
 }
-.pdtSlt-sec2 input[type="checkbox"]:checked {background: #fff url("http://img.go.co.kr/chk_bg.png") no-repeat 1px 2px;}
+.pdtSlt-sec2 input[type="checkbox"]:checked {background: #fff url("//img.go.co.kr/chk_bg.png") no-repeat 1px 2px;}
 .pdtSlt-sec2 .part-2 {background: #ec5700;}
 .pdtSlt-sec2 .part-con {}
 .pdtSlt-sec2 .part-con > ul {float: left;}

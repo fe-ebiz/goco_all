@@ -5,7 +5,7 @@ body, a {color: #494949;}
 .notice-wrap .d1 {}
 .notice-wrap h1 {font-size: 40px;}
 .notice-wrap h1 .s1 {color: #f76f1e;}
-.notice-wrap .d-figure {margin-top: 30px; height: 178px; background: url(http://img.go.co.kr/notice/shadow_bg.png) no-repeat center bottom;}
+.notice-wrap .d-figure {margin-top: 30px; height: 178px; background: url(//img.go.co.kr/notice/shadow_bg.png) no-repeat center bottom;}
 .notice-wrap .d1 > p {word-break: keep-all;}
 .notice-wrap .d1 .p0 {font-size: 20px; color: #969696; font-weight: 500;}
 .notice-wrap .d1 .p1 {font-size: 17px; margin-top: 20px;}

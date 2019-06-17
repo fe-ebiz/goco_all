@@ -44,8 +44,8 @@
 /* 고코 관리자용 */
 .f-area .f-bottom .customer {float:right;}
 .f-area .f-bottom .customer li {width:190px; height:70px; margin-bottom:10px; padding:10px 0 0 84px;}
-.f-area .f-bottom .customer li.f_call {background:url('http://img.go.co.kr/f_ico_call.gif') no-repeat 20px 15px #414141;}
-.f-area .f-bottom .customer li.f_mail {background:url('http://img.go.co.kr/f_ico_mail.gif') no-repeat 20px 15px #414141;}
+.f-area .f-bottom .customer li.f_call {background:url('//img.go.co.kr/f_ico_call.gif') no-repeat 20px 15px #414141;}
+.f-area .f-bottom .customer li.f_mail {background:url('//img.go.co.kr/f_ico_mail.gif') no-repeat 20px 15px #414141;}
 .f-area .f-bottom .customer li p {color:#a4a4a4; font-size:14px;}
 .f-area .f-bottom .customer li strong {color:#a4a4a4;}
 .f-area .f-bottom .customer li.f_call strong {font-size:38px; line-height:35px; letter-spacing:-4px;}

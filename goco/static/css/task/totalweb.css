@@ -23,7 +23,7 @@
 /* 13579이벤트_혜준 */
 #event_bn_right {top: -4px; z-index: 6;}
 /* 숙박이벤트_170519_혜준 */
-.event-wrapper {position: fixed; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat; z-index: 10;}
+.event-wrapper {position: fixed; width: 100%; height: 100%; background: url(//img.go.co.kr/black_rgba58.png) repeat; z-index: 10;}
 .event-box {position: absolute; width: 349px; left: 50%; margin-left: -174.5px; top: 50%; margin-top: -247.5px;}
 .event-box > p {background: #000; color: #fff; line-height: 2em; font-size: 13px;}
 .event-box > p > input {margin: 0 5px;}
@@ -80,7 +80,7 @@ box-sizing:border-box;}
 .culture_wrap .culture_foot {margin-top:35px; padding:25px 30px; background-color:#f5f5f5;}
 .culture_wrap .culture_foot .foot_title {font-size:18px;}
 .culture_wrap .culture_foot .foot_txt {margin-top:10px;}
-.culture_wrap .culture_layer_wrap {position:fixed; left:0; right:0; top:0; bottom:0; z-index:9999; background:url('http://img.go.co.kr/culture_layer_bg.png') repeat 0 0; font-size:0; text-align:center;}
+.culture_wrap .culture_layer_wrap {position:fixed; left:0; right:0; top:0; bottom:0; z-index:9999; background:url('//img.go.co.kr/culture_layer_bg.png') repeat 0 0; font-size:0; text-align:center;}
 .culture_wrap .culture_layer_wrap:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
 .culture_wrap .culture_layer_wrap .culture_layer_area {display:inline-block; width:620px; background-color:#fff; font-size:14px; vertical-align:middle;}
 .culture_wrap .culture_layer_wrap .culture_layer_area .culture_layer_area_top {position:relative; padding:0 20px; background-color:#323232;}
@@ -123,7 +123,7 @@ box-sizing:border-box;}
 .title-1 select {
     text-indent: 6px;
     appearance: none; -webkit-appearance: none; -ms-appearance: none; -o-appearance: none; -moz-appearance: none;
-    background: url(http://img.yeosucablecar.co.kr/slt_bg.jpg) no-repeat right top;
+    background: url(//img.yeosucablecar.co.kr/slt_bg.jpg) no-repeat right top;
     border: 1px solid #a7a7a7; font-size: 16px; color: #222; font-weight: 600;
 }
 .title-1 select option {font-size: 15px;}
@@ -237,7 +237,7 @@ box-sizing:border-box;}
 #fare_section .q-contents li:first-child p:first-child {top: -1px;}
 #fare_section .q-contents li .q-p, #fare_section .q-contents li .a-p {position: relative; padding-left: 25px;}
 #fare_section .q-contents li .q-p:before, #fare_section .q-contents li .a-p:before {content: ""; position: absolute; display: inline-block;; top: 2px; left: 0; width: 20px; height: 20px;
-    background: url(http://img.yeosucablecar.co.kr/bg_q.png) no-repeat;}
+    background: url(//img.yeosucablecar.co.kr/bg_q.png) no-repeat;}
 #fare_section .q-contents li .q-p:before {background-position: 0 0;}
 #fare_section .q-contents li .a-p:before {background-position: 0 -30px;}
 #fare_section .q-contents li.tit {background: #f5f5f5; font-weight: 600; font-size: 17px;}
@@ -254,12 +254,12 @@ box-sizing:border-box;}
 .clearHere > a {display: inline-block; width: 556px; height: 50px; background-color: #585858; border-radius: 3px; font-size: 17px; color: #fff; font-weight: 600; line-height: 2.9em;}
 .clearHere .c-yellow {color: #fff600;}
 .clearHere .gt {position: relative; top: -2px; left: 45px;font-size: 12px; font-family: "Nanum Gothic"; font-weight: 400;}
-.layer-pop-bg {position: fixed; z-index: 11; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
+.layer-pop-bg {position: fixed; z-index: 11; top: 0; left: 0; width: 100%; height: 100%; background: url(//img.go.co.kr/black_rgba58.png) repeat;}
 #r-lookup {position: fixed; z-index: 6; width: 430px; height: 272px; top: 50%; margin-top: -136px; left: 50%; margin-left: -215px; background: #f1f1f1; box-sizing: border-box; border: 2px solid #ff610a;  border-radius: 2px;}
 #r-lookup * {letter-spacing: -0.5px; color: #303030;}
 #r-lookup h2 {height: 62px; font-size: 22px; color: #fff; font-weight: 700; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
 #r-lookup .clsBtn {position: absolute; right: 20px;	top: 16px;	 display: inline-block; width: 22px; height: 22px;
-	background: url("http://img.go.co.kr/x_btn.png") no-repeat;
+	background: url("//img.go.co.kr/x_btn.png") no-repeat;
 }
 #r-lookup > p {font-size: 19px; line-height: 1.5em; text-align: center; margin-top: 20px; box-sizing: border-box; padding: 0 20px;}
 #r-lookup > p.nth-1 {}
@@ -281,7 +281,7 @@ box-sizing:border-box;}
 #r-confirm * {letter-spacing: -0.5px; color: #303030;}
 #r-confirm h2 {height: 62px; font-size: 22px; color: #fff; font-weight: 700; text-align: center; line-height: 2.8em; background: #ff610a; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
 #r-confirm .clsBtn {position: absolute; right: 20px;	top: 16px;	 display: inline-block; width: 22px; height: 22px;
-    background: url("http://img.go.co.kr/x_btn.png") no-repeat;
+    background: url("//img.go.co.kr/x_btn.png") no-repeat;
 }
 #r-confirm > p.nth-1 {font-size: 19px; line-height: 1.5em; text-align: center; margin-top: 20px; box-sizing: border-box;}
 #r-confirm > div.inner-box {width: 380px; min-height: 224px; margin: 0 auto; margin-top: 20px; border: 1px solid #d6d6d6; box-sizing: border-box; background: #fff; padding: 0 12px;}
@@ -300,8 +300,8 @@ box-sizing:border-box;}
 #fix-nav .nav {position: relative; margin: 0 auto; width: 1002px;/* width: 1135px; */ font-size: 0;}
 #fix-nav .nav > * {display: inline-block; vertical-align: middle;}
 #fix-nav .nav h2 {position: absolute; left: -130px; top: 6px;}
-#fix-nav .nav h2 a {display: block; width: 112px; height: 47px; background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat 0 0;}
-#fix-nav .nav h3 {margin-right: 10px; width: 161px; height: 51px; background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat -140px 0;}
+#fix-nav .nav h2 a {display: block; width: 112px; height: 47px; background: url(//img.go.co.kr/fix_nav_sprBg2.png) no-repeat 0 0;}
+#fix-nav .nav h3 {margin-right: 10px; width: 161px; height: 51px; background: url(//img.go.co.kr/fix_nav_sprBg2.png) no-repeat -140px 0;}
 #fix-nav .nav .inp {margin-left: 10px; margin-top: -6px;}
 #fix-nav .nav .inp > span {position: relative; top: -1px;display: block; color: #787878; font-size: 13px;}
 #fix-nav .nav .inp > .chkIn, #fix-nav .nav .inp > select {border: none; padding-left: 10px; font-size: 15px; /* height: 38px; */ height: 45px; border: 1px solid #7d7d7d;}
@@ -309,11 +309,11 @@ box-sizing:border-box;}
 #fix-nav .nav .inp > .chkIn {
     appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none;
     width: 174px;/* width: 144px; */
-    background: #fff url(http://img.go.co.kr/i-cal.jpg) no-repeat right 0;
+    background: #fff url(//img.go.co.kr/i-cal.jpg) no-repeat right 0;
 }
 #fix-nav .nav .inp > select {
     appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none;
-    background: #fff url(http://img.go.co.kr/i-down-arrow.png) no-repeat right 15px;
+    background: #fff url(//img.go.co.kr/i-down-arrow.png) no-repeat right 15px;
 }
 #fix-nav .nav .inp > select::-ms-expand {display: none;}
 /* #fix-nav .nav .inp > select.global {width: 110px; background-position: 85px;} */
@@ -323,10 +323,10 @@ box-sizing:border-box;}
 #fix-nav .nav .more-a:active, #fix-nav .nav .search-a:active {font-weight: 400;}
 #fix-nav .nav .more-a {right: 170px; width: 128px; background: #9c9c9c; /* margin-left: 20px; */}
 #fix-nav .nav .more-a:before {position: absolute; content: ""; bottom: -14px; left: 57px; width: 1px; border: 8px solid transparent; border-top-color: #9c9c9c;}
-#fix-nav .nav .more-a .i-plus {display: inline-block; position: relative; top: 4px; margin-right: 4px; width: 20px; height: 20px; background: url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -440px 0;}
-#fix-nav .nav .more-a.on .i-plus {background: url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -480px 0;}
+#fix-nav .nav .more-a .i-plus {display: inline-block; position: relative; top: 4px; margin-right: 4px; width: 20px; height: 20px; background: url(//img.go.co.kr/fix_nav_sprBg.png) no-repeat -440px 0;}
+#fix-nav .nav .more-a.on .i-plus {background: url(//img.go.co.kr/fix_nav_sprBg.png) no-repeat -480px 0;}
 #fix-nav .nav .search-a {right: 0; width: 160px; background: #344570;/* background: #fa6b0a; */ margin-left: 10px;}
-#fix-nav .nav .search-a .i-search {display: inline-block; position: relative; top: 5px; margin-right: 6px; width: 21px; height: 22px; background: url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -520px 0;}
+#fix-nav .nav .search-a .i-search {display: inline-block; position: relative; top: 5px; margin-right: 6px; width: 21px; height: 22px; background: url(//img.go.co.kr/fix_nav_sprBg.png) no-repeat -520px 0;}
 
 #fix-nav .nb-drop-bar {display: none; height: 39px; padding-top: 5px; background: #efefef; border-bottom: 1px solid #d9d9d9;}
 #fix-nav .nb-drop-bar.on {display: block;}
@@ -340,7 +340,7 @@ box-sizing:border-box;}
     border: none; width: 14px; height: 14px; background: #fff; margin-left: 10px;
     border: 1px solid #b4b4b4;
 }
-#fix-nav .nb-drop .nb-drInp:checked {background: #fff url(http://img.go.co.kr/fix_nav_sprBg.png) no-repeat -560px 2px;}
+#fix-nav .nb-drop .nb-drInp:checked {background: #fff url(//img.go.co.kr/fix_nav_sprBg.png) no-repeat -560px 2px;}
 #fix-nav .nb-drop label {
     user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
     font-size: 13px; color: #787878; margin-left: 5px; cursor: pointer;
@@ -353,7 +353,7 @@ box-sizing:border-box;}
 #fix-nav .nb-drop #nb-occupied + label, #fix-nav .nb-drop #nb-confirm + label {color: #344570;}
 #fix-nav .nb-drop .i-close {position: relative; width: 16px; float: right; top: 5px; cursor: pointer;}
 
-.backDrop-bg {position: fixed; z-index: 11; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
+.backDrop-bg {position: fixed; z-index: 11; top: 0; left: 0; width: 100%; height: 100%; background: url(//img.go.co.kr/black_rgba58.png) repeat;}
 
 .sltCheck-sec {position: absolute; left: 50%; margin-left: -357px; top: 160px; background-color: #fff; min-width: 368px; max-width: 714px; min-height: 440px; letter-spacing: -0.5px; box-sizing: border-box;
 z-index: 12;}
@@ -390,7 +390,7 @@ z-index: 12;}
 .sltCal-sec h3 .i-close {position: absolute; top: 16px; right: 18px; float: right; cursor: pointer;}
 .sltCal-sec p.p-1 {position: relative; text-align: center; padding: 7px 18px 6px; font-size: 21px; font-family: "Noto Sans KR", "Nanum Gothic";}
 .sltCal-sec p.p-1 em {position: relative; margin-left: 10px; top: -1px; font: normal 600 24px "Arial", sans-serif; color: #000; vertical-align: middle;}
-.sltCal-sec p.p-1 a {position: relative; display: inline-block; width: 11px; height: 17px; top: 4px; /* top: 7px; */ background: url("http://img.go.co.kr/cal_sprBg.png") no-repeat 0 0;}
+.sltCal-sec p.p-1 a {position: relative; display: inline-block; width: 11px; height: 17px; top: 4px; /* top: 7px; */ background: url("//img.go.co.kr/cal_sprBg.png") no-repeat 0 0;}
 .sltCal-sec p.p-1 .prev-a {float: left;}
 .sltCal-sec p.p-1 .next-a {float: right; background-position: -20px 0;}
 
@@ -451,7 +451,7 @@ z-index: 12;}
     padding: 10px 10px 10px 77px; line-height: 1.3em; font-weight: 400; border-bottom: 1px solid #bcbcbc; /* margin-bottom: 5px; */}
 .pdtSlt-sec .part-1 h3 span.tt {position: absolute; display: inline-block; width: 58px; height: 17px;
     left: 15px; top: 13px;
-    background: url(http://img.go.co.kr/fix_nav_sprBg2.png) no-repeat -340px 0;
+    background: url(//img.go.co.kr/fix_nav_sprBg2.png) no-repeat -340px 0;
 }
 .pdtSlt-sec .part-1 .dep-1 {padding: 5px 0;}
 .pdtSlt-sec .part-1 .dep-1 > li {font-size: 0; padding-top: 5px; padding-bottom: 5px;}
@@ -474,7 +474,7 @@ z-index: 12;}
     border: 1px solid #a5a5a5; width: 15px; height: 15px; border-radius: 0; outline: 0;
     background: #fff; margin-right: 5px; margin-left: 15px;
 }
-.pdtSlt-sec input[type="checkbox"]:checked {background: #fff url("http://img.go.co.kr/chk_bg.png") no-repeat 1px 2px;}
+.pdtSlt-sec input[type="checkbox"]:checked {background: #fff url("//img.go.co.kr/chk_bg.png") no-repeat 1px 2px;}
 .pdtSlt-sec .part-2 h2 {background: #ec5700;}
 .pdtSlt-sec .part-2 .dep-1 > li {line-height: 1.2em; padding: 7px 0 7px;}
 .pdtSlt-sec .part-2 .dep-1 > li .label {user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;
@@ -527,7 +527,7 @@ z-index: 12;}
     padding: 10px 12px; border: 1px solid #000; box-shadow: 3px 4px rgba(0,0,0, .18);}
 .pdtSlt-sec .part-3 .ul-2.on {display: block;}
 .pdtSlt-sec .part-3 .ul-2:after {content: ""; display: block; position: absolute; width: 17px; height: 15px; bottom: -15px; right: 75px;
-    background: url(http://img.go.co.kr/i_trangle.png) no-repeat;
+    background: url(//img.go.co.kr/i_trangle.png) no-repeat;
 }
 .pdtSlt-sec .part-3 .ul-2 li {font-size: 15px; line-height: 1.5em;}
 .pdtSlt-sec .part-3 .ul-2 li.th {color: #000; font-weight: 600;}
@@ -541,19 +541,19 @@ z-index: 12;}
 #wrapper #membership .member_info_t td .member_info_t_payment {margin-top:5px;}
 #wrapper #membership .member_info_t td .member_info_t_payment .member_info_t_payment_btn {display:inline-block; padding:2px 5px; background-color:#ff6833; color:#fff; font-size:12px;}
 #wrapper #membership .member_info_t td .member_info_t_chk {-webkit-appearance:none; -moz-appearance:none; appearance:none; width:0; height:0; overflow:hidden;}
-#wrapper #membership .member_info_t td .member_info_t_chkbox {display:inline-block; position:relative; width:16px; height:14px; background:url('http://img.go.co.kr/member_info_t_chk_off.gif') no-repeat 0 0; vertical-align:middle;}
-#wrapper #membership .member_info_t td .member_info_t_chkbox.on {background:url('http://img.go.co.kr/member_info_t_chk_on.gif') no-repeat 0 0;}
+#wrapper #membership .member_info_t td .member_info_t_chkbox {display:inline-block; position:relative; width:16px; height:14px; background:url('//img.go.co.kr/member_info_t_chk_off.gif') no-repeat 0 0; vertical-align:middle;}
+#wrapper #membership .member_info_t td .member_info_t_chkbox.on {background:url('//img.go.co.kr/member_info_t_chk_on.gif') no-repeat 0 0;}
 #wrapper #membership .member_info_t td .orange {color:#ff610a;}
 #wrapper #membership .member_info_t td .sml_gray_txt {color:#b0b0b0; font-weight:normal; font-size:11px;}
 #wrapper #membership .member_info_t td .member_info_t_fail {position:relative; width:556px; padding:15px 10px; background-color:#2ba78d; border-radius:3px; color:#fff; margin:15px auto 0; font-size:16px;}
-#wrapper #membership .member_info_t td .member_info_t_fail:before {content:''; display:block; position:absolute; right:25px; top:50%; width:8px; height:14px; margin-top:-7px; background:url('http://img.go.co.kr/member_info_t_arrow.gif') no-repeat 0 0;}
+#wrapper #membership .member_info_t td .member_info_t_fail:before {content:''; display:block; position:absolute; right:25px; top:50%; width:8px; height:14px; margin-top:-7px; background:url('//img.go.co.kr/member_info_t_arrow.gif') no-repeat 0 0;}
 #wrapper #membership .member_info_t td .member_info_t_fail em {color:#fffc01;}
 
 /* 상품 최저가 안내 레이어팝업 위치 수정 170626 이현우 */
 #rsv_wrapper #rsv_sang {position:relative;}
 #rsv_wrapper #discount_pop {top:29px !important; right:auto !important; left:-92px;}
 #rsv_wrapper #discount_pop {position:absolute; top:195px; right:-30px; width:275px; text-align:left; line-height:2}
-#rsv_wrapper #discount_pop .tit {float:left; padding-top:10px; padding-left:10px; width:265px; height:25px; color:#fff; font-weight:600; background:url(http://img.go.co.kr/discount_bg.png) no-repeat}
+#rsv_wrapper #discount_pop .tit {float:left; padding-top:10px; padding-left:10px; width:265px; height:25px; color:#fff; font-weight:600; background:url(//img.go.co.kr/discount_bg.png) no-repeat}
 #rsv_wrapper #discount_pop .text {float:left; padding:10px; width:253px; color:#3a3a3a; font-size:12px; line-height:1.5; background:#fff; border-left:1px solid #3a3a3a; border-right:1px solid #3a3a3a; border-bottom:1px solid #3a3a3a}
 #rsv_wrapper #discount_pop .text span {color:#ec5700; font-weight:600}
 #rsv_wrapper {position:relative; text-align:left; z-index: 10;}
@@ -561,7 +561,7 @@ z-index: 12;}
 #rsv_wrapper span.go {font-size:30px;font-weight:600;letter-spacing:-1.5px;color:#ff7a2d}
 
 /* 예약내역_170626_현우 */
-#membership .member_rsv_complete {position:fixed; left:0; top:0; right:0; bottom:0; text-align:center; font-size:0; background:url('http://img.go.co.kr/modal_bg.png') repeat 0 0;}
+#membership .member_rsv_complete {position:fixed; left:0; top:0; right:0; bottom:0; text-align:center; font-size:0; background:url('//img.go.co.kr/modal_bg.png') repeat 0 0;}
 #membership .member_rsv_complete:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
 #membership .member_rsv_complete .modal_area {display:inline-block; width:600px; border:3px solid #ff610a; border-radius:3px; background-color:#fff; vertical-align:middle; text-align:left;}
 #membership .member_rsv_complete .modal_area.type2 {width:758px; border:1px solid #7f8082; border-radius:0;}
@@ -569,7 +569,7 @@ z-index: 12;}
 #membership .member_rsv_complete .modal_area .top strong {display:block; padding:15px; border-bottom:1px solid #c5c5c5; font-size:16px; color:#181818;}
 #membership .member_rsv_complete .modal_area .top .modal_close {position:absolute; right:20px; top:50%; margin-top:-9px;}
 #membership .member_rsv_complete .modal_area.type2 .top {border-bottom:0; background-color:#7e8186;}
-#membership .member_rsv_complete .modal_area.type2 .top strong {padding:10px 10px 10px 47px; color:#fff; background:url('http://img.go.co.kr/modal_bullet.gif') no-repeat 30px 50%;}
+#membership .member_rsv_complete .modal_area.type2 .top strong {padding:10px 10px 10px 47px; color:#fff; background:url('//img.go.co.kr/modal_bullet.gif') no-repeat 30px 50%;}
 #membership .member_rsv_complete .modal_area.type2 .top .modal_close {margin-top:-11px;}
 #membership .member_rsv_complete .modal_area .mid {padding:20px 25px 35px;}
 #membership .member_rsv_complete .modal_area .mid .com_txt {text-align:center;}
@@ -581,11 +581,11 @@ z-index: 12;}
 #membership .member_rsv_complete .modal_area .mid .bank_data tr th {background-color:#f7f7f7; font-size:16px; padding:5px 10px; color:#090909; text-align:center; border-top:1px solid #c5c5c5; font-weight:bold;}
 #membership .member_rsv_complete .modal_area .mid .bank_data tr td {border-left:1px solid #c5c5c5; border-top:1px solid #c5c5c5; font-size:14px; padding:5px 10px;}
 #membership .member_rsv_complete .modal_area .mid .bank_data tr td input[type="text"], #membership .member_rsv_complete .modal_area .mid .bank_data tr td input[type="password"], #membership .member_rsv_complete .modal_area .mid .bank_data tr td select {box-sizing:border-box; height:30px; padding:5px;}
-#membership .member_rsv_complete .modal_area .modal_bullet {line-height:1.5; color:#e44f49; font-size:14px; padding-left:20px; background:url('http://img.go.co.kr/modal_mark.gif') no-repeat 0 3px; margin-top:10px;}
+#membership .member_rsv_complete .modal_area .modal_bullet {line-height:1.5; color:#e44f49; font-size:14px; padding-left:20px; background:url('//img.go.co.kr/modal_mark.gif') no-repeat 0 3px; margin-top:10px;}
 #membership .member_rsv_complete .modal_area .mid .com_txt .modal_bullet {display:inline-block;}
 #membership .member_rsv_complete .modal_area .mid .go_qna {margin-top:20px;}
 #membership .member_rsv_complete .modal_area .mid .go_qna a {display:block; position:relative; background-color:#636363; padding:10px; font-size:16px; color:#fff; border-radius:3px; text-align:center;}
-#membership .member_rsv_complete .modal_area .mid .go_qna a:before {content:''; display:block; position:absolute; width:7px; height:12px; right:21px; top:50%; margin-top:-7px; background:url('http://img.go.co.kr/modal_arrow01.gif') no-repeat 0 0;}
+#membership .member_rsv_complete .modal_area .mid .go_qna a:before {content:''; display:block; position:absolute; width:7px; height:12px; right:21px; top:50%; margin-top:-7px; background:url('//img.go.co.kr/modal_arrow01.gif') no-repeat 0 0;}
 #membership .member_rsv_complete .modal_area .mid .go_qna a span {color:#fff701;}
 #membership .member_rsv_complete .modal_area .mid .modal_btn {margin-top:25px; text-align:center;}
 #membership .member_rsv_complete .modal_area.type2 .mid .modal_btn {margin-top:15px;}
@@ -593,8 +593,8 @@ z-index: 12;}
 #membership .member_rsv_complete .modal_area .mid .modal_btn .complete {background-color:#fb610b;}
 #membership .member_rsv_complete .modal_area .mid .modal_btn .refund01 {box-sizing:border-box; width:220px; height:54px; line-height:54px; font-size:18px; font-weight:bold; background-color:#fc6009; position:relative; margin:0 20px;}
 #membership .member_rsv_complete .modal_area .mid .modal_btn .refund02 {box-sizing:border-box; width:220px; height:54px; line-height:54px; background-color:#fff; border:1px solid #fb6109; color:#fb6109; font-size:18px; font-weight:bold; position:relative; margin:0 20px;}
-#membership .member_rsv_complete .modal_area .mid .modal_btn .refund01:before {content:''; display:block; position:absolute; right:18px; top:50%; width:8px; height:13px; background:url('http://img.go.co.kr/modal_arrow02.gif') no-repeat 0 0; margin-top:-6px;}
-#membership .member_rsv_complete .modal_area .mid .modal_btn .refund02:before {content:''; display:block; position:absolute; right:18px; top:50%; width:8px; height:13px; background:url('http://img.go.co.kr/modal_arrow03.gif') no-repeat 0 0; margin-top:-6px;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn .refund01:before {content:''; display:block; position:absolute; right:18px; top:50%; width:8px; height:13px; background:url('//img.go.co.kr/modal_arrow02.gif') no-repeat 0 0; margin-top:-6px;}
+#membership .member_rsv_complete .modal_area .mid .modal_btn .refund02:before {content:''; display:block; position:absolute; right:18px; top:50%; width:8px; height:13px; background:url('//img.go.co.kr/modal_arrow03.gif') no-repeat 0 0; margin-top:-6px;}
 #membership .member_rsv_complete .modal_area .mid .modal_btn .chk {background-color:#e05244;}
 #membership .member_rsv_complete .modal_area .mid .modal_btn .no {background-color:#fdfdfd; color:#333; border:1px solid #d6d6d6;}
 #membership .member_rsv_complete .modal_area .mid .cancel_wrap {margin-top:15px; padding:20px 0 10px; border-top:1px solid #c5c5c5; border-bottom:1px solid #c5c5c5;}

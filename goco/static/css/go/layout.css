@@ -193,12 +193,12 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 #loginW .login .box{width:860px; border:10px solid #e5e5e5; height:310px; margin-top:40px; background:#fff}
 #loginW .login .box .left{float:left}
 #loginW .login .box .left p{text-align:center; font-size:30px; font-weight:bold; width:330px; margin-top:75px; margin-bottom:20px; letter-spacing:-0.5px;}
-#loginW .login .box .left .loginD_btn{width:232px; height:48px; border:none; color: #f85d04; font-size:16px; font-weight:bold; cursor: pointer; text-align:center; line-height:2.9; background:url(http://img.go.co.kr/go/login_btn2.jpg); letter-spacing:-1px; margin-left:45px}
+#loginW .login .box .left .loginD_btn{width:232px; height:48px; border:none; color: #f85d04; font-size:16px; font-weight:bold; cursor: pointer; text-align:center; line-height:2.9; background:url(//img.go.co.kr/go/login_btn2.jpg); letter-spacing:-1px; margin-left:45px}
 #loginW .login .box .line{width:1px; height:225px; background:#e5e5e5; floaT:left; margin-top:45px}
 #loginW .login .box .right{float:left; width:320px; margin:50px 85px}
 .form-controlh { width:330px;height: 34px; padding: 5px 12px; font-size: 14px; line-height: 1.42857143;color: #555555; border: 1px solid #cccccc; text-align:left; margin-bottom:10px; border-radius: 3px;}
 #loginW .login .box .right label {float: left; margin-top:20px; color:#333333}
-#loginW .login .box .right .login_btn{float:left; width:354px; height:47px; border:none; color: #fff; font-size:20px; font-weight:bold; cursor: pointer; text-align:center; line-height:2.3; background:url(http://img.go.co.kr/go/login_btn.jpg)}
+#loginW .login .box .right .login_btn{float:left; width:354px; height:47px; border:none; color: #fff; font-size:20px; font-weight:bold; cursor: pointer; text-align:center; line-height:2.3; background:url(//img.go.co.kr/go/login_btn.jpg)}
 #loginW .login .txt{text-align:center; margin-top:30px; letter-spacing:-0.1px}
 
 /** 판매기록 **/
@@ -230,10 +230,10 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 
 .chba .btn_r{floaT:right; display:block}
 .chba .btnr{floaT:left; margin-left:5px; color:#fff; text-align:center; line-height:2.6; font-weight:600}
-.chba .btn_r .btn01{background:url(http://img.go.co.kr/go/schedule_btn01.jpg); width:129px; height:36px; cursor: pointer;}
-.chba .btn_r .btn02{background:url(http://img.go.co.kr/go/schedule_btn02.jpg); width:129px; height:36px; cursor: pointer;}
-.chba .btn_r .btn03{background:url(http://img.go.co.kr/go/schedule_btn03.jpg); width:129px; height:36px; cursor: pointer;}
-.chba .btn_r .btn010{background:url(http://img.go.co.kr/go/schedule_btn010.jpg?ver=2); width:129px; height:36px; cursor: pointer;}
+.chba .btn_r .btn01{background:url(//img.go.co.kr/go/schedule_btn01.jpg); width:129px; height:36px; cursor: pointer;}
+.chba .btn_r .btn02{background:url(//img.go.co.kr/go/schedule_btn02.jpg); width:129px; height:36px; cursor: pointer;}
+.chba .btn_r .btn03{background:url(//img.go.co.kr/go/schedule_btn03.jpg); width:129px; height:36px; cursor: pointer;}
+.chba .btn_r .btn010{background:url(//img.go.co.kr/go/schedule_btn010.jpg?ver=2); width:129px; height:36px; cursor: pointer;}
 
 .table-bordered {border-right:1px solid #dddddd; border-top:1px solid #dddddd; border-bottom:1px solid #dddddd; border-collapse: separate; border-radius: 4px; floaT:left; width:100%; margin-top:20px; font-size: 12px;}
 .table-bordered .fc-head{height:35px; background:#f4f6f7;}
@@ -244,13 +244,13 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 .table-bordered .dhc-body td{border-left:2px solid #dddddd; border-top:2px solid #dddddd; padding:12px 12px 20px 12px; /*height:80px;*/ position: relative;}
 .table-bordered .dhc-body td.disabled-bg{color:#b0b0b0; font-size:15px; vertical-align:top}
 .table-bordered .dhc-body td.disabled-bg1{color:#b0b0b0; font-size:15px; vertical-align:top;}
-/*.table-bordered .dhc-body td.disabled-bg1.td-dim {background: url(http://img.go.co.kr/black_rgba75.png) repeat;}
+/*.table-bordered .dhc-body td.disabled-bg1.td-dim {background: url(//img.go.co.kr/black_rgba75.png) repeat;}
 .table-bordered .dhc-body td.disabled-bg1.td-dim .dim {background: none;}*/
 .table-bordered .dhc-body td.disabled-bg1 .calendar-date{font-weight: bold; font-size:15px; color:#333333; width:100%; margin-bottom:15px;}
 .table-bordered .dhc-body td.disabled-bg1 .calendar-date1{font-weight: bold; font-size:15px; color:#d71400; margin-bottom:15px;}
 
-.table-bordered .dhc-body td.disabled-bg1 .btn04{background:url(http://img.go.co.kr/go/schedule_btn04.png); width:79px; height:29px; cursor: pointer; color:#fff; text-align:center; line-height:2.0; font-weight:600; float:right; font-size:14px;}
-.table-bordered .dhc-body td.disabled-bg1 .btn05{background:url(http://img.go.co.kr/go/schedule_btn05.png); width:79px; height:29px; cursor: pointer; color:#fff; text-align:center; line-height:2.0; font-weight:600; float:right; font-size:14px;}
+.table-bordered .dhc-body td.disabled-bg1 .btn04{background:url(//img.go.co.kr/go/schedule_btn04.png); width:79px; height:29px; cursor: pointer; color:#fff; text-align:center; line-height:2.0; font-weight:600; float:right; font-size:14px;}
+.table-bordered .dhc-body td.disabled-bg1 .btn05{background:url(//img.go.co.kr/go/schedule_btn05.png); width:79px; height:29px; cursor: pointer; color:#fff; text-align:center; line-height:2.0; font-weight:600; float:right; font-size:14px;}
 
 .table-bordered .dhc-body td.disabled-bg1 .infosw{background:#fff5ce; width:100%; height:42px; margin-top:7px; font-size:12px; color:#242424; font-weight:600; padding-top:5px; cursor: pointer;}
 .table-bordered .dhc-body td.disabled-bg1 .infosw .roo{floaT:left; margin-left:5px;}
@@ -292,20 +292,20 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 #popW .txri{line-height:2.3; margin-left:3px; float:left}
 #popW .tdwidt{width:100%}
 #popW .bobtn{margin-top:30px; float:left; margin-left:400px}
-#popW .bobtn .btn06{background:url(http://img.go.co.kr/go/schedule_btn06.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;}
-#popW .bobtn .btn07{background:url(http://img.go.co.kr/go/schedule_btn07.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; margin-left:5px; font-weight: bold;}
-#popW .btn08{background:url(http://img.go.co.kr/go/schedule_btn08.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#000; text-align:center; line-height:2.6; font-weight: bold; margin-left:50px}
-#popW .btn09_on{background:url(http://img.go.co.kr/go/schedule_btn09.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;}
-#popW .btn09{background:url(http://img.go.co.kr/go/schedule_btn08.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#000; text-align:center; line-height:2.6; font-weight: bold;}
-#popW .btn08_on{background:url(http://img.go.co.kr/go/schedule_btn09.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;margin-left:50px}
+#popW .bobtn .btn06{background:url(//img.go.co.kr/go/schedule_btn06.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;}
+#popW .bobtn .btn07{background:url(//img.go.co.kr/go/schedule_btn07.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; margin-left:5px; font-weight: bold;}
+#popW .btn08{background:url(//img.go.co.kr/go/schedule_btn08.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#000; text-align:center; line-height:2.6; font-weight: bold; margin-left:50px}
+#popW .btn09_on{background:url(//img.go.co.kr/go/schedule_btn09.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;}
+#popW .btn09{background:url(//img.go.co.kr/go/schedule_btn08.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#000; text-align:center; line-height:2.6; font-weight: bold;}
+#popW .btn08_on{background:url(//img.go.co.kr/go/schedule_btn09.png); width:92px; height:34px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;margin-left:50px}
 
 #popWs{width:990px; border:3px solid #97a5ab; padding:35px; height:350px; letter-spacing:-0.8px; display:block; float:left}
 #popWs .top{floaT:left; width:990px; border-bottom:1px solid #d9d9d9; padding-bottom:20px}
 #popWs .top .title{float:left; font-size:20px; font-weight:bold;}
 #popWs .top .close{float:right}
 #popWs .bobtn{margin-top:30px; float:left; margin-left:400px}
-#popWs .bobtn .btn06{background:url(http://img.go.co.kr/go/schedule_btn06.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;}
-#popWs .bobtn .btn07{background:url(http://img.go.co.kr/go/schedule_btn07.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; margin-left:5px; font-weight: bold;}
+#popWs .bobtn .btn06{background:url(//img.go.co.kr/go/schedule_btn06.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; font-weight: bold;}
+#popWs .bobtn .btn07{background:url(//img.go.co.kr/go/schedule_btn07.png); width:93px; height:35px; cursor:pointer; floaT:left; color:#fff; text-align:center; line-height:2.6; margin-left:5px; font-weight: bold;}
 
 .chem{floaT:left; margin:35px 0 0 10px; font-size:13px}
 .chem li{floaT:left;  font-size:13px; margin-right:20px}
@@ -333,7 +333,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); -webkit-box-s
 box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);}
 .m-t-xss{floaT:left; margin-left:7px;}
 
-.guide-btn{background:url(http://img.go.co.kr/go/guide_btn01.jpg); width:217px; height:51px; cursor: pointer; float:right; display:block; color:#fff; line-height:3.0; font-weight:600; font-size:15px; margin-bottom:25px}
+.guide-btn{background:url(//img.go.co.kr/go/guide_btn01.jpg); width:217px; height:51px; cursor: pointer; float:right; display:block; color:#fff; line-height:3.0; font-weight:600; font-size:15px; margin-bottom:25px}
 
 
 /** 실시간 알림 팝업창 20161019 **/

@@ -127,7 +127,7 @@
 .history02-info .barcode-pop .box {position: absolute; left: 50%; top: 50%; margin-left: -140px; margin-top: -275px; width: 280px; height: 550px; background: #fff; text-align: center; font-size: 14px; z-index: 10000;}
 .history02-info .barcode-pop .box p {position: absolute; transform: rotate(90deg); -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform-origin: left top;}
 .history02-info .barcode-pop .box p.nth-1 {font-size: 26px; font-weight: 600; right: -525px; top: 0; width: 550px;}
-.history02-info .barcode-pop .box p.nth-2 {background: url("http://img.go.co.kr/mobile/h_barcode.png") repeat; right: -322px; top: 74px; width: 402px; height: 125px;}
+.history02-info .barcode-pop .box p.nth-2 {background: url("//img.go.co.kr/mobile/h_barcode.png") repeat; right: -322px; top: 74px; width: 402px; height: 125px;}
 .history02-info .barcode-pop .box p.nth-3 {right: -330px; font-size: 20px; font-weight: 600; width: 550px;}
 .history02-info .barcode-pop .box .btn-a-cancel {position: absolute; bottom: 30px; right: 36px; display: block; width: 20px; height: 20px;}
 .history02-info .barcode-pop .box .btn-a-cancel:before, .history02-info .barcode-pop .box .btn-a-cancel:after {content: ""; position: absolute; top: 10px; left: -2px; display: block; width: 26px; height: 1px; background: #000;}
@@ -163,7 +163,7 @@
 .h-q-pop .box ul li {position: relative; margin-top: 9px;}
 .h-q-pop .box ul li:first-child {margin-top: 0;}
 .h-q-pop .box ul li a {display: block; margin: 0 auto; width: 248px; height: 40px; border-radius: 6px; line-height: 2.8em; text-align: left; text-indent: 41px;}
-.h-q-pop .box ul li a:before {content: ""; display: inline-block; position: relative; width: 44px; height: 16px; background: url(http://img.go.co.kr/mobile/h_q_icons.png) no-repeat;}
+.h-q-pop .box ul li a:before {content: ""; display: inline-block; position: relative; width: 44px; height: 16px; background: url(//img.go.co.kr/mobile/h_q_icons.png) no-repeat;}
 .h-q-pop .box ul li.front a {background: #163c88; color: #fff;}
 .h-q-pop .box ul li.go a {background: #f96a0a; color: #fff;}
 .h-q-pop .box ul li.kko a {background: #fbe300; color: #381e1f;}
@@ -172,6 +172,6 @@
 .h-q-pop .box ul li.kko a:before {height: 22px; background-position: center -60px; top: 5px;}
 
 .h-q-pop.road .box {position: absolute; left: 50%; top: 50%; margin-left: -138px; margin-top: -102px; width: 276px; height: 114px; background: #fff; border-radius: 8px; text-align: center; font-size: 14px;}
-.h-q-pop .box ul li.road a:before {top: 6px; height: 28px; width: 100px; height: 26px; background: url(http://img.go.co.kr/mobile/h_r_icons.png) no-repeat;}
+.h-q-pop .box ul li.road a:before {top: 6px; height: 28px; width: 100px; height: 26px; background: url(//img.go.co.kr/mobile/h_r_icons.png) no-repeat;}
 .h-q-pop .box ul li.road a {background: #3869b8; color: #fff; text-indent: 58px;}
 .h-q-pop .box ul li.road a span {position: relative;}

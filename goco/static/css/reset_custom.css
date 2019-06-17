@@ -50,7 +50,7 @@ table {width: 100%;}
 img{max-width: 100%;}/*ipad사이즈에서 userlogin 의 title등 %로 된  것을 위해*/
 img, input, label, select { vertical-align: middle; }
 input + span { vertical-align:middle; }
-legend, caption {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px;}
-.hidden {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px; opacity: 0; filter: alpha(opacity=0);}
+legend, caption {overflow: hidden; positon: absolute; border: 0; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px);}
+.hidden {overflow: hidden; positon: absolute; border: 0; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px);}
 .clr:before, .clr:after, .row:before, .row:after {content: ""; display: block;}
 .clr:after, .row:after {clear: both;}

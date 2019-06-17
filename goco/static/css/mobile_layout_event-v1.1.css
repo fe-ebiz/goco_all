@@ -223,7 +223,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 /* faq */
 .bscond_wrap .bs-box {position: relative; width: 100%; margin: 0 auto 15px; background-color: #efefef;}
 .bscond_wrap .bs-box .faq_title img {width: 100%;}
-/*.bscond_wrap .bs-box .faq_title {background: url(http://img.go.co.kr/event/180118_bscond_event/faq_top.jpg) no-repeat center center; width: 100%; height: 113px; background-size: 100% 100%;}*/
+/*.bscond_wrap .bs-box .faq_title {background: url(//img.go.co.kr/event/180118_bscond_event/faq_top.jpg) no-repeat center center; width: 100%; height: 113px; background-size: 100% 100%;}*/
 .bscond_wrap .bs-box .ig-1 {width: 100%;}
 .bscond_wrap .bs-box .faq-ul {position: relative; border-top: 2px solid #264a76; background: #f8f8f8;}
 .bscond_wrap .bs-box .faq-ul > li {position: relative; border: 1px solid #bababa; border-top: none; border-right: none; border-left: none;}
@@ -291,7 +291,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 
 /* 이벤트 신청하기 공통 */
 .fz-1 {font-size: 15px !important;}
-.evt-area-apply {position: relative; width: 100%; padding-bottom: 80px; font-family: "NanumSquare", sans-serif;}
+.evt-area-apply {position: relative; width: 100%; padding-bottom: 80px; font-family: "NanumSquare", sans-serif; max-width: 768px; margin: 0 auto;}
 .evt-area-apply.evt-name {background: #394052;}
 .evt-area-apply .evt-top {background: #4f4c7b; text-align: center; color: #fff; font-size: 14px; padding: 6px 0; line-height: 1.3; letter-spacing: 0; word-break: keep-all;}
 .evt-area-apply .evt-top br {}
@@ -325,7 +325,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-outer .evt-main {text-align: center;}
 .evt-outer .evt-main .evt-visual {padding-top: 5px; padding-bottom: 18px; background: #d6d8f7;}
 .evt-outer .evt-main .evt-visual img.txtResult {width: 310px;}
-.evt-outer .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 303px; margin: 0 auto; background: url(http://img.go.co.kr/event/mayhills/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.evt-outer .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 303px; margin: 0 auto; background: url(//img.go.co.kr/event/mayhills/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .evt-outer .evt-main .evt-visual div.txtResult span.name {display: inline-block; font-size: 18px; font-weight: 700; position: absolute; top: 25px; width: 172px; height: 26px; left: 50px; text-align: center; line-height: 1.5;}
 .evt-outer .evt-main .evt-visual > p {width: 100%; max-width: 320px; margin: 10px auto 0; font-size: 13px; word-break: keep-all;}
 .evt-outer .evt-main .evt-visual .p-row-1 {}
@@ -400,6 +400,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-outer .evt-bottom {position: relative; height: 62px;}
 .evt-outer .evt-bottom .fixed-btn {font-size: 0; box-sizing: border-box; z-index: 3; text-align: center; background: #fff; padding: 8px 0; position: fixed; left: 0; bottom: 0; width: 100%;}
 @media (min-width: 768px) {
+	.evt-area-apply .btn-a,
 	.evt-outer .evt-bottom .fixed-btn {width: 768px; left: 50%; margin-left: -384px; box-sizing: border-box; border-left: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6;}
 }
 .evt-outer .evt-bottom .fixed-btn > a {display: inline-block; width: 46%; height: 46px; vertical-align: middle; color: #fff; font-size: 13px; line-height: 1.2; box-sizing: border-box;}
@@ -436,18 +437,18 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-outer .box-guide .guide-list li:first-child {margin-top: 22px;}
 .evt-outer .box-guide .guide-list li .ico {display: table-cell; width: 32px; height: 100%; vertical-align: middle;}
 .evt-outer .box-guide .guide-list li p {display: table-cell; padding-left: 7px; font-size: 13px; line-height: 16px; word-break: keep-all; vertical-align: middle; color: #181818;}
-.evt-outer .box-guide .guide-list .li-1 .ico {background: url('http://img.go.co.kr/event/ramada/evt7179/list_guide_01.png') no-repeat; background-size: 32px;}
-.evt-outer .box-guide .guide-list .li-2 .ico {background: url('http://img.go.co.kr/event/ramada/evt7179/list_guide_02.png') no-repeat; background-size: 32px;}
-.evt-outer .box-guide .guide-list .li-3 .ico {background: url('http://img.go.co.kr/event/ramada/evt7179/list_guide_03.png') no-repeat; background-size: 32px;}
-.evt-outer .box-guide .guide-list .li-4 .ico {background: url('http://img.go.co.kr/event/ramada/evt7179/list_guide_04.png') no-repeat; background-size: 32px;}
-.evt-outer .box-guide .guide-list .li-5 .ico {background: url('http://img.go.co.kr/event/ramada/evt7179/list_guide_05.png') no-repeat; background-size: 32px;}
-.evt-outer .box-guide .guide-list .li-1 .ico.ico-blue {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_01.png'); background-repeat: no-repeat;}
-.evt-outer .box-guide .guide-list .li-2 .ico.ico-blue {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_02.png'); background-repeat: no-repeat;}
-.evt-outer .box-guide .guide-list .li-3 .ico.ico-blue {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_03.png'); background-repeat: no-repeat;}
-.evt-outer .box-guide .guide-list .li-4 .ico.ico-blue {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_04.png'); background-repeat: no-repeat;}
-.evt-outer .box-guide .guide-list .li-5 .ico.ico-blue {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_05.png'); background-repeat: no-repeat;}
+.evt-outer .box-guide .guide-list .li-1 .ico {background: url('//img.go.co.kr/event/ramada/evt7179/list_guide_01.png') no-repeat; background-size: 32px;}
+.evt-outer .box-guide .guide-list .li-2 .ico {background: url('//img.go.co.kr/event/ramada/evt7179/list_guide_02.png') no-repeat; background-size: 32px;}
+.evt-outer .box-guide .guide-list .li-3 .ico {background: url('//img.go.co.kr/event/ramada/evt7179/list_guide_03.png') no-repeat; background-size: 32px;}
+.evt-outer .box-guide .guide-list .li-4 .ico {background: url('//img.go.co.kr/event/ramada/evt7179/list_guide_04.png') no-repeat; background-size: 32px;}
+.evt-outer .box-guide .guide-list .li-5 .ico {background: url('//img.go.co.kr/event/ramada/evt7179/list_guide_05.png') no-repeat; background-size: 32px;}
+.evt-outer .box-guide .guide-list .li-1 .ico.ico-blue {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_01.png'); background-repeat: no-repeat;}
+.evt-outer .box-guide .guide-list .li-2 .ico.ico-blue {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_02.png'); background-repeat: no-repeat;}
+.evt-outer .box-guide .guide-list .li-3 .ico.ico-blue {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_03.png'); background-repeat: no-repeat;}
+.evt-outer .box-guide .guide-list .li-4 .ico.ico-blue {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_04.png'); background-repeat: no-repeat;}
+.evt-outer .box-guide .guide-list .li-5 .ico.ico-blue {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_05.png'); background-repeat: no-repeat;}
 .evt-outer .box-guide .p-list {position: relative; box-sizing:border-box; margin-top: 22px; padding: 0 6px}
-.evt-outer .box-guide .p-list p {margin-top: 4px; padding-left: 12px; font-size: 10px; line-height: 14px; text-align: left; word-break: keep-all; color: #111; background: url(http://img.go.co.kr/event/ramada/evt7179/list_p.gif) no-repeat 0 4px; background-size: 9px auto;}
+.evt-outer .box-guide .p-list p {margin-top: 4px; padding-left: 12px; font-size: 10px; line-height: 14px; text-align: left; word-break: keep-all; color: #111; background: url(//img.go.co.kr/event/ramada/evt7179/list_p.gif) no-repeat 0 4px; background-size: 9px auto;}
 
 .evt-outer .box-faq .faq-q.on .i-x-2 {top: 17px; right: 4px; width: 7px; height: 7px; border: 1px solid #f24959; border-left: none;  border-bottom: none; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
 .evt-outer .box-faq .faq-q.on .i-x-2:before, .evt-outer .box-faq .faq-q.on .i-x-2:after {content:none}
@@ -486,7 +487,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .bscondo-evt7788 .evt-top,
 .apply-bscondo .evt-top {background: #1c1a1b;}
 .bscondo-evt7788 .evt-main .evt-visual {background: #f7ca4b; padding-top: 20px;}
-.bscondo-evt7788 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 270px; margin: 0 auto; background: url(http://img.go.co.kr/event/bscondo/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.bscondo-evt7788 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 270px; margin: 0 auto; background: url(//img.go.co.kr/event/bscondo/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .bscondo-evt7788 .evt-main .evt-visual div.txtResult span.name {width: 162px; top: 8px; left: 75px;}
 .bscondo-evt7788 .evt-main .evt-visual .p-row-2 {background: #debf4a; border-top: 1px solid #74a47e; border-bottom: 1px solid #74a47e;}
 .apply-bscondo .btn-a,
@@ -508,7 +509,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .yeonho-evt7788 .colr-3 {color: #fbef2b;}
 .yeonho-evt7788 .evt-top {background: #005B6E;}
 .yeonho-evt7788 .evt-main .evt-visual {background: #7bcacf; padding-top: 10px;}
-.yeonho-evt7788 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/yeonho/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.yeonho-evt7788 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/yeonho/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .yeonho-evt7788 .evt-main .evt-visual div.txtResult span.name {width: 162px; top: 29px; left: 60px;}
 .yeonho-evt7788 .evt-main .evt-visual .p-row-2 {background: #6DBFCB; border-top: 1px solid #5bb5c3; border-bottom: 1px solid #5bb5c3;}
 .yeonho-evt7788 .evt-main .evt-tit {background: #005B6E;}
@@ -530,7 +531,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .ocean-evt7942 .evt-top {background: #2684cc;}
 .ocean-evt7942 .evt-main {}
 .ocean-evt7942 .evt-main .evt-visual {background: #BEE6FF;}
-.ocean-evt7942 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.ocean-evt7942 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .ocean-evt7942 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 29px; left: 50px;}
 .ocean-evt7942 .evt-main .evt-visual .p-row-2 {background: #a4daff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
 .ocean-evt7942 .evt-main .evt-tit {background: #243b71;}
@@ -544,7 +545,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .taebaek-evt8282 .evt-top {background: #0257b5;}
 .taebaek-evt8282 .evt-main {}
 .taebaek-evt8282 .evt-main .evt-visual {background: #B8D7F4;}
-.taebaek-evt8282 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/taebaek/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.taebaek-evt8282 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/taebaek/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .taebaek-evt8282 .evt-main .evt-visual .p-row-2 {background: #a6c3ef; border-top: 1px solid #94b3e4; border-bottom: 1px solid #94b3e4;}
 .taebaek-evt8282 .evt-main .evt-tit {background: #0052ad;}
 
@@ -557,7 +558,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .namwonHts-evt7179 .evt-top {background: #336534;}
 .namwonHts-evt7179 .evt-main {}
 .namwonHts-evt7179 .evt-main .evt-visual {background: #C6EDCE;}
-.namwonHts-evt7179 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/namwonHts/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.namwonHts-evt7179 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/namwonHts/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .namwonHts-evt7179 .evt-main .evt-visual .p-row-2 {background: #B1D7CA; border-top: 1px solid #94b3e4; border-bottom: 1px solid #94b3e4;}
 .namwonHts-evt7179 .evt-main .evt-tit {background: #56A264;}
 
@@ -574,7 +575,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .apply-bscondo .evt-top {background: #1c1a1b;}
 .bscondo-evt2018 .evt-main {}
 .bscondo-evt2018 .evt-main .evt-visual {background: #ff7db1;}
-.bscondo-evt2018 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/bscondo/summer2018/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.bscondo-evt2018 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/bscondo/summer2018/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .bscondo-evt2018 .evt-main .evt-visual div.txtResult span.name {top: 6px; width: 162px; height: 27px;  left: 75px;}
 .bscondo-evt2018 .evt-main .evt-visual .p-row-2 {background: #e977ae; border-top: 1px solid #8f5e76; border-bottom: 1px solid #8f5e76;}
 .bscondo-evt2018 .evt-main .evt-tit {background: #1c1a1b;}
@@ -588,7 +589,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .ocean-evt2253 .evt-top {background: #2684cc;}
 .ocean-evt2253 .evt-main {}
 .ocean-evt2253 .evt-main .evt-visual {background: #bde6ff;}
-.ocean-evt2253 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/ocean/come2253/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.ocean-evt2253 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/ocean/come2253/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .ocean-evt2253 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 28px; left: 50px;}
 .ocean-evt2253 .evt-main .evt-visual .p-row-2 {background: #a4d9ff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
 .ocean-evt2253 .evt-main .evt-tit {background: #243b71;}
@@ -603,7 +604,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .coresco-evt4567 .colr-3 {color: #180075;}
 .coresco-evt4567 .evt-top {background: #4187b0;}
 .coresco-evt4567 .evt-main .evt-visual {background: #3ddae9;}
-.coresco-evt4567 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/coresco/chiak_evt4567/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.coresco-evt4567 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/coresco/chiak_evt4567/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .coresco-evt4567 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 26px; left: 50px;}
 .coresco-evt4567 .evt-main .evt-visual .p-row-2 {background: #37c5e5; border-top: 1px solid #b7b9ef; border-bottom: 1px solid #b7b9ef;}
 .coresco-evt4567 .evt-main .evt-tit {background: #064f88;}
@@ -651,7 +652,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .mhh-evt0113 .evt-top {background: #2684cc;}
 .mhh-evt0113 .evt-main {}
 .mhh-evt0113 .evt-main .evt-visual {background: #bde6ff;}
-.mhh-evt0113 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/mohanghea/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.mhh-evt0113 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/mohanghea/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .mhh-evt0113 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 28px; left: 50px;}
 .mhh-evt0113 .evt-main .evt-visual .p-row-2 {background: #a4d9ff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
 .mhh-evt0113 .evt-main .evt-tit {background: #243b71;}
@@ -666,7 +667,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .stay3-evt1119 .colr-3 {color: #9844ff;}
 .stay3-evt1119 .evt-top {background: #2684cc;}
 .stay3-evt1119 .evt-main .evt-visual {background: #bde6ff;}
-.stay3-evt1119 .evt-main .evt-visual div.txtResult {height: 175px; background: url(http://img.go.co.kr/event/stay3_181119/txt_winnerGd.jpg) no-repeat; background-size: 100% auto;}
+.stay3-evt1119 .evt-main .evt-visual div.txtResult {height: 175px; background: url(//img.go.co.kr/event/stay3_181119/txt_winnerGd.jpg) no-repeat; background-size: 100% auto;}
 .stay3-evt1119 .evt-main .evt-visual div.txtResult span.name {width: 173px; top: 15px; left: 70px;}
 .stay3-evt1119 .evt-main .evt-visual .p-row-2 {background: #a4d9ff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
 .stay3-evt1119 .evt-contents, .stay3-evt1119 .evt-contents .evt-menu-box {background: #bde6ff;}
@@ -696,10 +697,10 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .chance-evt181211 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto;}
 /* 오션투유 */
 .ocean-evt2253.chance-evt181211 .colr-3 {color: #e60000;}
-.ocean-evt2253.chance-evt181211 .evt-main .evt-visual div.txtResult {background: url(http://img.go.co.kr/mobile/event/181211_chance/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.ocean-evt2253.chance-evt181211 .evt-main .evt-visual div.txtResult {background: url(//img.go.co.kr/mobile/event/181211_chance/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 /* bs콘도 */
 .bscondo-evt2018.chance-evt181211 .colr-3 {color: #0044aa;}
-.bscondo-evt2018.chance-evt181211 .evt-main .evt-visual div.txtResult {background: url(http://img.go.co.kr/mobile/event/181211_chance/bscondo/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.bscondo-evt2018.chance-evt181211 .evt-main .evt-visual div.txtResult {background: url(//img.go.co.kr/mobile/event/181211_chance/bscondo/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 
 
 
@@ -742,7 +743,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .bus-wrapper .btn-box {z-index:10; position: fixed; display: block; width: 100%; bottom: 0; left: 0;}
 .bus-wrapper .btn-box a {position: absolute; display: block; width: 100%; height: 74px; bottom: 0; left: 0; text-align: center; background: #00457a;}
 .bus-wrapper .btn-box .btn-buy span {position: relative; display: inline-block; padding-right: 40px; font-size: 26px; font-weight: 700; line-height: 74px; color: #fff;}
-.bus-wrapper .btn-box .btn-buy span:before {content: ''; display: inline-block; position: absolute; width: 32px; height: 32px; top:50%; right: 0; margin-top: -16px; background: url(http://img.go.co.kr/mobile/landing/20181126_busOcean/btn_buy.png) no-repeat center center; background-size: 32px auto;}
+.bus-wrapper .btn-box .btn-buy span:before {content: ''; display: inline-block; position: absolute; width: 32px; height: 32px; top:50%; right: 0; margin-top: -16px; background: url(//img.go.co.kr/mobile/landing/20181126_busOcean/btn_buy.png) no-repeat center center; background-size: 32px auto;}
 .bus-wrapper .btn-box .bt {height: 42px; font-size: 14px; font-weight: 700; line-height: 42px; color: #fff; background: #385fa4;}
 .bus-wrapper .dawrap {z-index: 11; width:100%; height:100%; max-height:300px; background: #fff; position:absolute; bottom:42px; height:auto;padding-bottom:25px;}
 .bus-wrapper .dawrap span, .dawrap select {display: inline-block;}
@@ -874,11 +875,11 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .ramada-evt7179-summer .evt-contents .price-txt {background: #0D8CFA;}
 .ramada-evt7179-summer .evt-main .evt-tit {background: #070238;}
 .ramada-evt7179-summer .area-guide .guide-txt-1 em {color: #0856C2;}
-.ramada-evt7179-summer .box-guide .guide-list .li-1 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_01.png'); background-repeat: no-repeat;}
-.ramada-evt7179-summer .box-guide .guide-list .li-2 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_02.png'); background-repeat: no-repeat;}
-.ramada-evt7179-summer .box-guide .guide-list .li-3 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_03.png'); background-repeat: no-repeat;}
-.ramada-evt7179-summer .box-guide .guide-list .li-4 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_04.png'); background-repeat: no-repeat;}
-.ramada-evt7179-summer .box-guide .guide-list .li-5 .ico {background-image: url('http://img.go.co.kr/event/ramada/evt7179_summer/list_guide_05.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-guide .guide-list .li-1 .ico {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_01.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-guide .guide-list .li-2 .ico {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_02.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-guide .guide-list .li-3 .ico {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_03.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-guide .guide-list .li-4 .ico {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_04.png'); background-repeat: no-repeat;}
+.ramada-evt7179-summer .box-guide .guide-list .li-5 .ico {background-image: url('//img.go.co.kr/event/ramada/evt7179_summer/list_guide_05.png'); background-repeat: no-repeat;}
 .ramada-evt7179-summer .box-faq {position:relative; padding-bottom: 10px;}
 .ramada-evt7179-summer .box-faq img.txtFaq {z-index:2; position:relative; padding:21px 0 18px;}
 .ramada-evt7179-summer .box-faq .faq-ul {box-sizing:border-box; width:100%; padding:0 8px;}
@@ -905,7 +906,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .evt-outer.value_free {}
 .evt-outer.value_free .tit-arrow:after {display: none; /*background: #070238;*/}
 .evt-outer.value_free .evt-top {display:none; background:none;}
-.evt-outer.value_free .evt-main .evt-visual {position: relative; height: 625px; padding: 0; background: url('http://img.go.co.kr/event/value/free/txt_winnerGd_bg.jpg') no-repeat center bottom / 100% 100%;}
+.evt-outer.value_free .evt-main .evt-visual {position: relative; height: 625px; padding: 0; background: url('//img.go.co.kr/event/value/free/txt_winnerGd_bg.jpg') no-repeat center bottom / 100% 100%;}
 .evt-outer.value_free .evt-main .evt-visual .visual-box {position: absolute; width: 100%; top: 11%; text-align: center;}
 .evt-outer.value_free .evt-main .evt-visual .visual-box > * {position: absolute; width: 100%; color: #fff;}
 .evt-outer.value_free .evt-main .evt-visual .visual-box .visual-img {position: relative; display: block; margin: 0 auto; width: 250px;}
@@ -922,7 +923,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 
 /* 새로운 형식 이벤트 .visual-box 추가로 스타일 변경 차후 상단 이동*/
 .evt-area-apply .evt-top {z-index: 1; position: absolute; width: 100%; top: 375px; background: none; font-size: 11px;}
-.evt-area-apply .evt-visual {position: relative; height: 410px; padding: 0; background: url('http://img.go.co.kr/event/value/free/txt_apply_bg.jpg') no-repeat center bottom / 100% 100%;}
+.evt-area-apply .evt-visual {position: relative; height: 410px; padding: 0; background: url('//img.go.co.kr/event/value/free/txt_apply_bg.jpg') no-repeat center bottom / 100% 100%;}
 .evt-area-apply .evt-visual .visual-box {position: absolute; width: 100%; top: 10%; text-align: center;}
 .evt-area-apply .evt-visual .visual-box > * {position: absolute; width: 100%; color: #fff;}
 .evt-area-apply .evt-visual .visual-box .visual-img {position: relative; display: block; margin: 0 auto; width: 275px;}

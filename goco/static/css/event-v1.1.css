@@ -6,9 +6,9 @@
 
 /* 메인배너 */
 #slides_bn {width:100%; margin:auto; }
-#slides_bn .slide_img01{background:url(http://img.go.co.kr/top_dogospa.jpg) center 0 no-repeat; width:100%; height:200px;}
-#slides_bn .slide_img02{background:url(http://img.go.co.kr/top_resomspa.jpg) center 0 no-repeat; width:100%; height:200px; }
-#slides_bn .slide_img03{background:url(http://img.go.co.kr/top_asan01.jpg) center 0 no-repeat; width:100%; height:200px; }
+#slides_bn .slide_img01{background:url(//img.go.co.kr/top_dogospa.jpg) center 0 no-repeat; width:100%; height:200px;}
+#slides_bn .slide_img02{background:url(//img.go.co.kr/top_resomspa.jpg) center 0 no-repeat; width:100%; height:200px; }
+#slides_bn .slide_img03{background:url(//img.go.co.kr/top_asan01.jpg) center 0 no-repeat; width:100%; height:200px; }
 #slides_bn .imgw{ width:1300px;  margin:auto; position:relative; }
 #slides_bn .imgw ul{position:absolute; left:400px}
 #slides_bn .imgw ul li{float:left; margin-right:70px}
@@ -17,19 +17,19 @@
 #slide_btnw{width:1100px; margin:auto; position:relative;}
 #slide_btnw ul{width:1100px}
 #slide_btnw ul li{float:left;}
-#slide_btnw ul li.asan_prev a{display:block; width:120px; height:119px; background-image:url(http://img.go.co.kr/asan_prev.png); text-indent:-99999px;  position:absolute; top:37px}
+#slide_btnw ul li.asan_prev a{display:block; width:120px; height:119px; background-image:url(//img.go.co.kr/asan_prev.png); text-indent:-99999px;  position:absolute; top:37px}
 #slide_btnw ul li.asan_prev a:hover{background-position:0 -119px}
-#slide_btnw ul li.asan_next a{display:block;  width:120px; height:119px; background-image:url(http://img.go.co.kr/asan_next.png); text-indent:-99999px;  position:absolute; top:37px; right:0}
+#slide_btnw ul li.asan_next a{display:block;  width:120px; height:119px; background-image:url(//img.go.co.kr/asan_next.png); text-indent:-99999px;  position:absolute; top:37px; right:0}
 #slide_btnw ul li.asan_next a:hover{background-position:0 -119px}
 
-#slide_btnw ul li.resom_prev a{display:block; width:120px; height:119px; background-image:url(http://img.go.co.kr/resom_prev.png); text-indent:-99999px;  position:absolute; top:37px;}
+#slide_btnw ul li.resom_prev a{display:block; width:120px; height:119px; background-image:url(//img.go.co.kr/resom_prev.png); text-indent:-99999px;  position:absolute; top:37px;}
 #slide_btnw ul li.resom_prev a:hover{background-position:0 -119px}
-#slide_btnw ul li.resom_next a{display:block; width:120px; height:119px; background-image:url(http://img.go.co.kr/resom_next.png); text-indent:-99999px;  position:absolute; top:37px; right:0}
+#slide_btnw ul li.resom_next a{display:block; width:120px; height:119px; background-image:url(//img.go.co.kr/resom_next.png); text-indent:-99999px;  position:absolute; top:37px; right:0}
 #slide_btnw ul li.resom_next a:hover{background-position:0 -119px}
 
-#slide_btnw ul li.dogo_prev a{display:block; width:120px; height:119px; background-image:url(http://img.go.co.kr/dogo_prev.png); text-indent:-99999px;  position:absolute; top:37px}
+#slide_btnw ul li.dogo_prev a{display:block; width:120px; height:119px; background-image:url(//img.go.co.kr/dogo_prev.png); text-indent:-99999px;  position:absolute; top:37px}
 #slide_btnw ul li.dogo_prev a:hover{background-position:0 -119px}
-#slide_btnw ul li.dogo_next a{display:block;width:120px; height:119px; background-image:url(http://img.go.co.kr/dogo_next.png); text-indent:-99999px;  position:absolute; top:37px; right:0}
+#slide_btnw ul li.dogo_next a{display:block;width:120px; height:119px; background-image:url(//img.go.co.kr/dogo_next.png); text-indent:-99999px;  position:absolute; top:37px; right:0}
 #slide_btnw ul li.dogo_next a:hover{background-position:0 -119px}
 
 /* 탭 */
@@ -48,10 +48,10 @@
 #list_etc_goods_cc .photo{position:relative; margin-right:32px}
 #list_etc_goods_cc .photo_last {position:relative}
 
-#list_etc_goods_cc .photo .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
-#list_etc_goods_cc .photo .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
-#list_etc_goods_cc .photo_last .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
-#list_etc_goods_cc .photo_last .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
+#list_etc_goods_cc .photo .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_specials.png) no-repeat}
+#list_etc_goods_cc .photo .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_best.png) no-repeat}
+#list_etc_goods_cc .photo_last .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_specials.png) no-repeat}
+#list_etc_goods_cc .photo_last .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_best.png) no-repeat}
 
 #list_etc_goods_cc img{margin-bottom:5px; width:310px; height:210px; text-align:center}
 #list_etc_goods_cc .dis_price{font-size:18px; font-weight:800; color:#ff0000; margin-left:7px; font-family:Tahoma;}
@@ -73,7 +73,7 @@
 #guesthouse {float:left; padding-bottom:100px; width:100%; background:#fff; }
 
 /* 메인배너 */
-#guesthouse .guesthouse_bn1 {background:url(http://img.go.co.kr/top_guesthouse1.jpg) center 0 no-repeat; width:100%; height:200px;}
+#guesthouse .guesthouse_bn1 {background:url(//img.go.co.kr/top_guesthouse1.jpg) center 0 no-repeat; width:100%; height:200px;}
 
 
 /* 탭 */
@@ -117,10 +117,10 @@
 #guesthouse_list_w .photo{position:relative; margin-right:32px}
 #guesthouse_list_w .photo_last {position:relative}
 
-#guesthouse_list_w .photo .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
-#guesthouse_list_w .photo .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
-#guesthouse_list_w .photo_last .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
-#guesthouse_list_w .photo_last .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
+#guesthouse_list_w .photo .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_specials.png) no-repeat}
+#guesthouse_list_w .photo .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_best.png) no-repeat}
+#guesthouse_list_w .photo_last .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_specials.png) no-repeat}
+#guesthouse_list_w .photo_last .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_best.png) no-repeat}
 
 #guesthouse_list_w img{margin-bottom:5px; width:310px; height:210px; text-align:center}
 #guesthouse_list_w .dis_price{font-size:18px; font-weight:800; color:#ff0000; margin-left:7px; font-family:Tahoma;}
@@ -151,7 +151,7 @@
 #spapackage {float:left; padding-bottom:100px; width:100%; background:#fff; }
 
 /* 메인배너 */
-#spapackage .spapackage_bn {background:url(http://img.go.co.kr/top_aspa.jpg) center 0 no-repeat; width:100%; height:303px;}
+#spapackage .spapackage_bn {background:url(//img.go.co.kr/top_aspa.jpg) center 0 no-repeat; width:100%; height:303px;}
 
 /* 탭 */
 #spapackage .tab_wrap {width:1002px; height:40px; margin:auto; margin-bottom:30px;  margin-top:30px; clear:both; background-color:#c6173a}
@@ -165,10 +165,10 @@
 .spapackage_list_w .photo{position:relative; margin-right:32px}
 .spapackage_list_w .photo_last {position:relative}
 
-.spapackage_list_w .photo .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
-.spapackage_list_w .photo .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
-.spapackage_list_w .photo_last .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_specials.png) no-repeat}
-.spapackage_list_w .photo_last .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(http://img.go.co.kr/icon_best.png) no-repeat}
+.spapackage_list_w .photo .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_specials.png) no-repeat}
+.spapackage_list_w .photo .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_best.png) no-repeat}
+.spapackage_list_w .photo_last .icon_specials {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_specials.png) no-repeat}
+.spapackage_list_w .photo_last .icon_best {position:absolute; top:-6px; left:8px; width:58px; height:58px; background:url(//img.go.co.kr/icon_best.png) no-repeat}
 
 .spapackage_list_w img{margin-bottom:5px; width:310px; height:210px; text-align:center}
 .spapackage_list_w .dis_price{font-size:18px; font-weight:800; color:#ff0000; margin-left:7px; font-family:Tahoma;}
@@ -186,10 +186,10 @@
 
 /* 테마별국내숙소모음 랜딩 */
 #themeLanding {float:left; padding-bottom:100px; width:100%; background:#fff}
-#themeLanding .busan_bn1 {width:100%; height:200px; background:url(http://img.go.co.kr/landing/busan_titBG.jpg) center 0 no-repeat}
-#themeLanding .jeju_bn1 {width:100%; height:200px; background:url(http://img.go.co.kr/landing/jeju_titBG.jpg) center 0 no-repeat}
-#themeLanding .lesidence_bn1 {width:100%; height:200px; background:url(http://img.go.co.kr/landing/lesidence_titBG.jpg) center 0 no-repeat}
-#themeLanding .pension_bn1 {width:100%; height:200px; background:url(http://img.go.co.kr/landing/pension_titBG.jpg) center 0 no-repeat}
+#themeLanding .busan_bn1 {width:100%; height:200px; background:url(//img.go.co.kr/landing/busan_titBG.jpg) center 0 no-repeat}
+#themeLanding .jeju_bn1 {width:100%; height:200px; background:url(//img.go.co.kr/landing/jeju_titBG.jpg) center 0 no-repeat}
+#themeLanding .lesidence_bn1 {width:100%; height:200px; background:url(//img.go.co.kr/landing/lesidence_titBG.jpg) center 0 no-repeat}
+#themeLanding .pension_bn1 {width:100%; height:200px; background:url(//img.go.co.kr/landing/pension_titBG.jpg) center 0 no-repeat}
 
 #themeLanding .listTit {float:left; margin:20px 0; width:1002px; height:46px; background-color:#4f4f4f}
 #themeLanding .listTit h3 {color:#fff; font-size:16px; line-height:2.8; margin-left:20px; text-align:left}
@@ -290,11 +290,11 @@
 #appAd .top .menu li a {color:#696868; text-decoration:none}
 #appAd .top .menu li a:hover {color:#fa914d}
 #appAd .top .menu .line {margin:0 20px; color:#bbbbbb; font-size:14px}
-#appAd .main {float:left; width:100%; height:619px; background:url(http://img.go.co.kr/landing/appAd_img02.png) no-repeat}
+#appAd .main {float:left; width:100%; height:619px; background:url(//img.go.co.kr/landing/appAd_img02.png) no-repeat}
 #appAd .main .wrap {position:relative; margin:auto; width:1000px; text-align:left}
 #appAd .main .wrap .txt {position:absolute; left:0; top:75px}
 #appAd .main .wrap .photo {position:absolute; right:-190px; top:70px}
-#appAd .footer {float:left; width:100%; height:200px; padding-top:20px; background:url(http://img.go.co.kr/landing/appAd_img03.png)}
+#appAd .footer {float:left; width:100%; height:200px; padding-top:20px; background:url(//img.go.co.kr/landing/appAd_img03.png)}
 #appAd .footer .txt {margin:auto; width:1000px; text-align:center; color:#e3e3e3; font-size:12px}
 
 #appAd_m {float:left; width:100%; background:#fff}
@@ -306,7 +306,7 @@
 #appAd_m .main {position:relative; float:left; width:100%}
 #appAd_m .main .btn {position:absolute; bottom:0; left:0}
 #appAd_m .main .btn img {float:left; width:33.3333%}
-#appAd_m .footer {float:left; width:100%; padding:20px 0; background:url(http://img.go.co.kr/landing/appAd_img03.png)}
+#appAd_m .footer {float:left; width:100%; padding:20px 0; background:url(//img.go.co.kr/landing/appAd_img03.png)}
 #appAd_m .footer p {padding:0 15px; text-align:center; color:#e3e3e3; font-size:0.563em; letter-spacing:-0.5px}
 
 
@@ -319,7 +319,7 @@
 #friendAd .top .menu li a {color:#696868; text-decoration:none}
 #friendAd .top .menu li a:hover {color:#fa914d}
 #friendAd .top .menu .line {margin:0 20px; color:#bbbbbb; font-size:14px}
-#friendAd .main {margin:0 auto; width:100%; height:619px;background:url('http://img.go.co.kr/landing/friendAd_img02.png') center no-repeat;}
+#friendAd .main {margin:0 auto; width:100%; height:619px;background:url('//img.go.co.kr/landing/friendAd_img02.png') center no-repeat;}
 #friendAd .main .wrap {clear:both;position:relative; margin:auto; width:1000px;height:100%; text-align:left; color:#d7f5ff;}
 
 
@@ -329,7 +329,7 @@
 #friendAd .main .wrap .photo {position:absolute; right:-78px; top:0px}
 #friendAd .wrap_notice {position:relative; margin:auto; width:100%; text-align:left; background-color:#dedede;}
 #friendAd .wrap_notice img{display:block;width:997px;margin:0 auto;}
-#friendAd .footer {float:left; width:100%; height:210px; padding-top:20px;background:url('http://img.go.co.kr/landing/friendAd_img03.png') repeat; }
+#friendAd .footer {float:left; width:100%; height:210px; padding-top:20px;background:url('//img.go.co.kr/landing/friendAd_img03.png') repeat; }
 #friendAd .footer .txt {margin:auto; width:1000px; text-align:center; color:#e3e3e3; font-size:12px}
 
 
@@ -350,7 +350,7 @@
 #friendAd_take .main .txt {width: 100%;text-align: center; }
 #friendAd_take .main .Bgray {width: 100%; float:left; text-align: center; background: #eee}
 #friendAd_take .main .Bgray2 {width: 100%;  float:left; text-align: center; background: #dedede}
-#friendAd_take .footer {float:left; width:100%; height:210px; padding-top:20px;background:url('http://img.go.co.kr/landing/friendAd_img03.png') repeat; }
+#friendAd_take .footer {float:left; width:100%; height:210px; padding-top:20px;background:url('//img.go.co.kr/landing/friendAd_img03.png') repeat; }
 #friendAd_take .footer .txt {margin:auto; width:1000px; text-align:center; color:#e3e3e3; font-size:12px}
 
 #friendAd_pop {width:100%; height:auto; float:left; margin-top:220px; position:fixed; z-index:99999}
@@ -370,10 +370,10 @@
 /* 연말연휴테마 */
 
 #year_end {width:100%; height:357px;  margin:auto;}
-#year_end .main01 {background:url(http://img.go.co.kr/landing/year_ski_01.jpg) center 0 no-repeat; width:100%; height:357px; margin-top:49px; }
-#year_end .main02 {background:url(http://img.go.co.kr/landing/year_waterpark_01.jpg) center 0 no-repeat; width:100%; height:357px;margin-top:49px;}
-#year_end .main03 {background:url(http://img.go.co.kr/landing/year_spa_01.jpg) center 0 no-repeat; width:100%; height:357px;margin-top:49px;}
-#year_end .main04 {background:url(http://img.go.co.kr/landing/year_sun_01.jpg) center 0 no-repeat; width:100%; height:357px;margin-top:49px;}
+#year_end .main01 {background:url(//img.go.co.kr/landing/year_ski_01.jpg) center 0 no-repeat; width:100%; height:357px; margin-top:49px; }
+#year_end .main02 {background:url(//img.go.co.kr/landing/year_waterpark_01.jpg) center 0 no-repeat; width:100%; height:357px;margin-top:49px;}
+#year_end .main03 {background:url(//img.go.co.kr/landing/year_spa_01.jpg) center 0 no-repeat; width:100%; height:357px;margin-top:49px;}
+#year_end .main04 {background:url(//img.go.co.kr/landing/year_sun_01.jpg) center 0 no-repeat; width:100%; height:357px;margin-top:49px;}
 #year_end .tab_wrap {background-color:#f4f2f3; padding-top:20px; paddign-bottom:20px;}
 #year_end .tab_wrap ul {position:relative; width:1002px; height:45px; text-align:center; letter-spacing:-0.5px; margin:auto; border:1px solid #c8c8c8; background-color:#fff;  clear:both; }
 #year_end .tab_wrap ul li {position:relative; float:left; display:inline-block; width:180px; height:45px; line-height:45px; text-align:center; border-right:1px solid #c8c8c8; color:#595858; font-size:14px; font-weight:600;  }
@@ -520,7 +520,7 @@
 .ocean-evt7942 .evt-top {background: #2684cc;}
 .ocean-evt7942 .evt-main {}
 .ocean-evt7942 .evt-main .evt-visual {padding-top: 20px; padding-bottom: 55px; background: #BEE6FF;}
-.ocean-evt7942 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.ocean-evt7942 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .ocean-evt7942 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 29px; left: 50px;}
 .ocean-evt7942 .evt-main .evt-visual .p-row-2 {background: #a4daff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
 .ocean-evt7942 .evt-main .evt-tit {background: #243b71;}
@@ -556,7 +556,7 @@
 .ocean-evt2253 .evt-top {background: #2684cc;}
 .ocean-evt2253 .evt-main {}
 .ocean-evt2253 .evt-main .evt-visual {padding-top: 20px; padding-bottom: 55px; background: #BEE6FF;}
-.ocean-evt2253 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+.ocean-evt2253 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .ocean-evt2253 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 29px; left: 50px;}
 .ocean-evt2253 .evt-main .evt-visual .p-row-2 {background: #a4daff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
 .ocean-evt2253 .evt-main .evt-tit {background: #243b71;}
@@ -620,7 +620,7 @@
 .mhh-evt0113 .evt-top {background: #2684cc;}
 .mhh-evt0113 .evt-main {}
 .mhh-evt0113 .evt-main .evt-visual {padding-top: 20px; padding-bottom: 55px; background: #BEE6FF;}
-/*.mhh-evt0113 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(http://img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
+/*.mhh-evt0113 .evt-main .evt-visual div.txtResult {position: relative; width: 310px; height: 300px; margin: 0 auto; background: url(//img.go.co.kr/event/ocean/txt_winnerGd.jpg) no-repeat; background-size: 310px;}
 .mhh-evt0113 .evt-main .evt-visual div.txtResult span.name {width: 171px; top: 29px; left: 50px;}*/
 .mhh-evt0113 .evt-main .evt-visual .p-row-2 {background: #a4daff; border-top: 1px solid #a3a3a3; border-bottom: 1px solid #a3a3a3;}
 .mhh-evt0113 .evt-main .evt-tit {background: #243b71;}
