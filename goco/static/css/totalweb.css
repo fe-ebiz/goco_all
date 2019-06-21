@@ -145,7 +145,7 @@ box-sizing:border-box;}
 #fare_wrapper tbody .gt {position: relative; left: 2px; display: inline-block; width: 5%;}
 #fare_wrapper tbody s, #fare_wrapper tbody .prc {position: relative; display: inline-block; width: 41%;}
 #fare_wrapper tbody s {text-align: right; float: left;}
-#fare_wrapper tbody .prc {text-align: right;}
+/* #fare_wrapper tbody .prc {text-align: right;} */
 #fare_wrapper tbody .quan {position: relative; width: 68px; height: 26px; margin: 0 auto; border: 1px solid #bbb; background: #fff;
 	-webkit-user-select: none; /* Chrome, Opera, Safari */
 	-moz-user-select: none; /* Firefox 2+ */
@@ -166,6 +166,13 @@ box-sizing:border-box;}
 #fare_wrapper table.gender tbody s, #fare_wrapper table.gender tbody .prc {position: relative; display: inline-block; width: 40%;}
 #fare_wrapper table.gender tbody s {margin-left: -5px; left: 3px;}
 #fare_wrapper table.gender tbody .prc {width: 38.5%;}
+
+#fare_wrapper.oc2xmipic thead tr th:first-child,
+#fare_wrapper.oc2xmipic tbody tr td:first-child {text-align: left; padding-left: 20px}
+#fare_wrapper.oc2xmipic thead {}
+#fare_wrapper.oc2xmipic tbody td.total {text-align: center; padding-right: 0; background: #FFF8D5;}
+#fare_wrapper.oc2xmipic thead .txt-sale {color: #FFF203;font-size: 14px;margin-left: 20px;}
+#fare_wrapper.oc2xmipic tbody .link-rsv {display: inline-block; padding: 0px 20px; height: 34px; background: #C00600; line-height: 34px; font-size: 15px; color: #fff;}
 
 #fare_section .pay-box {position: relative; margin-top: -1px; width: 100%; height: 80px; border: 1px solid #a9a9a9; background: #fff8d5; box-sizing: border-box; text-align: right; padding-right: 20px; letter-spacing: -0.5px;}
 #fare_section .pay-box > p {display: inline-block; vertical-align: middle;  color: #302e2b; font-family: "Noto Sans KR", "Nanum Gothic"; text-align: left; padding-top: 14px;}
@@ -221,7 +228,7 @@ box-sizing:border-box;}
 .nb-open-btn a i img {position: relative; left: -60px; width: 80px;}
 .nb-open-btn a.on i img {left: -40px;}
 
-.nb-open-btn a i.bt {top: 9px; left: 8px;}
+.nb-open-btn a i.bt {top: 4px; left: 8px; line-height: 1;}
 .nb-open-btn a i.bt img {left: 0; width: 17px;}
 
 .nb-open-btn a span {color: #fff;}

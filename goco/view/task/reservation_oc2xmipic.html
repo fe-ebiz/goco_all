@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>상세피이지 로고 추가</title>
+
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css" />
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/totalweb.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="../../static/css/layout_new3.css" />  -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../static/css/totalweb.css" /> -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- <script src="http://static.go.co.kr/js/select_product.js"></script> -->
+
+    <style>
+        /* body {margin-top: 500px;} */
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="contents">
+            <div class="contents_tit2" style="margin-bottom:0px;padding-top: 5px;padding-bottom: 5px;">
+                <span style="float:left">[내륙여행] ★1차티켓★ 미드나잇 피크닉 페스티벌 2019 338439</span>
+                <!-- 공유하기 -->
+                <span style="float:right; margin-right:20px">
+                </span>
+            </div>
+            
+            <div id="rsv_wrapper" class="rsv_wrapper">
+
+                <div class="clr"></div>
+                
+                <div class="fare_section" id="fare_section">
+                    <div class="tit_box" align="center" style="display:none;">
+
+                        <span class="t1" style="margin-left:0px">이용기간 :</span>
+                        <span class="t1" style="margin-left:0px">
+                            <span class="c-yellow">2019년 07월 12일 ~ 2019년 07월 13일</span>
+                        </span>
+                        <input type="hidden" name="hseldate" id="hseldate" value="2019-06-21">
+                        <input type="hidden" name="nseldate" id="nseldate" value="2019-07-13">
+                        <input type="hidden" name="ticket_mode" value="dates">
+
+
+                    </div>
+                    <div id="fare_wrapper">
+                        <table class="gender-non">
+                            <colgroup>
+                                <col width="261px">
+                                <col width="123px">
+                                <col width="123px">
+                                <col width="208px">
+                                <col width="122px">
+                                <col width="143px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>상품명</th>
+                                    <th>주중/주말</th>
+                                    <th>대인/소인</th>
+                                    <th>
+                                        특가 <img src="http://img.ocean2you.co.kr/go/banner_lowest_price.gif" alt=""
+                                            class="banner_lowest_price">
+                                    </th>
+                                    <th>수량선택</th>
+                                    <th class="last">결제금액</th>
+                                </tr>
+                            </thead>
+                            <tbody id="varo_listre">
+                                <tr>
+                                    <td rowspan="1">비치클럽파티 1일권 (금)</td>
+                                    <td rowspan="1">공통</td>
+                                    <td class="ctgr" rowspan="1">대인</td>
+                                    <td class="prc-sale"><s>30,000원</s><span class="gt">&gt;</span><span
+                                            class="prc c-red">18,000원</span></td>
+                                    <td>
+                                        <p class="quan clr">
+                                            <span class="s-l"
+                                                onclick="single.up_down_bt('down', 'person_de2857', 0, '338439')">-</span>
+                                            <input type="text" class="inp on" value="0" id="person_de2857"
+                                                name="person_de2857" numberonly="true" maxlength="2">
+                                            <span class="s-r"
+                                                onclick="single.up_down_bt('up', 'person_de2857', '4', '338439')">+</span>
+                                        </p>
+                                    </td>
+                                    <td class="total" style="text-align:right;padding-right:10px"><span class="on"
+                                            id="person_de2857_price">0원</span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="6" class="division"></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1">뮤직페스티벌 1일권 (토)</td>
+                                    <td rowspan="1">공통</td>
+                                    <td class="ctgr" rowspan="1">대인</td>
+                                    <td class="prc-sale"><s>70,000원</s><span class="gt">&gt;</span><span
+                                            class="prc c-red">42,000원</span></td>
+                                    <td>
+                                        <p class="quan clr">
+                                            <span class="s-l"
+                                                onclick="single.up_down_bt('down', 'person_de2858', 0, '338439')">-</span>
+                                            <input type="text" class="inp on" value="0" id="person_de2858"
+                                                name="person_de2858" numberonly="true" maxlength="2">
+                                            <span class="s-r"
+                                                onclick="single.up_down_bt('up', 'person_de2858', '4', '338439')">+</span>
+                                        </p>
+                                    </td>
+                                    <td class="total" style="text-align:right;padding-right:10px"><span class="on"
+                                            id="person_de2858_price">0원</span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1" colspan="6" class="division"></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="1">비치클럽파티X뮤직페스티벌 양일권 (금-토)</td>
+                                    <td rowspan="1">공통</td>
+                                    <td class="ctgr" rowspan="1">대인</td>
+                                    <td class="prc-sale"><s>90,000원</s><span class="gt">&gt;</span><span
+                                            class="prc c-red">54,000원</span></td>
+                                    <td>
+                                        <p class="quan clr">
+                                            <span class="s-l"
+                                                onclick="single.up_down_bt('down', 'person_de2859', 0, '338439')">-</span>
+                                            <input type="text" class="inp on" value="0" id="person_de2859"
+                                                name="person_de2859" numberonly="true" maxlength="2">
+                                            <span class="s-r"
+                                                onclick="single.up_down_bt('up', 'person_de2859', '4', '338439')">+</span>
+                                        </p>
+                                    </td>
+                                    <td class="total" style="text-align:right;padding-right:10px"><span class="on"
+                                            id="person_de2859_price">0원</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="pay-box clr" id="payresult">
+                        <!--
+                        <p class="nth1">
+                            •<span class="f-bd">구매혜택</span> 카드무이자
+                            <a href="javascript:util.on(&#39;#loadcard&#39;)"><img src="http://img.ocean2you.co.kr/go/btn_card.jpg" alt="카드무이자"></a>
+                        </p>
+                        -->
+                        <p class="nth2"><span class="f-bd s1">최종 결제금액</span><span class="c-red"><span
+                                    class="f-bd">0</span><span class="sm">원</span></span>
+                        </p>
+
+                        <p class="nth3">
+                            <a class="nth3" href="javascript:alert('입장권을 선택해주세요.')">결제하기<span class="gt">&gt;</span></a>
+                        </p>
+                    </div>
+
+                    <!-- 190621 숙박 + 티켓 패키지 -->
+                    <div id="fare_wrapper" class="oc2xmipic">
+                        <table class="gender-non">
+                            <colgroup>
+                                <col>
+                                <col width="208px">
+                                <col width="143px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>리조트 숙박 + 티켓 패키지 <span class="txt-sale">패키지 제휴 할인특가, 온라인 최저가!</span></th>
+                                    <th>
+                                        특가 <img src="http://img.ocean2you.co.kr/go/banner_lowest_price.gif" alt=""
+                                            class="banner_lowest_price">
+                                    </th>
+
+                                    <th class="last">결제금액</th>
+                                </tr>
+                            </thead>
+                            <tbody id="varo_listre">
+                                <tr>
+                                    <td>비치클럽파티 + 디럭스 마운틴뷰 콘도 (07.12(금) / 2인권)</td>
+                                    <td class="prc-sale"><s>330,000원</s><span class="gt">&gt;</span><span
+                                            class="prc c-red">99,000~</span></td>
+
+                                    <td class="total"><a href="" class="link-rsv">최저가 예약</a></td>
+                                </tr>
+                                <tr>
+                                    <td>비치클럽파티 + 디럭스 오션뷰 콘도 (07.12(금) / 2인권)</td>
+                                    <td class="prc-sale"><s>350,000원</s><span class="gt">&gt;</span><span
+                                            class="prc c-red">129,000</span></td>
+
+                                    <td class="total"><a href="" class="link-rsv">최저가 예약</a></td>
+                                </tr>
+                                <tr>
+                                    <td>비치클럽파티 + 디럭스 마운틴뷰 콘도 (07.13(토) / 2인권)</td>
+                                    <td class="prc-sale"><s>330,000원</s><span class="gt">&gt;</span><span
+                                            class="prc c-red">99,000~</span></td>
+
+                                    <td class="total"><a href="" class="link-rsv">최저가 예약</a></td>
+                                </tr>
+                                <tr>
+                                    <td>비치클럽파티 + 디럭스 오션뷰 콘도 (07.13(토) / 2인권)</td>
+                                    <td class="prc-sale"><s>350,000원</s><span class="gt">&gt;</span><span
+                                            class="prc c-red">129,000</span></td>
+
+                                    <td class="total"><a href="" class="link-rsv">최저가 예약</a></td>
+                                </tr>
+                                <tr>
+                                    <td>비치클럽파티 X 뮤직페스티벌 + 디럭스 마운틴뷰 콘도 (07.12-13(금,토) 양일/2인권)</td>
+                                    <td class="prc-sale"><s>330,000원</s><span class="gt">&gt;</span><span
+                                            class="prc c-red">159,000</span></td>
+
+                                    <td class="total"><a href="" class="link-rsv">최저가 예약</a></td>
+                                </tr>
+                                <tr>
+                                    <td>비치클럽파티 X 뮤직페스티벌 + 디럭스 오션뷰 콘도 (07.12-13(금,토) 양일/2인권)</td>
+                                    <td class="prc-sale"><s>350,000원</s><span class="gt">&gt;</span><span
+                                            class="prc c-red">189,000</span></td>
+
+                                    <td class="total"><a href="" class="link-rsv">최저가 예약</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- / -->
+                    
+                    <!-- 안내 및 유의사항 -->
+                    <div class="ntc_wrap">
+                        <div class="ntc_tit">안내 및
+                            <br>유의사항</div>
+                        <div class="ntc_contents">
+                            <!---<p>본 상품은 숙박상품이 아닌 이용권 전용상품입니다.</p>---->
+                            <span style="font-weight:bold;"># ★1차티켓★ 미드나잇 피크닉 페스티벌 2019</span>
+                            <br>
+                            <br>
+                            <p>▶ 비치클럽파티 : 2019.07.12 (금)<br>
+                                ▶ 뮤직페스티벌 : 2019.07.13 (토)<br>
+                                ▶ 양일권 : 2019.07.12 ~ 07.13 (금~토)<br>
+                                <br>
+                                * 본 티켓은 1차 한정수량 판매티켓 상품으로 그 이후에는 구매가 불가능합니다.<br>
+                                * 미성년자 (2000년 12월 31일 이후 출생자)는 콘서트 입장이 불가합니다.<br>
+                                * 콘서트는 우천시에도 진행되며, 좌석은 모두 선착순 스탠딩입니다.<br>
+                                * 본 티켓은 서핑/SUP 강습 및 셔틀은 포함되어있지 않습니다. 빠른 시일 내에 별도 판매예정입니다. <br>
+                                * 본 티켓은 양도 및 재판매가 불가하며, 양도와 재판매로 인한 모든 법적 문제는 주최사 및 판매사에서 책임지지 않습니다. <br>
+                                * 입장팔찌는 &lt;미드나잇 피크닉 페스티벌 2019 티켓부스&gt;에서 수령 가능합니다.</p>
+                        </div>
+                    </div>
+                    <!--변경내용_0531 추가-->
+                    <!-- <div class="q-wrap clr">
+                        <div class="q-tit">자주 묻는<br>질문</div>
+                        <div class="q-contents">
+                            <ul>
+                                            </ul>
+                        </div>
+                    </div> -->
+                    <!--변경내용_0531 끝-->
+
+                </div>
+                <!--fare_section end-->
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -157,7 +157,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .history02-info .non-voucher {background: none; border: 0;}
 .history02-info .non-voucher li {color: #7d7d7d; font-size: 11px; padding-left: 12px;}
 .history02-info .non-voucher li .gt {position: relative; font-size: 10px; top: -1px; color: #7d7d7d;}
-.history02-info .non-voucher li:before {content: "※"; display: inline-block; position: absolute; left: 0; }
+.history02-info .non-voucher li:before {content: "※"; display: inline-block; position: absolute; left: 0;}
+/* .history02-info .non-voucher li:before {content: "※"; display: inline-block; position: absolute; left: 0; font-family: 'Nanum Gothic', sans-serif;} */
 
 .history02-info .way {margin-top: -1px; border-top: 1px solid #eaeaea;}
 .history02-info .way li {padding-left: 24px;}
