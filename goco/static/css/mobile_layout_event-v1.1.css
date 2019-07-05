@@ -13,7 +13,7 @@ ul,li {list-style: none;}
 .hidden {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px; opacity: 0; filter: alpha(opacity=0);}
 .clr:before, .clr:after {content: ""; display: block;}
 .clr:after {clear: both;}
-.wrapper {position: relative;}
+.wrapper {position: relative; max-width: 640px; margin: 0 auto;}
 .wrapper img {max-width: 100%;}
 
 /* 랜딩페이지 */
@@ -830,7 +830,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .pop_layer .pop_area .input_area {padding:20px 30px 12px; }
 .pop_layer .pop_area .input_area table tr th {font-weight:bold; font-size:14px; text-align:left; vertical-align:middle;}
 .pop_layer .pop_area .input_area table tr td {padding:5px 0; vertical-align:middle;}
-.pop_layer .pop_area .input_area table tr td input[type="text"], .pop_layer .pop_area .input_area table tr td input[type="password"] {height:30px; padding:5px; border:1px solid #8f8f8f; font-size:14px; box-sizing:border-box;}
+.pop_layer .pop_area .input_area table tr td input[type="text"], .pop_layer .pop_area .input_area table tr td input[type="passubord"] {height:30px; padding:5px; border:1px solid #8f8f8f; font-size:14px; box-sizing:border-box;}
 .pop_layer .pop_area .input_area table tr td .select_wrapper {position:relative;}
 .pop_layer .pop_area .input_area table tr td .select_wrapper:before {content:''; display:block; position:absolute; right:10px; top:50%; width:0; height:0; margin-top:-2px; border-top:5px solid transparent; border-bottom:5px solid #585858; border-right:5px solid transparent; border-left:5px solid transparent; -webkit-transform:rotate(180deg); transform:rotate(180deg);}
 .pop_layer .pop_area .input_area table tr td .select_wrapper select {width:100%; height:30px; padding:5px; border:1px solid #8f8f8f; font-size:14px; box-sizing:border-box; -webkit-appearance:none;border-radius:0}
@@ -947,10 +947,29 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 }
 
 /* 미픽 통 이미지 랜딩 */
-.mipic-wrapper {max-width: 640px; margin: 0 auto;}
+/* .mipic-wrapper {max-width: 640px; margin: 0 auto;} */
 .mipic-wrapper img {width: 100%;}
 .mipic-wrapper .link-box {background: #fff;}
 .mipic-wrapper .link-box a {display: block; width: 50%; box-sizing: border-box;}
 .mipic-wrapper .link-box a:nth-child(1) {float: left; padding-right: 3px;}
 .mipic-wrapper .link-box a:nth-child(2) {float: right; padding-left: 3px;}
 .mipic-wrapper .link-box.box-1 {padding: 6px 0;}
+
+/* 씨베이 부대시설 랜딩 */
+.seabayFacil-wrapper {background: #011538;}
+.seabayFacil-wrapper img {width: 100%;}
+.seabayFacil-wrapper .link-area > a {display: block;}
+.seabayFacil-wrapper .link-area > a:first-child {margin-bottom: 6px;}
+.seabayFacil-wrapper .bottom-area,
+.seabayFacil-wrapper .bottom-area .inner {padding-top: 6px; background: #000;} 
+.seabayFacil-wrapper .bottom-area {padding-bottom: 18%; font-size: 0; letter-spacing: 0;}
+.seabayFacil-wrapper .bottom-area .inner {position: fixed; bottom: 0; width: 100%; max-width: 640px;}
+.seabayFacil-wrapper .bottom-area .inner > a {display: inline-block; width: 50%; box-sizing: border-box;}
+.seabayFacil-wrapper .bottom-area .inner > a:nth-child(1) { padding-right: 3px;}
+.seabayFacil-wrapper .bottom-area .inner > a:nth-child(2) {padding-left: 3px;}
+.seabayFacil-wrapper.sub {}
+.seabayFacil-wrapper.sub .bottom-area {padding-bottom: 15%; background: none;}
+.seabayFacil-wrapper.sub .bottom-area .inner > a:nth-child(1) {width: 33.6%;}
+.seabayFacil-wrapper.sub .bottom-area .inner > a:nth-child(2) {width: 66.4%;}
+.seabayFacil-wrapper.sw {background: #b7b9ff;}
+.seabayFacil-wrapper.bf {background: #cebaa1;}

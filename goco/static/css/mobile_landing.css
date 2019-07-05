@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+body {
+    background: #ffdddd;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+    width: 100%;
+}
+
+.ui-datepicker {
+    font-size: 17px;
+    width: 250px;
+}
+
+.ui-datepicker select.ui-datepicker-month {
+    width: 35%;
+    font-size: 11px;
+}
+
+.ui-datepicker select.ui-datepicker-year {
+    width: 40%;
+    font-size: 11px;
+}
+
+.wrap {
+    width: 100%;
+    padding-bottom: 55px;
+    background: #ffdddd;
+    position: relative;
+}
+
+.wrap img {
+    width: 100%;
+}
+
+.but {
+    width: 100%;
+    font-size: 0;
+    position: fixed;
+    height: 55px;
+    z-index: 10;
+    bottom: 0;
+    display: block;
+    background: #ffdddc;
+    padding-top: 5px;
+}
+
+.but.on {
+    padding-top: 0;
+}
+
+.but a {
+    display: inline-block;
+    background: #a65656;
+    color: #fff;
+    font-size: 15px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.but .l_bt {
+    width: 29%;
+}
+
+.but .r_bt {
+    width: 70%;
+    margin-left: 1%;
+}
+
+.but a .gt {
+    font-family: "Nanum Gothic", sans-serif;
+    position: relative;
+    left: 5px;
+    font-size: 12px;
+    top: -1px;
+}
+
+.but .bt {
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+    height: 60px;
+    line-height: 3;
+}
+
+/* 수영장 */
+.dawrap {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    background: #fff;
+    position: absolute;
+    bottom: 55px;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.dawrap>div {
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+.dawrap span,
+.dawrap select {
+    display: inline-block;
+}
+
+.dawrap span {
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.dawrap h1 {
+    text-align: center;
+    font-size: 15px;
+    line-height: 2;
+    font-weight: bold;
+    color: #333;
+    background: #f2f2f2;
+    height: 35px;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+/* 조식 */
+.fiwrap {width:100%; background: #fff; position:absolute; bottom:55px; height:auto;padding-bottom:10px}
+.fiwrap > div {padding:0px 10px;  box-sizing: border-box;}
+.fiwrap span, .fiwrap select {display: inline-block;}
+.fiwrap span {position: relative; font-size:16px; text-align: left;  box-sizing: border-box;line-height:35px}
+.fiwrap h1 {text-align:center; font-size:15px; line-height:2; font-weight: bold; color:#333; background: #f2f2f2; height:35px; border-bottom: 1px solid #cfcfcf;}
+
+.fixed-bg {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); display: none;}
+.fie {margin-top:10px;}
+
+.da {
+    margin-top: 10px;
+}
+
+.date {
+    width: 55%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    text-align: center
+}
+
+.date2 {
+    width: 18%;
+    text-align: right
+}
+
+input.date {
+    border: 1px solid #a4a4a4;
+    box-sizing: border-box;
+}
+
+.i-x {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.i-x:before,
+.i-x:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: #000;
+    top: 12px;
+    right: 0px;
+}
+
+.i-x:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.i-x:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* 씨베이 수영장 */
+.wrap {padding-bottom: 16%;}
+.but.sub.sw,
+.but.sub.sw .l_bt,
+.but.sub.sw .r_bt {background: #b7b9ff;}
+.but.sub {background: none;}
+.but.sub {font-size: 0; letter-spacing: 0;}
+.but.sub,
+.but.sub a {height: auto; font-size: 0;}
+.but.sub a.bt {padding: 2% 0; font-size: 14px;}
+.but.sub a > span {display: none;}
+.but.sub a:not(.bt) {margin: 0; box-sizing: border-box;}
+.but.sub .l_bt {width: 33.6%; padding-right: 3px;}
+.but.sub .r_bt {width: 66.4%; padding-left: 3px;}
+.but.sub.bf,
+.but.sub.bf .l_bt,
+.but.sub.bf .r_bt {background: #cebaa1;}

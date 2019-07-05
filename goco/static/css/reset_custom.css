@@ -51,6 +51,6 @@ img{max-width: 100%;}/*ipad사이즈에서 userlogin 의 title등 %로 된  것�
 img, input, label, select { vertical-align: middle; }
 input + span { vertical-align:middle; }
 legend, caption {width:0; height:0; font-size:0; line-height:0; text-indent:-9999px; visibility:hidden;}
-.hidden {overflow: hidden; positon: absolute; border: 0; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px);}
+.hidden {overflow: hidden; position: absolute; border: 0; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px);}
 .clr:before, .clr:after, .row:before, .row:after {content: ""; display: block;}
 .clr:after, .row:after {clear: both;}
