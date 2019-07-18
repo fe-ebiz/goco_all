@@ -1,225 +1,179 @@
-@charset "utf-8";
+@charset "utf-8";.wrap,
+.wrapper { position: relative; max-width: 640px; margin: 0 auto; } 
+.wrap img,
+.wrapper img { max-width: 100%; } 
 
-body {
-    background: #ffdddd;
-}
+body { } 
 
-img {
-    vertical-align: top;
-    border: none;
-    width: 100%;
-}
+img { vertical-align: top; border: none; width: 100%; } 
 
-.ui-datepicker {
-    font-size: 17px;
-    width: 250px;
-}
+.ui-datepicker { font-size: 17px; width: 250px; } 
 
-.ui-datepicker select.ui-datepicker-month {
-    width: 35%;
-    font-size: 11px;
-}
+.ui-datepicker select.ui-datepicker-month { width: 35%; font-size: 11px; } 
 
-.ui-datepicker select.ui-datepicker-year {
-    width: 40%;
-    font-size: 11px;
-}
+.ui-datepicker select.ui-datepicker-year { width: 40%; font-size: 11px; } 
 
-.wrap {
-    width: 100%;
-    padding-bottom: 55px;
-    background: #ffdddd;
-    position: relative;
-}
+.wrapper { width: 100%; padding-bottom: 55px; background: #dedede; position: relative; } 
 
-.wrap img {
-    width: 100%;
-}
+.wrapper img { width: 100%; } 
 
-.but {
-    width: 100%;
-    font-size: 0;
-    position: fixed;
-    height: 55px;
-    z-index: 10;
-    bottom: 0;
-    display: block;
-    background: #ffdddc;
-    padding-top: 5px;
-}
+.wrapper .but { width: 100%; max-width: 640px; font-size: 0; position: fixed; height: 55px; z-index: 10; bottom: 0; display: block; background: #dedede; padding-top: 5px; } 
 
-.but.on {
-    padding-top: 0;
-}
+.wrapper .but.on { padding-top: 0; } 
 
-.but a {
-    display: inline-block;
-    background: #a65656;
-    color: #fff;
-    font-size: 15px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-}
+.wrapper .but a { display: inline-block; background: #a65656; color: #fff; font-size: 15px; height: 60px; text-align: center; line-height: 60px; } 
 
-.but .l_bt {
-    width: 29%;
-}
+.wrapper .but .l_bt { width: 29%; } 
 
-.but .r_bt {
-    width: 70%;
-    margin-left: 1%;
-}
+.wrapper .but .r_bt { width: 70%; margin-left: 1%; } 
 
-.but a .gt {
-    font-family: "Nanum Gothic", sans-serif;
-    position: relative;
-    left: 5px;
-    font-size: 12px;
-    top: -1px;
-}
+.wrapper .but a .gt { font-family: "Nanum Gothic", sans-serif; position: relative; left: 5px; font-size: 12px; top: -1px; } 
 
-.but .bt {
-    width: 100%;
-    position: relative;
-    font-size: 18px;
-    height: 60px;
-    line-height: 3;
-}
+.wrapper .but .bt { width: 100%; position: relative; font-size: 18px; height: 60px; line-height: 3; } 
 
-/* 수영장 */
-.dawrap {
-    width: 100%;
-    height: 100%;
-    max-height: 300px;
-    background: #fff;
-    position: absolute;
-    bottom: 55px;
-    height: auto;
-    padding-bottom: 25px;
-}
+/* 불꽃놀이 예약 영역 */
+.wrapper .dawrap { width: 100%; height: 100%; max-height: 300px; background: #fff; position: absolute; bottom: 55px; height: auto; padding-bottom: 25px; } 
 
-.dawrap>div {
-    box-sizing: border-box;
-    padding: 0px 10px;
-}
+.wrapper .dawrap>div { box-sizing: border-box; padding: 0px 10px; } 
 
-.dawrap span,
-.dawrap select {
-    display: inline-block;
-}
+.wrapper .dawrap span,
+.wrapper .dawrap select { display: inline-block; } 
 
-.dawrap span {
-    position: relative;
-    font-size: 15px;
-    text-align: left;
-    box-sizing: border-box;
-}
+.wrapper .dawrap span { position: relative; font-size: 15px; text-align: left; box-sizing: border-box; } 
 
-.dawrap h1 {
-    text-align: center;
-    font-size: 15px;
-    line-height: 2;
-    font-weight: bold;
-    color: #333;
-    background: #f2f2f2;
-    height: 35px;
-    border-bottom: 1px solid #cfcfcf;
-}
+.wrapper .dawrap h1 { text-align: center; font-size: 15px; line-height: 2; font-weight: bold; color: #333; background: #f2f2f2; height: 35px; border-bottom: 1px solid #cfcfcf; } 
 
-.fixed-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .5);
-    display: none;
-}
+.wrapper .fixed-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .5); display: none; } 
 
-/* 조식 */
-.fiwrap {width:100%; background: #fff; position:absolute; bottom:55px; height:auto;padding-bottom:10px}
-.fiwrap > div {padding:0px 10px;  box-sizing: border-box;}
-.fiwrap span, .fiwrap select {display: inline-block;}
-.fiwrap span {position: relative; font-size:16px; text-align: left;  box-sizing: border-box;line-height:35px}
-.fiwrap h1 {text-align:center; font-size:15px; line-height:2; font-weight: bold; color:#333; background: #f2f2f2; height:35px; border-bottom: 1px solid #cfcfcf;}
+/* 조식 예약 영역 */
+.wrapper .fiwrap { width:100%; background: #fff; position:absolute; bottom:55px; height:auto; padding-bottom:10px } 
+.wrapper .fiwrap > div { padding:0px 10px; box-sizing: border-box; } 
+.wrapper .fiwrap span, .fiwrap select { display: inline-block; } 
+.wrapper .fiwrap span { position: relative; font-size:16px; text-align: left; box-sizing: border-box; line-height:35px } 
+.wrapper .fiwrap h1 { text-align:center; font-size:15px; line-height:2; font-weight: bold; color:#333; background: #f2f2f2; height:35px; border-bottom: 1px solid #cfcfcf; } 
 
-.fixed-bg {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); display: none;}
-.fie {margin-top:10px;}
+.wrapper .fixed-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.5); display: none; } 
+.wrapper .fie { margin-top:10px; } 
 
-.da {
-    margin-top: 10px;
-}
+.wrapper .da { margin-top: 10px; } 
 
-.date {
-    width: 55%;
-    height: 35px;
-    line-height: 35px;
-    font-size: 15px;
-    cursor: pointer;
-    float: right;
-    text-align: center
-}
+.wrapper .date { width: 55%; height: 35px; line-height: 35px; font-size: 15px; cursor: pointer; float: right; text-align: center } 
 
-.date2 {
-    width: 18%;
-    text-align: right
-}
+.wrapper .date2 { width: 18%; text-align: right } 
 
-input.date {
-    border: 1px solid #a4a4a4;
-    box-sizing: border-box;
-}
+.wrapper input.date { border: 1px solid #a4a4a4; box-sizing: border-box; } 
 
-.i-x {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
-    display: block;
-}
+.i-x { position: absolute; right: 5px; top: 5px; width: 20px; height: 20px; display: block; } 
 
 .i-x:before,
-.i-x:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 20px;
-    height: 1px;
-    background: #000;
-    top: 12px;
-    right: 0px;
-}
+.i-x:after { content: ""; position: absolute; display: inline-block; width: 20px; height: 1px; background: #000; top: 12px; right: 0px; } 
 
-.i-x:before {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
+.i-x:before { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); } 
 
-.i-x:after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
+.i-x:after { -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); } 
 
-/* 씨베이 수영장 */
-.wrap {padding-bottom: 16%;}
-.but.sub.sw,
-.but.sub.sw .l_bt,
-.but.sub.sw .r_bt {background: #b7b9ff;}
-.but.sub {background: none;}
-.but.sub {font-size: 0; letter-spacing: 0;}
-.but.sub,
-.but.sub a {height: auto; font-size: 0;}
-.but.sub a.bt {padding: 2% 0; font-size: 14px;}
-.but.sub a > span {display: none;}
-.but.sub a:not(.bt) {margin: 0; box-sizing: border-box;}
-.but.sub .l_bt {width: 33.6%; padding-right: 3px;}
-.but.sub .r_bt {width: 66.4%; padding-left: 3px;}
-.but.sub.bf,
-.but.sub.bf .l_bt,
-.but.sub.bf .r_bt {background: #cebaa1;}
+/*
+* 기존 팝업 스타일 영역
+*/
+/* popup */
+.pop_layer { display:none; position:fixed; left:0; right:0; top:0; bottom:0; background-color:rgba(0,0,0,.5); } 
+.pop_layer .pop_area { position:absolute; left:20px; right:20px; top:50%; padding:35px 0 10px; background-color:#fff; -webkit-transform:translateY(-50%); transform:translateY(-50%); } 
+.pop_layer .pop_area .pop_title { display:block; margin:0 20px; padding-bottom:20px; border-bottom:1px solid #000; font-size:23px; text-align:center; } 
+.pop_layer .pop_area .input_area { padding:20px 30px 12px; } 
+.pop_layer .pop_area .input_area table tr th { font-weight:bold; font-size:14px; text-align:left; vertical-align:middle; } 
+.pop_layer .pop_area .input_area table tr td { padding:5px 0; vertical-align:middle; } 
+.pop_layer .pop_area .input_area table tr td input[type="text"], .pop_layer .pop_area .input_area table tr td input[type="password"] { height:30px; padding:5px; border:1px solid #8f8f8f; font-size:14px; box-sizing:border-box; } 
+.pop_layer .pop_area .input_area table tr td .select_wrapper { position:relative; } 
+.pop_layer .pop_area .input_area table tr td .select_wrapper:before { content:''; display:block; position:absolute; right:10px; top:50%; width:0; height:0; margin-top:-2px; border-top:5px solid transparent; border-bottom:5px solid #585858; border-right:5px solid transparent; border-left:5px solid transparent; -webkit-transform:rotate(180deg); transform:rotate(180deg); } 
+.pop_layer .pop_area .input_area table tr td .select_wrapper select { width:100%; height:30px; padding:5px; border:1px solid #8f8f8f; font-size:14px; box-sizing:border-box; -webkit-appearance:none; border-radius:0 } 
+
+.pop_layer .pop_area .pop_btn { margin:0 10px; } 
+.pop_layer .pop_area .pop_btn a { display:block; height:52px; background-color:#e63b3b; color:#fff; font-weight:bold; font-size:16px; text-align:center; line-height:52px; } 
+.pop_layer .pop_area .pop_close { position:absolute; right:0; top:0; width:40px; height:40px; font-size:0; text-align:center; line-height:40px; } 
+.pop_layer .pop_area .pop_close img { width:18px; } 
+
+/* 주사위이벤트 관련 공지 170630 이현우 */
+.dice-wrap .visual-wrap { position:relative; } 
+.dice-wrap .visual-wrap img { width:100%; } 
+.dice-wrap .visual-wrap .btn-wrap { position:absolute; left:4.4%; right:4.4%; bottom:3%; overflow:hidden; } 
+.dice-wrap .visual-wrap .btn-wrap a { float:left; width:49%; } 
+.dice-wrap .visual-wrap .btn-wrap a:first-child { margin-right:1%; } 
+.dice-wrap .visual-wrap .btn-wrap a:last-child { margin-left:1%; } 
+
+/* 171012 팝업에 가격 노출 강혜준 */
+.pop_layer .pop_area .prc-box { position: relative; padding: 0px 30px 17px; } 
+.pop_layer .pop_area .prc-box span { display: inline-block; } 
+.pop_layer .pop_area .prc-box .s1 { font-size: 14px; color: #8f8f8f; font-weight: 700; } 
+.pop_layer .pop_area .prc-box .s1 s { font-size: 15px; } 
+.pop_layer .pop_area .prc-box { } 
+.pop_layer .pop_area .prc-box .s2 { position: relative; top: -5px; float: right; font-weight: 700; font-size: 14px; } 
+.pop_layer .pop_area .prc-box .s2 .c1 { color: #e63b3b; font-size: 20px; margin-right: 1px; } 
+
+/* 단순 랜딩 공통 */
+.landing-wrapper { padding-bottom: 72px; } 
+
+.landing-wrapper.imgLanding { } 
+.landing-wrapper .evt-bottom .fixed-btn { position: fixed; left: 0; bottom: 0; width: 100%; padding: 10px; background-color: #fff; box-sizing: border-box; } 
+.landing-wrapper .evt-bottom .type-btn1 > a { display: block; height: 52px; font-weight: bold; font-size: 16px; text-align: center; line-height: 52px; } 
+
+.landing-wrapper.rmd-bf-use .evt-bottom .type-btn1 > a, 
+.landing-wrapper.rmd-bf-use .pop_layer .pop_area .pop_btn a { background: #95a26e; color: #fff; } 
+.landing-wrapper.rmd-bf-use .evt-bottom .type-btn1 > a { } 
+.landing-wrapper.rmd-bf-free1p .evt-bottom .type-btn1 > a,
+.landing-wrapper.rmd-bf-free1p .pop_layer .pop_area .pop_btn a { background: #ae9c87; color: #fff; } 
+.landing-wrapper.rmd-bf-free1p .evt-bottom .type-btn1 > a { } 
+/* end */
+
+/* 씨베이 부대시설 통합 랜딩 영역 */
+.seabayFacil-wrapper { background: #011538; } 
+.seabayFacil-wrapper img { width: 100%; } 
+.seabayFacil-wrapper .link-area > a { display: block; } 
+.seabayFacil-wrapper .link-area > a:first-child { margin-bottom: 6px; } 
+.seabayFacil-wrapper .bottom-area,
+.seabayFacil-wrapper .bottom-area .inner { background: #000; } 
+.seabayFacil-wrapper .bottom-area { padding-bottom: 18%; font-size: 0; letter-spacing: 0; } 
+.seabayFacil-wrapper .bottom-area .inner { position: fixed; bottom: 0; width: 100%; max-width: 640px; } 
+.seabayFacil-wrapper .bottom-area .inner > a { display: inline-block; width: 50%; box-sizing: border-box; } 
+.seabayFacil-wrapper .bottom-area .inner > a:nth-child(1) { padding-right: 3px; } 
+.seabayFacil-wrapper .bottom-area .inner > a:nth-child(2) { padding-left: 3px; } 
+
+/* .seabayFacil-wrapper.sub { } 
+.seabayFacil-wrapper.sub .bottom-area { padding-bottom: 15%; background: none; } 
+.seabayFacil-wrapper.sub .bottom-area .inner > a:nth-child(1) { width: 33.6%; } 
+.seabayFacil-wrapper.sub .bottom-area .inner > a:nth-child(2) { width: 66.4%; } 
+.seabayFacil-wrapper.sw { background: #b7b9ff; } 
+.seabayFacil-wrapper.bf { background: #cebaa1; }  */
+
+/* 씨베이 랜딩 서브페이지 영역 */
+.seabayFacil-wrapper .but a {line-height: normal; background: none;}
+.seabayFacil-wrapper { padding-bottom: 16%; } 
+.seabayFacil-wrapper.sub.sw .but { background: #b7b9ff; } 
+.seabayFacil-wrapper.sub .but { background: none; } 
+.seabayFacil-wrapper.sub .but { font-size: 0; letter-spacing: 0; } 
+.seabayFacil-wrapper.sub .but,
+.seabayFacil-wrapper.sub .but a { height: auto; font-size: 0; } 
+.seabayFacil-wrapper.sub .but a.bt { padding: 2% 0; font-size: 14px; } 
+.seabayFacil-wrapper.sub .but a > span { display: none; } 
+.seabayFacil-wrapper.sub .but a:not(.bt) { margin: 0; box-sizing: border-box; } 
+.seabayFacil-wrapper.sub .but .l_bt { width: 33.7%; padding-right: 3px; } 
+.seabayFacil-wrapper.sub .but .r_bt { width: 66.3%; padding-left: 3px; } 
+.seabayFacil-wrapper.sub.bf .but { background: #cebaa1; } 
+
+/* 오션투유 조식 1인 무료 이용권 영역 */
+.oc2Facil-wrapper { padding-bottom: 100px; } 
+.btn_wrap { position:fixed; left:0; bottom:0; width:100%; padding:10px; background-color:#fff; box-sizing:border-box; } 
+.btn_wrap ul { display:table; width:100%; } 
+.btn_wrap ul li { display:table-cell; width:50%; vertical-align:middle; } 
+.btn_wrap ul li a { display:block; height:52px; color:#fff; font-weight:bold; font-size:16px; text-align:center; line-height:52px; } 
+.btn_wrap ul li:first-child a { background-color:#e63b3b; } 
+.btn_wrap ul li:last-child a { background-color:#e63b3b; } 
+.oc2Facil-wrapper.bf-free { background: #21120f; } 
+.oc2Facil-wrapper.bf-free .btn_wrap ul li:last-child a { background-color: #efa051; color: #21140c } 
+.oc2Facil-wrapper.bf-free .pop_layer .pop_area .pop_btn a { background-color: #efa051; color: #21140c } 
+
+.oc2Facil-wrapper.bf-free .oc2Facil-body .info-use { background: #21120f; } 
+.oc2Facil-wrapper.bf-free .oc2Facil-body .info-use .content { margin: 0 10px; padding: 10px 15px; border: 1px solid #56371E; font-size: 13px; line-height: 1.5; color: #fff; word-break: keep-all; } 
+.oc2Facil-wrapper.bf-free .oc2Facil-body .info-use .content > li { position: relative; padding-left: 10px; letter-spacing: -0.5px; } 
+.oc2Facil-wrapper.bf-free .oc2Facil-body .info-use .content > li:before { content: '-'; display: inline-block; position: absolute; left: 0; } 
+.oc2Facil-wrapper.bf-free .oc2Facil-body .info-use .content > li.dot-no:before { content: ''; } 
+.oc2Facil-wrapper.bf-free .oc2Facil-body .info-use .content em { color: #FFE800; } 

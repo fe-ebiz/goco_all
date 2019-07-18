@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>아메리칸 뷔페 이용안내</title>
+
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta http-equiv="Pragma" content="No-Cache">
+    <meta http-equiv="expire" content="-1">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+
+    <!-- 폰트 영역 -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="//static.go.co.kr/css/reset_custom.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//static.go.co.kr/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="//static.go.co.kr/js/common_ver2.js"></script>
+    <script>
+        var base_url = "go.co.kr";
+        var burl = "go.co.kr";
+    </script>
+    <script type="text/javascript" src="//static.go.co.kr/js/all_common.js"></script>
+    <!-- 검색시 달력에서 이용 -->
+    <link rel="stylesheet" href="//static.go.co.kr/css/jquery-ui.css">
+    <script type="text/javascript" src="//static.go.co.kr/js/jquery_ui.js"></script>
+    <!-- 달력 한글화 -->
+    <script type="text/javascript" src="//static.go.co.kr/js/datepicker_ko.js"></script>
+    <script type="text/javascript" src="//static.go.co.kr/js/jquery.number.min.js"></script>
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="//static.go.co.kr/js/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//static.go.co.kr/css/daterangepicker.css">
+    
+    <!-- <link rel="stylesheet" href="//static.go.co.kr/css/mobile_landing.css"> -->
+    <link rel="stylesheet" href="/static/css/mobile_landing.css">
+
+</head>
+
+<body>
+    <!-- 랜딩구분 name-wrapper: 랜딩 이름 , home: 부대시설 통합, sub: 서브 랜딩, name: 서브랜딩 구분 -->
+    <div class="wrapper oc2Facil-wrapper sub bf-free" id="wrap">
+        <div class="oc2Facil-body">
+            <!-- 이미지 영역 -->
+            <img src="https://img.go.co.kr/mobile/landing/oc2Facil_20190718/bf_free/img_01.jpg" alt="아메리칸 뷔페 1인 무료이용권">
+
+            <!-- 랜딩 별도 내용 영역 -->
+            <div class="info-use">
+                <ul class="content">
+                    <li>추가 구매하신 뷔페 조식권은 이용당일 취소가 불가합니다.</li>
+                    <li>본 무료이용권은 1인 무료이용권입니다.</li>
+                    <li>추가인원 이용시에는 조식권의 구매가 필요합니다.</li>
+                    <li class="dot-no">＊ 대인 : 정상가 19,800원 ▶ <em>사전예약가 12,900원</em></li>
+                    <li class="dot-no">＊ 소인 : 정상가 14,900원 ▶ <em>사전예약가 8,900원</em> (소인기준: 13세 미만)</li>
+                    <li>단, 36개월 미만 유아는 무료이용 가능</li>
+                    <li>위치: 1층 한식당 다연</li>
+                    <li>운영시간 : 07시 30분 ~ 10시 00시</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn_wrap">
+            <ul>
+                <li><a href="#" class="btn01">아메리칸 뷔페 신청하기</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 예약하기 -->
+    <div id="Reservation" class="pop_layer">
+        <div class="pop_area">
+            <strong class="pop_title">아메리칸 뷔페 신청하기</strong>
+            <div style="font-size:13px;margin-left:20px;margin-top:10px">
+                <span style="color:red;">
+                    * 접수안내<br>
+                    - 무료1인이 포함된 인원을 선택하십시오.<br>
+                    - 예약자 기준으로 1회 구매가능합니다.
+                </span>
+            </div>
+            <div class="input_area">
+                <form name="rform" id="rform" method="post" action="/home/landing/sms/post_save.php?md=WQwlVQ==">
+                    <input type="hidden" name="userid" id="userid" value="">
+                    <input type="hidden" name="p_no" id="p_no" value="517">
+                    <input type="hidden" name="r_no" id="r_no" value="257712">
+                    <input type="hidden" name="paygubun" id="paygubun" value="ticket">
+                    <input type="hidden" name="options" value="breakfast__12133">
+                    <input type="hidden" name="total_cnt" id="total_cnt" value="2">
+                    <input type="hidden" name="type_gubun" id="type_gubun" value="3">
+                    <input type="hidden" name="bbq_chk" value="Y">
+                    <input type="hidden" name="new_chk" value="N">
+
+                    <table>
+                        <colgroup>
+                            <col style="width:*;">
+                            <col style="width:140px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="sdate" class="lb_txt">조식이용</label>
+                                </th>
+                                <td>
+                                    2018-12-16 <input type="hidden" name="sdate" id="sdate" value="2018-12-16">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <label for="ticket_num" class="lb_txt">성인</label>
+                                    <input type="hidden" name="ticket_num[]" id="ticket_num0" value="47">
+                                </th>
+                                <td>
+                                    <div class="select_wrapper">
+                                        <select name="tcount[]" id="tcount0" onchange="fmoney();">
+                                            <option value="1" selected="">1명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0원</option>
+                                            <option value="2">2명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9,900원</option>
+                                            <option value="3">3명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19,800원</option>
+                                            <option value="4">4명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;29,700원</option>
+                                            <option value="5">5명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;39,600원</option>
+                                            <option value="6">6명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49,500원</option>
+                                            <option value="7">7명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;59,400원</option>
+                                            <option value="8">8명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;69,300원</option>
+                                            <option value="9">9명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;79,200원</option>
+                                            <option value="10">10명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;89,100원</option>
+                                            <option value="11">11명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;99,000원</option>
+                                            <option value="12">12명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;108,900원</option>
+                                            <option value="13">13명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;118,800원</option>
+                                            <option value="14">14명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;128,700원</option>
+                                            <option value="15">15명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;138,600원</option>
+                                            <option value="16">16명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;148,500원</option>
+                                            <option value="17">17명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;158,400원</option>
+                                            <option value="18">18명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;168,300원</option>
+                                            <option value="19">19명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;178,200원</option>
+                                            <option value="20">20명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;188,100원</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="ticket_num" class="lb_txt">소인</label>
+                                    <input type="hidden" name="ticket_num[]" id="ticket_num1" value="48">
+                                </th>
+                                <td>
+                                    <div class="select_wrapper">
+                                        <select name="tcount[]" id="tcount1" onchange="fmoney();">
+                                            <option value="0">0명</option>
+                                            <option value="1">1명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7,000원</option>
+                                            <option value="2">2명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;14,000원</option>
+                                            <option value="3">3명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21,000원</option>
+                                            <option value="4">4명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28,000원</option>
+                                            <option value="5">5명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;35,000원</option>
+                                            <option value="6">6명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;42,000원</option>
+                                            <option value="7">7명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49,000원</option>
+                                            <option value="8">8명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;56,000원</option>
+                                            <option value="9">9명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;63,000원</option>
+                                            <option value="10">10명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70,000원</option>
+                                            <option value="11">11명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;77,000원</option>
+                                            <option value="12">12명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;84,000원</option>
+                                            <option value="13">13명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;91,000원</option>
+                                            <option value="14">14명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;98,000원</option>
+                                            <option value="15">15명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;105,000원</option>
+                                            <option value="16">16명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;112,000원</option>
+                                            <option value="17">17명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;119,000원</option>
+                                            <option value="18">18명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;126,000원</option>
+                                            <option value="19">19명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;133,000원</option>
+                                            <option value="20">20명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;140,000원</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!--
+                            <tr>
+                                <th scope="row" >
+                                    <label for="username" class="lb_txt">예약자명</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="name" id="username" style="width:100%;" value=""/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" >
+                                    <label for="tel" class="lb_txt">연락처</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="tel" id="tel" maxlength="13" style="width:100%;" value=""/>
+                                </td>
+                            </tr>
+                            -->
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+            <div class="prc-box clr" id="fmoney">
+            </div>
+
+            <div class="pop_btn">
+                <a href="#" onclick="form_chk();">
+                    아메리칸 뷔페 구매하기 </a>
+            </div>
+            <a href="#" class="pop_close"><img src="https://img.go.co.kr/barbecue/btn_pop_close.gif" alt=""></a>
+        </div>
+    </div>
+    <!-- // 예약하기 -->
+    <!-- 예약사항 조회 -->
+    <div id="Inquiry" class="pop_layer">
+        <div class="pop_area">
+            <strong class="pop_title">예약사항 조회</strong>
+            <div class="input_area">
+                <table>
+                    <colgroup>
+                        <col style="width:75px;">
+                        <col style="width:*;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <label for="Inquiry_name" class="lb_txt">예약자명</label>
+                            </th>
+                            <td>
+                                <input type="text" id="Inquiry_name" placeholder="홍길동" style="width:100%;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="Inquiry_Phone" class="lb_txt">연락처</label>
+                            </th>
+                            <td>
+                                <input type="text" id="Inquiry_Phone" placeholder="010-1234-5678" style="width:100%;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pop_btn">
+                <a href="#">결제하기</a>
+            </div>
+            <a href="#" class="pop_close"><img src="https://img.go.co.kr/barbecue/btn_pop_close.gif" alt=""></a>
+        </div>
+    </div>
+    <!-- // 예약사항조회 -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            fmoney();
+            $('.btn01').click(function () {
+                var dt = new Date();
+                if (dt.getHours() >= 10 && "2019-07-18" == "2018-12-16" || "2019-07-18" >
+                    "2018-12-15") {
+                    alert("마감되었습니다.");
+                    return false;
+                }
+                $('#Reservation').show();
+                clickcount('reserve');
+                return false;
+            });
+
+            $('.pop_close').click(function () {
+                $(this).parents('.pop_layer').hide();
+                return false;
+            });
+
+            $("#tel").keyup(function (event) {
+                event = event || window.event;
+                var _val = this.value.trim();
+                this.value = auto_hypen(_val);
+            });
+        });
+
+        function datereload() {
+            $.ajax({
+                url: "./state.php",
+                type: "post",
+                data: "mode=oceanbbq_chkdate&p_no=517&r_no=257712",
+                success: function (e) {
+                    var tmp = e.split("|");
+                    var disabledDays = new Array();
+                    for (var j = 0; j < tmp.length; j++) {
+                        disabledDays.push(tmp[j]);
+                    }
+                    $("#sdate").datepicker({
+                        dateFormat: "yy-mm-dd",
+                        showAnim: "slideDown",
+                        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+                        minDate: "2019-07-18",
+                        maxDate: "2018-12-31",
+                        changeMonth: true,
+                        changeYear: true,
+                        beforeShowDay: function (date) {
+                            var m = date.getMonth(),
+                                d = date.getDate(),
+                                y = date.getFullYear();
+                            for (i = 0; i < disabledDays.length; i++) {
+                                if ($.inArray(y + '-' + (m + 1) + '-' + d, disabledDays) != -
+                                    1) {
+                                    return [false];
+                                }
+                            }
+                            return [true];
+                        }
+                    });
+                }
+            });
+        }
+
+        function auto_hypen(str) {
+            str = str.replace(/[^0-9]/g, '');
+            var tmp = '';
+            if (str.length < 4) {
+                return str;
+            } else if (str.length < 7) {
+                tmp += str.substr(0, 3);
+                tmp += '-';
+                tmp += str.substr(3);
+                return tmp;
+            } else if (str.length < 11) {
+                tmp += str.substr(0, 3);
+                tmp += '-';
+                tmp += str.substr(3, 3);
+                tmp += '-';
+                tmp += str.substr(6);
+                return tmp;
+            } else {
+                tmp += str.substr(0, 3);
+                tmp += '-';
+                tmp += str.substr(3, 4);
+                tmp += '-';
+                tmp += str.substr(7);
+                return tmp;
+            }
+            return str;
+        }
+
+        function options_show(onum) {
+            $.ajax({
+                url: "./state.php",
+                type: "post",
+                data: "mode=options_chk&onum=" + onum + "&sdate=" + $("#sdate").val(),
+                success: function (e) {
+                    if (e == "N") {
+                        $("#options_tr").hide();
+                        $("#options_onum").val('');
+                    } else {
+                        $("#options_tr").show();
+                        $("#options_div").html(e);
+                    }
+                    fmoney();
+                }
+            });
+        }
+
+        function form_chk() {
+
+            if ($("#sdate").val() == "") {
+                alert("이용일을 선택해주세요.");
+                return false;
+            }
+
+            var cnt = 0;
+            for (var s = 0; s < parseInt($("#total_cnt").val()); s++) {
+                if ($("#tcount" + s).val() > 0) {
+                    cnt = cnt + 1;
+                }
+            }
+
+            if (cnt == 0) {
+                alert("매수를 선택해주세요.");
+                return false;
+            }
+
+
+            /*
+            if($("#username").val() == "") { 
+                alert("예약자명을 입력해주세요");
+                $("#username").focus();
+                return false;
+            } 
+        
+            if($("#tel").val() == "") { 
+                alert("연락처를 입력해주세요");
+                $("#tel").focus();
+                return false;
+            } */
+
+
+
+            $.ajax({
+                type: "POST",
+                url: "./state.php",
+                data: {
+                    "mode": "chk_again",
+                    "p_no": "517",
+                    "gubun": "breakfast__12133"
+                },
+                success: function (e) {
+                    if (e == "Y") {
+                        alert("이미 조식패키지를 구매하셨습니다.\r\n추가구매는 현장에서 가능합니다.");
+                        return false;
+                    }
+                }
+            })
+
+            var chk = "1";
+            if (parseInt($("#final").val()) == 0) {
+
+                alert("로그인 후 이용가능합니다.");
+                $("#rform").attr("action", "/home/landing/sms/post_save.php?md=WQwlVQ==&main=Y");
+                $("#rform").submit();
+            } else {
+                $('#rform').submit();
+            }
+
+        }
+
+        function clickcount(str) {
+            $.ajax({
+                url: "./state.php",
+                type: "post",
+                data: "mode=sub_ticket_click&p_no=517&t_gubun=" + str + "&options=breakfast__12133",
+                success: function (e) {
+
+                }
+            });
+        }
+
+        function simple_reserve(chk) {
+            var result = confirm(chk + "인은 무료입니다. 예약하시겠습니까?");
+            if (result) {
+
+                var string = $("#rform").serialize();
+                $.ajax({
+                    url: "./state.php",
+                    type: "post",
+                    data: "mode=simple_reserve&" + string,
+                    success: function (e) {
+                        alert(e);
+                        location.reload();
+                    }
+                });
+            } else {
+                return false;
+            }
+        }
+
+        function fmoney() {
+            var string = $("#rform").serialize();
+            $.ajax({
+                url: "./state.php",
+                type: "post",
+                data: "mode=fmoney&" + string,
+                success: function (e) {
+                    $("#fmoney").html(e);
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

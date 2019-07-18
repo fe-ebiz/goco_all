@@ -27,7 +27,7 @@ a:active, a:hover {text-decoration:none}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 /* reset end */
 
-.hidden {overflow: hidden; font-size:0; width:0; height:0; line-height:0; position:absolute; top: 0; left:-9999px; opacity: 0; filter: alpha(opacity=0);}
+.hidden {position: absolute; width: 1px; height: 1px; overflow: hidden; padding: 0; margin: -1px; border: 0; clip: rect(1px, 1px, 1px, 1px);}
 .clr:before, .clr:after {content: ""; display: block;}
 .clr:after {clear: both;}
 

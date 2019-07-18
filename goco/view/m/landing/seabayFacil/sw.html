@@ -2,67 +2,610 @@
 <html lang="ko">
 
 <head>
-	<meta charset="UTF-8">
-	<title> 국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR </title>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>오션투유리조트</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="//static.go.co.kr/css/reset_custom.css">
     
-	<!-- 폰트어썸 CDN -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/mobile_layout_event-v1.1.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../../../../static/css/mobile_layout_event-v1.1.css"> -->
-    <link rel="stylesheet" type="text/css" href="/static/css/mobile_layout_event-v1.1.css">
-    
-	<!-- jquery라이브러리 -->
-	<style src="http://code.jquery.com/jquery-1.11.2.min.js"></style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//static.go.co.kr/js/common_ver2.js"></script>
+    <script>
+        var base_url = "go.co.kr";
+        var burl = "go.co.kr";
+    </script>
+    <script type="text/javascript" src="//static.go.co.kr/js/all_common.js"></script>
+    <!--- 검색시 달력에서 이용 ---->
+    <link rel="stylesheet" href="//static.go.co.kr/css/jquery-ui.css">
+    <script type="text/javascript" src="//static.go.co.kr/js/jquery_ui.js"></script>
+    <!--- 달력 한글화 --->
+    <script type="text/javascript" src="//static.go.co.kr/js/datepicker_ko.js"></script>
+    <script type="text/javascript" src="//static.go.co.kr/js/jquery.number.min.js"></script>
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="//static.go.co.kr/js/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//static.go.co.kr/css/daterangepicker.css">
+    <style src="http://code.jquery.com/jquery-1.11.2.min.js"></style>
+    <script type="text/javascript" src="//static.go.co.kr/js/iscroll.js"></script>
 
 </head>
 
 <body>
-	<h1 class="hidden">강릉씨베이호텔 패밀리풀 / 인피니티풀</h1>
-	
-	<div class="wrapper seabayFacil-wrapper sub sw">
-	    <section class="info">
-            <h1 class="hidden">패밀리풀 / 인피니티풀</h1>
-	        <img src="http://img.go.co.kr/mobile/landing/seabayFacil_20190705/sw/img_01.jpg" alt="수영장 사진">
-            <p class="hidden">
-                호캉스, 최고의 힐링 플레이스!
-                푸른 동해바다 전망, 바다를 직접 대하는 듯한 환상!
-                가족, 연인, 친구들과 함께 즐길 수 있는 최고의 장소입니다.
-                바텐더가 손수 만드는 환상의 칵테일, 와인, 샴페인, 맥주 등을
-                원하시는 사이드 메뉴와 함께 즐기실 수 있습니다.
-            </p>
-            <h2 class="hidden">수영장 이용안내</h2>
-            <p class="hidden">
-                주간이용권 대인 18000원(할인가)
-                주각이용권 소인(소인기준 3세~12세 이하) 9000원(할인가)
-                인피니티풀 야간 18000원(할인가)
-                (주/야간 만19세 이상만 이용가능)
-                위치안내: 패밀리 풀(5층) / 인피니티 풀(15층)
-                주간이용권: 패밀리 풀과 인피니티 풀 모두 이용가능
-                패밀리풀 운영시간: 09시~19시(정비휴식 12시~13시)
-                인피니티풀 운영시간: 13시~19시
-                야갼이용권: 인피니티 풀만 이용가능(만19세 이상 성인만 이용가능)
-                야간 인피티니 풀 운영시간: 20시~22시
-                준비물품: 수영모(야구모자 가능), 수영복(편한 복장 가능), 개인수건
-                기타안내: 최대 수용인원 초과 시 안전을 위해 입장이 제한될 수 있음
-                풀장에는 락커룸이 없으므로 미리 환복 후 입장
-                인피니티 풀 내 샤워실 이용가능
-                구명조끼(소인용)은 선착순 무료대여, 외부음식 반입 불가
-            </p>
-        </section>
-        <div class="cf bottom-area">
-            <div class="inner">
-                <a href="" title="페이지 이동">
-                    <img src="http://img.go.co.kr/mobile/landing/seabayFacil_20190705/sw/bt_btn_01.jpg" alt="홈으로">
-                </a>
-                <a href="" title="페이지 이동">
-                    <img src="http://img.go.co.kr/mobile/landing/seabayFacil_20190705/sw/bt_btn_02.jpg" alt="수영장 사전예약">
-                </a>
+    <form name="rform" id="rform" method="post" action="/home/landing/sms/post_save.php?md=WQwlVQ==">
+        <!-- <input type="hidden" name="userid" id="userid" value="" /> -->
+        <input type="hidden" name="paygubun" id="paygubun" value="ticket">
+        <input type="hidden" name="options" value="pay_end">
+        <input type="hidden" name="type_gubun" id="type_gubun" value="1">
+
+        <!-- <link rel="stylesheet" href="//static.go.co.kr/css/mobile_landing.css"> -->
+        <link rel="stylesheet" href="/static/css/mobile_landing.css">
+
+        <!-- 랜딩구분 name-wrapper: 랜딩 이름 , home: 부대시설 통합, sub: 서브 랜딩, name: 서브랜딩 구분 -->
+        <div class="wrapper seabayFacil-wrapper sub sw" id="wrap">
+            <div class="oc2Facil-body">
+                <!-- 이미지 영역 -->
+                <img src="http://img.go.co.kr/mobile/landing/seabayFacil_20190705/sw/img_01.jpg" alt="불꽃놀이 패키지">
+                
+                <!-- 랜딩 별도 내용 영역 -->
+                <div class="info-use">
+                    <ul class="content">
+                        <li>추가 구매하신 뷔페 조식권은 이용당일 취소가 불가합니다.</li>
+                        <li>본 무료이용권은 1인 무료이용권입니다.</li>
+                        <li>추가인원 이용시에는 조식권의 구매가 필요합니다.</li>
+                        <li class="dot-no">＊ 대인 : 정상가 19,800원 ▶ <em>사전예약가 12,900원</em></li>
+                        <li class="dot-no">＊ 소인 : 정상가 14,900원 ▶ <em>사전예약가 8,900원</em> (소인기준: 13세 미만)</li>
+                        <li>단, 36개월 미만 유아는 무료이용 가능</li>
+                        <li>위치: 1층 한식당 다연</li>
+                        <li>운영시간 : 07시 30분 ~ 10시 00시</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="but" id="but">
+                <a href="//m.go.co.kr/home/landing/sms/o_step1.php?g=pay_end&amp;e=&amp;r=" class="l_bt"><img
+                        src="http://img.go.co.kr/mobile/landing/seabayFacil_20190705/sw/bt_btn_01.jpg" alt="메인">메인화면</a>
+                <a href="javascript:;" class="r_bt"><img
+                        src="http://img.go.co.kr/mobile/landing/seabayFacil_20190705/sw/bt_btn_02.jpg" alt="불꽃놀이 예약">불꽃놀이 예약하기<span class="gt">&gt;</span></a>
+                <a href="#" class="bt" onclick="form_chk();" style="display: none;">결제하기<span id="fmoney"></span></a>
+            </div>
+
+            <div class="fiwrap" style="display: none;">
+                <h1>패밀리풀 / 인피니티풀<a class="i-x" href="javascript:;"></a>
+                </h1>
+
+                <div class="fie clr">
+                    <span>이용일</span>
+                    <input type="text" class="date hasDatepicker" name="sdate" id="sdate" placeholder="날짜선택" readonly=""
+                        onfocus="this.blur()" style="cursor:default">
+                </div>
+                <div class="fie clr">
+                    <span style="height:35px;width:35%;">대인</span>
+                    <span
+                        style="padding:0px 8px;height:35px;width:42%;font-weight:700;font-size:14px;text-align:right;">
+                        <s style="color:#8f8f8f;">40,000원</s>&nbsp;
+                        <span style="line-height:35px;font-size:14px;">
+                            <font style="color:#e63b3b;">18000</font>원
+                        </span>
+                    </span>
+                    <input type="hidden" name="ticket_num[]" id="ticket_num0" value="17">
+                    <select name="tcount[]" id="tcount0" class="date date2" onchange="fmoney();">
+                        <option value="0">0개</option>
+                        <option value="1">1개</option>
+                        <option value="2">2개</option>
+                        <option value="3">3개</option>
+                        <option value="4">4개</option>
+                        <option value="5">5개</option>
+                        <option value="6">6개</option>
+                        <option value="7">7개</option>
+                        <option value="8">8개</option>
+                        <option value="9">9개</option>
+                        <option value="10">10개</option>
+                        <option value="11">11개</option>
+                        <option value="12">12개</option>
+                        <option value="13">13개</option>
+                        <option value="14">14개</option>
+                        <option value="15">15개</option>
+                        <option value="16">16개</option>
+                        <option value="17">17개</option>
+                        <option value="18">18개</option>
+                        <option value="19">19개</option>
+                        <option value="20">20개</option>
+                        <option value="21">21개</option>
+                        <option value="22">22개</option>
+                        <option value="23">23개</option>
+                        <option value="24">24개</option>
+                        <option value="25">25개</option>
+                        <option value="26">26개</option>
+                        <option value="27">27개</option>
+                        <option value="28">28개</option>
+                        <option value="29">29개</option>
+                        <option value="30">30개</option>
+                        <option value="31">31개</option>
+                        <option value="32">32개</option>
+                        <option value="33">33개</option>
+                        <option value="34">34개</option>
+                        <option value="35">35개</option>
+                        <option value="36">36개</option>
+                        <option value="37">37개</option>
+                        <option value="38">38개</option>
+                        <option value="39">39개</option>
+                        <option value="40">40개</option>
+                        <option value="41">41개</option>
+                        <option value="42">42개</option>
+                        <option value="43">43개</option>
+                        <option value="44">44개</option>
+                        <option value="45">45개</option>
+                        <option value="46">46개</option>
+                        <option value="47">47개</option>
+                        <option value="48">48개</option>
+                        <option value="49">49개</option>
+                        <option value="50">50개</option>
+                        <option value="51">51개</option>
+                        <option value="52">52개</option>
+                        <option value="53">53개</option>
+                        <option value="54">54개</option>
+                        <option value="55">55개</option>
+                        <option value="56">56개</option>
+                        <option value="57">57개</option>
+                        <option value="58">58개</option>
+                        <option value="59">59개</option>
+                        <option value="60">60개</option>
+                        <option value="61">61개</option>
+                        <option value="62">62개</option>
+                        <option value="63">63개</option>
+                        <option value="64">64개</option>
+                        <option value="65">65개</option>
+                        <option value="66">66개</option>
+                        <option value="67">67개</option>
+                        <option value="68">68개</option>
+                        <option value="69">69개</option>
+                        <option value="70">70개</option>
+                        <option value="71">71개</option>
+                        <option value="72">72개</option>
+                        <option value="73">73개</option>
+                        <option value="74">74개</option>
+                        <option value="75">75개</option>
+                        <option value="76">76개</option>
+                        <option value="77">77개</option>
+                        <option value="78">78개</option>
+                        <option value="79">79개</option>
+                        <option value="80">80개</option>
+                        <option value="81">81개</option>
+                        <option value="82">82개</option>
+                        <option value="83">83개</option>
+                        <option value="84">84개</option>
+                        <option value="85">85개</option>
+                        <option value="86">86개</option>
+                        <option value="87">87개</option>
+                        <option value="88">88개</option>
+                        <option value="89">89개</option>
+                        <option value="90">90개</option>
+                        <option value="91">91개</option>
+                        <option value="92">92개</option>
+                        <option value="93">93개</option>
+                        <option value="94">94개</option>
+                        <option value="95">95개</option>
+                        <option value="96">96개</option>
+                        <option value="97">97개</option>
+                        <option value="98">98개</option>
+                        <option value="99">99개</option>
+                        <option value="100">100개</option>
+                    </select>
+                </div>
+                <div class="fie clr">
+                    <span style="height:35px;width:35%;">소인</span>
+                    <span
+                        style="padding:0px 8px;height:35px;width:42%;font-weight:700;font-size:14px;text-align:right;">
+                        <s style="color:#8f8f8f;">30,000원</s>&nbsp;
+                        <span style="line-height:35px;font-size:14px;">
+                            <font style="color:#e63b3b;">9000</font>원
+                        </span>
+                    </span>
+                    <input type="hidden" name="ticket_num[]" id="ticket_num1" value="16">
+                    <select name="tcount[]" id="tcount1" class="date date2" onchange="fmoney();">
+                        <option value="0">0개</option>
+                        <option value="1">1개</option>
+                        <option value="2">2개</option>
+                        <option value="3">3개</option>
+                        <option value="4">4개</option>
+                        <option value="5">5개</option>
+                        <option value="6">6개</option>
+                        <option value="7">7개</option>
+                        <option value="8">8개</option>
+                        <option value="9">9개</option>
+                        <option value="10">10개</option>
+                        <option value="11">11개</option>
+                        <option value="12">12개</option>
+                        <option value="13">13개</option>
+                        <option value="14">14개</option>
+                        <option value="15">15개</option>
+                        <option value="16">16개</option>
+                        <option value="17">17개</option>
+                        <option value="18">18개</option>
+                        <option value="19">19개</option>
+                        <option value="20">20개</option>
+                        <option value="21">21개</option>
+                        <option value="22">22개</option>
+                        <option value="23">23개</option>
+                        <option value="24">24개</option>
+                        <option value="25">25개</option>
+                        <option value="26">26개</option>
+                        <option value="27">27개</option>
+                        <option value="28">28개</option>
+                        <option value="29">29개</option>
+                        <option value="30">30개</option>
+                        <option value="31">31개</option>
+                        <option value="32">32개</option>
+                        <option value="33">33개</option>
+                        <option value="34">34개</option>
+                        <option value="35">35개</option>
+                        <option value="36">36개</option>
+                        <option value="37">37개</option>
+                        <option value="38">38개</option>
+                        <option value="39">39개</option>
+                        <option value="40">40개</option>
+                        <option value="41">41개</option>
+                        <option value="42">42개</option>
+                        <option value="43">43개</option>
+                        <option value="44">44개</option>
+                        <option value="45">45개</option>
+                        <option value="46">46개</option>
+                        <option value="47">47개</option>
+                        <option value="48">48개</option>
+                        <option value="49">49개</option>
+                        <option value="50">50개</option>
+                        <option value="51">51개</option>
+                        <option value="52">52개</option>
+                        <option value="53">53개</option>
+                        <option value="54">54개</option>
+                        <option value="55">55개</option>
+                        <option value="56">56개</option>
+                        <option value="57">57개</option>
+                        <option value="58">58개</option>
+                        <option value="59">59개</option>
+                        <option value="60">60개</option>
+                        <option value="61">61개</option>
+                        <option value="62">62개</option>
+                        <option value="63">63개</option>
+                        <option value="64">64개</option>
+                        <option value="65">65개</option>
+                        <option value="66">66개</option>
+                        <option value="67">67개</option>
+                        <option value="68">68개</option>
+                        <option value="69">69개</option>
+                        <option value="70">70개</option>
+                        <option value="71">71개</option>
+                        <option value="72">72개</option>
+                        <option value="73">73개</option>
+                        <option value="74">74개</option>
+                        <option value="75">75개</option>
+                        <option value="76">76개</option>
+                        <option value="77">77개</option>
+                        <option value="78">78개</option>
+                        <option value="79">79개</option>
+                        <option value="80">80개</option>
+                        <option value="81">81개</option>
+                        <option value="82">82개</option>
+                        <option value="83">83개</option>
+                        <option value="84">84개</option>
+                        <option value="85">85개</option>
+                        <option value="86">86개</option>
+                        <option value="87">87개</option>
+                        <option value="88">88개</option>
+                        <option value="89">89개</option>
+                        <option value="90">90개</option>
+                        <option value="91">91개</option>
+                        <option value="92">92개</option>
+                        <option value="93">93개</option>
+                        <option value="94">94개</option>
+                        <option value="95">95개</option>
+                        <option value="96">96개</option>
+                        <option value="97">97개</option>
+                        <option value="98">98개</option>
+                        <option value="99">99개</option>
+                        <option value="100">100개</option>
+                    </select>
+                </div>
+                <div class="fie clr">
+                    <span style="height:35px;width:35%;">야간(성인)</span>
+                    <span
+                        style="padding:0px 8px;height:35px;width:42%;font-weight:700;font-size:14px;text-align:right;">
+                        <s style="color:#8f8f8f;">40,000원</s>&nbsp;
+                        <span style="line-height:35px;font-size:14px;">
+                            <font style="color:#e63b3b;">18,000</font>원
+                        </span>
+                    </span>
+                    <input type="hidden" name="ticket_num[]" id="ticket_num2" value="15">
+                    <select name="tcount[]" id="tcount2" class="date date2" onchange="fmoney();">
+                        <option value="0">0개</option>
+                        <option value="1">1개</option>
+                        <option value="2">2개</option>
+                        <option value="3">3개</option>
+                        <option value="4">4개</option>
+                        <option value="5">5개</option>
+                        <option value="6">6개</option>
+                        <option value="7">7개</option>
+                        <option value="8">8개</option>
+                        <option value="9">9개</option>
+                        <option value="10">10개</option>
+                        <option value="11">11개</option>
+                        <option value="12">12개</option>
+                        <option value="13">13개</option>
+                        <option value="14">14개</option>
+                        <option value="15">15개</option>
+                        <option value="16">16개</option>
+                        <option value="17">17개</option>
+                        <option value="18">18개</option>
+                        <option value="19">19개</option>
+                        <option value="20">20개</option>
+                        <option value="21">21개</option>
+                        <option value="22">22개</option>
+                        <option value="23">23개</option>
+                        <option value="24">24개</option>
+                        <option value="25">25개</option>
+                        <option value="26">26개</option>
+                        <option value="27">27개</option>
+                        <option value="28">28개</option>
+                        <option value="29">29개</option>
+                        <option value="30">30개</option>
+                        <option value="31">31개</option>
+                        <option value="32">32개</option>
+                        <option value="33">33개</option>
+                        <option value="34">34개</option>
+                        <option value="35">35개</option>
+                        <option value="36">36개</option>
+                        <option value="37">37개</option>
+                        <option value="38">38개</option>
+                        <option value="39">39개</option>
+                        <option value="40">40개</option>
+                        <option value="41">41개</option>
+                        <option value="42">42개</option>
+                        <option value="43">43개</option>
+                        <option value="44">44개</option>
+                        <option value="45">45개</option>
+                        <option value="46">46개</option>
+                        <option value="47">47개</option>
+                        <option value="48">48개</option>
+                        <option value="49">49개</option>
+                        <option value="50">50개</option>
+                        <option value="51">51개</option>
+                        <option value="52">52개</option>
+                        <option value="53">53개</option>
+                        <option value="54">54개</option>
+                        <option value="55">55개</option>
+                        <option value="56">56개</option>
+                        <option value="57">57개</option>
+                        <option value="58">58개</option>
+                        <option value="59">59개</option>
+                        <option value="60">60개</option>
+                        <option value="61">61개</option>
+                        <option value="62">62개</option>
+                        <option value="63">63개</option>
+                        <option value="64">64개</option>
+                        <option value="65">65개</option>
+                        <option value="66">66개</option>
+                        <option value="67">67개</option>
+                        <option value="68">68개</option>
+                        <option value="69">69개</option>
+                        <option value="70">70개</option>
+                        <option value="71">71개</option>
+                        <option value="72">72개</option>
+                        <option value="73">73개</option>
+                        <option value="74">74개</option>
+                        <option value="75">75개</option>
+                        <option value="76">76개</option>
+                        <option value="77">77개</option>
+                        <option value="78">78개</option>
+                        <option value="79">79개</option>
+                        <option value="80">80개</option>
+                        <option value="81">81개</option>
+                        <option value="82">82개</option>
+                        <option value="83">83개</option>
+                        <option value="84">84개</option>
+                        <option value="85">85개</option>
+                        <option value="86">86개</option>
+                        <option value="87">87개</option>
+                        <option value="88">88개</option>
+                        <option value="89">89개</option>
+                        <option value="90">90개</option>
+                        <option value="91">91개</option>
+                        <option value="92">92개</option>
+                        <option value="93">93개</option>
+                        <option value="94">94개</option>
+                        <option value="95">95개</option>
+                        <option value="96">96개</option>
+                        <option value="97">97개</option>
+                        <option value="98">98개</option>
+                        <option value="99">99개</option>
+                        <option value="100">100개</option>
+                    </select>
+                </div>
+                <input type="hidden" id="total_cnt" value="3">
+                <!-- <div class="fie clr" id="ftext"><span style="color:#e63b3b;font-weight:600;">구매할 패키지를 선택해주세요.</span> -->
             </div>
         </div>
-	</div>
+
+
+        <script>
+            $(function () {
+                $(".fiwrap, #but .bt").hide();
+
+                $("#but").on('click', '.r_bt', function () {
+                    $("#but .l_bt, #but .r_bt").hide();
+                    $(".fiwrap, #but .bt").show();
+                    $("#but").addClass('on');
+                });
+
+                $("#but .r_bt").on('click', function () {
+                    $(".fixed-bg").fadeToggle();
+                    $(".fiwrap").slideToggle();
+                    $("#but").removeClass('on');
+                });
+
+                $(".i-x").on('click', function () {
+                    $(".fixed-bg").fadeToggle();
+                    $(".fiwrap").slideToggle();
+                    $("#but").removeClass('on');
+
+                    $("#but .l_bt, #but .r_bt").show();
+                    $("#but .bt").hide();
+                });
+
+            });
+        </script>
+        
+        <input type="hidden" name="p_no" id="p_no" value="517">
+        <input type="hidden" name="r_no" id="r_no" value="131156">
+        <input type="hidden" name="e" value="">
+        <input type="hidden" name="m" value="">
+    </form>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $("#tel").keyup(function (event) {
+                event = event || window.event;
+                var _val = this.value.trim();
+                this.value = auto_hypen(_val);
+            });
+            datereload();
+
+            ftext();
+        });
+
+        function datereload() {
+            $.ajax({
+                url: "/home/landing/sms/state.php",
+                type: "post",
+                data: "mode=options_date&p_no=517&r_no=131156",
+                success: function (e) {
+                    var tmp = e.split("|");
+                    var disabledDays = new Array();
+                    for (var j = 0; j < tmp.length; j++) {
+                        disabledDays.push(tmp[j]);
+                    }
+                    $("#sdate").datepicker({
+                        dateFormat: "yy-mm-dd",
+                        showAnim: "slideDown",
+                        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+                        minDate: 0,
+                        changeMonth: true,
+                        changeYear: true,
+                        beforeShowDay: function (date) {
+
+
+                            var m = date.getMonth(),
+                                d = date.getDate(),
+                                y = date.getFullYear();
+                            for (i = 0; i < disabledDays.length; i++) {
+                                if ($.inArray(y + '-' + (m + 1) + '-' + d, disabledDays) != -
+                                    1) {
+                                    return [false];
+                                }
+                            }
+                            return [true];
+
+                        },
+
+                        onSelect: function () {
+                            // 조식
+
+                            fmoney();
+                            ftext();
+
+
+                        }
+
+                    });
+                }
+            });
+        }
+
+        function form_chk() {
+            if ($("input[name='none_product']").val() == "1") {
+                alert("해당일자엔 조식을 이용하실 수 없습니다.");
+                return false;
+            }
+
+            if ($("#sdate").val() == "") {
+                alert("이용일을 선택해주세요.");
+                return false;
+            }
+
+            var cnt = 0;
+            for (var s = 0; s <= parseInt($("#total_cnt").val()); s++) {
+                if ($("#tcount" + s).val() > 0) {
+                    cnt = cnt + 1;
+                }
+            }
+
+            if (cnt == 0) {
+                alert("매수를 선택해주세요.");
+                return false;
+            }
+
+            $('#rform').submit();
+        }
+
+        function fmoney() {
+            var string = $("#rform").serialize();
+
+            $.ajax({
+                url: "./state.php",
+                type: "post",
+                data: "mode=fmoney&" + string,
+                success: function (data) {
+                    if (parseInt(data) == "0") {
+                        $("#fmoney").text("");
+                    } else {
+                        $("#fmoney").text(" (" + number_format(data) + "원)");
+                    }
+                    ftext();
+                }
+            });
+        }
+
+        function ftext() {
+            var string = $("#rform").serialize();
+
+            $.ajax({
+                url: "./state.php",
+                type: "post",
+                data: "mode=ftext&" + string,
+                success: function (data) {
+                    $("#ftext").html(data);
+                }
+            });
+        }
+
+        function auto_hypen(str) {
+            str = str.replace(/[^0-9]/g, '');
+            var tmp = '';
+            if (str.length < 4) {
+                return str;
+            } else if (str.length < 7) {
+                tmp += str.substr(0, 3);
+                tmp += '-';
+                tmp += str.substr(3);
+                return tmp;
+            } else if (str.length < 11) {
+                tmp += str.substr(0, 3);
+                tmp += '-';
+                tmp += str.substr(3, 3);
+                tmp += '-';
+                tmp += str.substr(6);
+                return tmp;
+            } else {
+                tmp += str.substr(0, 3);
+                tmp += '-';
+                tmp += str.substr(3, 4);
+                tmp += '-';
+                tmp += str.substr(7);
+                return tmp;
+            }
+            return str;
+        }
+    </script>
 
 </body>
 

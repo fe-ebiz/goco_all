@@ -961,7 +961,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .seabayFacil-wrapper .link-area > a {display: block;}
 .seabayFacil-wrapper .link-area > a:first-child {margin-bottom: 6px;}
 .seabayFacil-wrapper .bottom-area,
-.seabayFacil-wrapper .bottom-area .inner {padding-top: 6px; background: #000;} 
+.seabayFacil-wrapper .bottom-area .inner {background: #000;} 
 .seabayFacil-wrapper .bottom-area {padding-bottom: 18%; font-size: 0; letter-spacing: 0;}
 .seabayFacil-wrapper .bottom-area .inner {position: fixed; bottom: 0; width: 100%; max-width: 640px;}
 .seabayFacil-wrapper .bottom-area .inner > a {display: inline-block; width: 50%; box-sizing: border-box;}
