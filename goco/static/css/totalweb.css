@@ -5,7 +5,7 @@
 .pull-right {float: right;}
 .ta-right {text-align: right;}
 
-
+#contents img, #contents input {vertical-align: middle;}
 /* 썸네일 로고 170428 이현우 */
 #imgview_box .thumbnail_logo {position:absolute; left:15px; top:55px; width:80px !important; height:39px !important;}
 /* 상세페이지 테이블 패딩조정 */
