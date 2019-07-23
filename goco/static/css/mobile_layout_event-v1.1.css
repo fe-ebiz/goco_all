@@ -973,3 +973,7 @@ box-sizing: border-box; /*border: 1px solid #000;*/}
 .seabayFacil-wrapper.sub .bottom-area .inner > a:nth-child(2) {width: 66.4%;}
 .seabayFacil-wrapper.sw {background: #b7b9ff;}
 .seabayFacil-wrapper.bf {background: #cebaa1;}
+.seabayFacil-wrapper.bf-only {background: #b6c591;}
+.seabayFacil-wrapper.bf-only .bottom-area {background: none;}
+.seabayFacil-wrapper.bf-only .bottom-area .inner > a:nth-child(1) {padding-right: 1px;}
+.seabayFacil-wrapper.bf-only .bottom-area .inner > a:nth-child(2) {padding-left: 1px;}
