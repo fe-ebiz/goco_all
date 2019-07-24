@@ -7,13 +7,37 @@
 <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
 <link rel="stylesheet" href="http://static.go.co.kr/css/reset_custom.css">
 
-<!-- <link rel="stylesheet" href="https://static.go.co.kr/css/mobile_landing.css"> -->
-<link rel="stylesheet" href="/static/css/mobile_landing.css">
+<style>
+	img {vertical-align: top; border: none; width:100%;}
 
+	.wrap {width: 100%; position:relative; padding-bottom:140px;}
+	.wrap img {width:100%;}
+	.pkg_w {width:100%; }
+	.pkg_w ul {width:80%; }
+	.bt_w {padding:5px 0 0px 0;  position:fixed; bottom:0; left:0; width:100%; height:140px;background: #1e6395; }
+
+	.bt,.bt2 {width:100%; font-size:0; padding-top:10px; text-align: center;}
+
+	.bt a,.bt2 a {display: inline-block; color:#fff; width:50%; font-size: 15px; text-align: center; line-height: 50px;}
+	.bt .l_bt {width: 43%;}
+	.bt .r_bt {width: 43%; margin-left: 3%;}
+
+	.bt2 .l_bt2 {width: 43%;}
+	.bt2 .r_bt2 {width: 43%; margin-left: 3%;}
+
+	.bt a .gt , .bt2 a .gt {font-family: "Nanum Gothic", sans-serif; position: relative; left: 5px; font-size: 12px; top: -1px;}
+
+	.wrap_img {position:relative;}
+	.pkg_img {position:absolute; top:15%; left:20px;}
+	.pkg_img img {width:95%; margin-top:15px;}
+	.go_logo {width:100%; height:70px; padding-top:15px; text-align: center; background: #f1f1f1;}
+	.go_logo img {width:35%;}
+
+</style>
 </head>
 <body>
 	<h1 class="hidden">오션투유 리조트&amp;콘도 설악비치 이용안내</h1>
-	<div class="wrapper oc2Facil-wrapper home">
+	<div class="wrap">
 		<img src="http://img.go.co.kr/landing/170928_oc2pkg/ocean_pkg1.jpg?ver=20180903174355" alt="오션투유 패키지구성">
 		<div class="wrap_img">
 			<img src=" http://img.go.co.kr/landing/170928_oc2pkg/ocean_pkg3.jpg?ver=20180903174355" alt="오션투유 패키지구성">
@@ -27,18 +51,16 @@
 		</div>
 		<img src=" http://img.go.co.kr/landing/170928_oc2pkg/ocean_pkg4.jpg?ver=20180903174355" alt="오션투유 패키지구성">
 		<p class="go_logo"><img src="http://img.go.co.kr/landing/170928_oc2pkg/top_logo.png?ver=20180903174355" alt="Goco"></p>
+	</div>
+	<div class="bt_w">
+		<div class="bt">
+			<a href="javascript:next('breakfast');" class="l_bt"><img src="http://img.go.co.kr/landing/170928_oc2pkg/btn1.png?ver=20180903174355" alt="조식뷔페 예약"></a>
+			<a href="javascript:next('bbq');" class="r_bt"><img src="http://img.go.co.kr/landing/170928_oc2pkg/btn2.png?ver=20180903174355" alt="바베큐장 예약"></a>
 
-		
-		<div class="bt_w">
-			<div class="bt">
-				<a href="javascript:next('breakfast');" class="l_bt"><img src="http://img.go.co.kr/landing/170928_oc2pkg/btn1.png?ver=20180903174355" alt="조식뷔페 예약"></a>
-				<a href="javascript:next('bbq');" class="r_bt"><img src="http://img.go.co.kr/landing/170928_oc2pkg/btn2.png?ver=20180903174355" alt="바베큐장 예약"></a>
-	
-			</div>
-			<div class="bt2">	
-				<a href="javascript:next('bike');" class="l_bt2"><img src="http://img.go.co.kr/landing/170928_oc2pkg/btn3.png?ver=20180903174355" alt="전동바이크 예약"></a>
-				<a href="javascript:next('festival');" class="r_bt2"><img src="http://img.go.co.kr/landing/170928_oc2pkg/btn4.png?ver=20180903174355" alt="불꽃놀이 예약"></a>
-			</div>
+		</div>
+		<div class="bt2">	
+			<a href="javascript:next('bike');" class="l_bt2"><img src="http://img.go.co.kr/landing/170928_oc2pkg/btn3.png?ver=20180903174355" alt="전동바이크 예약"></a>
+			<a href="javascript:next('festival');" class="r_bt2"><img src="http://img.go.co.kr/landing/170928_oc2pkg/btn4.png?ver=20180903174355" alt="불꽃놀이 예약"></a>
 		</div>
 	</div>
 	
