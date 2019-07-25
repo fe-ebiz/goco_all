@@ -1,6 +1,7 @@
 @charset "utf-8"; 
 @import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
 @import url('http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap');
 
 .wrap,
 .wrapper { position: relative; max-width: 640px; margin: 0 auto; } 
@@ -155,9 +156,11 @@ img { vertical-align: top; border: none; width: 100%; }
 .seabayFacil-wrapper.bf { background: #cebaa1; } */
 
 /* 랜딩 서브페이지 공통 영역 */
-.wrapper .but a { line-height: normal; background: none; } 
 .wrapper.sub {padding-bottom: 55px;}
 .wrapper.sub .info-use {background: #fff;}
+
+/* but 재수정 */
+.wrapper .but a { line-height: normal; background: none; } 
 .wrapper.sub .but { padding-top: 0; background: none; } 
 .wrapper.sub .but { font-size: 0; letter-spacing: 0; } 
 .wrapper.sub .but,
@@ -168,13 +171,57 @@ img { vertical-align: top; border: none; width: 100%; }
 .wrapper.sub .but a.l_bt { width: 33.5%; } 
 .wrapper.sub .but a.r_bt { width: 66.5%; } 
 
+/* but-2 제작 */
 .wrapper.sub .but-2 {}
-.wrapper.sub .but-2 a {font-size: 16px; height: 55px; line-height: 55px; font-family: 'Noto Sans KR', sans-serif;}
+.wrapper.sub .but-2 { width: 100%; max-width: 640px; font-size: 0; position: fixed; height: 55px; z-index: 10; bottom: 0; display: block; } 
+.wrapper.sub .but-2.on { padding-top: 0; } 
+.wrapper.sub .but-2 a { display: inline-block; background: #a65656; color: #fff; font-size: 16px; height: 55px; line-height: 55px; font-family: 'Noto Sans KR', sans-serif; text-align: center;} 
+.wrapper.sub .but-2 a .gt { font-family: "Nanum Gothic", sans-serif; position: relative; left: 5px; font-size: 12px; top: -1px; } 
 .wrapper.sub .but-2 a .in-bl {vertical-align: middle;}
-.wrapper.sub .but-2 a.l_bt {background: #a1a1a1;}
-.wrapper.sub .but-2 a.r_bt {background: #000;}
+.wrapper.sub .but-2 a.l_bt {background: #a1a1a1; width: 33.5%;}
+.wrapper.sub .but-2 a.r_bt {background: #000; width: 66.5%;}
+.wrapper.sub .but-2 a.bt {width: 100%;}
 .wrapper.sub .but-2 a .icon {width: auto; height: 25px; vertical-align: middle;}
 
+hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;}
+
+.wrapper.sub .info-use em { font-weight: 700 !important; } 
+.wrapper.sub .info-use .c-1 { color: #f95500 !important; } 
+.wrapper.sub .info-use .c-2 { color: #adadad !important; } 
+/* .wrapper.sub .info-use .c-2 { color: #AD8F69 !important; }  */
+.wrapper.sub .info-use .c-3 { color: #FE6243 !important; } 
+.wrapper.sub .info-use .c-4 { color: #FFE800 !important; } 
+
+.wrapper.sub .info-use .info-notice .dot-1,
+.wrapper.sub .info-use .info-notice > li { position: relative; padding-left: 10px; letter-spacing: -0.5px; } 
+.wrapper.sub .info-use .info-notice .dot-1:before,
+.wrapper.sub .info-use .info-notice > li:before { content: '-'; display: inline-block; position: absolute; left: 0; } 
+.wrapper.sub .info-use .info-notice .dot-2 { position: relative; padding-left: 13px; letter-spacing: -0.5px; } 
+.wrapper.sub .info-use .info-notice .dot-2:before { content: '※'; display: inline-block; position: absolute; left: 0; } 
+.wrapper.sub .info-use .info-notice .dot-3 { position: relative; padding-left: 7px; letter-spacing: -0.5px; } 
+.wrapper.sub .info-use .info-notice .dot-3:before { content: '·'; display: inline-block; position: absolute; left: 0; font-weight: 700; } 
+
+.wrapper.sub .info-use .info-notice .dot-no:before { content: ''; } 
+.wrapper.sub .info-use .info-notice-2 > li {padding-left: 0;} 
+.wrapper.sub .info-use .info-notice-2 > li .in-bl:nth-child(2) {max-width: 72%; vertical-align: top;}
+
+@media (max-width: 320px) {
+    .wrapperwrapper.sub .info-use .info-notice > li {font-size: 11.5px;}
+}
+
+/* 조식 1인 무료 이용권 영역 공통 */
+.wrapper.bf-free { padding-bottom: 72px; } 
+.btn_wrap { position:fixed; bottom:0; width:100%; max-width: 640px; padding: 10px; background-color:#fff; box-sizing:border-box; } 
+.btn_wrap ul { display:table; width:100%; } 
+.btn_wrap ul li { display:table-cell; width:50%; vertical-align:middle; } 
+.btn_wrap ul li a { display:block; height:52px; color:#fff; font-weight:bold; font-size:16px; text-align:center; line-height:52px; } 
+.btn_wrap ul li:first-child a { background-color:#e63b3b; } 
+.btn_wrap ul li:last-child a { background-color:#e63b3b; } 
+
+/* 씨베이 랜딩 부대통합 영역 */
+.seabayFacil-wrapper.home { padding-bottom: 16%; } 
+
+/* 씨베이 랜딩 서브페이지 영역 */
 .seabayFacil-wrapper.sub .info-use { padding: 20px 0; } 
 .seabayFacil-wrapper.sub .info-use .info-container { position: relative; width: 96%; margin: 0 auto; box-sizing: border-box; padding: 20px 10px; background: #fff; color: #444023; line-height: 1.5; font-size: 13px; word-break: keep-all; letter-spacing: -0.5px; } 
 .seabayFacil-wrapper.sub .info-use .info-container:before,
@@ -202,33 +249,6 @@ img { vertical-align: top; border: none; width: 100%; }
 .seabayFacil-wrapper.sub .info-use .info-tbl-2 tbody td {padding: 3px 0;}
 .seabayFacil-wrapper.sub .info-use .info-tbl-2 tbody td.colons:after {content: ':'; float: right; padding-right: 5px;}
 
-hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;}
-
-
-.wrapper.sub .info-use em { font-weight: 700 !important; } 
-.wrapper.sub .info-use .c-1 { color: #f95500 !important; } 
-.wrapper.sub .info-use .c-2 { color: #adadad !important; } 
-/* .wrapper.sub .info-use .c-2 { color: #AD8F69 !important; }  */
-.wrapper.sub .info-use .c-3 { color: #FE6243 !important; } 
-.wrapper.sub .info-use .c-4 { color: #FFE800 !important; } 
-
-.wrapper.sub .info-use .info-notice > li { position: relative; padding-left: 10px; letter-spacing: -0.5px; } 
-.wrapper.sub .info-use .info-notice > li:before { content: '-'; display: inline-block; position: absolute; left: 0; } 
-.wrapper.sub .info-use .info-notice > li.dot-2 { position: relative; padding-left: 13px; letter-spacing: -0.5px; } 
-.wrapper.sub .info-use .info-notice > li.dot-2:before { content: '※'; display: inline-block; position: absolute; left: 0; } 
-.wrapper.sub .info-use .info-notice > li.dot-3 { position: relative; padding-left: 7px; letter-spacing: -0.5px; } 
-.wrapper.sub .info-use .info-notice > li.dot-3:before { content: '·'; display: inline-block; position: absolute; left: 0; font-weight: 700; } 
-
-.wrapper.sub .info-use .info-notice > li.dot-no:before { content: ''; } 
-.wrapper.sub .info-use .info-notice-2 > li {padding-left: 0;} 
-.wrapper.sub .info-use .info-notice-2 > li .in-bl:nth-child(2) {max-width: 72%; vertical-align: top;}
-
-@media (max-width: 320px) {
-    .wrapperwrapper.sub .info-use .info-notice > li {font-size: 11.5px;}
-}
-
-/* 씨베이 랜딩 서브페이지 영역 */
-.seabayFacil-wrapper.home { padding-bottom: 16%; } 
 /* 수영장 */
 .seabayFacil-wrapper.sw .but { background: #b7b9ff; } 
 .seabayFacil-wrapper.sw .but a.l_bt {width: 100%; padding-right: 0;}
@@ -241,17 +261,8 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 .seabayFacil-wrapper.bf .info-use { background: #cebaa1; } 
 
 /* 1인 무료 조식 */
-.seabayFacil-wrapper.bf-free { padding-bottom: 72px; } 
 .seabayFacil-wrapper.bf-free .info-use { background: #B7C592; }
 
-
-/* 조식 1인 무료 이용권 영역 공통 */
-.btn_wrap { position:fixed; bottom:0; width:100%; max-width: 640px; padding:10px; background-color:#fff; box-sizing:border-box; } 
-.btn_wrap ul { display:table; width:100%; } 
-.btn_wrap ul li { display:table-cell; width:50%; vertical-align:middle; } 
-.btn_wrap ul li a { display:block; height:52px; color:#fff; font-weight:bold; font-size:16px; text-align:center; line-height:52px; } 
-.btn_wrap ul li:first-child a { background-color:#e63b3b; } 
-.btn_wrap ul li:last-child a { background-color:#e63b3b; } 
 /* 오션투유 조식 1인 무료 이용권 영역 */
 .oc2Facil-wrapper.home {padding-bottom: 145px;}
 .oc2Facil-wrapper.home .pkg_w {width:100%; }
@@ -273,13 +284,11 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 .oc2Facil-wrapper.home .go_logo {width:100%; height:70px; padding-top:15px; text-align: center; background: #f1f1f1;}
 .oc2Facil-wrapper.home .go_logo img {width:35%;}
 
-.oc2Facil-wrapper.bf-free { padding-bottom: 100px; } 
-
 .oc2Facil-wrapper.bf-free { background: #21120f; } 
 .oc2Facil-wrapper.bf-free .btn_wrap ul li:last-child a { background-color: #efa051; color: #21140c } 
 .oc2Facil-wrapper.bf-free .pop_layer .pop_area .pop_btn a { background-color: #efa051; color: #21140c } 
 
-.oc2Facil-wrapper.bf-free .info-use { background: #21120f; } 
+.oc2Facil-wrapper.bf-free .info-use { background: #21120f; margin-bottom: 20px; } 
 .oc2Facil-wrapper.bf-free .info-use .info-container { margin: 0 10px; padding: 10px 15px; border: 1px solid #56371E; font-size: 13px; line-height: 1.5; color: #fff; word-break: keep-all; } 
 /* .oc2Facil-wrapper.bf-free .info-use .content > li { position: relative; padding-left: 10px; letter-spacing: -0.5px; } 
 .oc2Facil-wrapper.bf-free .info-use .content > li:before { content: '-'; display: inline-block; position: absolute; left: 0; } 
@@ -306,3 +315,21 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 3px;
 }
+
+/* 라마다 서브페이지 */
+.ramadaFacil-wrapper.sub .info-use { padding: 20px 0; background: #F7F4EF; } 
+.ramadaFacil-wrapper.sub .info-use .info-container { position: relative; width: 96%; margin: 0 auto; box-sizing: border-box; padding: 20px 10px; background: #fff; border: 2px solid #ccc; border-radius: 5px; color: #444023; line-height: 1.5; font-size: 13px; word-break: keep-all; letter-spacing: -0.5px; } 
+.ramadaFacil-wrapper.sub .info-use .info-container:before,
+.ramadaFacil-wrapper.sub .info-use .info-container:after { content: ''; display: block; position: absolute; width: 10px; height: 10px; top: 15px; border: 2px solid #ccc; border-radius: 50%; } 
+.ramadaFacil-wrapper.sub .info-use .info-container:before { left: 15px; } 
+.ramadaFacil-wrapper.sub .info-use .info-container:after { right: 15px; } 
+.ramadaFacil-wrapper.sub .info-use .info-title { font-size: 30px; text-align: center; color: #ACACAC; } 
+/* .ramadaFacil-wrapper.sub .info-use .info-title {font-family: 'NanumSquare', sans-serif;} */
+/* .ramadaFacil-wrapper.sub .info-use .info-title {font-family: 'Noto Sans KR', sans-serif;} */
+.ramadaFacil-wrapper.sub .info-use .info-title {font-family: 'Black Han Sans', sans-serif;}
+
+/* 라마다 1인 무료 조식 */
+.ramadaFacil-wrapper.bf-free .info-use {}
+
+/* 라마다 조식 예약 */
+.ramadaFacil-wrapper.bf .but-2 a.r_bt {width: 100%;}

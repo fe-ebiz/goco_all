@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>아메리칸 뷔페 이용안내</title>
+    <title>국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR</title>
 
     <meta http-equiv="Cache-Control" content="No-Cache">
     <meta http-equiv="Pragma" content="No-Cache">
@@ -41,29 +41,34 @@
 
 <body>
     <!-- 랜딩구분 name-wrapper: 랜딩 이름 , home: 부대시설 통합, sub: 서브 랜딩, name: 서브랜딩 구분 -->
-    <div class="wrapper seabayFacil-wrapper sub bf-free" id="wrap">
-        <div class="seabayFacil-body">
+    <div class="wrapper ramadaFacil-wrapper sub bf-free" id="wrap">
+        <div class="ramadaFacil-body">
             <!-- 이미지 영역 -->
-            <img src="http://img.go.co.kr/mobile/landing/seabayFacil_20190723/bf/img_01.jpg" alt="조식뷔페 1인 무료이용권">
+            <img src="http://img.go.co.kr/mobile/landing/ramadaFacil_20190725/bf_free/img_01.jpg" alt="조식뷔페 1인 무료이용권">
 
             <!-- 랜딩 별도 내용 영역 -->
             <div class="info-use">
-                <ul class="content">
-                    <li>추가 구매하신 뷔페 조식권은 이용당일 취소가 불가합니다.</li>
-                    <li>본 무료이용권은 1인 무료이용권입니다.</li>
-                    <li>추가인원 이용시에는 조식권의 구매가 필요합니다.</li>
-                    <li class="dot-no">＊ 대인 : 정상가 19,800원 ▶ <em>사전예약가 12,900원</em></li>
-                    <li class="dot-no">＊ 소인 : 정상가 14,900원 ▶ <em>사전예약가 8,900원</em> (소인기준: 13세 미만)</li>
-                    <li>단, 36개월 미만 유아는 무료이용 가능</li>
-                    <li>위치: 1층 한식당 다연</li>
-                    <li>운영시간 : 07시 30분 ~ 10시 00시</li>
-                </ul>
+                <div class="info-container">
+                    <div class="info-title">이용안내</div>
+                    
+                    <ul class="info-notice">
+                        <li class="dot-2">본 무료이용권은 1개 객실에 1인만 발행되는 무료이용권입니다.</li>
+                        <li class="dot-2">구매하신 뷔페조식권은 이용당일 취소가 불가합니다.</li>
+                        <li class="dot-2">
+                            추가인원 이용시에는 상품구매가 필요합니다.
+                            <div class="dot-1">대인 : 정상가 15,000 <span class="c-2">▶</span> 사전예약가 12,000원</div>
+                            <div class="dot-1">소인 : 정상가 12,000 <span class="c-2">▶</span> 사전예약가 9,900원<br>(소인 기준 : 36개월 ~ 8세미만)</div>
+                        </li>
+                        <li class="dot-2">운영시간 : 07시 ~ 10시 (9시 30분까지 입장가능)</li>
+                        <li class="dot-2">위치안내 : 라마다 앙코르 평택호텔 2층 레스토랑</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="btn_wrap">
             <ul>
-                <li><a href="#" class="btn01">아메리칸 뷔페 신청하기</a></li>
+                <li><a href="#" class="btn01">무료이용권 받기</a></li>
             </ul>
         </div>
     </div>
@@ -170,25 +175,6 @@
                                     </div>
                                 </td>
                             </tr>
-
-                            <!--
-                            <tr>
-                                <th scope="row" >
-                                    <label for="username" class="lb_txt">예약자명</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="name" id="username" style="width:100%;" value=""/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" >
-                                    <label for="tel" class="lb_txt">연락처</label>
-                                </th>
-                                <td>
-                                    <input type="text" name="tel" id="tel" maxlength="13" style="width:100%;" value=""/>
-                                </td>
-                            </tr>
-                            -->
                         </tbody>
                     </table>
                 </form>
@@ -269,193 +255,6 @@
                 this.value = auto_hypen(_val);
             });
         });
-
-        function datereload() {
-            $.ajax({
-                url: "./state.php",
-                type: "post",
-                data: "mode=oceanbbq_chkdate&p_no=517&r_no=257712",
-                success: function (e) {
-                    var tmp = e.split("|");
-                    var disabledDays = new Array();
-                    for (var j = 0; j < tmp.length; j++) {
-                        disabledDays.push(tmp[j]);
-                    }
-                    $("#sdate").datepicker({
-                        dateFormat: "yy-mm-dd",
-                        showAnim: "slideDown",
-                        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
-                        minDate: "2019-07-18",
-                        maxDate: "2018-12-31",
-                        changeMonth: true,
-                        changeYear: true,
-                        beforeShowDay: function (date) {
-                            var m = date.getMonth(),
-                                d = date.getDate(),
-                                y = date.getFullYear();
-                            for (i = 0; i < disabledDays.length; i++) {
-                                if ($.inArray(y + '-' + (m + 1) + '-' + d, disabledDays) != -
-                                    1) {
-                                    return [false];
-                                }
-                            }
-                            return [true];
-                        }
-                    });
-                }
-            });
-        }
-
-        function auto_hypen(str) {
-            str = str.replace(/[^0-9]/g, '');
-            var tmp = '';
-            if (str.length < 4) {
-                return str;
-            } else if (str.length < 7) {
-                tmp += str.substr(0, 3);
-                tmp += '-';
-                tmp += str.substr(3);
-                return tmp;
-            } else if (str.length < 11) {
-                tmp += str.substr(0, 3);
-                tmp += '-';
-                tmp += str.substr(3, 3);
-                tmp += '-';
-                tmp += str.substr(6);
-                return tmp;
-            } else {
-                tmp += str.substr(0, 3);
-                tmp += '-';
-                tmp += str.substr(3, 4);
-                tmp += '-';
-                tmp += str.substr(7);
-                return tmp;
-            }
-            return str;
-        }
-
-        function options_show(onum) {
-            $.ajax({
-                url: "./state.php",
-                type: "post",
-                data: "mode=options_chk&onum=" + onum + "&sdate=" + $("#sdate").val(),
-                success: function (e) {
-                    if (e == "N") {
-                        $("#options_tr").hide();
-                        $("#options_onum").val('');
-                    } else {
-                        $("#options_tr").show();
-                        $("#options_div").html(e);
-                    }
-                    fmoney();
-                }
-            });
-        }
-
-        function form_chk() {
-
-            if ($("#sdate").val() == "") {
-                alert("이용일을 선택해주세요.");
-                return false;
-            }
-
-            var cnt = 0;
-            for (var s = 0; s < parseInt($("#total_cnt").val()); s++) {
-                if ($("#tcount" + s).val() > 0) {
-                    cnt = cnt + 1;
-                }
-            }
-
-            if (cnt == 0) {
-                alert("매수를 선택해주세요.");
-                return false;
-            }
-
-
-            /*
-            if($("#username").val() == "") { 
-                alert("예약자명을 입력해주세요");
-                $("#username").focus();
-                return false;
-            } 
-        
-            if($("#tel").val() == "") { 
-                alert("연락처를 입력해주세요");
-                $("#tel").focus();
-                return false;
-            } */
-
-
-
-            $.ajax({
-                type: "POST",
-                url: "./state.php",
-                data: {
-                    "mode": "chk_again",
-                    "p_no": "517",
-                    "gubun": "breakfast__12133"
-                },
-                success: function (e) {
-                    if (e == "Y") {
-                        alert("이미 조식패키지를 구매하셨습니다.\r\n추가구매는 현장에서 가능합니다.");
-                        return false;
-                    }
-                }
-            })
-
-            var chk = "1";
-            if (parseInt($("#final").val()) == 0) {
-
-                alert("로그인 후 이용가능합니다.");
-                $("#rform").attr("action", "/home/landing/sms/post_save.php?md=WQwlVQ==&main=Y");
-                $("#rform").submit();
-            } else {
-                $('#rform').submit();
-            }
-
-        }
-
-        function clickcount(str) {
-            $.ajax({
-                url: "./state.php",
-                type: "post",
-                data: "mode=sub_ticket_click&p_no=517&t_gubun=" + str + "&options=breakfast__12133",
-                success: function (e) {
-
-                }
-            });
-        }
-
-        function simple_reserve(chk) {
-            var result = confirm(chk + "인은 무료입니다. 예약하시겠습니까?");
-            if (result) {
-
-                var string = $("#rform").serialize();
-                $.ajax({
-                    url: "./state.php",
-                    type: "post",
-                    data: "mode=simple_reserve&" + string,
-                    success: function (e) {
-                        alert(e);
-                        location.reload();
-                    }
-                });
-            } else {
-                return false;
-            }
-        }
-
-        function fmoney() {
-            var string = $("#rform").serialize();
-            $.ajax({
-                url: "./state.php",
-                type: "post",
-                data: "mode=fmoney&" + string,
-                success: function (e) {
-                    $("#fmoney").html(e);
-                }
-            });
-        }
     </script>
 
 </body>

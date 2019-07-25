@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 GO.CO.KR</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" href="https://static.go.co.kr/css/reset_custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://static.go.co.kr/js/common_ver2.js"></script>
+    <script>
+        var base_url = "go.co.kr";
+        var burl = "go.co.kr";
+    </script>
+    <script type="text/javascript" src="https://static.go.co.kr/js/all_common.js"></script>
+    <!--- 검색시 달력에서 이용 ---->
+    <link rel="stylesheet" href="https://static.go.co.kr/css/jquery-ui.css">
+    <script type="text/javascript" src="https://static.go.co.kr/js/jquery_ui.js"></script>
+    <!--- 달력 한글화 --->
+    <script type="text/javascript" src="https://static.go.co.kr/js/datepicker_ko.js"></script>
+    <script type="text/javascript" src="https://static.go.co.kr/js/jquery.number.min.js"></script>
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="https://static.go.co.kr/js/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://static.go.co.kr/css/daterangepicker.css">
+    <style src="http://code.jquery.com/jquery-1.11.2.min.js"></style>
+    <script type="text/javascript" src="https://static.go.co.kr/js/iscroll.js"></script>
+
+</head>
+
+<body>
+    <form name="rform" id="rform" method="post" action="">
+
+        <link rel="stylesheet" href="https://static.go.co.kr/css/mobile_landing.css">
+        <!-- <link rel="stylesheet" href="/static/css/mobile_landing.css"> -->
+
+        <!-- 랜딩구분 name-wrapper: 랜딩 이름 , home: 부대시설 통합, sub: 서브 랜딩, name: 서브랜딩 구분 -->
+        <div class="wrapper ramadaFacil-wrapper sub bf" id="wrap">
+            <div class="ramadaFacil-body">
+                <!-- 이미지 영역 -->
+                <img src="http://img.go.co.kr/mobile/landing/ramadaFacil_20190725/bf/img_01.jpg" alt="조식 패키지">
+
+                <!-- 랜딩 별도 내용 영역 -->
+                <div class="info-use">
+                    <div class="info-container">
+                        <div class="info-title">이용안내</div>
+
+                        <ul class="info-notice">
+                            <li class="dot-2">구매하신 뷔페조식 이용권은 이용당일 취소가 불가합니다.</li>
+                            <li class="dot-2">
+                                추가인원 이용요금은 다음과 같습니다.
+                                <div class="dot-1">대인 : 정상가 15,000 <span class="c-2">▶</span> 사전예약가 12,000원</div>
+                                <div class="dot-1">소인 : 정상가 12,000 <span class="c-2">▶</span> 사전예약가 9,900원<br>(소인 기준 : 36개월 ~ 8세미만)</div>
+                            </li>
+                            <li class="dot-2">운영시간 : 07시 ~ 10시 (9시 30분까지 입장가능)</li>
+                            <li class="dot-2">위치안내 : 라마다 앙코르 평택호텔 2층 레스토랑</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="but-2" id="but">
+                <a href="javascript:;" class="r_bt"><img src="http://img.go.co.kr/mobile/landing/icon/ic_bf.png"
+                        alt="조식 예약하기" class="icon"> <span class="in-bl">조식 예약하기</span></a>
+
+                <a href="#" class="bt" onclick="form_chk();" style="display: none;">결제하기<span id="fmoney"></span></a>
+            </div>
+
+            <div class="fixed-bg" style="display: none;">
+                <div class="dawrap">
+                    <h1>아메리칸 조식뷔페
+                        <a class="i-x" href="javascript:;"></a>
+                    </h1>
+                    <div id="blist" style="overflow-y:hidden;height:300px">
+                        <div id="break_o">
+                            <div class="da clr">
+                                <span style="line-height:35px">투숙일<span style="font-size:12px">(조식 익일제공)</span></span>
+                                <input type="text" class="date hasDatepicker" name="sdate" id="sdate" placeholder="날짜선택"
+                                    readonly="" onfocus="this.blur()" style="cursor:default" onchange="break_o()">
+                            </div>
+                        </div>
+                        <span style="color:#e63b3b;font-size:11px;">
+                            ※ 36개월 미만 무료
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            $(function () {
+
+                $(".bbqwrap, #but .bt").hide();
+
+                $("#but").on('click', '.r_bt', function () {
+                    $("#but .l_bt, #but .r_bt").hide();
+                    $(".bbqwrap, #but .bt").show();
+                    $("#but").addClass('on');
+                });
+
+                $("#but .r_bt").on('click', function () {
+                    $(".fixed-bg").fadeToggle();
+                    $(".bbqwrap").slideToggle();
+                    $("#but").removeClass('on');
+                    $("#wrap").bind("touchmove", function (e) {
+                        e.preventDefault();
+                    });
+                });
+
+                $(".i-x").on('click', function () {
+                    $(".fixed-bg").fadeToggle();
+                    $(".bbqwrap").slideToggle();
+                    $("#but").removeClass('on');
+
+                    $("#but .l_bt, #but .r_bt").show();
+                    $("#but .bt").hide();
+
+                    $("#wrap").unbind("touchmove");
+                });
+
+                $("#sdate").click(function () {
+                    alert("체크인 날짜를 선택해주세요.");
+                });
+            });
+
+        </script>
+        
+    </form>
+    
+</body>
+
+</html>
