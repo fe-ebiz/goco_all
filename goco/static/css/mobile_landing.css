@@ -168,6 +168,13 @@ img { vertical-align: top; border: none; width: 100%; }
 .wrapper.sub .but a.l_bt { width: 33.5%; } 
 .wrapper.sub .but a.r_bt { width: 66.5%; } 
 
+.wrapper.sub .but-2 {}
+.wrapper.sub .but-2 a {font-size: 16px; height: 55px; line-height: 55px; font-family: 'Noto Sans KR', sans-serif;}
+.wrapper.sub .but-2 a .in-bl {vertical-align: middle;}
+.wrapper.sub .but-2 a.l_bt {background: #a1a1a1;}
+.wrapper.sub .but-2 a.r_bt {background: #000;}
+.wrapper.sub .but-2 a .icon {width: auto; height: 25px; vertical-align: middle;}
+
 .seabayFacil-wrapper.sub .info-use { padding: 20px 0; } 
 .seabayFacil-wrapper.sub .info-use .info-container { position: relative; width: 96%; margin: 0 auto; box-sizing: border-box; padding: 20px 10px; background: #fff; color: #444023; line-height: 1.5; font-size: 13px; word-break: keep-all; letter-spacing: -0.5px; } 
 .seabayFacil-wrapper.sub .info-use .info-container:before,
@@ -185,12 +192,6 @@ img { vertical-align: top; border: none; width: 100%; }
 .seabayFacil-wrapper.sub .info-use .info-tbl thead th { background: #DBDBDB; padding: 6px 0; } 
 .seabayFacil-wrapper.sub .info-use .info-tbl tbody td { padding: 12px 0; background: #fafafa; line-height: 1.6;} 
 .seabayFacil-wrapper.sub .info-use .info-tbl tbody td .big { font-size: 18px; } 
-.seabayFacil-wrapper.sub .info-use .info-tbl tbody td em { font-weight: 700; } 
-
-.seabayFacil-wrapper.sub .info-use .c-1 { color: #f95500; } 
-.seabayFacil-wrapper.sub .info-use .c-2 { color: #adadad; } 
-/* .seabayFacil-wrapper.sub .info-use .c-2 { color: #AD8F69; }  */
-.seabayFacil-wrapper.sub .info-use .c-3 { color: #FE6243; } 
 
 .seabayFacil-wrapper.sub .info-use .info-tbl tbody td .split-box {}
 .seabayFacil-wrapper.sub .info-use .info-tbl tbody td .split-box [class*=split-] {float: left; width: 50%; box-sizing: border-box;}
@@ -201,18 +202,29 @@ img { vertical-align: top; border: none; width: 100%; }
 .seabayFacil-wrapper.sub .info-use .info-tbl-2 tbody td {padding: 3px 0;}
 .seabayFacil-wrapper.sub .info-use .info-tbl-2 tbody td.colons:after {content: ':'; float: right; padding-right: 5px;}
 
-.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;}
+hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;}
 
-.seabayFacil-wrapper.sub .info-use .info-notice > li { position: relative; padding-left: 10px; letter-spacing: -0.5px; } 
-.seabayFacil-wrapper.sub .info-use .info-notice > li:before { content: '-'; display: inline-block; position: absolute; left: 0; } 
-.seabayFacil-wrapper.sub .info-use .info-notice > li.dot-2 { position: relative; padding-left: 13px; letter-spacing: -0.5px; } 
-.seabayFacil-wrapper.sub .info-use .info-notice > li.dot-2:before { content: '※'; display: inline-block; position: absolute; left: 0; } 
-.seabayFacil-wrapper.sub .info-use .info-notice > li.dot-no:before { content: ''; } 
-.seabayFacil-wrapper.sub .info-use .info-notice-2 > li {padding-left: 0;} 
-.seabayFacil-wrapper.sub .info-use .info-notice-2 > li .in-bl:nth-child(2) {max-width: 72%; vertical-align: top;}
+
+.wrapper.sub .info-use em { font-weight: 700 !important; } 
+.wrapper.sub .info-use .c-1 { color: #f95500 !important; } 
+.wrapper.sub .info-use .c-2 { color: #adadad !important; } 
+/* .wrapper.sub .info-use .c-2 { color: #AD8F69 !important; }  */
+.wrapper.sub .info-use .c-3 { color: #FE6243 !important; } 
+.wrapper.sub .info-use .c-4 { color: #FFE800 !important; } 
+
+.wrapper.sub .info-use .info-notice > li { position: relative; padding-left: 10px; letter-spacing: -0.5px; } 
+.wrapper.sub .info-use .info-notice > li:before { content: '-'; display: inline-block; position: absolute; left: 0; } 
+.wrapper.sub .info-use .info-notice > li.dot-2 { position: relative; padding-left: 13px; letter-spacing: -0.5px; } 
+.wrapper.sub .info-use .info-notice > li.dot-2:before { content: '※'; display: inline-block; position: absolute; left: 0; } 
+.wrapper.sub .info-use .info-notice > li.dot-3 { position: relative; padding-left: 7px; letter-spacing: -0.5px; } 
+.wrapper.sub .info-use .info-notice > li.dot-3:before { content: '·'; display: inline-block; position: absolute; left: 0; font-weight: 700; } 
+
+.wrapper.sub .info-use .info-notice > li.dot-no:before { content: ''; } 
+.wrapper.sub .info-use .info-notice-2 > li {padding-left: 0;} 
+.wrapper.sub .info-use .info-notice-2 > li .in-bl:nth-child(2) {max-width: 72%; vertical-align: top;}
 
 @media (max-width: 320px) {
-    .seabayFacil-wrapper.sub .info-use .info-notice > li {font-size: 11.5px;}
+    .wrapperwrapper.sub .info-use .info-notice > li {font-size: 11.5px;}
 }
 
 /* 씨베이 랜딩 서브페이지 영역 */
@@ -268,15 +280,29 @@ img { vertical-align: top; border: none; width: 100%; }
 .oc2Facil-wrapper.bf-free .pop_layer .pop_area .pop_btn a { background-color: #efa051; color: #21140c } 
 
 .oc2Facil-wrapper.bf-free .info-use { background: #21120f; } 
-.oc2Facil-wrapper.bf-free .info-use .content { margin: 0 10px; padding: 10px 15px; border: 1px solid #56371E; font-size: 13px; line-height: 1.5; color: #fff; word-break: keep-all; } 
-.oc2Facil-wrapper.bf-free .info-use .content > li { position: relative; padding-left: 10px; letter-spacing: -0.5px; } 
+.oc2Facil-wrapper.bf-free .info-use .info-container { margin: 0 10px; padding: 10px 15px; border: 1px solid #56371E; font-size: 13px; line-height: 1.5; color: #fff; word-break: keep-all; } 
+/* .oc2Facil-wrapper.bf-free .info-use .content > li { position: relative; padding-left: 10px; letter-spacing: -0.5px; } 
 .oc2Facil-wrapper.bf-free .info-use .content > li:before { content: '-'; display: inline-block; position: absolute; left: 0; } 
 .oc2Facil-wrapper.bf-free .info-use .content > li.dot-no:before { content: ''; } 
-.oc2Facil-wrapper.bf-free .info-use .content em { color: #FFE800; } 
+.oc2Facil-wrapper.bf-free .info-use .content em { color: #FFE800; }  */
 
-.wrapper.sub .but-2 {}
-.wrapper.sub .but-2 a {font-size: 16px; height: 55px; line-height: 55px; font-family: 'Noto Sans KR', sans-serif;}
-.wrapper.sub .but-2 a .in-bl {vertical-align: middle;}
-.wrapper.sub .but-2 a.l_bt {background: #a1a1a1;}
-.wrapper.sub .but-2 a.r_bt {background: #000;}
-.wrapper.sub .but-2 a .icon {width: auto; height: 25px; vertical-align: middle;}
+/* 오션투유 조식예약 */
+.oc2Facil-wrapper.bf .info-use {background: #FFDDDC; padding-bottom: 20px; font-family: 'NanumSquare', sans-serif;}
+.oc2Facil-wrapper.bf .info-use .info-container {width: 96%; margin: 0 auto; background: #A65657; box-sizing: border-box; padding: 20px 10px; color: #fff; line-height: 1.5; font-size: 13px; word-break: keep-all; letter-spacing: -0.5px; }
+.oc2Facil-wrapper.bf .info-use .info-container + .info-container {margin-top: 5px;}
+.oc2Facil-wrapper.bf .info-use .info-container.deliver-container {padding-left: 20px; padding-right: 20px;}
+.oc2Facil-wrapper.bf .info-use .info-container .info-title {margin-bottom: 10px; text-align: center; font-size: 24px;}
+.oc2Facil-wrapper.bf .info-use .info-container .info-title:before,
+.oc2Facil-wrapper.bf .info-use .info-container .info-title:after {
+    content: '·';
+    margin: 0 8px;
+}
+.oc2Facil-wrapper.bf .info-use .info-container.bf-container .info-notice {padding: 0 5px;}
+.oc2Facil-wrapper.bf .info-use .info-container .info-picture {margin-bottom: 10px;}
+.oc2Facil-wrapper.bf .info-use .info-container.use-container .info-notice {
+    padding: 10px;
+    margin-top: 10px;
+    background: #803839;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
