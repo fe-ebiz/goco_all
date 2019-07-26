@@ -255,6 +255,9 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 .seabayFacil-wrapper.sw .info-use { background: #B7BAFF; } 
 .seabayFacil-wrapper.sw .info-use .info-container {font-size: 12px; letter-spacing: -1px;}
 .seabayFacil-wrapper.sub .info-use .info-notice > li {line-height: 1.6;}
+.seabayFacil-wrapper.sw-2 {padding-bottom: 0;}
+.seabayFacil-wrapper.sw-2 .hidden {width: 0px; height: 0px;}
+.seabayFacil-wrapper.sw-2 .bottom-area {}
 
 /* 조식 */
 .seabayFacil-wrapper.bf .but { background: #cebaa1; } 
@@ -262,6 +265,12 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 
 /* 1인 무료 조식 */
 .seabayFacil-wrapper.bf-free .info-use { background: #B7C592; }
+
+/* 주차장이용안내 */
+.seabayFacil-wrapper.park {padding-bottom: 0;}
+.seabayFacil-wrapper.park .hidden {width: 0px; height: 0px;}
+.seabayFacil-wrapper.park .link-area a:first-child {margin: 0;}
+.seabayFacil-wrapper.park .bottom-area {}
 
 /* 오션투유 조식 1인 무료 이용권 영역 */
 .oc2Facil-wrapper.home {padding-bottom: 145px;}
