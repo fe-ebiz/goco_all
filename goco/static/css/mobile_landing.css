@@ -3,6 +3,10 @@
 @import url('http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap');
 
+.hidden {
+    position: absolute;
+}
+
 .wrap,
 .wrapper { position: relative; max-width: 640px; margin: 0 auto; } 
 .wrap img,
@@ -219,7 +223,7 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 .btn_wrap ul li:last-child a { background-color:#e63b3b; } 
 
 /* 씨베이 랜딩 부대통합 영역 */
-.seabayFacil-wrapper.home { padding-bottom: 16%; } 
+.seabayFacil-wrapper.home { padding-bottom: 16%; }
 
 /* 씨베이 랜딩 서브페이지 영역 */
 .seabayFacil-wrapper.sub .info-use { padding: 20px 0; } 
@@ -255,7 +259,8 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 .seabayFacil-wrapper.sw .info-use { background: #B7BAFF; } 
 .seabayFacil-wrapper.sw .info-use .info-container {font-size: 12px; letter-spacing: -1px;}
 .seabayFacil-wrapper.sub .info-use .info-notice > li {line-height: 1.6;}
-.seabayFacil-wrapper.sw-2 {padding-bottom: 0;}
+/* 190726 씨베이호텔 - 주차장이용안내와 연결되는 수영장이용안내 */
+.seabayFacil-wrapper.sw-2 {padding-bottom: 0; background: #fff;}
 .seabayFacil-wrapper.sw-2 .hidden {width: 0px; height: 0px;}
 .seabayFacil-wrapper.sw-2 .bottom-area {}
 
@@ -266,11 +271,14 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 /* 1인 무료 조식 */
 .seabayFacil-wrapper.bf-free .info-use { background: #B7C592; }
 
-/* 주차장이용안내 */
-.seabayFacil-wrapper.park {padding-bottom: 0;}
+/* 190726 주차장이용안내 */
+.seabayFacil-wrapper.park {padding-bottom: 0; background: #fff;}
 .seabayFacil-wrapper.park .hidden {width: 0px; height: 0px;}
 .seabayFacil-wrapper.park .link-area a:first-child {margin: 0;}
 .seabayFacil-wrapper.park .bottom-area {}
+/* 190726 홈버튼 추가 */ 
+.seabayFacil-wrapper .btn-home {z-index: 99; position: absolute; top: 15px; right: 15px; display: inline-block; width: 9%;}
+.seabayFacil-wrapper .btn-home img {}
 
 /* 오션투유 조식 1인 무료 이용권 영역 */
 .oc2Facil-wrapper.home {padding-bottom: 145px;}
