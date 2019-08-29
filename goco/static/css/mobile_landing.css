@@ -249,6 +249,11 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 .seabayFacil-wrapper.sub .info-use .info-tbl-2 tbody td {padding: 3px 0;}
 .seabayFacil-wrapper.sub .info-use .info-tbl-2 tbody td.colons:after {content: ':'; float: right; padding-right: 5px;}
 
+/* 홈 버튼 공통 */
+.seabayFacil-wrapper.sw .btn-home,
+.seabayFacil-wrapper.park .btn-home,
+.seabayFacil-wrapper.sw-2 .btn-home {position: absolute; top: 30px; right: 30px; width: 63px;}
+
 /* 수영장 */
 .seabayFacil-wrapper.sw .but { background: #b7b9ff; } 
 .seabayFacil-wrapper.sw .but a.l_bt {width: 100%; padding-right: 0;}
