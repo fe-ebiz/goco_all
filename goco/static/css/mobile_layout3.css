@@ -15,7 +15,12 @@ a:hover, a:active {text-decoration:none; color:#ff6600}*/
 
 body, html {margin:0; width:100%; height:100%}
 
-
+.form-reset {
+    border: 1px solid #adadad;
+    background-color: #fff;
+    box-shadow: none;
+    border-radius: 0;
+}
 
 
 
@@ -336,6 +341,7 @@ border-radius: 10px; -moz-border-radius: 10px; /*모질라*/-webkit-border-radiu
 
 
 /*라디오버튼*/
+#product_info .radio_box {padding: 5px 0;}
 .radio_box{float:left; width:100%;}
 .radio_box label{line-height:1; margin:0 10px;
 display:block; position:relative; height:50px; padding-left:34px; text-indent:5px; line-height:1.3; color:#7b7b7b;
@@ -4481,16 +4487,55 @@ text-align: center; border-radius: 4px; letter-spacing: -1px; margin-left: 5px; 
     #gjt-181109 .sec-lan-kakao .gjt-wrap {padding-top: 23px; padding-bottom: 25px; background: url(//img.go.co.kr/mobile/landing/20181109_GangwonJejuTheme/img_kakao.png) no-repeat right 13px bottom; background-size: 100px auto;}
 }
 
+/* 객실 수 추가 */
+#product_info .product-quantity {
+    line-height: 1.43;
+    font-size: 12.5px;
+}
 
+#product_info .product-quantity:before {
+    content: '';
+    clear: both;
+    display: block;
+    margin: 0 10px;
+    height: 1px;
+    background-color: #d2d2d2;
+}
 
+#product_info .product-quantity .split {
+    position: relative;
+    padding: 8px 10px;
+}
 
+#product_info .product-quantity .split:nth-child(1) {
+    float: left;
+}
 
+#product_info .product-quantity .split:nth-child(1) .lbl {
+    top: -1px;
+}
 
+#product_info .product-quantity .split:nth-child(2) {
+    font-size: 14px;
+    float: right;
+    top: -2px;
+}
 
+#product_info .product-quantity .quantity-cover>* {
+    position: relative;
+    vertical-align: middle;
+}
 
+#product_info .product-quantity .quantity-cover .lbl {}
 
+#product_info .product-quantity .quantity-cover .lbl+* {
+    margin-left: 5px;
+}
 
+#product_info .product-quantity .quantity-cover .quantity-select {
+    min-width: 50px;
+}
 
-
-
-
+#product_info .product-quantity .quantity-cover .total-price {
+    font-size: 16px;
+}

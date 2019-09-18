@@ -252,7 +252,7 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 /* 홈 버튼 공통 */
 .seabayFacil-wrapper.sw .btn-home,
 .seabayFacil-wrapper.park .btn-home,
-.seabayFacil-wrapper.sw-2 .btn-home {position: absolute; top: 30px; right: 30px; width: 63px;}
+.seabayFacil-wrapper.sw-2 .btn-home {position: absolute; top: 15px; right: 15px; width: 38px;}
 
 /* 수영장 */
 .seabayFacil-wrapper.sw .but { background: #b7b9ff; } 
