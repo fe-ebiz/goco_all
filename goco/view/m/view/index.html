@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://static.go.co.kr/css/moblie_reset.css">
     <link rel="stylesheet" href="https://static.go.co.kr/css/swiper.min.css">
     <link rel="stylesheet" href="https://static.go.co.kr/css/mobile_layout3.css">
-    <!-- <link rel="stylesheet" href="/static/css/mobile_layout3.css"> -->
-    <link rel="stylesheet" href="https://static.go.co.kr/css/totalmobile.css">
+    <!-- <link rel="stylesheet" href="https://static.go.co.kr/css/totalmobile.css"> -->
+    <link rel="stylesheet" href="/static/css/totalmobile.css">
 
     <!-- <link rel="stylesheet" href="../../static/css/totalmobile.css" type="text/css"/> -->
 
@@ -125,6 +125,10 @@
                                                             <span class="total-price">50,000</span>
                                                         </div>
                                                     </div>
+                                                    <div class="cf"></div>
+                                                    <div class="split-f">
+                                                        <button type="button" class="btn-reset rsv-btn">예약하기</button>
+                                                    </div>
                                                 </div>
                                             </td>
                                         </tr>
@@ -152,23 +156,3 @@
 </body>
 
 </html>
-
-<script>
-    var filter = "win16|win32|win64|mac|macintel";
-
-    if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
-        if (window.location == 'https://greenliving.co.kr/' || window.location == 'https://www.greenliving.co.kr/' || 'https://m.greenliving.co.kr/') {
-
-            window.location.href = 'https://greenliving.co.kr/main';
-        } else if (window.location == 'http://shop.greenliving.co.kr/' || window.location == 'http://m.shop.greenliving.co.kr/') {
-
-            window.location.href = 'https://m.greenliving.co.kr/';
-        }
-    } else {
-        if (window.location == 'https://greenliving.co.kr/' || window.location == 'https://www.greenliving.co.kr/') {
-            window.location.href = 'https://greenliving.co.kr/main';
-        } else if (window.location == 'http://shop.greenliving.co.kr/') {
-            window.location.href = 'https://greenliving.co.kr/index.html';
-        }
-    }
-</script>

@@ -4,6 +4,19 @@
 @import url(http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
 @import url(http://static.go.co.kr/css/faq_m-v1.1.css);
 
+.form-reset {
+    border: 1px solid #adadad;
+    background-color: #fff;
+    box-shadow: none;
+    border-radius: 0;
+}
+.btn-reset {
+    border: 1px solid #adadad;
+    background-color: #fff;
+    box-shadow: none;
+    border-radius: 0;
+}
+
 .f-bd {font-weight: 700;}
 .thColor {color: #ff6a00}
 
@@ -2408,4 +2421,80 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     .package-menu-area .package-menu-list li.on a span {padding-right: 13px;}
     .package-menu-area .package-menu-list li.on a span:before {font-size: 12px;}
     .package-menu-area .package-menu-list li.on a span.on:before {right: 8px;}
+}
+
+/* 객실 수 추가 */
+#product_info .product-quantity {
+    padding: 0 10px;
+    line-height: 1.43;
+    font-size: 12.5px;
+}
+
+#product_info .product-quantity:before {
+    content: '';
+    clear: both;
+    display: block;
+    height: 1px;
+    background-color: #d2d2d2;
+}
+
+#product_info .product-quantity .split {
+    position: relative;
+    padding: 8px 0 3px;
+}
+
+#product_info .product-quantity .split:nth-child(1) {
+    float: left;
+}
+
+#product_info .product-quantity .split:nth-child(1) .lbl {
+    top: -1px;
+}
+
+#product_info .product-quantity .split:nth-child(2) {
+    font-size: 14px;
+    float: right;
+    top: 2px;
+}
+
+#product_info .product-quantity .quantity-cover>* {
+    position: relative;
+    vertical-align: middle;
+}
+
+#product_info .product-quantity .quantity-cover .lbl {}
+
+#product_info .product-quantity .quantity-cover .lbl+* {
+    margin-left: 5px;
+}
+
+#product_info .product-quantity .quantity-cover .quantity-select {
+    min-width: 50px;
+    height: 26px;
+}
+
+#product_info .product-quantity .quantity-cover .total-price {
+    font-size: 16px;
+}
+
+#product_info .product-quantity .split-f {
+    padding-bottom: 5px;
+    text-align: right;
+}
+#product_info .product-quantity .split-f:before {
+    content: '';
+    display: table;
+    clear: both;
+}
+#product_info .product-quantity .split-f .rsv-btn {
+    min-width: 100px;
+    line-height: 1.423;
+    font-size: 14px;
+    padding: 6px 15px 5px;
+    background-color: #ff0000;
+    border-color: #efefef;
+    color: #fff;
+}
+#product_info .radio_box {
+    padding: 5px 0;
 }
