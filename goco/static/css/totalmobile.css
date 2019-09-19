@@ -2487,7 +2487,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     clear: both;
 }
 #product_info .product-quantity .split-f .rsv-btn {
-    min-width: 100px;
+    min-width: 90px;
     line-height: 1.423;
     font-size: 14px;
     padding: 6px 15px 5px;
