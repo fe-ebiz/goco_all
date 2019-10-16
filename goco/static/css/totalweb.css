@@ -228,7 +228,8 @@ box-sizing:border-box;}
 .nb-open-btn a i img {position: relative; left: -60px; width: 80px;}
 .nb-open-btn a.on i img {left: -40px;}
 
-.nb-open-btn a i.bt {top: 4px; left: 8px; line-height: 1;}
+/* .nb-open-btn a i.bt {top: 4px; left: 8px; line-height: 1;} */
+.nb-open-btn a i.bt {top: 9px; left: 8px; line-height: 1;}
 .nb-open-btn a i.bt img {left: 0; width: 17px;}
 
 .nb-open-btn a span {color: #fff;}
