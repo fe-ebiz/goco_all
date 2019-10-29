@@ -340,3 +340,10 @@ hr.line {margin: 0; border: none; margin: 10px auto; border-top: 1px solid #ddd;
 
 /* 라마다 조식 예약 */
 .ramadaFacil-wrapper.bf .but-2 a.r_bt {width: 100%;}
+
+.ramadaFacil-wrapper.salad {padding-bottom: 0;}
+.ramadaFacil-wrapper.salad .info-use {padding-bottom: 10px;}
+.ramadaFacil-wrapper.salad .info-use,
+.ramadaFacil-wrapper.salad .copyright {background: #d2d0cc;}
+.ramadaFacil-wrapper.salad .copyright {padding-bottom: 20px; font-size: 12px; color: #545454; line-height: 1.4; letter-spacing: -1px; text-align: center; word-break: keep-all;}
+.ramadaFacil-wrapper.salad .copyright small {font-size: 11px; color: #626262;}
