@@ -1,193 +1,275 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
 <head>
-	<title>오션투유 객실현황</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta http-equiv="Cache-Control" content="No-Cache">
-	<meta http-equiv="Pragma" content="No-Cache">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="imagetoolbar" content="false">
 
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="오션투유">
-	<meta property="og:description" content="국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 객실현황 GO.CO.KR 오션투유">
-	<meta property="og:image" content="http://img.go.co.kr/tournspa.ico?ver=20170125183914">
-	<meta property="og:url" content="http://www.go.co.kr">
+    <head>
+        <title>오션투유 객실현황</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="Cache-Control" content="No-Cache">
+        <meta http-equiv="Pragma" content="No-Cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="imagetoolbar" content="false">
 
-	<meta name="author" content="GO.CO.KR 오션투유">
-	<meta name="description" content="국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 객실현황 GO.CO.KR 오션투유">
-	<meta name="classification" content="GO.CO.KR 오션투유">
-	<meta name="keywords" content="객실현황 GO.CO.KR 오션투유">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="오션투유">
+        <meta property="og:description" content="국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 객실현황 GO.CO.KR 오션투유">
+        <meta property="og:image" content="http://img.go.co.kr/tournspa.ico?ver=20170125183914">
+        <meta property="og:url" content="http://www.go.co.kr">
 
-	<!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
+        <meta name="author" content="GO.CO.KR 오션투유">
+        <meta name="description" content="국내외여행, 호텔, 편션, 리조트, 콘도 최저가할인예약 객실현황 GO.CO.KR 오션투유">
+        <meta name="classification" content="GO.CO.KR 오션투유">
+        <meta name="keywords" content="객실현황 GO.CO.KR 오션투유">
 
-	<link rel="shortcut icon" href="http://img.go.co.kr/tournspa.ico?ver=3">
-	<link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css" type="text/css">
-	<link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css" type="text/css">
-	<!-- <link rel="stylesheet" href="../../static/css/go/layout.css" type="text/css"> -->
-	<link rel="stylesheet" href="http://static.go.co.kr/css/task/room_layout.css">
-	<link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
-	<style>
-	.table-wrapper .table-box .d-table  th.th-d {padding-left: 10px;}
-</style>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="http://static.go.co.kr/js/jquery-ui.js"></script>
-<script type="text/javascript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script><script charset="UTF-8" type="text/javascript" src="http://t1.daumcdn.net/postcode/api/core/190107/1546836247227/190107.js"></script>
-<script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
-<script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
-<script type="text/javascript" src="http://static.go.co.kr/js/own/common.js?ver=20190129172349"></script>
-<script type="text/javascript" src="http://static.go.co.kr/js/own/Nwagon.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$("#sdate").datepicker({ dateFormat:"yy-mm-dd", showAnim:"slideDown", dayNamesMin:["일","월","화","수","목","금","토"], changeMonth: true, changeYear: true });
-		$("#edate").datepicker({ dateFormat:"yy-mm-dd", showAnim:"slideDown", dayNamesMin:["일","월","화","수","목","금","토"], changeMonth: true, changeYear: true });
-		$("#sdate2").datepicker({ dateFormat:"yy-mm", showAnim:"slideDown", dayNamesMin:["일","월","화","수","목","금","토"], changeMonth: true, changeYear: true });
-		$("#edate2").datepicker({ dateFormat:"yy-mm", showAnim:"slideDown", dayNamesMin:["일","월","화","수","목","금","토"], changeMonth: true, changeYear: true });
+        <!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
 
-		var menupos = $("#nav-bar").offset().top; 
+        <link rel="shortcut icon" href="http://img.go.co.kr/tournspa.ico?ver=3">
+        <link rel="stylesheet" href="http://static.go.co.kr/css/go/reset.css" type="text/css">
+        <link rel="stylesheet" href="http://static.go.co.kr/css/go/layout.css" type="text/css">
+        <!-- <link rel="stylesheet" href="../../static/css/go/layout.css" type="text/css"> -->
+        <link rel="stylesheet" href="http://static.go.co.kr/css/task/room_layout.css">
+        <link rel="stylesheet" href="http://static.go.co.kr/css/jquery-ui.css">
+        <style>
+            .table-wrapper .table-box .d-table th.th-d {
+                padding-left: 10px;
+            }
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="http://static.go.co.kr/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+        <script charset="UTF-8" type="text/javascript" src="http://t1.daumcdn.net/postcode/api/core/190107/1546836247227/190107.js"></script>
+        <script type="text/javascript" src="http://static.go.co.kr/js/datepicker_ko.js"></script>
+        <script type="text/javascript" src="http://static.go.co.kr/js/jquery.number.min.js"></script>
+        <script type="text/javascript" src="http://static.go.co.kr/js/own/common.js?ver=20190129172349"></script>
+        <script type="text/javascript" src="http://static.go.co.kr/js/own/Nwagon.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#sdate").datepicker({
+                    dateFormat: "yy-mm-dd",
+                    showAnim: "slideDown",
+                    dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+                    changeMonth: true,
+                    changeYear: true
+                });
+                $("#edate").datepicker({
+                    dateFormat: "yy-mm-dd",
+                    showAnim: "slideDown",
+                    dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+                    changeMonth: true,
+                    changeYear: true
+                });
+                $("#sdate2").datepicker({
+                    dateFormat: "yy-mm",
+                    showAnim: "slideDown",
+                    dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+                    changeMonth: true,
+                    changeYear: true
+                });
+                $("#edate2").datepicker({
+                    dateFormat: "yy-mm",
+                    showAnim: "slideDown",
+                    dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+                    changeMonth: true,
+                    changeYear: true
+                });
 
-		$(window).scroll(function(){ 
+                var menupos = $("#nav-bar").offset().top;
 
-		//특정높이 이상부터 스크립트 실행 
-		if($(window).scrollTop() > 150) {
-			if($(window).scrollTop() >= menupos) { 
-				$("#nav-bar").css({"position": "fixed", "top": "0"}); 			
-				$("#nav-bar .nav").css({"height": 55, "top": 0});
-				$("#alert_info").css({"position": "fixed", "top": 50, "z-index": 2}); 
-				$("#top_mar").show();
-				$("#logo").hide().css({"position": "fixed", "top": 0, "width": 116, "z-index": 3, "right": "66%", "margin-right": 325}).hover(function(){
-					$(this).css({"width": "116px", "text-align": "left"});	
-				});
-			} else {
-				$("#nav-bar").css("position","relative");
-				$("#alert_info").css({"position": "relative", "top": 0}); 
-				$("#nav-bar .nav").css({"height": 50});
-				$("#top_mar").hide();
-				$("#logo").hide();
-			}
-		} else if($(window).scrollTop() == 0){
-			//스크롤이 맨위로 가면 초기화 
-			$("#nav-bar").css("position","relative");
-			$("#alert_info").css({"position": "relative", "top": 0}); 
-			$("#nav-bar .nav").css({"height": 50});
-			$("#top_mar").hide();
-			$("#logo").hide();
+                $(window).scroll(function () {
 
-		}
-		
-	});
+                    //특정높이 이상부터 스크립트 실행 
+                    if ($(window).scrollTop() > 150) {
+                        if ($(window).scrollTop() >= menupos) {
+                            $("#nav-bar").css({
+                                "position": "fixed",
+                                "top": "0"
+                            });
+                            $("#nav-bar .nav").css({
+                                "height": 55,
+                                "top": 0
+                            });
+                            $("#alert_info").css({
+                                "position": "fixed",
+                                "top": 50,
+                                "z-index": 2
+                            });
+                            $("#top_mar").show();
+                            $("#logo").hide().css({
+                                "position": "fixed",
+                                "top": 0,
+                                "width": 116,
+                                "z-index": 3,
+                                "right": "66%",
+                                "margin-right": 325
+                            }).hover(function () {
+                                $(this).css({
+                                    "width": "116px",
+                                    "text-align": "left"
+                                });
+                            });
+                        } else {
+                            $("#nav-bar").css("position", "relative");
+                            $("#alert_info").css({
+                                "position": "relative",
+                                "top": 0
+                            });
+                            $("#nav-bar .nav").css({
+                                "height": 50
+                            });
+                            $("#top_mar").hide();
+                            $("#logo").hide();
+                        }
+                    } else if ($(window).scrollTop() == 0) {
+                        //스크롤이 맨위로 가면 초기화 
+                        $("#nav-bar").css("position", "relative");
+                        $("#alert_info").css({
+                            "position": "relative",
+                            "top": 0
+                        });
+                        $("#nav-bar .nav").css({
+                            "height": 50
+                        });
+                        $("#top_mar").hide();
+                        $("#logo").hide();
 
-		$(".table-bordered thead input[name=week]").change(function(){
-			var dayofweek = $(this).attr("data-week-of-day");
-			var checked =  $(this).is(":checked");
-			$(".table-bordered tbody tr td input[name=date][data-week-of-day="+dayofweek+"]").prop('checked', checked);
-		});
+                    }
 
-		$.ajax({		
-			type: "post",
-			url: "/inc/state.php",
-			data: "mode=unconfirm",
-			success: function(r) {
-				$("#alert_info").html(r);
-			}
-		});
-	});
+                });
 
-	function login(e) {
-		$.ajax({		
-			type: 'post',
-			url: '/inc/state.php',
-			data: 'mode=login&admin=2&a=' + e,
-			success: function(r) {
-				location.reload();
-			}
-		});
-	}
-</script>
-</head>
+                $(".table-bordered thead input[name=week]").change(function () {
+                    var dayofweek = $(this).attr("data-week-of-day");
+                    var checked = $(this).is(":checked");
+                    $(".table-bordered tbody tr td input[name=date][data-week-of-day=" + dayofweek + "]").prop('checked', checked);
+                });
+
+                $.ajax({
+                    type: "post",
+                    url: "/inc/state.php",
+                    data: "mode=unconfirm",
+                    success: function (r) {
+                        $("#alert_info").html(r);
+                    }
+                });
+            });
+
+            function login(e) {
+                $.ajax({
+                    type: 'post',
+                    url: '/inc/state.php',
+                    data: 'mode=login&admin=2&a=' + e,
+                    success: function (r) {
+                        location.reload();
+                    }
+                });
+            }
+        </script>
+    </head>
+
 <body>
-	<div id="headerW">
-		<div class="header">
-			<h1><a href="/"><img src="http://img.go.co.kr/go/logo_ocean.jpg"></a></h1>
-			<div class="snb">			
-						
-				<select style="height: 28px;" onchange="login(this.value)">
-				 
-				<option value="c014|오션투유리조트속초설악비치호텔앤콘도" selected="selected">오션투유리조트속초설악비치호텔앤콘도</option>
-				 
-				<option value="c033|연호리조트">연호리조트</option>
-				 
-				<option value="c072|BS콘도도고온천호텔앤리조트">BS콘도도고온천호텔앤리조트</option>
-				 
-				<option value="h1285|라마다앙코르평택">라마다앙코르평택</option>
-				 
-				<option value="c0001|지리산남원중앙하이츠콘도">지리산남원중앙하이츠콘도</option>
-				<option value="r091|동강시스타리조트">동강시스타리조트</option><option value="c015|코레스코치악콘도">코레스코치악콘도</option><option value="r179|평창아이원리조트">평창아이원리조트</option>			
-				</select>
-							<a href="/" class="log_btn">HOME</a> 
-				<a href="http://www.go.co.kr/home/view/?p_no=HE93" class="log_btn" target="_blank">바로가기</a> 
-				<a href="/logout.php" class="log_btn">로그아웃</a> 
-				<a onclick="layer_on(&quot;#popWs&quot;);" class="log_btn">비밀번호변경</a>
-			</div>
-		</div>
-	</div>
-	<div id="nav-bar" style="z-index: 3; position: relative; top: 0px;">
-		<ul class="nav" style="height: 50px; top: 0px;">
-			<li>
-				<a href="reserve.php">판매기록</a>
-				<ul class="dep2-menu">
-					<li><a href="reserve.php">판매목록</a></li>
-					<li><a href="reserve.php?e=Y">이벤트 판매목록</a></li>
-					<li><a href="virtual.php">입금대기</a></li>
-					<li><a href="chkin1.php">투숙자 리스트</a></li>
-					<li><a href="etc.php">부대시설 현황</a></li>
-					
-					<!--li><a href="chkin2.php">투숙자 현황</a></li-->
-				</ul>
-			</li>
-			<li class="on">
-				<a href="sale1.php?v=2">객실관리</a>
-				<ul class="dep2-menu">
-					<li><a href="sale1.php?v=2">요금</a></li>
-					<li><a href="sale3.php">현황</a></li>
-					<!--li><a href="sale2.php">현황2</a></li-->
-					<li><a href="room.php">관리</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="room_day.php">판매현황</a>
-				<ul class="dep2-menu">
-					<li><a href="room_day.php">전체 일별</a></li>
-					<li><a href="room_month.php">전체 월별</a></li>
+    <div id="headerW">
+        <div class="header">
+            <h1><a href="/"><img src="http://img.go.co.kr/go/logo_ocean.jpg"></a></h1>
+            <div class="snb">
 
-					<li><a href="agency_day.php">판매채널 일별(결제)</a></li>
-					<li><a href="agency_month.php">판매채널 월별(결제)</a></li>
-					<li><a href="agency_day.php?a=1">판매채널 일별(투숙)</a></li>
-					<li><a href="agency_month.php?a=1">판매채널 월별(투숙)</a></li>
+                <div class="using-user">
+                    <a href="javascript:;" class="toggle-btn" onclick="$(this).next().toggle()">접속멤버 110명</a>
+                    <div class="using-member-area" style="display: none">
+                        <ul class="list">
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                            <li>OOO, 123.123.12.12, 2020-04-16 05:10:10 </li>
+                        </ul>
+                    </div>
+                </div>
+                <select style="height: 28px;" onchange="login(this.value)">
 
-					<li><a href="etc_day.php">부대시설 일별</a></li>
-					<li><a href="etc_month.php">부대시설 월별</a></li>
-				</ul>
-			</li>
-			<li><a href="info.php">호텔정보</a></li>		
-		</ul>
-	</div>
 
-	<div id="wrapper">
-		<div id="container">
-			<div id="alert_info" style="width: 99%;"><span>모든 예약건수가 확인되었습니다.</span> &nbsp; <span class="alert_btn2"><a href="javascript:page.layer('booking', '')">현장 예약하기 &gt;</a></span><span class="alert_tel">시설담당자 : <strong>임우석 차장 &nbsp; | &nbsp;  010-8817-1634</strong> (24시간 통화가능)</span></div>
+                    <option value="c014|오션투유리조트속초설악비치호텔앤콘도" selected="selected">오션투유리조트속초설악비치호텔앤콘도</option>
 
-			<div class="clr"></div>
-			<div class="container notice-area week-notice">
-				<p class="row dot"><span class="ic-bArrow"></span>해당주 금,토요일 판매량 목표치</p>
-				<p class="row dot"><span class="dot">-</span> 체크인 일주일 전까지 40~50%</p>
-				<p class="row dot"><span class="dot">-</span> 6일전~3일전(4일간, 일 ~ 수요일까지) 20~25%</p>
-				<p class="row dot"><span class="dot">-</span> 2일전~당일(3일간, 목~토요일까지) 25~30% (당일 15~20%)</p>
-			</div>
-		</div>
+                    <option value="c033|연호리조트">연호리조트</option>
 
-		<div class="clr"></div>
-	</div>
+                    <option value="c072|BS콘도도고온천호텔앤리조트">BS콘도도고온천호텔앤리조트</option>
+
+                    <option value="h1285|라마다앙코르평택">라마다앙코르평택</option>
+
+                    <option value="c0001|지리산남원중앙하이츠콘도">지리산남원중앙하이츠콘도</option>
+                    <option value="r091|동강시스타리조트">동강시스타리조트</option>
+                    <option value="c015|코레스코치악콘도">코레스코치악콘도</option>
+                    <option value="r179|평창아이원리조트">평창아이원리조트</option>
+                </select>
+                <a href="/" class="log_btn">HOME</a>
+                <a href="http://www.go.co.kr/home/view/?p_no=HE93" class="log_btn" target="_blank">바로가기</a>
+                <a href="/logout.php" class="log_btn">로그아웃</a>
+                <a onclick="layer_on(&quot;#popWs&quot;);" class="log_btn">비밀번호변경</a>
+            </div>
+        </div>
+    </div>
+    <div id="nav-bar" style="z-index: 3; position: relative; top: 0px;">
+        <ul class="nav" style="height: 50px; top: 0px;">
+            <li>
+                <a href="reserve.php">판매기록</a>
+                <ul class="dep2-menu">
+                    <li><a href="reserve.php">판매목록</a></li>
+                    <li><a href="reserve.php?e=Y">이벤트 판매목록</a></li>
+                    <li><a href="virtual.php">입금대기</a></li>
+                    <li><a href="chkin1.php">투숙자 리스트</a></li>
+                    <li><a href="etc.php">부대시설 현황</a></li>
+
+                    <!--li><a href="chkin2.php">투숙자 현황</a></li-->
+                </ul>
+            </li>
+            <li class="on">
+                <a href="sale1.php?v=2">객실관리</a>
+                <ul class="dep2-menu">
+                    <li><a href="sale1.php?v=2">요금</a></li>
+                    <li><a href="sale3.php">현황</a></li>
+                    <!--li><a href="sale2.php">현황2</a></li-->
+                    <li><a href="room.php">관리</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="room_day.php">판매현황</a>
+                <ul class="dep2-menu">
+                    <li><a href="room_day.php">전체 일별</a></li>
+                    <li><a href="room_month.php">전체 월별</a></li>
+
+                    <li><a href="agency_day.php">판매채널 일별(결제)</a></li>
+                    <li><a href="agency_month.php">판매채널 월별(결제)</a></li>
+                    <li><a href="agency_day.php?a=1">판매채널 일별(투숙)</a></li>
+                    <li><a href="agency_month.php?a=1">판매채널 월별(투숙)</a></li>
+
+                    <li><a href="etc_day.php">부대시설 일별</a></li>
+                    <li><a href="etc_month.php">부대시설 월별</a></li>
+                </ul>
+            </li>
+            <li><a href="info.php">호텔정보</a></li>
+        </ul>
+    </div>
+
+    <div id="wrapper">
+        <div id="container">
+            <div id="alert_info" style="width: 99%;"><span>모든 예약건수가 확인되었습니다.</span> &nbsp; <span class="alert_btn2"><a href="javascript:page.layer('booking', '')">현장 예약하기 &gt;</a></span><span class="alert_tel">시설담당자 : <strong>임우석 차장 &nbsp; | &nbsp; 010-8817-1634</strong> (24시간 통화가능)</span></div>
+
+            <div class="clr"></div>
+            <div class="container notice-area week-notice">
+                <p class="row dot"><span class="ic-bArrow"></span>해당주 금,토요일 판매량 목표치</p>
+                <p class="row dot"><span class="dot">-</span> 체크인 일주일 전까지 40~50%</p>
+                <p class="row dot"><span class="dot">-</span> 6일전~3일전(4일간, 일 ~ 수요일까지) 20~25%</p>
+                <p class="row dot"><span class="dot">-</span> 2일전~당일(3일간, 목~토요일까지) 25~30% (당일 15~20%)</p>
+            </div>
+        </div>
+
+        <div class="clr"></div>
+    </div>
 
 </body>
+
 </html>
